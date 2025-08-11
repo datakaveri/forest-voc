@@ -1,0 +1,36 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:generalAdvisoryRegional",
+            "@type": [
+                "forest:TextProperty"
+            ],
+            "rdfs:comment": "A general advisory, provided in the regional language, to the farmers for the cultivation of crops in regards to the conditions of weather, soil ,land etc. It may include warnings of potential catastrophical events.",
+            "rdfs:label": "generalAdvisoryRegional",
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:AgriAdvisory"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Text"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ]
+        }
+    ]
+}

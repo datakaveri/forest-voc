@@ -1,0 +1,36 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:pows",
+            "@type": [
+                "forest:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Pods without Stem (POWS) represents the harvested agricultural produce such as vegetables, fruits, etc. that lack stems, which may impact overall appearance and handling.",
+            "rdfs:label": "pows",
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:AgriProduceQuality"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Number"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ]
+        }
+    ]
+}

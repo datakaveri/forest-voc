@@ -1,0 +1,42 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:cropSpeciesInfo",
+            "@type": [
+                "forest:StructuredProperty"
+            ],
+            "rdfs:comment": "Information of crops corresponding to this observation.",
+            "rdfs:label": "cropSpeciesInfo",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:Farmer"
+                },
+                {
+                    "@id": "forest:CropInsurance"
+                },
+                {
+                    "@id": "forest:FarmerCollective"
+                },
+                {
+                    "@id": "forest:SoilHealth"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:CropCondition"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            }
+        }
+    ]
+}

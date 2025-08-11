@@ -1,0 +1,5 @@
+label,type,comment,domainIncludes,rangeIncludes,exactMatch,older_labels,fromOtherSchemas,fromBaseSchema,Reference Link 
+landParcelID,QP,The ULPIN(Unique Land Parcel Identification Number) representing the land parcel corresponding to the observation.,LandIdentityDesc,"Number, ValueDescriptor",,,0,0,"https://www.nic.in/products/ulpin/#:~:text=Unique%20Land%20Parcel%20Identi%EF%AC%81cation%20Number%20System&text=The%20ULPIN%20is%20generated%20using,accorded%20to%20a%20land%20parcel."
+surveyNumber,TXP,The unique land survey number allocated to the land corresponding to this observation.,LandIdentityDesc,"Text, ValueDescriptor",,,0,0,
+baseSurveyNumber,QP,The base survey number of the land corresponding to this observation.,LandIdentityDesc,"Number, ValueDescriptor",,,0,0,
+subdivisionNumber,TXP,The subdivision number from the land survey number corresponding to this observation,LandIdentityDesc,"Text, ValueDescriptor",,,0,0,"https://www.tesz.in/guide/patta-chitta#:~:text=Survey%20Number%20%E2%80%93%20A%20unique%20number,of%20a%20particular%20survey%20number."

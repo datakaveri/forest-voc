@@ -1,0 +1,12 @@
+label,type,comment,domainIncludes,rangeIncludes,exactMatch,older_labels,fromOtherSchemas,fromBaseSchema,Reference Link 
+year,QP,"Year corresponding to this observation and is described in YYYY format, for eg. 2020.","PublicSchemes,
+Farmer,
+AgriCredit","Number, ValueDescriptor",,,1,1,
+evaluationYear,TXP,The period during which a survey or assessment has been carried out.,AgriCredit,"Text, ValueDescriptor",,,0,0,
+loanType,TXP,"The specific type of financial assistance provided to individuals or entities. For eg., crop loan, term loan etc.",AgriCredit,"Text, ValueDescriptor",,,0,0,
+loanTargetAmount,QP,"The total amount of money planned to be disbursed as agricultural credit for a particular loan type, by the government or financial institution within a certain time period.",AgriCredit,"Number, ValueDescriptor",,,0,0,https://pib.gov.in/Pressreleaseshare.aspx?PRID=1576498
+loanAchievementAmount,QP,"The total amount of money actually disbursed as agricultural credit for a particular loan type, by the government or financial institution within a certain time period.",AgriCredit,"Number, ValueDescriptor",,,0,0,https://pib.gov.in/Pressreleaseshare.aspx?PRID=1576498
+achievementRate,QP,"The ratio of the actual loan amount disbursed to the loan amount targeted to be disbursed for a particular loan type, expressed as a percentage, denoting the level of attainment of the credit goals. It is calculated as (loanAchievementAmount / loanTargetAmount)*100.",AgriCredit,"Number, ValueDescriptor",,,0,0,https://pib.gov.in/Pressreleaseshare.aspx?PRID=1576498
+totalTargetAmount,QP,The total amount of money targeted to be disbursed across all loan types within a specific period.,AgriCredit,"Number, ValueDescriptor",,,0,0,
+totalAchievementAmount,QP,The total amount of money actually disbursed across all loan types within a specific period.,AgriCredit,"Number, ValueDescriptor",,,0,0,
+totalAchievementRate,QP,"The ratio of the actual loan amount disbursed in total to the total loan amount targeted to be disbursed across all loan types, expressed as a percentage, denoting the level of attainment of the credit goals.",AgriCredit,"Number, ValueDescriptor",,,0,0,

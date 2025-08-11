@@ -1,0 +1,34 @@
+{
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:apdURL",
+            "@type": [
+                "forest:TextProperty"
+            ],
+            "rdfs:comment": "URL pointing to the Access Policy Decision (APD) for an individual Resource.",
+            "rdfs:label": "apdURL",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:Resource"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Text"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            }
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "@context": {
+        "iudx": "https://voc.iudx.org.in/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:additionalInfoURL",
+            "@type": [
+                "forest:Relationship"
+            ],
+            "rdfs:comment": "URL from which additional information of the subject can be obtained",
+            "rdfs:label": "additionalInfoURL",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:AccessObjectInfoValue"
+                },
+                {
+                    "@id": "forest:Organization"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "forest:RelationshipValue"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+label,type,comment,domainIncludes,rangeIncludes,exactMatch,older_labels,fromOtherSchemas,fromBaseSchema,References
+atmosphericPressure,QP,Observed air (atmospheric or barometric) pressure.,Weather,"Number, ValueDescriptor",Fiware:atmosphericPressure,AIR_PRESSURE,0,0,Fiware:WeatherObserved
+illuminance,QP,Observed instantaneous ambient light intensity.,Weather,"Number, ValueDescriptor",Fiware:illuminance,LIGHT,0,0,Fiware:WeatherObserved
+precipitation,QP,Observed precipitation/rainfall level over a given duration.,Weather,"Number, ValueDescriptor",Fiware:precipitation,RAINFALL,0,0,Fiware:WeatherObserved
+relativeHumidity,QP,Observed instantaneous relative humidity (water vapour in air).,Weather,TimeSeriesAggregation,Fiware:relativeHumidity,HUMIDITY,0,0,Fiware:WeatherObserved
+windSpeed,QP,Observed wind speed.,Weather,TimeSeriesAggregation,Fiware:windSpeed,,0,0,Fiware:WeatherObserved
+windDirection,QP,Observed wind directiont. Measured in degrees clockwise from due north.,Weather,"Number, ValueDescriptor",Fiware:windDirection,,0,0,Fiware:WeatherObserved
+weatherType,TXP,"Observed weather type or status. Represented by a comma separated list of weather types, e.g., cloudy, sunny etc.",Weather,"Text, ValueDescriptor",Fiware:weatherType,,0,0,Fiware:WeatherObserved
+dewPoint,QP,Observed  temperature to which air must be cooled to become saturated with water vapor.,Weather,"Number, ValueDescriptor",Fiware:dewPoint,,0,0,Fiware:WeatherObserved
+solarRadiation,QP,Observed solar radiation.,Weather,"Number, ValueDescriptor",Fiware:solarRadiation,,0,0,Fiware:WeatherObserved
+airTemperature,QP,Observed value of air temperature. Value is an object containing attributes representing statistical aggregates derived from past data.,Weather,TimeSeriesAggregation,Fiware:temperature,"TEMPERATURE, TEMPERATURE_MAX, TEMPERATURE_MIN",0,0,Fiware:WeatherForecast
+gustSpeed,QP,A sudden burst of high-speed wind over the observed average wind speed lasting  only for a few seconds.,Weather,"Number, ValueDescriptor",,,0,0,
+airQualityIndex,QP,Overall Air Quality Index (AQI) for the observed air quality.,Weather,"Number, ValueDescriptor",,AQI,0,0,
+aqiMajorPollutant,TXP,Major pollutant in the Air Quality Index (AQI).,Weather,"Text, ValueDescriptor",,"AQI_POLLUTANT,LEAD_POLLUTANT",0,0,
+observationDateTime,TP,Last reported time of observation.,Weather,"DateTime, ValueDescriptor",,LASTUPDATEDATETIME,1,0,
+aqiMajorPollutantForecast,TXP,Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future.,Weather,"Text, ValueDescriptor",,,0,0,
+airQualityIndexForecast,QP,Forecasted overall Air Quality Index (AQI) over a certain duration in future.,Weather,"Number, ValueDescriptor",,,0,0,
+precipitationForecast,QP,Forecasted rainfall over a certain duration in future.,Weather,"Number,
+ValueDescriptor",,,0,0,
+relativeHumidityForecast,QP,Forecasted relative humidity (water vapour in air) over a certain duration in future.,Weather,"Number, ValueDescriptor",,,0,0,Fiware:WeatherObserved
+airTemperatureForecast,QP,Forecasted value of air temperature over a certain duration in future.,Weather,"Number, ValueDescriptor",,,0,0,Fiware:WeatherForecast
+localeInfo,SP,Locale information corresponding to this observation.,"LandParcel,
+Weather",LocaleDesc,,,0,0,
+dayLength,QP,The period of solar radiation in a day corresponding to this observation.,Weather,"Number, ValueDescriptor",Fiware: ,,0,0,
+season,TXP,"Represents specific time of the year that has distinct weather patterns and conditions, such as summer, autumn (fall), etc.",Weather,"Text, ValueDescriptor",,,0,0,

@@ -1,0 +1,8 @@
+label,type,comment,domainIncludes,rangeIncludes,exactMatch,older_labels,fromOtherSchemas,fromBaseSchema,Reference Link 
+name,TXP,Version name corresponding to the device in this observation.,Version,"Text, ValueDescriptor",,,1,1,
+startDateTime,TP,Reported start time corresponding to this observation.,Version,"DateTime, ValueDescriptor",,,0,0,
+endDateTime,TP,Reported end time of the version corresponding to this observation.,Version,"DateTime, ValueDescriptor",,,0,0,
+versionNum,QP,Reported end time corresponding to this observation.,Version,"Number, ValueDescriptor",,,0,0,
+comments,TXP,User comments corresponding to this observation. ,Version,"Text, ValueDescriptor",,,0,0,
+versionSpec,SP,Version specifications or information corresponding to the version in this observation.,Version,"Text, 
+Object, ValueDescriptor",,,0,0,

@@ -1,0 +1,20 @@
+{
+    "@context": "https://agrijson.org",
+    "id": "resource-item-id",
+    "type": [
+        "forest:PowerDistribution",
+        "forest:Resource"
+    ],
+    "cityName": "KARIMNAGAR",
+    "powerDistributionDivision": "KARIMNAGAR RURAL",
+    "powerDistributionSubdivision": "NUSTHULAPUR",
+    "powerDistributionSection": "NUTSULAPOOR",
+    "areaServed": "RENIKUNTA",
+    "categoryCode": "5",
+    "category": "Agriculture",
+    "totalServiceCount": 550,
+    "billedServicesCount": 0,
+    "energyConsumption": 0,
+    "powerConsumption": 2815,
+    "observationDateTime": "2021-10-07T11:00:00+05:30"
+}

@@ -1,0 +1,36 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:consignmentQuantity",
+            "@type": [
+                "forest:QuantitativeProperty"
+            ],
+            "rdfs:comment": "The number of units or weight of cargo or food involved in the consignment corresponding to this observation.",
+            "rdfs:label": "consignmentQuantity",
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:ExportTransaction"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Number"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ]
+        }
+    ]
+}

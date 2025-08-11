@@ -1,0 +1,39 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:irrigationMethod",
+            "@type": [
+                "forest:TextProperty"
+            ],
+            "rdfs:comment": "The types of irrigating crops include surface irrigation, flooded field irrigation, drip irrigation, sprinkler irrigation, subsurface irrigation, etc",
+            "rdfs:label": "irrigationMethod",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:LandParcel"
+                },
+                {
+                    "@id": "forest:Irrigation"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Text"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            }
+        }
+    ]
+}

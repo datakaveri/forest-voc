@@ -1,0 +1,77 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:AgriMarket",
+        "forest:Resource"
+    ],
+    "agencyName": "Private Trading Agency",
+    "registrationNumber": "Q32200MH2009PLC123456",
+    "personnelInfo": {
+        "phone": "+919876543210",
+        "email": "abc@gmail.com",
+        "businessAddress": {
+            "buildingNum": "52",
+            "street": "A street",
+            "locality": "Thenkasi",
+            "cityName": "Tirunelveli",
+            "state": "Tamil Nadu",
+            "country": "India",
+            "pincode": 627811
+        }
+    },
+    "marketID": "519XX",
+    "marketName": "ABC",
+    "amcCode": "300",
+    "amcName": "Badepally",
+    "amcGrade": "Spl.Gr",
+    "commissionAgentCount": 23,
+    "traderCount": 30,
+    "farmerCount": 57,
+    "foundingDate": "2023-03-31",
+    "marketValuation": 90000,
+    "commodityInfo": {
+        "commodityVarietyName": "Water Melon",
+        "commodityVarietyCode": "86",
+        "arrivalQuantity": 120,
+        "minimumPrice": 400,
+        "maximumPrice": 1000,
+        "modalPrice": 670
+    },
+    "observationDateTime": "2023-03-31T08:30:00+05:30",
+    "contactPointInfo": {
+        "contactPointName": "MD. Shanmugam",
+        "contactPointEmail": "abcthenkasi@gmail.com",
+        "helplineNumber": [
+            "462-23433432",
+            "462-23211231"
+        ]
+    },
+    "areaServed": [
+        "Tenkasi",
+        "Vellineloor",
+        "Madurai"
+    ],
+    "mediaURL": [
+        "https://privatetraders/mandi_519XX_001",
+        "https://privatetraders/mandi_519XX_002",
+        "https://privatetraders/mandi_123_003"
+    ],
+    "landExtent": 10,
+    "weighBridgeCapacity": 20000,
+    "auctionShedNumber": "91XXY",
+    "auctionShedSpace": 51,
+    "officeSpace": 25,
+    "warehouseSpace": 75,
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            91.285169,
+            23.834296
+        ]
+    },
+    "language": [
+        "Tamizh",
+        "Malayalam"
+    ]
+}

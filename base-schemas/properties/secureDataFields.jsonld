@@ -1,0 +1,32 @@
+{
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:secureDataFields",
+            "@type": [
+                "forest:TextProperty"
+            ],
+            "rdfs:comment": "List of properties/fields/attributes contained in the data available from the resources associated with a given resource Group which are secure, i.e., need authorization from the auth server to access these fields for a given resource.",
+            "rdfs:label": "secureDataFields",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:DataFieldListValue"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Text",
+                    "@container": "@set"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+label,type,comment,domainIncludes,rangeIncludes,exactMatch,older_labels,fromOtherSchemas,fromBaseSchemas,Reference Link 
+modelName,TXP,"Name of a specific model associated with an entity, e.g., sensor, device etc.",ModelDesc,"Text, ValueDescriptor",,,0,0,
+areaServed,TXP,Area served by the entity or a service.,ModelDesc,"Text,Text-list, ValueDescriptor",,,0,0,
+modelURL,TXP,"URL providing further information of a specific model associated with an entity, e.g., sensor, device etc.",ModelDesc,"Text, ValueDescriptor",,,0,0,
+manufacturerName,TXP,"Name of the manufacturer associated with an entity, e.g., sensor, device etc.",ModelDesc,"Text, ValueDescriptor",,,0,0,
+brandName,TXP,"Name of the brand associated with an entity, e.g., sensor, device etc.",ModelDesc,"Text, ValueDescriptor",,,0,0,
+year,QP,The year corresponding to this observation. It is described in YYYY format.,ModelDesc,"Number, ValueDescriptor",,,0,1,

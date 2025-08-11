@@ -1,0 +1,59 @@
+{
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "schema": "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "iudx": "https://voc.iudx.org.in/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:fileFormat",
+            "@type": [
+                "forest:TextProperty"
+            ],
+            "rdfs:comment": "Format of the media file corresponding to this observation.",
+            "rdfs:label": "fileFormat",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:AgriAdvisory"
+                },
+                {
+                    "@id": "forest:ConsentArtifact"
+                },
+                {
+                    "@id": "forest:Imagery"
+                },
+                {
+                    "@id": "forest:Common"
+                },
+                {
+                    "@id": "forest:HyperLocalAdvisory"
+                },
+                {
+                    "@id": "forest:Model"
+                },
+                {
+                    "@id": "forest:Resource"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:ValueDescriptor"
+                },
+                {
+                    "@container": "@list",
+                    "@id": "forest:Text"
+                },
+                {
+                    "@id": "forest:Text"
+                }
+            ]
+        }
+    ]
+}

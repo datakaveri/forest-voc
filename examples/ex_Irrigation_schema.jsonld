@@ -1,0 +1,334 @@
+{
+    "@context": "https://agrijson.org/",
+    "type": [
+        "forest:Irrigation",
+        "forest:Schema"
+    ],
+    "id": "https://agrijson.org/Irrigation",
+    "schema": {
+        "title": "ADEX Irrigation Data Model",
+        "type": "object",
+        "properties": {
+            "type": {
+                "type": "array",
+                "items": [
+                    {
+                        "type": "string",
+                        "description": "ADEX Data Model name. It has to be Irrigation"
+                    },
+                    {
+                        "type": "string",
+                        "description": "ADEX Entity type. It has to be Resource"
+                    }
+                ]
+            },
+            "location": {
+                "type": "object",
+                "description": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor."
+            },
+            "irrigationCount": {
+                "type": "number",
+                "description": "The total number times the farm has been irrigated corresponding to this observation.",
+                "unitCode": "C62",
+                "unitText": "dimensionless"
+            },
+            "irrigationMethod": {
+                "type": "string",
+                "description": "The types of irrigating crops include surface irrigation, flooded field irrigation, drip irrigation, sprinkler irrigation, and subsurface irrigation."
+            },
+            "observationDateTime": {
+                "type": "string",
+                "description": "Last reported time of observation.",
+                "format": "date-time"
+            },
+            "category": {
+                "type": "string",
+                "description": "Represents the name of classification of an entity or service based on a particular aspect."
+            },
+            "reservoirID": {
+                "type": "string",
+                "description": "The unique ID referring to the water reservoir corresponding to this observation."
+            },
+            "reservoirName": {
+                "type": "string",
+                "description": "The name of the water reservoir corresponding to this observation."
+            },
+            "inflow": {
+                "type": "number",
+                "description": "Indicates the rate at which water enters into the reservoir corresponding to this observation.",
+                "unitCode": "K6",
+                "unitText": "kilolitre"
+            },
+            "riverBasin": {
+                "type": "string",
+                "description": "The name of the river/stream corresponding to this observation"
+            },
+            "fullReservoirLevel": {
+                "type": "number",
+                "description": "The maximum level the water in the reservoir is designed to reach.",
+                "unitCode": "LF",
+                "unitText": "linear foot"
+            },
+            "totalCapacity": {
+                "type": "number",
+                "description": "Represents the total volume of water that the reservoir corresponding to this observation can hold.",
+                "unitCode": "D41",
+                "unitText": "tonne per cubic metre"
+            },
+            "outflow": {
+                "type": "number",
+                "description": "Indicates the rate at which water flows out of the reservoir corresponding to this observation.",
+                "unitCode": "K6",
+                "unitText": "kilolitre"
+            },
+            "currentCapacity": {
+                "type": "number",
+                "description": "The current volume of water stored in the reservoir corresponding to this observation.",
+                "unitCode": "D41",
+                "unitText": "tonne per cubic metre"
+            },
+            "season": {
+                "type": "string",
+                "description": "Represents specific time of the year that has distinct weather patterns and conditions, such as summer, autumn (fall), etc."
+            },
+            "localeInfo": {
+                "type": "object",
+                "description": "Locale information corresponding to this observation.",
+                "properties": {
+                    "subdistrictName": {
+                        "type": "string",
+                        "description": "Name of the subdistrict corresponding to this observation.  A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states."
+                    },
+                    "countryName": {
+                        "type": "string",
+                        "description": "Name of the country corresponding to this observation."
+                    },
+                    "wardName": {
+                        "type": "string",
+                        "description": "Ward name corresponding to this observation."
+                    },
+                    "clusterCode": {
+                        "type": "string",
+                        "description": "The cluster code corresponding to this observation."
+                    },
+                    "countryCode": {
+                        "type": "string",
+                        "description": "Name of the country code corresponding to this observation."
+                    },
+                    "clusterName": {
+                        "type": "string",
+                        "description": "Name of the cluster corresponding to this observation. A cluster or a firkas represents a group of villages."
+                    },
+                    "zoneID": {
+                        "type": "string",
+                        "description": "Zone ID corresponding to this observation."
+                    },
+                    "districtCode": {
+                        "type": "string",
+                        "description": "The district code corresponding to this observation."
+                    },
+                    "districtName": {
+                        "type": "string",
+                        "description": "Name of the district corresponding to this observation."
+                    },
+                    "zoneName": {
+                        "type": "string",
+                        "description": "Zone name corresponding to this observation."
+                    },
+                    "subdistrictCode": {
+                        "type": "string",
+                        "description": "The subdistrict code corresponding to this observation."
+                    },
+                    "gramPanchayatName": {
+                        "type": "string",
+                        "description": "Name of the gram panchayat corresponding to this observation."
+                    },
+                    "wardID": {
+                        "type": "string",
+                        "description": "Ward ID corresponding to this observation."
+                    },
+                    "villageName": {
+                        "type": "string",
+                        "description": "Name of the village corresponding to this observation."
+                    },
+                    "stateCode": {
+                        "type": "string",
+                        "description": "The state code corresponding to this observation."
+                    },
+                    "revenueDivisionCode": {
+                        "type": "string",
+                        "description": "The revenue division code corresponding to this observation"
+                    },
+                    "villageCode": {
+                        "type": "string",
+                        "description": "The village code corresponding to this observation."
+                    },
+                    "revenueDivision": {
+                        "type": "string",
+                        "description": "Name of the revenue division in a district corresponding to this observation."
+                    },
+                    "stateName": {
+                        "type": "string",
+                        "description": "Name of the state corresponding to this observation."
+                    }
+                }
+            },
+            "waterLevel": {
+                "type": "number",
+                "description": "The water level in a specific water body such as the reservoir or the ground water table.",
+                "unitCode": "LF",
+                "unitText": "linear foot"
+            },
+            "nutrientInfo": {
+                "type": "object",
+                "description": "The chemical elements and compounds that are necessary for plant growth, reproduction, metabolism.",
+                "properties": {
+                    "mgo": {
+                        "type": "number",
+                        "description": "Observed value of Magnesium Oxide composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "k2o": {
+                        "type": "number",
+                        "description": "Observed value of Potassium Oxide composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "ca": {
+                        "type": "number",
+                        "description": "Observed value of Calcium composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "nitrogen": {
+                        "type": "number",
+                        "description": "Observed value of Nitrogen composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "organicCarbon": {
+                        "type": "number",
+                        "description": "Observed value of Organic Carbon composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "so4": {
+                        "type": "number",
+                        "description": "Observed value of Sulphate in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "mg": {
+                        "type": "number",
+                        "description": "Observed value of Magnesium in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "cl": {
+                        "type": "number",
+                        "description": "Observed value of Chlorine composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "boron": {
+                        "type": "number",
+                        "description": "Observed value of Boron composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "sulphur": {
+                        "type": "number",
+                        "description": "Observed value of sulphur composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "tds": {
+                        "type": "number",
+                        "description": "Observed value of Carbon trioxide in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "hco3": {
+                        "type": "number",
+                        "description": "Observed value of Bicarbonate in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "fluorine": {
+                        "type": "number",
+                        "description": "Observed value of Fluorine in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "potassium": {
+                        "type": "number",
+                        "description": "Observed value of Potassium composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "fe": {
+                        "type": "number",
+                        "description": "Observed value of Iron composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "no3": {
+                        "type": "number",
+                        "description": "Observed value of Nitrate in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "zn": {
+                        "type": "number",
+                        "description": "Observed value of Zinc composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "co3": {
+                        "type": "number",
+                        "description": "Observed value of Carbon trioxide in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "p2o5": {
+                        "type": "number",
+                        "description": "Observed value of Phosphorus Pentoxide composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "na": {
+                        "type": "number",
+                        "description": "Observed value of Sodium in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "cu": {
+                        "type": "number",
+                        "description": "Observed value of Copper composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "mn": {
+                        "type": "number",
+                        "description": "Observed value of Manganese composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "phosphorus": {
+                        "type": "number",
+                        "description": "Observed value of Phosphorus composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    },
+                    "mo": {
+                        "type": "number",
+                        "description": "Observed value of Molybdenum composition in the entity under consideration.",
+                        "unitCode": "P1",
+                        "unitText": "Percentage"
+                    }
+                }
+            }
+        }
+    }
+}

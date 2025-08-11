@@ -1,0 +1,35 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:AgriResearcher",
+        "forest:Resource"
+    ],
+    "name": "Swaminathan",
+    "phone": "9283294XXX",
+    "academicQualification": "Doctorate in Agricultural Science",
+    "fieldOfResearch": "Crop Disease Resistance",
+    "residentialAddress": {
+        "buildingNum": "61/65",
+        "street": "abc",
+        "locality": "Ballepalli",
+        "districtName": "Khammam",
+        "stateName": "Telangana",
+        "countryName": "India",
+        "pincode": 507002
+    },
+    "identityInfo": {
+        "panNo": "AXXXXXXHHZ",
+        "aadharNo": "3112XXXX54XXX"
+    },
+    "language": [
+        "Tamil",
+        "English",
+        "Hindi",
+        "Telugu"
+    ],
+    "designation": "R&D head",
+    "email": "swaminathanofficial@gmail.com",
+    "gender": "Male",
+    "workStatus": "Retired"
+}

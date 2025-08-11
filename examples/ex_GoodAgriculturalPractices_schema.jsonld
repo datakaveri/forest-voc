@@ -1,0 +1,75 @@
+{
+    "@context": "https://agrijson.org/",
+    "type": [
+        "forest:GoodAgriculturalPractices",
+        "forest:Schema"
+    ],
+    "id": "https://agrijson.org/GoodAgriculturalPractices",
+    "schema": {
+        "title": "ADEX GoodAgriculturalPractices Data Model",
+        "type": "object",
+        "properties": {
+            "type": {
+                "type": "array",
+                "items": [
+                    {
+                        "type": "string",
+                        "description": "ADEX Data Model name. It has to be GoodAgriculturalPractices"
+                    },
+                    {
+                        "type": "string",
+                        "description": "ADEX Entity type. It has to be Resource"
+                    }
+                ]
+            },
+            "certificateInfo": {
+                "type": "object",
+                "description": "Date of issual, expiry/validity, renewal of the document/certificate corresponding to this observation.",
+                "properties": {
+                    "certificationIssualDate": {
+                        "type": "string",
+                        "description": "The date of issual of the report or document or item corresponding to this observation.",
+                        "format": "date"
+                    },
+                    "certificationExpiryDate": {
+                        "type": "string",
+                        "description": "The date of expiry of the report or document or item corresponding to this observation.",
+                        "format": "date"
+                    },
+                    "certifyingAuthority": {
+                        "type": "string",
+                        "description": "Name of the authority issuing the certificate corresponding to this observation."
+                    },
+                    "certificationRenewalDate": {
+                        "type": "string",
+                        "description": "The date of renewal of the report or document or item corresponding to this observation.",
+                        "format": "date"
+                    },
+                    "certificateNumber": {
+                        "type": "string",
+                        "description": "Unique identification number of the certificate corresponding to this observation."
+                    }
+                }
+            },
+            "controlPoints": {
+                "type": "array",
+                "description": "The Control Points in India Good Agricultural Practices (IndGAP) is a set of guildlines that are crucial for maintaining the integrity of the food supply chain and reducing risks associated with foodborne illnesses, contamination, and environmental damage.",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "moduleName": {
+                "type": "string",
+                "description": "Name of the module in India Good Agricultural Practices (IndGAP). The modules are designed to ensure the production of safe, high-quality agricultural products while minimizing negative environmental impacts. The modules that are adapted by Quality Council of India are All Farm Base, Crops Base, Agro Biodiversity, Fresh Fruits & Vegetables, Combinable Crops, Green Coffee, Tea and Spices."
+            },
+            "isGAPCompliant": {
+                "type": "string",
+                "description": "Compliance criteria in the India Good Agricultural Practices (IndGAP) are the measurable benchmarks that ensure farmers are implementing the recommended practices to achieve the objectives of sustainable and responsible farming. The value True -  indicates the farming practices that are under the compliance of IndGAP and False - indicates the farming practices that are not under the compliance of IndGAP."
+            },
+            "subModuleName": {
+                "type": "string",
+                "description": "The subModules specified in India Good Agricultural Practices (IndGAP) corresponding to this observation."
+            }
+        }
+    }
+}

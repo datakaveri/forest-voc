@@ -1,0 +1,63 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "provider-id/rs.adex.org.in/cropinsurance-rg/cropinsurance-ri",
+    "type": [
+        "forest:CropInsurance",
+        "forest:Resource"
+    ],
+    "issualDate": "2021-01-01",
+    "expiryDate": "2022-01-01",
+    "renewalDate": "2022-02-01",
+    "policyDate": "2022-03-01",
+    "insurancePremium": 3000,
+    "agencyName": "United India",
+    "insuranceCoverage": 500000,
+    "policyProtection": [
+        "Accidents",
+        "Theft",
+        "Fire",
+        "Natural disasters"
+    ],
+    "policyNumber": "BHAR00012345",
+    "cropSpeciesInfo": {
+        "cropNameICC": "Rice",
+        "cropNameCommon": "Telangana Sona",
+        "cropCode": "AR56",
+        "cropGroupICC": "Cereals",
+        "cropCodeICC": "PQ1231",
+        "cropNameBotanical": "Oryza sativa"
+    },
+    "landIdentityInfo": {
+        "surveyNumber": "26 / 2e",
+        "baseSurveyNumber": 26,
+        "landParcelID": 34554321345672,
+        "subdivisionNumber": "2e"
+    },
+    "schemeInfo": {
+        "schemeName": "PM Kisan Samman Nidhi Yojana",
+        "schemeID": "PMK5454H"
+    },
+    "personnelInfo": {
+        "phone": "9799999721",
+        "birthPlace": "Khammam,Telangana",
+        "residentialAddress": {
+            "buildingNum": "61/65",
+            "street": "abc",
+            "locality": "Ballepalli",
+            "districtName": "Khammam",
+            "stateName": "Telangana",
+            "countryName": "India",
+            "pincode": 507002
+        },
+        "dob": "1959-01-15",
+        "email": "kumarmk@gmail.com",
+        "salutation": "Mr",
+        "gender": "Male",
+        "identityInfo": {
+            "bankAccountNo": 101344515616,
+            "ifscCode": "SBIJ0005943",
+            "panNo": "BHSPS6711H",
+            "aadharNo": "0000 1111 2222"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+label,type,comment,domainIncludes,rangeIncludes,exactMatch,older_labels,fromOtherSchemas,fromBaseSchema,References
+cityName,TXP,Name of the city corresponding to this observation.,"PowerDistribution, AddressDesc","Text, ValueDescriptor",,,1,0,
+powerDistributionDivision,TXP,The name of the power distribution division corresponding to this observation.,PowerDistribution,"Text, ValueDescriptor",,,0,0,
+powerDistributionSubdivision,TXP,The name of the sub division in the power distribution  corresponding to this observation.,PowerDistribution,"Text, ValueDescriptor",,,0,0,
+powerDistributionSection,TXP,The name of the power distribution section corresponding to this observation.,PowerDistribution,"Text, ValueDescriptor",,,0,0,
+areaServed,TXP,"The list of geographic areas (states, districts) served by the entity.
+","ModelDesc, FarmerCollective,PowerDistribution","Text, Text-list ValueDescriptor",,,1,0,
+category,TXP,Represents the name of classification of an entity or service based on a particular aspect. ,"Irrigation,PowerDistribution","Text, ValueDescriptor",,,1,0,
+categoryCode,TXP,The code of the category corresponding to this observation.,PowerDistribution,"Text, ValueDescriptor",,,0,0,
+totalServiceCount,QP,The total count of services availed corresponding to this observation.,PowerDistribution,"Number, ValueDescriptor",,,0,0,
+billedServicesCount,QP,The total count of services that are billed corresponding to this observation.,PowerDistribution,"Number, ValueDescriptor",,,0,0,
+energyConsumption,QP,"Energy consumed over a specific time corresponding to this observation.
+
+",PowerDistribution,"Number, ValueDescriptor",,,0,0,
+powerConsumption,QP,"Power consumed by the entity corresponding to this observation.
+
+",PowerDistribution,"Number, ValueDescriptor",,,0,0,
+observationDateTime,TP,Last reported time of observation.,"Weather,PowerDistribution","DateTime, ValueDescriptor",,LASTUPDATEDATETIME,1,0,

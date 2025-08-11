@@ -1,0 +1,31 @@
+{
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:durationInMinutes",
+            "@type": [
+                "rdf:Property"
+            ],
+            "rdfs:comment": "Specifies an interval duration in minutes for computing statistical aggregations.",
+            "rdfs:label": "durationInMinutes",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Number"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "@context": "https://agrijson.org/",
+    "type": [
+        "forest:Provider"
+    ],
+    "id": "64f4ty9-ebaf-6df7-b575-766ec6092a25",
+    "name": "ADEXAdmin",
+    "description": "Administrator of the ADEX platform",
+    "providerOrg": {
+        "name": "adex",
+        "additionalInfoURL": "https://adex.org.in",
+        "location": {
+            "type": "Place",
+            "address": "ABD area, Hyderabad",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    78.476,
+                    17.385
+                ]
+            }
+        }
+    },
+    "itemStatus": "ACTIVE"
+}

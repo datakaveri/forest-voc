@@ -1,0 +1,76 @@
+{
+    "@context": "https://agrijson.org/",
+    "type": [
+        "forest:ProductAuction",
+        "forest:Schema"
+    ],
+    "id": "https://agrijson.org/ProductAuction",
+    "schema": {
+        "title": "ADEX Product Auction Data Model",
+        "type": "object",
+        "properties": {
+            "type": {
+                "type": "array",
+                "items": [
+                    {
+                        "type": "string",
+                        "description": "ADEX Data Model name. It has to be Weather"
+                    },
+                    {
+                        "type": "string",
+                        "description": "ADEX Entity type. It has to be ProductAuction"
+                    }
+                ]
+            },
+            "rangeName": {
+                "type": "string",
+                "description": "Range name associated with the product auction."
+            },
+            "depotName": {
+                "type": "string",
+                "description": "Depot name where the product is stored or auctioned."
+            },
+            "productName": {
+                "type": "string",
+                "description": "Name of the product being auctioned."
+            },
+            "productType": {
+                "type": "string",
+                "description": "Type/category of the product."
+            },
+            "quantity": {
+                "type": "number",
+                "description": "Quantity of the product available for auction.",
+                "unitText": "decitonne or quintal",
+                "unitCode": "DTN"
+            },
+            "biddingAmount": {
+                "type": "number",
+                "description": "Bidding amount for the product auction.",
+                "unitText": "Indian Rupee",
+                "unitCode": "INR"
+            },
+            "auctionDate": {
+                "type": "string",
+                "description": "Date and time of the auction event.",
+                "format": "date-time"
+            },
+            "divisionName": {
+                "type": "string",
+                "description": "Division name responsible for the auction."
+            },
+            "refNumber": {
+                "type": "string",
+                "description": "Reference number associated with this auction event."
+            },
+            "circleName": {
+                "type": "string",
+                "description": "Circle name relevant to the auction context."
+            },
+            "lotNumber": {
+                "type": "string",
+                "description": "Lot number identifying the auction lot."
+            }
+        }
+    }
+}

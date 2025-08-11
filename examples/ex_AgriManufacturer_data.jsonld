@@ -1,0 +1,41 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:AgriManufacturer",
+        "forest:Resource"
+    ],
+    "fssaiInfo": {
+        "certificateNumber": "FS7235632",
+        "certifyingAuthority": "Ministry of Health & Family Welfare, Government of India",
+        "certificationIssualDate": "2023-02-31",
+        "certificationExpiryDate": "2026-12-31"
+    },
+    "name": "Swaminathan",
+    "email": "swaminathanofficial@gmail.com",
+    "phone": "9283294XXX",
+    "productName": "Tractor",
+    "purposeDescription": "Farming",
+    "foundingDate": "2023-12-15",
+    "residentialAddress": {
+        "buildingNum": "61/65",
+        "street": "abc",
+        "locality": "Ballepalli",
+        "districtName": "Khammam",
+        "stateName": "Telangana",
+        "countryName": "India",
+        "pincode": 507002
+    },
+    "identityInfo": {
+        "panNo": "AXXXXXXHHZ",
+        "aadharNo": "3112XXXX54XXX"
+    },
+    "feedback": "Good",
+    "pos": {
+        "type": "Point",
+        "coordinates": [
+            93.8259,
+            6.7806
+        ]
+    }
+}

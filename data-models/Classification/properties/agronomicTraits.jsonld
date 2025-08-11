@@ -1,0 +1,36 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:agronomicTraits",
+            "@type": [
+                "forest:TextProperty"
+            ],
+            "rdfs:comment": "The specific characteristics of crops that impact their yield, quality, and ability to resist biotic and abiotic stresses. These traits include plant height, tillering capacity, root length and mass, grain size and weight, etc.",
+            "rdfs:label": "agronomicTraits",
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:Seed"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Text"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ]
+        }
+    ]
+}

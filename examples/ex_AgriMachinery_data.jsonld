@@ -1,0 +1,53 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:AgriMachinery",
+        "forest:Resource"
+    ],
+    "hsCode": "870190",
+    "certificateInfo": {
+        "certificationIssualDate": "2000-01-01",
+        "certificateNumber": "TKM4324",
+        "certificationExpiryDate": "2002-02-02"
+    },
+    "productType": "Tiller",
+    "productName": "M&M",
+    "purposeDescription": "Agriculture",
+    "emissionNorm": "BS6",
+    "registrationNumber": "324XX31XXX",
+    "registeringAuthority": "Ministry of Road Transport & Highways, Government of India",
+    "registrationDate": "1999-12-31",
+    "modelInfo": {
+        "manufacturerName": "Massey Ferguson",
+        "modelName": "MF35",
+        "year": "1999"
+    },
+    "ownerInfo": {
+        "name": "Brosnan",
+        "residentialAddress": {
+            "buildingNum": "61/65",
+            "street": "abc",
+            "locality": "Ballepalli",
+            "districtName": "Khammam",
+            "stateName": "Telangana",
+            "countryName": "India",
+            "pincode": 507002
+        }
+    },
+    "leasePeriod": "2 years",
+    "ownershipType": "Lease",
+    "leasingEntity": {
+        "phone": "9876543XXX",
+        "email": "dpa@gmail.com",
+        "businessAddress": {
+            "buildingNum": "52",
+            "street": "A street",
+            "locality": "Mahabalipuram",
+            "cityName": "Chennai",
+            "stateName": "Tamil Nadu",
+            "countryName": "India",
+            "pincode": 600045
+        }
+    }
+}

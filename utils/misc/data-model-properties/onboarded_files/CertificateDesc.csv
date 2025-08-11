@@ -1,0 +1,6 @@
+label,type,comment,domainIncludes,rangeIncludes,exactMatch,older_labels,fromOtherSchemas,fromBaseSchemas,Reference Link 
+certifyingAuthority,TXP,Name of the authority issuing the certificate corresponding to this observation.,CertificateDesc,"Text, ValueDescriptor",,,0,0,
+certificateNumber,TXP,Unique identification number of the certificate corresponding to this observation.,CertificateDesc,"Text, ValueDescriptor",,,0,0,
+certificationIssualDate,TP,The date of issual of the report or document or item corresponding to this observation.,CertificateDesc,"Text, ValueDescriptor",,,0,0,
+certificationExpiryDate,TP,The date of expiry of the report or document or item corresponding to this observation.,CertificateDesc,"Text, ValueDescriptor",,,0,0,
+certificationRenewalDate,TP,The date of renewal of the report or document or item corresponding to this observation.,CertificateDesc,"Text, ValueDescriptor",,,0,0,

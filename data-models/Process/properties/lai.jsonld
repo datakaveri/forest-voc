@@ -1,0 +1,40 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:lai",
+            "@type": [
+                "forest:TextProperty"
+            ],
+            "rdfs:comment": "The Leaf Area Index (LAI) quantifies the amount of leaf material in a canopy. It is the ratio of one-sided leaf area per unit ground area.",
+            "rdfs:label": "lai",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:CropCondition"
+                },
+                {
+                    "@id": "forest:HyperLocalAdvisory"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@container": "@list",
+                    "@id": "forest:Text"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            }
+        }
+    ]
+}

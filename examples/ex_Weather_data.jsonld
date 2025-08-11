@@ -1,0 +1,42 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:Weather",
+        "forest:Resource"
+    ],
+    "relativeHumidity": {
+        "instValue": 55.1,
+        "avgOverTime": 57.3,
+        "maxOverTime": 80.3,
+        "minOverTime": 28.4
+    },
+    "atmosphericPressure": 23,
+    "airTemperature": {
+        "instValue": 55.1,
+        "avgOverTime": 57.3,
+        "maxOverTime": 32.6,
+        "minOverTime": 15.8
+    },
+    "gustSpeed": 20,
+    "dewPoint": 21,
+    "weatherType": "pleasant",
+    "windDirection": 270,
+    "relativeHumidityForecast": 57,
+    "windSpeed": 21,
+    "precipitationForecast": 23,
+    "aqiMajorPollutantForecast": "Ozone",
+    "illuminance": {
+        "instValue": 55.1,
+        "avgOverTime": 57.3,
+        "maxOverTime": 80.3,
+        "minOverTime": 28.4
+    },
+    "airQualityIndex": 90,
+    "aqiMajorPollutant": "pm2p5",
+    "airTemperatureForecast": 60,
+    "precipitation": 0,
+    "solarRadiation": 31,
+    "airQualityIndexForecast": 91,
+    "observationDateTime": "2023-02-03T08:30:00+05:30"
+}

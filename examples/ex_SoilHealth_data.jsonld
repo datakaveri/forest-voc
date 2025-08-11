@@ -1,0 +1,59 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:SoilHealth",
+        "forest:Resource"
+    ],
+    "landIdentityInfo": {
+        "surveyNumber": "26 / 2e",
+        "baseSurveyNumber": 26,
+        "landParcelID": 34554321345672
+    },
+    "localeInfo": {
+        "subdistrictName": "BONAKAL",
+        "clusterName": "BONAKAL",
+        "districtName": "Khammam",
+        "villageName": "ALLAPADU",
+        "stateName": "Telangana"
+    },
+    "generalAdvisory": "Total normal rainfall of Khammam district is 227.8 mm and actual rainfall is 121.0 mm from 1st June to 14th July. Go for sowing of rice nursery after 24 hours of seed treatment",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            81.626505,
+            21.246191
+        ]
+    },
+    "observationDateTime": "2023-03-31T08:30:00+05:30",
+    "nutrientInfo": {
+        "nitrogen": 2.7,
+        "cl": 5.3,
+        "boron": 7.1,
+        "k2o": 54.2,
+        "p2o5": 2.54,
+        "ca": 7.34,
+        "zn": 3.235,
+        "fe": 2.65,
+        "potassium": 3.75,
+        "cu": 3.463,
+        "mo": 2.64,
+        "mn": 2.4,
+        "phosphorus": 5.86,
+        "organicCarbon": 9.45,
+        "mgo": 0.6563,
+        "sulphur": 1.23
+    },
+    "soilClass": "Plinthosols",
+    "soilCategory": "Soils distinguished by Fe/Al chemistry",
+    "electricalConductivity": 3.2,
+    "sampleID": "6xxxxxxxxxx98xx",
+    "cropNameCommon": "chilli (irrigated)",
+    "previousCropName": "chilli (irrigated)",
+    "previousYield": 20000,
+    "targetYield": 40000,
+    "testCentreID": "6xxxxxe39xxxxxxx9e",
+    "testCentreName": "Raithu Vedika",
+    "testCentreCode": "digital00001",
+    "testDateTime": "2022-07-03T13:53:30+05:30"
+}

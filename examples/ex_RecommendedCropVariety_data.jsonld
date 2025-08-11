@@ -1,0 +1,59 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:RecommendedCropVariety",
+        "forest:Resource"
+    ],
+    "personnelInfo": {
+        "phone": "9799999721",
+        "birthPlace": "Khammam,Telangana",
+        "residentialAddress": {
+            "buildingNum": "61/65",
+            "street": "abc",
+            "locality": "Ballepalli",
+            "districtName": "Khammam",
+            "stateName": "Telangana",
+            "countryName": "India",
+            "pincode": 507002
+        },
+        "dob": "1959-01-15",
+        "email": "kumarmk@gmail.com",
+        "salutation": "Mr",
+        "gender": "Male",
+        "identityInfo": {
+            "bankAccountNo": 101344515616,
+            "ifscCode": "SBIJ0005943",
+            "panNo": "BHSPS6711H",
+            "aadharNo": "0000 1111 2222"
+        }
+    },
+    "landExtent": 150,
+    "landIdentityInfo": {
+        "surveyNumber": "26 / 2e",
+        "baseSurveyNumber": 26,
+        "landParcelID": 34554321345672
+    },
+    "localeInfo": {
+        "subdistrictName": "BONAKAL",
+        "clusterName": "BONAKAL",
+        "districtName": "Khammam",
+        "villageName": "ALLAPADU",
+        "stateName": "Telangana"
+    },
+    "recommendedCropVariety": [
+        "Ariyan Nel, Arubatham Samba, Aruvadhan Kodai",
+        "Karen Narendra, Karen Vandana, Karan Shriya",
+        "Merut Yellow, Jaunpuri, Sartuj"
+    ],
+    "validFrom": "2023-01-02",
+    "validTill": "2023-01-15",
+    "recommendingAuthority": "Department of Agriculture and Farmers Welfare, Government of India",
+    "recommendedCrops": [
+        "Rice",
+        "Wheat",
+        "Maize"
+    ],
+    "soilClass": "Plinthosols",
+    "soilCategory": "Soils distinguished by Fe/Al chemistry"
+}

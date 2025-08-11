@@ -1,0 +1,48 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:residentialAddress",
+            "@type": [
+                "forest:StructuredProperty"
+            ],
+            "rdfs:comment": "Residential address corresponding to this observation",
+            "rdfs:label": "residentialAddress",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:PersonnelDesc"
+                },
+                {
+                    "@id": "forest:Transporter"
+                },
+                {
+                    "@id": "forest:AgriExpert"
+                },
+                {
+                    "@id": "forest:ExtensionWorker"
+                },
+                {
+                    "@id": "forest:AgriResearcher"
+                },
+                {
+                    "@id": "forest:AgriManufacturer"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:AddressDesc"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            }
+        }
+    ]
+}

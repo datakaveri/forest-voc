@@ -1,0 +1,58 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:Drone",
+        "forest:Resource"
+    ],
+    "icaoCode": "IC513342",
+    "droneType": "Fixed-Wing Hybrid VTOL",
+    "purposeCode": "F16-001XX",
+    "purposeDescription": "Real-time, accurate 3D comparable data",
+    "registeringAuthority": "Directorate General of Civil Aviation",
+    "registrationDate": "2023-01-01",
+    "droneCapacity": 20,
+    "droneCategory": "Commercial Drones",
+    "validTill": "2023-12-31",
+    "localeInfo": {
+        "districtName": "Khammam",
+        "stateName": "Telangana",
+        "countryName": "India"
+    },
+    "modelInfo": {
+        "manufacturerName": "DRDO",
+        "modelName": "TR435",
+        "year": 2023
+    },
+    "range": 34,
+    "endurance": 4,
+    "wingSpan": 12,
+    "wingLength": 22,
+    "weight": 3,
+    "flightAltitude": 500,
+    "ownershipType": "Lease",
+    "ownerInfo": {
+        "name": "Ram",
+        "residentialAddress": {
+            "buildingNum": "61/65",
+            "street": "abc",
+            "locality": "Ballepalli",
+            "districtName": "Khammam",
+            "stateName": "Telangana",
+            "countryName": "India",
+            "pincode": 507002
+        }
+    },
+    "lessorInfo": {
+        "name": "Kumar",
+        "residentialAddress": {
+            "buildingNum": "63/65",
+            "street": "abc",
+            "locality": "Ballepalli",
+            "districtName": "Khammam",
+            "stateName": "Telangana",
+            "countryName": "India",
+            "pincode": 507002
+        }
+    }
+}

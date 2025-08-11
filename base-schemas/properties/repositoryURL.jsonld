@@ -1,0 +1,34 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "schema": "http://schema.org/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "iudx": "https://voc.iudx.org.in/",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:repositoryURL",
+            "@type": [
+                "forest:Relationship"
+            ],
+            "rdfs:comment": "A URL pointing to a repository containing additional resources or code pertaining to this entity.",
+            "rdfs:label": "repositoryURL",
+            "adex:domainIncludes": [],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Text",
+                    "@type": "@id"
+                },
+                {
+                    "@id": "forest:RelationshipValue"
+                }
+            ]
+        }
+    ]
+}

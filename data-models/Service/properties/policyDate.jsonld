@@ -1,0 +1,36 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:policyDate",
+            "@type": [
+                "forest:TimeProperty"
+            ],
+            "rdfs:comment": "The date refers to the date on which the insurance policy itself becomes effective or starts providing coverage. It's the date from which the terms and conditions of the policy are applicable",
+            "rdfs:label": "policyDate",
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:CropInsurance"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Text"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ]
+        }
+    ]
+}

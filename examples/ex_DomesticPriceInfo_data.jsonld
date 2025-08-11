@@ -1,0 +1,18 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:DomesticPriceInfo",
+        "forest:Resource"
+    ],
+    "minimumPrice": 5000,
+    "commodityVarietyCode": "233",
+    "arrivalQuantity": 10.78,
+    "commodityCodeICC": "15",
+    "modalPrice": 6500,
+    "maximumPrice": 7000,
+    "commodityVarietyName": "White",
+    "tradedQuantity": 7.3,
+    "commodityName": "Red Gram",
+    "observationDateTime": "2023-03-30T05:00:00+05:30"
+}

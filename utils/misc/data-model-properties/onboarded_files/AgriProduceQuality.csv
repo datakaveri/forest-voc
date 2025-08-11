@@ -1,0 +1,8 @@
+label,type,comment,domainIncludes,rangeIncludes,exactMatch,older_labels,fromOtherSchemas,fromBaseSchemas,Reference Link 
+brokenProduce,QP,"The physically broken or cracked, impacting overall integrity of the product or item.",AgriProduceQuality,"Number, ValueDescriptor",,,0,0,
+ddp,QP,"Damaged & Discolored Pods (DDP) respresents the pods with visible damage, discoloration, or other aesthetic defects.",AgriProduceQuality,"Number, ValueDescriptor",,,0,0,
+foreignMatter,QP,"The presence of any unwanted materials, such as dirt, stones, or contaminants. ",AgriProduceQuality,"Number, ValueDescriptor",,,0,0,
+fineProduce,QP,The agricultural produce that meet the desired quality standards without significant defects.,AgriProduceQuality,"Number, ValueDescriptor",,,0,0,
+mip,QP,"Mold Infested Pods (MIP) represents the pods showing signs of mold growth, indicating spoilage or improper storage. ",AgriProduceQuality,"Number, ValueDescriptor",,,0,0,
+pows,QP,"Pods without Stem (POWS) represents the harvested agricultural produce such as vegetables, fruits, etc. that lack stems, which may impact overall appearance and handling. ",AgriProduceQuality,"Number, ValueDescriptor",,,0,0,
+moistureLevel,QP,The amount moisture content in an item corresponding to this observation.,AgriProduceQuality,"Number, ValueDescriptor",,,0,0,

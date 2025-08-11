@@ -1,0 +1,16 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:Crop",
+        "forest:Resource"
+    ],
+    "cropNameICC": "Rice",
+    "cropNameCommon": "Telangana Sona",
+    "cropCode": "AR56",
+    "seedVarietyName": "CO56",
+    "cropGroupICC": "Cereals",
+    "cropCodeICC": "PQ1231",
+    "seedVarietyCode": "TN324",
+    "cropNameBotanical": "Oryza sativa"
+}

@@ -1,0 +1,54 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:landIdentityInfo",
+            "@type": [
+                "forest:StructuredProperty"
+            ],
+            "rdfs:comment": "The unique land identification information corresponding to this observation.",
+            "rdfs:label": "landIdentityInfo",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:LandParcel"
+                },
+                {
+                    "@id": "forest:CropInsurance"
+                },
+                {
+                    "@id": "forest:CropCondition"
+                },
+                {
+                    "@id": "forest:SoilHealth"
+                },
+                {
+                    "@id": "forest:Seed"
+                },
+                {
+                    "@id": "forest:HyperLocalAdvisory"
+                },
+                {
+                    "@id": "forest:AgriAdvisory"
+                },
+                {
+                    "@id": "forest:RecommendedCropVariety"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:LandIdentityDesc"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            }
+        }
+    ]
+}

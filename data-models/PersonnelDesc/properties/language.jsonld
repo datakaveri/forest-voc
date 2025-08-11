@@ -1,0 +1,58 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:language",
+            "@type": [
+                "forest:TextProperty"
+            ],
+            "rdfs:comment": "Represents the language(s) that can be used for communicating with an entity or those offered by a service corresponding to this observation.",
+            "rdfs:label": "language",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:PersonnelDesc"
+                },
+                {
+                    "@id": "forest:Farmer"
+                },
+                {
+                    "@id": "forest:PersonalDesc"
+                },
+                {
+                    "@id": "forest:AgriMarket"
+                },
+                {
+                    "@id": "forest:AgriExpert"
+                },
+                {
+                    "@id": "forest:ExtensionWorker"
+                },
+                {
+                    "@id": "forest:AgriResearcher"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@container": "@list",
+                    "@id": "forest:Text"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
+            "skos:exactMatch": {
+                "@id": "Fiware: CPSV-AP.PublicService"
+            }
+        }
+    ]
+}

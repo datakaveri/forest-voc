@@ -1,0 +1,29 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:CodeSystem",
+        "forest:Resource"
+    ],
+    "codeSystemID": "ICD-10-PCS",
+    "codeSystemName": "International Classification of Diseases",
+    "mediaURL": [
+        "https://www.icd10data.com/ICD10CM/Codes",
+        "https://www.icd10data.com/ICD10PCS/Codes"
+    ],
+    "totalCount": 20,
+    "isCaseSensitive": true,
+    "codeSystemStatus": "Active",
+    "publisherInfo": {
+        "name": "abcXX",
+        "email": "abcXX@gmail.com"
+    },
+    "copyrights": "Copyright © | License ICD10 Data, When you work with ICD10data.com, we give you a dedicated data partner. Based on your specifications, we locate the files you need and deliver them with the latest updates, customized to fit your needs the budget.",
+    "versionInfo": {
+        "versionNum": 8,
+        "startDateTime": "2022-01-10T00:00:00+05:30",
+        "endDateTime": "9999-99-99T00:00:00+05:30"
+    },
+    "observationDateTime": "2022-01-10T00:00:00+05:30",
+    "purposeDescription": "ICD-10-PCS is intended for use by health care professionals, health care organizations, and insurance programs. ICD-10-PCS codes are used in a variety of clinical and health care applications for reporting, morbidity statistics, and billing. ICD-10-PCS is updated annually."
+}

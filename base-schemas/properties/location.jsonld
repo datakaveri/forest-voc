@@ -1,0 +1,79 @@
+{
+    "@context": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "schema": "http://schema.org/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:location",
+            "@type": [
+                "forest:GeoProperty"
+            ],
+            "rdfs:comment": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor.",
+            "rdfs:label": "location",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:Resource"
+                },
+                {
+                    "@id": "forest:ResourceGroup"
+                },
+                {
+                    "@id": "forest:Provider"
+                },
+                {
+                    "@id": "forest:ResourceServer"
+                },
+                {
+                    "@id": "forest:Organization"
+                },
+                {
+                    "@id": "forest:LandParcel"
+                },
+                {
+                    "@id": "forest:SoilHealth"
+                },
+                {
+                    "@id": "forest:Device"
+                },
+                {
+                    "@id": "forest:AgriMarket"
+                },
+                {
+                    "@id": "forest:Weather"
+                },
+                {
+                    "@id": "forest:Irrigation"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Point"
+                },
+                {
+                    "@id": "forest:GeoJSONGeometry"
+                },
+                {
+                    "@id": "forest:Place"
+                },
+                {
+                    "@id": "forest:Text"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "schema:location"
+            }
+        }
+    ]
+}

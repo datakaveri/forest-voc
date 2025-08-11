@@ -1,0 +1,9 @@
+label,type,comment,domainIncludes,rangeIncludes,exactMatch,older_labels,fromOtherSchemas,fromBaseSchema,Reference Link 
+cropGroupICC,TXP,"The crop classification as specified by the FAO (Food and Agriculture Organization) in a classification system called the ICC (International Standard for Coding Crops) classification, which groups crops into nine categories based on their botanical characteristics and use.",Crop,"Text, ValueDescriptor",,cropGroupName,0,0,https://www.fao.org/fileadmin/templates/ess/documents/world_census_of_agriculture/appendix3_r7.pdf
+cropNameCommon,TXP,The common/local name of the crop species corresponding to the observation.,Crop,"Text, ValueDescriptor",,,0,0,
+cropNameICC,TXP,The name of the crop as given by the ICC (International Crop Classification) of FAO (Food and Agicultural Organisation).,Crop,"Text, ValueDescriptor",,,0,0,https://www.fao.org/statistics/caliper/web/media/86
+cropNameBotanical,TXP,The botanical nomenclature of the crop species corresponding to this observation.,Crop,"Text, ValueDescriptor",,,0,0,
+cropCode,TXP,The unique code for the crop species corresponding to this observation.,Crop,"Text, ValueDescriptor",,,0,0,
+cropCodeICC,TXP,The unique code assigned for the crop species as per the ICC (International Crop Classification) of FAO (Food and Agicultural Organisation).,Crop,"Text, ValueDescriptor",,,0,0,
+seedVarietyCode,TXP,The code assigned to the seed variety corresponding to this observation.,Crop,"Text, ValueDescriptor",,,0,0,
+seedVarietyName,TXP,The name of the seed variety corresponding to this observation.,Crop,"Text, ValueDescriptor",,,0,0,

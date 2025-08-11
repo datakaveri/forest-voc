@@ -1,0 +1,274 @@
+{
+    "@context": "https://agrijson.org/",
+    "type": [
+        "forest:Seed",
+        "forest:Schema"
+    ],
+    "id": "https://agrijson.org/Seed",
+    "schema": {
+        "title": "ADEX Seed Data Model",
+        "type": "object",
+        "properties": {
+            "type": {
+                "type": "array",
+                "items": [
+                    {
+                        "type": "string",
+                        "description": "ADEX Data Model name. It has to be Seed"
+                    },
+                    {
+                        "type": "string",
+                        "description": "ADEX Entity type. It has to be Resource"
+                    }
+                ]
+            },
+            "cropCode": {
+                "type": "string",
+                "description": "The unique code for the crop species corresponding to this observation."
+            },
+            "cropNameCommon": {
+                "type": "string",
+                "description": "The common/local name of the crop species corresponding to the observation."
+            },
+            "seedVarietyName": {
+                "type": "string",
+                "description": "The name of the seed variety corresponding to this observation."
+            },
+            "cropCodeICC": {
+                "type": "string",
+                "description": "The unique code assigned for the crop species as per the ICC (Indicative Crop Classification) of FAO (Food and Agricultural Organisation)."
+            },
+            "cropNameICC": {
+                "type": "string",
+                "description": "The name of the crop as given by the ICC (Indicative Crop Classification) of FAO (Food and Agricultural Organisation)."
+            },
+            "cropNameBotanical": {
+                "type": "string",
+                "description": "The botanical nomenclature of the crop species corresponding to this observation."
+            },
+            "seedVarietyCode": {
+                "type": "string",
+                "description": "The code assigned to the seed variety corresponding to this observation."
+            },
+            "season": {
+                "type": "string",
+                "description": "Represents specific time of the year that has distinct weather patterns and conditions, such as summer, autumn (fall), etc."
+            },
+            "localeInfo": {
+                "type": "object",
+                "description": "Locale information corresponding to this observation.",
+                "properties": {
+                    "subdistrictName": {
+                        "type": "string",
+                        "description": "Name of the subdistrict corresponding to this observation. A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states."
+                    },
+                    "wardName": {
+                        "type": "string",
+                        "description": "Ward name corresponding to this observation."
+                    },
+                    "clusterCode": {
+                        "type": "string",
+                        "description": "The cluster code corresponding to this observation."
+                    },
+                    "clusterName": {
+                        "type": "string",
+                        "description": "Name of the cluster corresponding to this observation. A cluster or a firkas represents a group of villages."
+                    },
+                    "zoneID": {
+                        "type": "string",
+                        "description": "Zone ID corresponding to this observation."
+                    },
+                    "districtCode": {
+                        "type": "string",
+                        "description": "The district code corresponding to this observation."
+                    },
+                    "districtName": {
+                        "type": "string",
+                        "description": "Name of the district corresponding to this observation."
+                    },
+                    "countryCode": {
+                        "type": "string",
+                        "description": "The country code corresponding to this observation."
+                    },
+                    "zoneName": {
+                        "type": "string",
+                        "description": "Zone name corresponding to this observation."
+                    },
+                    "subdistrictCode": {
+                        "type": "string",
+                        "description": "The subdistrict code corresponding to this observation."
+                    },
+                    "wardID": {
+                        "type": "string",
+                        "description": "Ward ID corresponding to this observation."
+                    },
+                    "villageName": {
+                        "type": "string",
+                        "description": "Name of the village corresponding to this observation."
+                    },
+                    "stateCode": {
+                        "type": "string",
+                        "description": "The state code corresponding to this observation."
+                    },
+                    "revenueDivisionCode": {
+                        "type": "string",
+                        "description": "The revenue division code corresponding to this observation"
+                    },
+                    "villageCode": {
+                        "type": "string",
+                        "description": "The village code corresponding to this observation."
+                    },
+                    "revenueDivision": {
+                        "type": "string",
+                        "description": "Name of the revenue division in a district corresponding to this observation."
+                    },
+                    "stateName": {
+                        "type": "string",
+                        "description": "Name of the state corresponding to this observation."
+                    },
+                    "countryName": {
+                        "type": "string",
+                        "description": "Name of the country corresponding to this observation."
+                    }
+                }
+            },
+            "landIdentityInfo": {
+                "type": "object",
+                "description": "The unique land identification information corresponding to this observation.",
+                "properties": {
+                    "baseSurveyNumber": {
+                        "type": "number",
+                        "description": "The base survey number of the land corresponding to this observation.",
+                        "unitCode": "C62",
+                        "unitText": "Dimensionless"
+                    },
+                    "subdivisionNumber": {
+                        "type": "string",
+                        "description": "The subdivision number from the land survey number corresponding to this observation"
+                    },
+                    "surveyNumber": {
+                        "type": "string",
+                        "description": "The unique land survey number allocated to the land corresponding to this observation."
+                    },
+                    "landParcelID": {
+                        "type": "number",
+                        "description": "The ULPIN(Unique Land Parcel Identification Number) representing the land parcel corresponding to the observation.",
+                        "unitCode": "C62",
+                        "unitText": "Dimensionless"
+                    }
+                }
+            },
+            "seedGrowerInfo": {
+                "type": "object",
+                "description": "The personal details of the seed grower.",
+                "properties": {
+                    "gender": {
+                        "type": "string",
+                        "description": "Gender of the individual corresponding to this observation"
+                    },
+                    "fieldOfResearch": {
+                        "type": "string",
+                        "description": "A particular area or subject of study that undergoes investigation, exploration, and systematic examination to acquire fresh knowledge, insights, and comprehension."
+                    },
+                    "academicQualification": {
+                        "type": "string",
+                        "description": "The highest educational qualification of the individual corresponding to this observation."
+                    },
+                    "identityInfo": {
+                        "type": "object",
+                        "description": "Personal identification information issued by the government."
+                    },
+                    "nationality": {
+                        "type": "string",
+                        "description": "Represents the nation that the individual corresponding to this observation belongs to."
+                    },
+                    "businessAddress": {
+                        "type": "object",
+                        "description": "Business address corresponding to this observation"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Phone number  corresponding to this observation"
+                    },
+                    "residentialAddress": {
+                        "type": "object",
+                        "description": "Residential address corresponding to this observation"
+                    },
+                    "permanentAddress": {
+                        "type": "object",
+                        "description": "Permanent address corresponding to this observation"
+                    },
+                    "email": {
+                        "type": "string",
+                        "description": "Email address of the individual corresponding to this observation"
+                    },
+                    "designation": {
+                        "type": "string",
+                        "description": "Designation of the individual corresponding to this observation"
+                    },
+                    "workStatus": {
+                        "type": "string",
+                        "description": "The work status indicates whether the individual or entity is actively working, on leave, part-time, full-time, temporary, permanent, retired or in any other specific arrangement."
+                    },
+                    "dob": {
+                        "type": "string",
+                        "description": "Date of birth of the individual corresponding to this observation.",
+                        "format": "date"
+                    },
+                    "birthPlace": {
+                        "type": "string",
+                        "description": "Place of birth of the individual corresponding to this observation."
+                    },
+                    "expertise": {
+                        "type": "string",
+                        "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
+                    },
+                    "salutation": {
+                        "type": "string",
+                        "description": "Salutation of the individual corresponding to this observation"
+                    },
+                    "imageURL": {
+                        "type": "array",
+                        "description": "The link that points to the photo of the individual corresponding to this observation.",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "agronomicTraits": {
+                "type": "string",
+                "description": "The specific characteristics of crops that impact their yield, quality, and ability to resist biotic and abiotic stresses. These traits include plant height, tillering capacity, root length and mass, grain size and weight, etc."
+            },
+            "certificateInfo": {
+                "type": "object",
+                "description": "Date of issual, expiry/validity, renewal of the document/certificate corresponding to this observation.",
+                "properties": {
+                    "certificationIssualDate": {
+                        "type": "string",
+                        "description": "The date of issual of the report or document or item corresponding to this observation.",
+                        "format": "date"
+                    },
+                    "certificationExpiryDate": {
+                        "type": "string",
+                        "description": "The date of expiry of the report or document or item corresponding to this observation.",
+                        "format": "date"
+                    },
+                    "certifyingAuthority": {
+                        "type": "string",
+                        "description": "Name of the authority issuing the certificate corresponding to this observation."
+                    },
+                    "certificationRenewalDate": {
+                        "type": "string",
+                        "description": "The date of renewal of the report or document or item corresponding to this observation.",
+                        "format": "date"
+                    },
+                    "certificateNumber": {
+                        "type": "string",
+                        "description": "Unique identification number of the certificate corresponding to this observation."
+                    }
+                }
+            }
+        }
+    }
+}

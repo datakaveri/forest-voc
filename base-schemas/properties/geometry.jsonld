@@ -1,0 +1,40 @@
+{
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "schema": "http://schema.org/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:geometry",
+            "@type": [
+                "forest:GeoProperty"
+            ],
+            "rdfs:comment": "Geometry property in a GeoJSON object",
+            "rdfs:label": "geometry",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:Feature"
+                },
+                {
+                    "@id": "forest:Place"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:GeoJSONGeometry"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "geojson:geometry"
+            }
+        }
+    ]
+}

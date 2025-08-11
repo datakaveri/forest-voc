@@ -1,0 +1,31 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:Device",
+        "forest:Resource"
+    ],
+    "deviceID": "SBP_GSR1_LT70",
+    "deviceName": "APEX_WATER",
+    "rfID": "E2000123456789ABCDE",
+    "rssi": -3.6,
+    "deviceType": "Temperature",
+    "deviceModel": {
+        "manufacturerName": "Agro Pvt Ltd",
+        "areaServed": "Chennai",
+        "brandName": "CDE brand",
+        "year": 2021
+    },
+    "deviceIdentityNumber": "001019/00/345671/1",
+    "deviceBatteryStatus": "Connected",
+    "deviceStatus": "Active",
+    "deviceSensitivity": 51,
+    "deviceResolution": 95,
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            91.285169,
+            23.834296
+        ]
+    }
+}

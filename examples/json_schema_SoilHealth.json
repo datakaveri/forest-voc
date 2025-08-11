@@ -1,0 +1,315 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://agrijson.org/SoilHealth",
+    "title": "ADEX SoilHealth Data Model",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "string",
+                    "description": "ADEX Data Model name. It has to be SoilHealth"
+                },
+                {
+                    "type": "string",
+                    "description": "ADEX Entity type. It has to be Resource"
+                }
+            ]
+        },
+        "location": {
+            "type": "object",
+            "description": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor."
+        },
+        "cropSpeciesInfo": {
+            "type": "object",
+            "description": "Information of crops corresponding to this observation.",
+            "$ref": "https://agrijson.org/CropCondition"
+        },
+        "observationDateTime": {
+            "type": "string",
+            "description": "Last reported time of observation.",
+            "format": "date-time"
+        },
+        "landIdentityInfo": {
+            "type": "object",
+            "description": "The unique land identification information corresponding to this observation.",
+            "properties": {
+                "surveyNumber": {
+                    "type": "string",
+                    "description": "The unique land survey number allocated to the land corresponding to this observation."
+                },
+                "baseSurveyNumber": {
+                    "type": "number",
+                    "description": "The base survey number of the land corresponding to this observation.",
+                    "unitCode": "C62",
+                    "unitText": "Dimensionless"
+                },
+                "landParcelID": {
+                    "type": "number",
+                    "description": "The ULPIN(Unique Land Parcel Identification Number) representing the land parcel corresponding to the observation.",
+                    "unitCode": "C62",
+                    "unitText": "Dimensionless"
+                },
+                "subdivisionNumber": {
+                    "type": "string",
+                    "description": "The subdivision number from the land survey number corresponding to this observation"
+                }
+            }
+        },
+        "localeInfo": {
+            "type": "object",
+            "description": "Locale information corresponding to this observation.",
+            "properties": {
+                "subdistrictName": {
+                    "type": "string",
+                    "description": "Name of the subdistrict corresponding to this observation.  A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states."
+                },
+                "countryName": {
+                    "type": "string",
+                    "description": "Name of the country corresponding to this observation."
+                },
+                "wardName": {
+                    "type": "string",
+                    "description": "Ward name corresponding to this observation."
+                },
+                "clusterCode": {
+                    "type": "string",
+                    "description": "The cluster code corresponding to this observation."
+                },
+                "countryCode": {
+                    "type": "string",
+                    "description": "Name of the country code corresponding to this observation."
+                },
+                "clusterName": {
+                    "type": "string",
+                    "description": "Name of the cluster corresponding to this observation. A cluster or a firkas represents a group of villages."
+                },
+                "zoneID": {
+                    "type": "string",
+                    "description": "Zone ID corresponding to this observation."
+                },
+                "districtCode": {
+                    "type": "string",
+                    "description": "The district code corresponding to this observation."
+                },
+                "districtName": {
+                    "type": "string",
+                    "description": "Name of the district corresponding to this observation."
+                },
+                "zoneName": {
+                    "type": "string",
+                    "description": "Zone name corresponding to this observation."
+                },
+                "subdistrictCode": {
+                    "type": "string",
+                    "description": "The subdistrict code corresponding to this observation."
+                },
+                "gramPanchayatName": {
+                    "type": "string",
+                    "description": "Name of the gram panchayat corresponding to this observation."
+                },
+                "wardID": {
+                    "type": "string",
+                    "description": "Ward ID corresponding to this observation."
+                },
+                "villageName": {
+                    "type": "string",
+                    "description": "Name of the village corresponding to this observation."
+                },
+                "stateCode": {
+                    "type": "string",
+                    "description": "The state code corresponding to this observation."
+                },
+                "revenueDivisionCode": {
+                    "type": "string",
+                    "description": "The revenue division code corresponding to this observation"
+                },
+                "villageCode": {
+                    "type": "string",
+                    "description": "The village code corresponding to this observation."
+                },
+                "revenueDivision": {
+                    "type": "string",
+                    "description": "Name of the revenue division in a district corresponding to this observation."
+                },
+                "stateName": {
+                    "type": "string",
+                    "description": "Name of the state corresponding to this observation."
+                }
+            }
+        },
+        "validFrom": {
+            "type": "string",
+            "description": "The instance from which an official report/document or consent or service corresponding to this observation is valid.",
+            "format": "date"
+        },
+        "generalAdvisory": {
+            "type": "string",
+            "description": "A general advisory to the farmers, for the cultivation of crops in regards to the conditions of weather, soil ,land etc. It may include warnings of potential catastrophical events."
+        },
+        "testDateTime": {
+            "type": "string",
+            "description": "The date and time at which the sample is being tested in the laboratory or the testing centre.",
+            "format": "date-time"
+        },
+        "soilCategory": {
+            "type": "string",
+            "description": "The soil category may be specified as per the national system of soil classification or customizing the WRB(World Reference Base) codes."
+        },
+        "soilMoisture": {
+            "type": "number",
+            "description": "Volumetric Water Content (VMC) is the  numerical measure of soil moisture. It is simply the ratio of water volume to soil volume.",
+            "unitCode": "G31",
+            "unitText": "kilogram per cubic centimetre"
+        },
+        "soilClass": {
+            "type": "string",
+            "description": "The soil class may be specified as per the national system of soil classification or customizing the WRB(World Reference Base) codes."
+        },
+        "electricalConductivity": {
+            "type": "number",
+            "description": "The measure of electrical conductivity of the entity corresponding to this observation.",
+            "unitCode": "G43",
+            "unitText": "microsiemens per metre"
+        },
+        "validTill": {
+            "type": "string",
+            "description": "The specific period of time during which a document, authorization, offer or permission remains legally or effectively acceptable/applicable.",
+            "format": "date"
+        },
+        "sampleID": {
+            "type": "string",
+            "description": "The unique ID representing the sample corresponding to this observation"
+        },
+        "healthCardNum": {
+            "type": "string",
+            "description": "The unique number assigned to the soil health card corresponding to this observation."
+        },
+        "testCentreCode": {
+            "type": "string",
+            "description": "The unique code of the centre at which the sample is being tested."
+        },
+        "sampleDateTime": {
+            "type": "string",
+            "description": "The date and time at which the sample is being collected corresponding to this observation.",
+            "format": "date-time"
+        },
+        "pH": {
+            "type": "number",
+            "description": "The measure of the acidity or basicity.",
+            "unitCode": "C62",
+            "unitText": "dimensionless"
+        },
+        "testCentreID": {
+            "type": "string",
+            "description": "The unique ID of the centre at which the sample is being tested."
+        },
+        "testCentreName": {
+            "type": "string",
+            "description": "The name of the centre at which the sample is being tested."
+        },
+        "nutrientInfo": {
+            "type": "object",
+            "description": "The chemical elements and compounds that are necessary for plant growth, reproduction, metabolism.",
+            "properties": {
+                "mgo": {
+                    "type": "number",
+                    "description": "Observed value of Magnesium Oxide composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "k2o": {
+                    "type": "number",
+                    "description": "Observed value of Potassium Oxide composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "ca": {
+                    "type": "number",
+                    "description": "Observed value of Calcium composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "nitrogen": {
+                    "type": "number",
+                    "description": "Observed value of Nitrogen composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "organicCarbon": {
+                    "type": "number",
+                    "description": "Observed value of Organic Carbon composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "cl": {
+                    "type": "number",
+                    "description": "Observed value of Chlorine composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "boron": {
+                    "type": "number",
+                    "description": "Observed value of Boron composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "sulphur": {
+                    "type": "number",
+                    "description": "Observed value of sulphur composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "potassium": {
+                    "type": "number",
+                    "description": "Observed value of Potassium composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "fe": {
+                    "type": "number",
+                    "description": "Observed value of Iron composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "zn": {
+                    "type": "number",
+                    "description": "Observed value of Zinc composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "p2o5": {
+                    "type": "number",
+                    "description": "Observed value of Phosphorus Pentoxide composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "cu": {
+                    "type": "number",
+                    "description": "Observed value of Copper composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "mn": {
+                    "type": "number",
+                    "description": "Observed value of Manganese composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "phosphorus": {
+                    "type": "number",
+                    "description": "Observed value of Phosphorus composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                },
+                "mo": {
+                    "type": "number",
+                    "description": "Observed value of Molybdenum composition in the soil.",
+                    "unitCode": "P1",
+                    "unitText": "Percentage"
+                }
+            }
+        }
+    }
+}

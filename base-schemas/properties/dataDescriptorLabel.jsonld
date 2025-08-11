@@ -1,0 +1,32 @@
+{
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "schema": "http://schema.org/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:dataDescriptorLabel",
+            "@type": [
+                "forest:TextProperty"
+            ],
+            "rdfs:comment": "Human readable label for an entity",
+            "rdfs:label": "dataDescriptorLabel",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:DataDescriptor"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Text"
+                }
+            ]
+        }
+    ]
+}

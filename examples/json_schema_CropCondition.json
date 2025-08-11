@@ -1,0 +1,332 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://agrijson.org/CropCondition",
+  "title": "ADEX CropCondition Data Model",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "description": "ADEX Data Model name. It has to be CropCondition"
+        },
+        {
+          "type": "string",
+          "description": "ADEX Entity type. It has to be Resource"
+        }
+      ]
+    },
+    "mediaURL": {
+      "type": "array",
+      "description": "URL providing further information of any image(s) or media of the complaint or place.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "year": {
+      "type": "number",
+      "description": "Year corresponding to this observation and is described in YYYY format, for eg. 2020.",
+      "unitCode": "C62",
+      "unitText": "Dimensionless"
+    },
+    "previousYield": {
+      "type": "number",
+      "description": "The amount of yield produced by the crop that was cultivated prior to the current crop in the land/ soil corresponding to this observation.",
+      "unitCode": "KGM",
+      "unitText": "kilogram"
+    },
+    "targetYield": {
+      "type": "number",
+      "description": "The desired or expected level of production for a specific agricultural crop within a given area or field.",
+      "unitCode": "KGM",
+      "unitText": "kilogram"
+    },
+    "previousCropName": {
+      "type": "string",
+      "description": "The name of the crop that was cultivated prior to the current crop in the land/ soil corresponding to this observation."
+    },
+    "cropVarietyName": {
+      "type": "string",
+      "description": "The variations within the plant species either naturally or developed in research station."
+    },
+    "cropDensity": {
+      "type": "number",
+      "description": "The average number of crops/plants per square unit of the land corresponding to this observation.",
+      "unitCode": "MTK",
+      "unitText": "square metre"
+    },
+    "cropHeight": {
+      "type": "number",
+      "description": "The height of the crop corresponding to this observation.",
+      "unitCode": "MTR",
+      "unitText": "metre"
+    },
+    "ndvi": {
+      "type": "array",
+      "description": "The value of Normalized Differential Vegetation Index (NDVI) which is a metric for quantifying the health and density of vegetation corresponding to this observation. The NDVI values range from -1 to +1.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hasMoistureStress": {
+      "type": "string",
+      "description": "Whether the crop is under moisture stress or not. True - is the crop is under moisture stress, False - if it is not."
+    },
+    "cropAge": {
+      "type": "number",
+      "description": "The age of the crop species (in days) corresponding to the observation",
+      "unitCode": "C62",
+      "unitText": "Dimensionless"
+    },
+    "cropSeason": {
+      "type": "string",
+      "description": "A basic payload explaining each field in brief would be appreciated."
+    },
+    "cropDiseaseInfo": {
+      "type": "object",
+      "description": "The disease related information of the crop corresponding to this observation.",
+      "properties": {
+        "diseaseName": {
+          "type": "string",
+          "description": "The name of the disease corresponding to this observation."
+        },
+        "preventiveMeasures": {
+          "type": "array",
+          "description": "The measures to eliminate or reduce the risk of a problem, hazard, or negative event before it occurs.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "partsAffected": {
+          "type": "string",
+          "description": "The parts of the crop affected by the crop disease or pest."
+        },
+        "controlMeasures": {
+          "type": "array",
+          "description": "The measures that need to be taken in order to mitigate or control the adverse effects of a problem, hazard, or any unfavourable incidents.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "infectionStage": {
+          "type": "string",
+          "description": "The current stage of the infection caused by the disease or pest corresponding to this observation. For eg., initial infestation, colonization, feeding and damage, incubation, reproduction etc."
+        },
+        "diseaseSymptoms": {
+          "type": "string",
+          "description": "Respresents the symptoms for the crop disease."
+        },
+        "pestImpact": {
+          "type": "string",
+          "description": "The effects and consequences of pests over the crops and croplands."
+        },
+        "diseaseCode": {
+          "type": "string",
+          "description": "The unique code of the disease corresponding to this observation."
+        },
+        "diseaseImpact": {
+          "type": "string",
+          "description": "The effects and consequences of crop diseases(caused by pathogens such as bacteria, viruses, fungi, and parasites) on farmers, communities, ecosystems and public health."
+        },
+        "pestName": {
+          "type": "string",
+          "description": "The name of the organism/pest which has caused the crop disease."
+        },
+        "pestCode": {
+          "type": "string",
+          "description": "The unique code identifying the organism which has affected the crop."
+        }
+      }
+    },
+    "lai": {
+      "type": "array",
+      "description": "The Leaf Area Index (LAI) quantifies the amount of leaf material in a canopy. It is the ratio of one-sided leaf area per unit ground area.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cropCode": {
+      "type": "string",
+      "description": "The unique code for the crop species corresponding to this observation."
+    },
+    "cropNameCommon": {
+      "type": "string",
+      "description": "The common/local name of the crop species corresponding to the observation."
+    },
+    "cropCodeICC": {
+      "type": "string",
+      "description": "The unique code assigned for the crop species as per the ICC (International Crop Classification) of FAO (Food and Agicultural Organisation)."
+    },
+    "cropNameICC": {
+      "type": "string",
+      "description": "The name of the crop as given by the ICC (International Crop Classification) of FAO (Food and Agicultural Organisation)."
+    },
+    "cropNameBotanical": {
+      "type": "string",
+      "description": "The botanical nomenclature of the crop species corresponding to this observation."
+    },
+    "cropGroupICC": {
+      "type": "string",
+      "description": "The crop classification as specified by the FAO (Food and Agriculture Organization) in a classification system called the ICC (International Standard for Coding Crops) classification, which groups crops into nine categories based on their botanical characteristics and use."
+    },
+    "observationDateTime": {
+      "type": "string",
+      "description": "Last reported time of observation.",
+      "format": "date-time"
+    },
+    "landExtent": {
+      "type": "number",
+      "description": "Area of the land corresponding to this observation.",
+      "unitCode": "MTK",
+      "unitText": "square metre"
+    },
+    "cropArea": {
+      "type": "number",
+      "description": "Area of the agricultural land used for cultivation, i.e, the arable land area.",
+      "unitCode": "MTK",
+      "unitText": "square metre"
+    },
+    "localeInfo": {
+      "type": "object",
+      "description": "Locale information corresponding to this observation.",
+      "properties": {
+        "villageCode": {
+          "type": "string",
+          "description": "The village code corresponding to this observation."
+        },
+        "revenueDivisionCode": {
+          "type": "string",
+          "description": "The revenue division code corresponding to this observation"
+        },
+        "revenueDivision": {
+          "type": "string",
+          "description": "Name of the revenue division in a district corresponding to this observation."
+        },
+        "districtName": {
+          "type": "string",
+          "description": "Name of the district corresponding to this observation."
+        },
+        "zoneName": {
+          "type": "string",
+          "description": "Zone name corresponding to this observation."
+        },
+        "subdistrictCode": {
+          "type": "string",
+          "description": "The subdistrict code corresponding to this observation."
+        },
+        "wardName": {
+          "type": "string",
+          "description": "Ward name corresponding to this observation."
+        },
+        "countryCode": {
+          "type": "string",
+          "description": "Name of the country code corresponding to this observation."
+        },
+        "countryName": {
+          "type": "string",
+          "description": "Name of the country corresponding to this observation."
+        },
+        "districtCode": {
+          "type": "string",
+          "description": "The district code corresponding to this observation."
+        },
+        "clusterName": {
+          "type": "string",
+          "description": "Name of the cluster corresponding to this observation. A cluster or a firkas represents a group of villages."
+        },
+        "villageName": {
+          "type": "string",
+          "description": "Name of the village corresponding to this observation."
+        },
+        "zoneID": {
+          "type": "string",
+          "description": "Zone ID corresponding to this observation."
+        },
+        "stateName": {
+          "type": "string",
+          "description": "Name of the state corresponding to this observation."
+        },
+        "subdistrictName": {
+          "type": "string",
+          "description": "Name of the subdistrict corresponding to this observation.  A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states."
+        },
+        "wardID": {
+          "type": "string",
+          "description": "Ward ID corresponding to this observation."
+        },
+        "gramPanchayatName": {
+          "type": "string",
+          "description": "Name of the gram panchayat corresponding to this observation."
+        },
+        "stateCode": {
+          "type": "string",
+          "description": "The state code corresponding to this observation."
+        },
+        "clusterCode": {
+          "type": "string",
+          "description": "The cluster code corresponding to this observation."
+        }
+      }
+    },
+    "landIdentityInfo": {
+      "type": "object",
+      "description": "The unique land identification information corresponding to this observation.",
+      "properties": {
+        "baseSurveyNumber": {
+          "type": "number",
+          "description": "The base survey number of the land corresponding to this observation.",
+          "unitCode": "C62",
+          "unitText": "Dimensionless"
+        },
+        "subdivisionNumber": {
+          "type": "string",
+          "description": "The subdivision number from the land survey number corresponding to this observation"
+        },
+        "surveyNumber": {
+          "type": "string",
+          "description": "The unique land survey number allocated to the land corresponding to this observation."
+        },
+        "landParcelID": {
+          "type": "number",
+          "description": "The ULPIN(Unique Land Parcel Identification Number) representing the land parcel corresponding to the observation.",
+          "unitCode": "C62",
+          "unitText": "Dimensionless"
+        }
+      }
+    },
+    "irrigationSource": {
+      "type": "string",
+      "description": "The source of irrigation for a land, such as well, canals, tanks, borewell, etc"
+    },
+    "certificateInfo": {
+      "type": "object",
+      "description": "Date of issual, expiry/validity, renewal of the document/certificate corresponding to this observation.",
+      "properties": {
+        "certificationIssualDate": {
+          "type": "string",
+          "description": "The date of issual of the report or document or item corresponding to this observation.",
+          "format": "date"
+        },
+        "certificationExpiryDate": {
+          "type": "string",
+          "description": "The date of expiry of the report or document or item corresponding to this observation.",
+          "format": "date"
+        },
+        "certifyingAuthority": {
+          "type": "string",
+          "description": "Name of the authority issuing the certificate corresponding to this observation."
+        },
+        "certificationRenewalDate": {
+          "type": "string",
+          "description": "The date of renewal of the report or document or item corresponding to this observation.",
+          "format": "date"
+        },
+        "certificateNumber": {
+          "type": "string",
+          "description": "Unique identification number of the certificate corresponding to this observation."
+        }
+      }
+    }
+  }
+}

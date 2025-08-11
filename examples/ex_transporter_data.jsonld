@@ -1,0 +1,37 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:Transporter",
+        "forest:Resource"
+    ],
+    "name": "Dimitriv",
+    "phone": "9283294XXX",
+    "residentialAddress": {
+        "buildingNum": "61/65",
+        "street": "kamaraj",
+        "locality": "Palem",
+        "districtName": "Adilabad",
+        "stateName": "Telangana",
+        "countryName": "India",
+        "pincode": 507002
+    },
+    "identityInfo": {
+        "panNo": "AXXXXXXHHZ",
+        "aadharNo": "3112XXXX54XXX"
+    },
+    "email": "dimitrivofficial@gmail.com",
+    "pos": {
+        "type": "Point",
+        "coordinates": [
+            93.8259,
+            6.7806
+        ]
+    },
+    "userScore": 7,
+    "legalStatus": "Private org",
+    "areaServed": [
+        "Hyderabad",
+        "Adilabad"
+    ]
+}

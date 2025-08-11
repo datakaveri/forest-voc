@@ -1,0 +1,77 @@
+{
+    "@context": "https://agrijson.org/",
+    "type": [
+        "forest:AgriCredit",
+        "forest:Schema"
+    ],
+    "id": "https://agrijson.org/AgriCredit",
+    "schema": {
+        "title": "ADEX AgriCredit Data Model",
+        "type": "object",
+        "properties": {
+            "type": {
+                "type": "array",
+                "items": [
+                    {
+                        "type": "string",
+                        "description": "ADEX Data Model name. It has to be AgriCredit"
+                    },
+                    {
+                        "type": "string",
+                        "description": "ADEX Entity type. It has to be Resource"
+                    }
+                ]
+            },
+            "year": {
+                "type": "number",
+                "description": "Year corresponding to this observation and is described in YYYY format, for eg. 2020.",
+                "unitCode": "C62",
+                "unitText": "Dimensionless"
+            },
+            "loanTargetAmount": {
+                "type": "number",
+                "description": "The total amount of money planned to be disbursed as agricultural credit for a particular loan type, by the government or financial institution within a certain time period.",
+                "unitCode": "INR",
+                "unitText": "Indian Rupee"
+            },
+            "totalTargetAmount": {
+                "type": "number",
+                "description": "The total amount of money targeted to be disbursed across all loan types within a specific period.",
+                "unitCode": "INR",
+                "unitText": "Indian Rupee"
+            },
+            "loanType": {
+                "type": "string",
+                "description": "The specific type of financial assistance provided to individuals or entities. For eg., crop loan, term loan etc."
+            },
+            "totalAchievementAmount": {
+                "type": "number",
+                "description": "The total amount of money actually disbursed across all loan types within a specific period.",
+                "unitCode": "INR",
+                "unitText": "Indian Rupee"
+            },
+            "evaluationYear": {
+                "type": "string",
+                "description": "The period during which a survey or assessment has been carried out."
+            },
+            "totalAchievementRate": {
+                "type": "number",
+                "description": "The ratio of the actual loan amount disbursed in total to the total loan amount targeted to be disbursed across all loan types, expressed as a percentage, denoting the level of attainment of the credit goals.",
+                "unitCode": "P1",
+                "unitText": "Percentage"
+            },
+            "achievementRate": {
+                "type": "number",
+                "description": "The ratio of the actual loan amount disbursed to the loan amount targeted to be disbursed for a particular loan type, expressed as a percentage, denoting the level of attainment of the credit goals. It is calculated as (loanAchievementAmount / loanTargetAmount)*100.",
+                "unitCode": "P1",
+                "unitText": "Percentage"
+            },
+            "loanAchievementAmount": {
+                "type": "number",
+                "description": "The total amount of money actually disbursed as agricultural credit for a particular loan type, by the government or financial institution within a certain time period.",
+                "unitCode": "INR",
+                "unitText": "Indian Rupee"
+            }
+        }
+    }
+}

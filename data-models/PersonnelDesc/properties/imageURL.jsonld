@@ -1,0 +1,49 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:imageURL",
+            "@type": [
+                "forest:TextProperty"
+            ],
+            "rdfs:comment": "The link that points to the picture of the individual or an entity corresponding to this observation.",
+            "rdfs:label": "imageURL",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:PersonnelDesc"
+                },
+                {
+                    "@id": "forest:Imagery"
+                },
+                {
+                    "@id": "forest:AgriExpert"
+                },
+                {
+                    "@id": "forest:ExtensionWorker"
+                },
+                {
+                    "@id": "forest:AgriResearcher"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@container": "@list",
+                    "@id": "forest:Text"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            }
+        }
+    ]
+}

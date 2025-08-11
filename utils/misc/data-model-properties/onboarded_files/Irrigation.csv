@@ -1,0 +1,29 @@
+label,type,comment,domainIncludes,rangeIncludes,exactMatch,older_labels,fromOtherSchemas,fromBaseSchema,Reference Link 
+reservoirID,TXP,The unique ID referring to the water reservoir corresponding to this observation.,Irrigation,"Text, ValueDescriptor",,,0,0,
+reservoirName,TXP,The name of the water reservoir corresponding to this observation.,Irrigation,"Text, ValueDescriptor",,,0,0,
+riverBasin,TXP,The name of the river/stream corresponding to this observation,Irrigation,"Text, ValueDescriptor",,,0,0,
+fullReservoirLevel,QP,The maximum level the water in the reservoir is designed to reach.,Irrigation,"Number, ValueDescriptor",,,0,0,
+totalReservoirCapacity,QP,Represents the total volume of water that the reservoir corresponding to this observation can hold.,Irrigation,"Number, ValueDescriptor",,,0,0,
+currentReservoirCapacity,QP,The current volume of water stored in the reservoir corresponding to this observation.,Irrigation,"Number, ValueDescriptor",,,0,0,
+waterLevel,QP,The water level in a specific water body such as the reservoir or the ground water table.,Irrigation,"Number, ValueDescriptor",,,0,0,
+inflow,QP,Indicates the rate at which water enters into the reservoir corresponding to this observation.,Irrigation,"Number, ValueDescriptor",,,0,0,
+outflow,QP,Indicates the rate at which water flows out of the reservoir corresponding to this observation.,Irrigation,"Number, ValueDescriptor",,,0,0,
+observationDateTime,TP,Last reported time of observation.,"LandParcel,
+Commons,
+Irrigation","DateTime, ValueDescriptor",,,1,0,
+nutrientInfo,SP,The chemical elements and compounds that are present in the entity corresponding to this observation.,"Soil,
+Irrigation",NutrientDesc,,,1,0,
+th,QP,Total Hardness (TH) is the measurement of the mineral content in the water sample.,NutrientDesc,"Number, ValueDescriptor",,,0,0,https://www.corrosionpedia.com/definition/1104/total-hardness
+sar,QP,Sodium Adsorption Ratio (SAR) is the measure of water suitability for irrigation usage. The value represents the relative amount of Sodium ions to the combined amount of calcium and magnesium ions in water. It is calculated by the formula SAR = [Na]/(([Ca]+[Mg])/2)1/2.,NutrientDesc,"Number, ValueDescriptor",,,0,0,"https://www.researchgate.net/publication/344467280_WATER_QUALITY_ASSESSMENT_AND_SODIUM_ADSORPTION_RATIO_PREDICTION_OF_TIGRIS_RIVER_USING_ARTIFICIAL_NEURAL_NETWORK
+
+https://deq.mt.gov/files/Water/SurfaceWater/UseAssessment/Documents/EC_SAR_AssessmentMethod_WQDMASCM-01v1_Final.pdf"
+rsc,QP,Residual Sodium Carbonate (RSC) Index is the measure of alkalinity hazard of irrigation water for soil.,NutrientDesc,"Number, ValueDescriptor",,,0,0,"https://en.wikipedia.org/wiki/Residual_sodium_carbonate_index#:~:text=The%20residual%20sodium%20carbonate%20(RSC,a%20high%20cation%20exchange%20capacity."
+location,GP,The location mapping the boundaries of the land parcel corresponding to the observation.,"LandParcel,
+Irrigation","Place, ValueDescriptor",,,1,1,
+localeInfo,SP,Locale information corresponding to this observation.,"LandParcel,
+Irrigation",LocaleDesc,,,1,0,
+season,TXP,"Represents specific time of the year that has distinct weather patterns and conditions, such as summer, autumn (fall), etc.","Weather,
+Irrigation","Text, ValueDescriptor",,,1,0,
+category,TXP,Represents the name of classification of an entity or service based on a particular aspect. ,Irrigation,"Text, ValueDescriptor",,,0,0,
+irrigationCount,QP,The total number times the farm has been irrigated corresponding to this observation.,Irrigation,"Number, ValueDescriptor",,,0,0,
+irrigationMethod,TXP,"The types of irrigating crops include surface irrigation, flooded field irrigation, drip irrigation, sprinkler irrigation, and subsurface irrigation.",Irrigation,"Text, ValueDescriptor",,,0,0,

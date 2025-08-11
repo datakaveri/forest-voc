@@ -1,0 +1,40 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:Seed",
+        "forest:Resource"
+    ],
+    "cropNameICC": "Avocado",
+    "cropNameCommon": "Makhanfal",
+    "cropCodeICC": "IC4531",
+    "seedVarietyCode": "311",
+    "seedVarietyName": "The Hass",
+    "agronomicTraits": "Susceptible to heat",
+    "season": "Winter",
+    "certificateInfo": {
+        "certifyingAuthority": "The Central Seed Certification Board, Department of Agriculture",
+        "certificationIssualDate": "2000-01-01",
+        "certificateNumber": "TKM4324",
+        "certificationExpiryDate": "2002-02-02"
+    },
+    "seedGrowerInfo": {
+        "name": "Hazen Audel",
+        "residentialAddress": {
+            "buildingNum": "7G",
+            "street": "Rainbow",
+            "locality": "De Monte",
+            "cityName": "Imphal",
+            "stateName": "Manipur",
+            "stateCode": "27",
+            "countryName": "India",
+            "pincode": "600028"
+        }
+    },
+    "landParcelID": "S285",
+    "localeInfo": {
+        "districtName": "Kakching",
+        "villageName": "Sugnu",
+        "stateName": "Manipur"
+    }
+}

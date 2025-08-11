@@ -1,0 +1,45 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:validFrom",
+            "@type": [
+                "forest:TimeProperty"
+            ],
+            "rdfs:comment": "The instance from which an official report/document or consent or service corresponding to this observation is valid.",
+            "rdfs:label": "validFrom",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:ConsentArtifact"
+                },
+                {
+                    "@id": "forest:AgriAdvisory"
+                },
+                {
+                    "@id": "forest:RecommendedCropVariety"
+                },
+                {
+                    "@id": "forest:SoilHealth"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Text"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            }
+        }
+    ]
+}

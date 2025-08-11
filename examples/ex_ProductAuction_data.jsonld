@@ -1,0 +1,19 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:ProductAuction",
+        "forest:Resource"
+    ],
+    "rangeName": "BAJJU",
+    "depotName": "BAJJU",
+    "productName": "Fuel Wood Tortalis",
+    "productType": "Fuel Wood",
+    "quantity": 178.8,
+    "biddingAmount": 46488,
+    "auctionDate": "2023-11-07T00:00:00+05:30",
+    "divisionName": "DCF DOD STAGE II BIKANER",
+    "refNumber": "INV-9174",
+    "circleName": "DO-Jaipur",
+    "lotNumber": "2023/Fuel Wood/Fuel Wood Tortalis/88"
+}

@@ -1,0 +1,11 @@
+label,type,comment,domainIncludes,rangeIncludes,exactMatch,older_labels,fromOtherSchemas,fromBaseSchema,Reference Link 
+aadharNo,TXP,The aadhar number issued by the government for the individual corresponding to this observation.,IdentityDesc,"Text, ValueDescriptor",,,0,0,
+panNo,TXP,The pan card number of the individual corresponding to this observation.,IdentityDesc,"Text, ValueDescriptor",,,0,0,
+drivingLicense,TXP,The driving license number of the individual corresponding to this observation.,IdentityDesc,"Text, ValueDescriptor",,,0,0,
+gstin,TXP,The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation.,IdentityDesc,"Text, ValueDescriptor",,,0,0,
+fssaiLicense,TXP,The FSSAI (Food and Safety Standards Authority of India) license number.,IdentityDesc,"Text, ValueDescriptor",,,0,0,
+bankAccountNo,QP,The bank account number of the individual or business corresponding to this observation,IdentityDesc,"Number, ValueDescriptor",,,0,0,
+ifscCode,TXP,The IFSC code for the bank corresponding to this observation,IdentityDesc,"Text, ValueDescriptor",,,0,0,
+digitalSignature,TXP ,The link to the digital signature of the entity corresponding to this observation.,IdentityDesc,"Text, ValueDescriptor",,,0,0,
+iec,TXP ,The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India,IdentityDesc,"Text, ValueDescriptor",,,0,0,
+registrationNumber,TXP,The registration number of the entity corresponding to this observation.,IdentityDesc,"Text, ValueDescriptor",,,0,0,

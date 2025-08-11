@@ -1,0 +1,73 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:LandParcel",
+        "forest:Resource"
+    ],
+    "location": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    80.3100961763289,
+                    17.004966131923126
+                ],
+                [
+                    80.30668079742617,
+                    17.004365476886818
+                ],
+                [
+                    80.30746594200133,
+                    17.00218808623785
+                ],
+                [
+                    80.3104102341589,
+                    17.0020003789635
+                ],
+                [
+                    80.31229458113768,
+                    17.003990066511207
+                ],
+                [
+                    80.3100961763289,
+                    17.004966131923126
+                ]
+            ]
+        ]
+    },
+    "observationDateTime": "2023-01-31T00:00:00+05:30",
+    "ownershipType": "Owned",
+    "capitalInfo": {
+        "electricityCost": 300,
+        "leaseAmount": 10000,
+        "cultivationCost": 5000,
+        "netExpenditure": 3000,
+        "miscellaneousCost": 700,
+        "landCess": 300,
+        "harvestCost": 450,
+        "labourCost": 4000,
+        "machineryCost": 5000,
+        "netIncome": 100000,
+        "transportationCost": 200
+    },
+    "landIdentityInfo": {
+        "surveyNumber": "26 / 2e",
+        "baseSurveyNumber": 26,
+        "landParcelID": 34554321345672,
+        "subdivisionNumber": "2e"
+    },
+    "cropArea": 50,
+    "irrigationType": "Drip",
+    "landClassName": "Wetland",
+    "landClassCode": "616",
+    "landExtent": 70000,
+    "localeInfo": {
+        "subdistrictName": "BONAKAL",
+        "clusterName": "BONAKAL",
+        "districtName": "Khammam",
+        "villageName": "ALLAPADU",
+        "stateName": "Telangana"
+    },
+    "irrigationSource": "canal"
+}

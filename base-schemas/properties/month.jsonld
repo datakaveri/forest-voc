@@ -1,0 +1,33 @@
+{
+    "@context": {
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "iudx": "https://voc.iudx.org.in/",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:month",
+            "@type": [
+                "forest:QuantitativeProperty"
+            ],
+            "rdfs:comment": "Month corresponding to this observation and is described in MM format, for eg. 11 for the month of November.",
+            "rdfs:label": "month",
+            "adex:domainIncludes": [],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Number"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ]
+        }
+    ]
+}

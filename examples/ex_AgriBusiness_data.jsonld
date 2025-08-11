@@ -1,0 +1,41 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:AgriBusiness",
+        "forest:Resource"
+    ],
+    "personnelInfo": {
+        "phone": "+919876543XXX",
+        "email": "abc@gmail.com",
+        "businessAddress": {
+            "buildingNum": "52",
+            "street": "A street",
+            "locality": "Manathavady",
+            "cityName": "Wayanad",
+            "state": "Kerala",
+            "country": "India",
+            "pincode": 670645
+        }
+    },
+    "productName": "Atta",
+    "productDescription": "Powder made from the grinding of wheat used for human consumption.",
+    "serviceName": "Export",
+    "serviceCode": "EX592",
+    "serviceDescription": "Export of wheat flour from Bharat to BRICS countries.",
+    "foundingDate": "2009-12-31",
+    "areaServed": [
+        "Digilipur",
+        "Mayabandar",
+        "Rutland"
+    ],
+    "mediaURL": "https://bharatagency-example.img",
+    "feedback": "Decent pricing, good delivery service",
+    "pos": {
+        "type": "Point",
+        "coordinates": [
+            93.8259,
+            6.7806
+        ]
+    }
+}

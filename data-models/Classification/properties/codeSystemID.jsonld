@@ -1,0 +1,36 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:codeSystemID",
+            "@type": [
+                "forest:TextProperty"
+            ],
+            "rdfs:comment": "An identifier for this Code System, which assigns specific, unique codes to the items listed in it. Use of Code Systems accepted globally or nationally, enable identifying the item (like soil, crop, pest, pesticide, fertilizer, geographical unit, PIN/ZIP Code, commodity, market, bank, language, HSN) across the entire ecosystem.",
+            "rdfs:label": "codeSystemID",
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:CodeSystem"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Text"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ]
+        }
+    ]
+}

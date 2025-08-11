@@ -1,0 +1,40 @@
+{
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "schema": "http://schema.org/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:dataSampleFile",
+            "@type": [
+                "forest:Relationship"
+            ],
+            "rdfs:comment": "Sample file download link for the resource",
+            "rdfs:label": "dataSampleFile",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:ResourceGroup"
+                },
+                {
+                    "@id": "forest:Resource"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@container": "@list",
+                    "@id": "forest:Text"
+                },
+                {
+                    "@container": "@list",
+                    "@id": "forest:RelationshipValue"
+                }
+            ]
+        }
+    ]
+}

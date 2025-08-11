@@ -1,0 +1,33 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:Fertilizer",
+        "forest:Resource"
+    ],
+    "genericName": "Cypermethrin",
+    "productName": "Exodus",
+    "productCode": "EX643",
+    "chemicalComposition": "D:P:A",
+    "chemicalProportion": "25:25:15",
+    "mfgDate": "2022-02-02",
+    "productExpiryDate": "2023-12-31",
+    "precautionaryMeasures": "Wear a mask and spectacles while spraying.",
+    "storageGuidance": "Reach out of direct sunlight",
+    "certificateInfo": {
+        "certifyingAuthority": "The Fertilizer Association of India",
+        "certificateNumber": "FAI4214"
+    },
+    "manufacturerInfo": {
+        "name": "Elixir Pvt Ltd",
+        "businessAddress": {
+            "buildingNum": "2A",
+            "street": "Gandhi street",
+            "locality": "Ballepalli",
+            "districtName": "Chamoli",
+            "stateName": " Uttarakhand",
+            "countryName": "India",
+            "pincode": 246443
+        }
+    }
+}

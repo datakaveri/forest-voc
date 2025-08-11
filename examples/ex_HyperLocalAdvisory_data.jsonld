@@ -1,0 +1,73 @@
+{
+    "@context": "https://agrijson.org/",
+    "id": "resource-item-id",
+    "type": [
+        "forest:HyperLocalAdvisory",
+        "forest:Resource"
+    ],
+    "fileFormat": "Text",
+    "mediaURL": [
+        "https://gov-crop-advisory.com/rice"
+    ],
+    "personnelInfo": {
+        "phone": "9799999721",
+        "birthPlace": "Khammam,Telangana",
+        "residentialAddress": {
+            "buildingNum": "61/65",
+            "street": "abc",
+            "locality": "Ballepalli",
+            "districtName": "Khammam",
+            "stateName": "Telangana",
+            "countryName": "India",
+            "pincode": 507002
+        },
+        "dob": "1959-01-15",
+        "email": "kumarmk@gmail.com",
+        "salutation": "Mr",
+        "gender": "Male",
+        "identityInfo": {
+            "bankAccountNo": 101344515616,
+            "ifscCode": "SBIJ0005943",
+            "panNo": "BHSPS6711H",
+            "aadharNo": "0000 1111 2222"
+        }
+    },
+    "observationDateTime": "2022-12-08T05:45:00+05:30",
+    "feedback": "comprehensive advisory crop disease prevention would be appreciated",
+    "lai": [
+        "http://doi.org/10.5067/MODIS/MOD15A2H.006",
+        "http://doi.org/10.5067/MODIS/MYD15A2H.006"
+    ],
+    "season": "Monsoon",
+    "localeInfo": {
+        "subdistrictName": "BONAKAL",
+        "clusterName": "BONAKAL",
+        "districtName": "Khammam",
+        "villageName": "ALLAPADU",
+        "stateName": "Telangana"
+    },
+    "landIdentityInfo": {
+        "surveyNumber": "26 / 2e",
+        "baseSurveyNumber": 26,
+        "landParcelID": 34554321345672
+    },
+    "cropSeason": "Kharif",
+    "advisoryNature": "Disease management",
+    "ndvi": [
+        "http://api.agromonitoring.com/image/1.0/020598ba200/5baccca22b26590008d4da78?appid=63b351d5237d3a4232fe96f45c49671a",
+        "http://api.agromonitoring.com/image/1.0/030598ba200/5baccca22b26590008d4da78?appid=63b351d5237d3a4232fe96f45c49671a"
+    ],
+    "cropVarietyName": "CR Dhan 801",
+    "natureOfIntervention": "",
+    "natureOfProblem": "Moisture stress",
+    "advisoryChannel": [
+        "Website",
+        "Radio"
+    ],
+    "regionalLanguageID": "14",
+    "regionalLanguageName": "Telugu",
+    "advisoryID": "TL0056",
+    "nextAdvisoryDate": "2023-01-15",
+    "cropNameCommon": "Rice",
+    "cropCodeICC": "PQ1231"
+}

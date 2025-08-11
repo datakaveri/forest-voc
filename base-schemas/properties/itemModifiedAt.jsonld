@@ -1,0 +1,32 @@
+{
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "iudx": "https://voc.iudx.org.in/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:itemModifiedAt",
+            "@type": [
+                "forest:TimeProperty"
+            ],
+            "rdfs:comment": "DateTime of modification of a catalogue item.",
+            "rdfs:label": "itemModifiedAt",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:ADEXEntity"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:DateTime"
+                }
+            ]
+        }
+    ]
+}

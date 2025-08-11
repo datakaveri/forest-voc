@@ -1,0 +1,7 @@
+label,type,comment,domainIncludes,rangeIncludes,exactMatch,older_labels,fromOtherSchemas,fromBaseSchema,Reference Link 
+contactPointName,TXP,Name of the point of contact to the business or service corresponding to this observation,ContactPointDesc,"Text, ValueDescriptor",,,0,0,
+contactPointPhone,TXP,Phone number of point of contact to the business or service corresponding to this observation,ContactPointDesc,"Text, ValueDescriptor",,,0,0,
+contactPointEmail,TXP,Email address of the point of contact to the business or service corresponding to this observation.,ContactPointDesc,"Text, ValueDescriptor",,,0,0,
+helplineNumber,TXP,Helpline contact number(s) corresponding to this observation. ,ContactPointDesc,"Text,
+Text-list,
+ValueDescriptor",,,0,0,

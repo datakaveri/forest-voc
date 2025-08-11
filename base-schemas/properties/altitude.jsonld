@@ -1,0 +1,40 @@
+{
+    "@context": {
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "schema": "http://schema.org/",
+        "iudx": "https://voc.iudx.org.in/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:altitude",
+            "@type": [
+                "forest:GeoProperty"
+            ],
+            "rdfs:comment": "The vertical distance or height above a specific reference point, usually the Mean Sea Level (MSL) or a defined datum such as WGS 84 CRS (https://en.wikipedia.org/wiki/World_Geodetic_System).",
+            "rdfs:label": "altitude",
+            "adex:domainIncludes": [
+                {
+                    "@id": "forest:GeoCoordinates"
+                },
+                {
+                    "@id": "forest:Place"
+                }
+            ],
+            "adex:rangeIncludes": [
+                {
+                    "@id": "forest:Number"
+                },
+                {
+                    "@id": "forest:Text"
+                }
+            ]
+        }
+    ]
+}
