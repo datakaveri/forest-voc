@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@id": "forest:adexResourceAPIs",
+            "@id": "forest:dxResourceAPIs",
             "@type": [
                 "forest:TextProperty"
             ],
-            "rdfs:comment": "The set of ADEX resource APIs supported by a given ResourceGroup. ENUM: [TEMPORAL, SPATIAL, ATTR, TEXT]",
-            "rdfs:label": "adexResourceAPIs",
+            "rdfs:comment": "The set of DX resource APIs supported by a given ResourceGroup. ENUM: [TEMPORAL, SPATIAL, ATTR, TEXT]",
+            "rdfs:label": "dxResourceAPIs",
             "adex:domainIncludes": [
                 {
                     "@id": "forest:ResourceGroup",
