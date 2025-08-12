@@ -13,7 +13,7 @@ folders = []
 
 
 # Recursively list out classes and properties paths
-output_file = "adex.jsonld"
+output_file = "forest.jsonld"
 
 for (dirpath, dirnames, filenames) in os.walk("./"):
 
@@ -50,7 +50,7 @@ for fldr in folders:
 
 
 
-context.pop("id")
+#context.pop("id")
 context["id"] = "@id"
 context = {**contextsources, **context}
 context_output = {"@context": context}

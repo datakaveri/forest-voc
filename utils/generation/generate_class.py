@@ -6,8 +6,8 @@ import shutil
 
 
 classes = ['owl:Class', 'rdfs:Class']
-properties = ["adex:TextProperty", "adex:QuantitativeProperty", "adex:StructuredProperty", "adex:GeoProperty", "adex:TimeProperty", "adex:Relationship", 'rdf:Property'] 
-relation = ["adex:Relationship"]
+properties = ["forest:TextProperty", "forest:QuantitativeProperty", "forest:StructuredProperty", "forest:GeoProperty", "forest:TimeProperty", "forest:Relationship", 'rdf:Property'] 
+relation = ["forest:Relationship"]
 class_folder_path = "/tmp/all_classes/"
 properties_folder_path = "/tmp/all_properties/"
 examples_path = "/tmp/all_examples"
@@ -141,8 +141,8 @@ class Vocabulary:
                         error_list.append({"type ": "subClassOf missing" , "in": n["@graph"]["@id"]})
                         pass
                         
-                if "adex:domainIncludes" in n["@graph"] :
-                    for i in n["@graph"]["adex:domainIncludes"]:
+                if "forest:domainIncludes" in n["@graph"] :
+                    for i in n["@graph"]["forest:domainIncludes"]:
                         try:
                             self.g.add_edge(n["@graph"]["@id"], i["@id"], "domainIncludes")
                             self.g.add_edge(i["@id"], n["@graph"]["@id"], "domainOf")      
@@ -150,8 +150,8 @@ class Vocabulary:
                             error_list.append({"type ": "domainIncludes missing" , "value": i["@id"], "in": n["@graph"]["@id"]})
                             pass
                         
-                if "adex:rangeIncludes" in n["@graph"] :
-                    for i in n["@graph"]["adex:rangeIncludes"]:
+                if "forest:rangeIncludes" in n["@graph"] :
+                    for i in n["@graph"]["forest:rangeIncludes"]:
                         try:
                             self.g.add_edge(n["@graph"]["@id"], i["@id"], "rangeIncludes")
                             self.g.add_edge(i["@id"], n["@graph"]["@id"], "rangeOf")
@@ -184,7 +184,7 @@ class Vocabulary:
                     
                 
                     second_index = next(
-                    (i for i, item in enumerate(sorted_data_list) if "@id" in item and all(key in item for key in ["rdfs:subClassOf"]) and item["@id"] != ("iudx:%s"%item_name) and item["rdfs:subClassOf"]["@id"] == "adex:DataModel"),
+                    (i for i, item in enumerate(sorted_data_list) if "@id" in item and all(key in item for key in ["rdfs:subClassOf"]) and item["@id"] != ("iudx:%s"%item_name) and item["rdfs:subClassOf"]["@id"] == "forest:DataModel"),
                     None
                     )
 
@@ -192,7 +192,7 @@ class Vocabulary:
                         sorted_data_list.insert(0, sorted_data_list.pop(second_index))
 
                     first_index = next(
-                    (i for i, item in enumerate(sorted_data_list) if "@id" in item and all(key in item for key in ["rdfs:subClassOf"]) and item["@id"] == ("adex:%s"%item_name)),
+                    (i for i, item in enumerate(sorted_data_list) if "@id" in item and all(key in item for key in ["rdfs:subClassOf"]) and item["@id"] == ("forest:%s"%item_name)),
                     None
                     )
 
@@ -221,10 +221,10 @@ class Vocabulary:
     def make_master(self):
             master_dict = OrderedDict()
             master_dict = {"@context":{}}
-            with open("adex.jsonld" , "w") as master_file:
+            with open("forest.jsonld" , "w") as master_file:
                 for n in self.json_ld_graph:
                     master_dict["@context"][str(n["@graph"]["@id"].split(":")[-1])] = {"@id":n["@graph"]["@id"]}
-                    if "adex:Relationship" in n["@graph"]["@type"]:
+                    if "forest:Relationship" in n["@graph"]["@type"]:
                          master_dict["@context"][str(n["@graph"]["@id"].split(":")[-1])] = {"@id":n["@graph"]["@id"], "@type":"@id"}
                     master_dict["@context"]["type"] = "@type"
                     master_dict["@context"]["id"] = "@id"
@@ -234,6 +234,7 @@ class Vocabulary:
                     master_dict["@context"]["schema"]= "http://schema.org/"
                     master_dict["@context"]["owl"]= "http://www.w3.org/2002/07/owl#"
                     master_dict["@context"]["iudx"] = "https://voc.iudx.org.in/"
+                    master_dict["@context"]["forest"] = "https://voc.forest-stack.iudx.io/"
                     master_dict["@context"]["adex"] =  "https://agrijson.org/"
                     master_dict["@context"]["geojson"] = "https://purl.org/geojson/vocab#"
                     master_dict["@context"]["rdf"] =  "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -283,7 +284,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
