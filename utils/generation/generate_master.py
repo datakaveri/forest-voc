@@ -50,7 +50,7 @@ for fldr in folders:
 
 
 
-#context.pop("id")
+context.pop("id")
 context["id"] = "@id"
 context = {**contextsources, **context}
 context_output = {"@context": context}
