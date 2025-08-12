@@ -33,7 +33,7 @@ context = {}
 
 contextsources["type"] = "@type"
 contextsources["id"] = "@id"
-contextsources["@vocab"] = "https://agrijson.org/"
+contextsources["@vocab"] = "https://voc.forest-stack.iudx.io/"
 
 for fldr in folders:
     for fl in os.listdir(fldr):
@@ -43,7 +43,7 @@ for fldr in folders:
                 contextsources = {**contextsources,
                                   **schema["@context"]}
                 context = {**context,
-                           **{fl[:-7]: {"@id": "adex:"+fl[:-7]}}}
+                           **{fl[:-7]: {"@id": "forest:"+fl[:-7]}}}
             except Exception as e:
                 print("Class - " + fl[:-7] + " failed")
                 print(e)
