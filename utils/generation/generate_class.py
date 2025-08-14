@@ -228,7 +228,7 @@ class Vocabulary:
                          master_dict["@context"][str(n["@graph"]["@id"].split(":")[-1])] = {"@id":n["@graph"]["@id"], "@type":"@id"}
                     master_dict["@context"]["type"] = "@type"
                     master_dict["@context"]["id"] = "@id"
-                    master_dict["@context"]["@vocab"] =  "https://agrijson.org/"
+                    master_dict["@context"]["@vocab"] =  "https://voc.forest-stack.iudx.io/"
                     master_dict["@context"]["rdfs"] =  "http://www.w3.org/2000/01/rdf-schema#"
                     master_dict["@context"]["skos"] = "http://www.w3.org/2004/02/skos/core#"
                     master_dict["@context"]["schema"]= "http://schema.org/"
