@@ -13,7 +13,7 @@ import time
 all_classes_folder = "/tmp/all_classes/"
 all_properties_folder = "/tmp/all_properties/"
 all_examples_folder = "/tmp/all_examples/"
-master_context_file = "./adex.jsonld"
+master_context_file = "./forest.jsonld"
 
 schema_folders = [all_classes_folder, all_properties_folder]
 
@@ -21,7 +21,7 @@ token = ""
 with open("../config/vocserver.json", "r") as f:
     token = json.load(f)["vocserver.webhookpasswd"]
 
-url = "https://agrijson.org/"
+url = "https://voc.forest-stack.iudx.io/"
 
 
 voc_headers = {"token": token, "content-type": "application/ld+json", "accept": "application/ld+json"}
