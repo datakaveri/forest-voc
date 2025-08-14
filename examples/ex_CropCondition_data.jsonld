@@ -1,61 +1,61 @@
 {
-    "@context": "https://agrijson.org/",
-    "id": "resource-item-id",
-    "type": [
-        "forest:CropCondition",
-        "forest:Resource"
+  "@context": "https://agrijson.org/",
+  "id": "resource-item-id",
+  "type": [
+    "forest:CropCondition",
+    "forest:Resource"
+  ],
+  "cropNameICC": "Rice",
+  "cropNameCommon": "Telangana Sona",
+  "cropCode": "AR56",
+  "cropGroupICC": "Cereals",
+  "cropCodeICC": "PQ1231",
+  "cropNameBotanical": "Oryza sativa",
+  "cropAge": 90,
+  "cropSeason": "Kharif",
+  "cropArea": 2.5,
+  "cropDiseaseInfo": {
+    "diseaseName": "Rice blast",
+    "partsAffected": "Leaves",
+    "pestName": "Pyricularia orizae",
+    "pestCode": "Py-1.23",
+    "infectionStage": "feeding and damage",
+    "diseaseSymptoms": "Yellow leaves",
+    "controlMeasures": [
+      "keeping soil flooded 2 to 4 inches deep from the time rice plants are 6 to 8 inches tall until draining for harvest"
     ],
-    "cropNameICC": "Rice",
-    "cropNameCommon": "Telangana Sona",
-    "cropCode": "AR56",
-    "cropGroupICC": "Cereals",
-    "cropCodeICC": "PQ1231",
-    "cropNameBotanical": "Oryza sativa",
-    "cropAge": 90,
-    "cropSeason": "Kharif",
-    "cropArea": 2.5,
-    "cropDiseaseInfo": {
-        "diseaseName": "Rice blast",
-        "partsAffected": "Leaves",
-        "pestName": "Pyricularia orizae",
-        "pestCode": "Py-1.23",
-        "infectionStage": "feeding and damage",
-        "diseaseSymptoms": "Yellow leaves",
-        "controlMeasures": [
-            "keeping soil flooded 2 to 4 inches deep from the time rice plants are 6 to 8 inches tall until draining for harvest"
-        ],
-        "preventiveMeasures": [
-            "crop rotation",
-            "use of fungicides",
-            "plantation in warm soil"
-        ],
-        "mediaURL": [
-            "https://rice-disease-img001",
-            "https://rice-disease-img002",
-            "https://rice-disease-img003"
-        ]
-    },
-    "observationDateTime": "2023-01-01T00:20:00+05:30",
-    "cropHeight": 1.2,
-    "cropDensity": 250,
-    "landIdentityInfo": {
-        "surveyNumber": "26 / 2e",
-        "baseSurveyNumber": 26,
-        "landParcelID": 34554321345672
-    },
-    "landExtent": 50,
-    "ndvi": [
-        "http://api.agromonitoring.com/image/1.0/020598ba200/5baccca22b26590008d4da78?appid=63b351d5237d3a4232fe96f45c49671a",
-        "http://api.agromonitoring.com/image/1.0/030598ba200/5baccca22b26590008d4da78?appid=63b351d5237d3a4232fe96f45c49671a"
-    ],
-    "lai": [
-        "http://doi.org/10.5067/MODIS/MOD15A2H.006",
-        "http://doi.org/10.5067/MODIS/MYD15A2H.006"
+    "preventiveMeasures": [
+      "crop rotation",
+      "use of fungicides",
+      "plantation in warm soil"
     ],
     "mediaURL": [
-        "https://rice-crop-img01",
-        "https://rice-crop-img02",
-        "https://rice-crop-img03"
-    ],
-    "hasMoistureStress": false
+      "https://rice-disease-img001",
+      "https://rice-disease-img002",
+      "https://rice-disease-img003"
+    ]
+  },
+  "observationDateTime": "2023-01-01T00:20:00+05:30",
+  "cropHeight": 1.2,
+  "cropDensity": 250,
+  "landIdentityInfo": {
+    "surveyNumber": "26 / 2e",
+    "baseSurveyNumber": 26,
+    "landParcelID": 34554321345672
+  },
+  "landExtent": 50,
+  "ndvi": [
+    "http://api.agromonitoring.com/image/1.0/020598ba200/5baccca22b26590008d4da78?appid=63b351d5237d3a4232fe96f45c49671a",
+    "http://api.agromonitoring.com/image/1.0/030598ba200/5baccca22b26590008d4da78?appid=63b351d5237d3a4232fe96f45c49671a"
+  ],
+  "lai": [
+    "http://doi.org/10.5067/MODIS/MOD15A2H.006",
+    "http://doi.org/10.5067/MODIS/MYD15A2H.006"
+  ],
+  "mediaURL": [
+    "https://rice-crop-img01",
+    "https://rice-crop-img02",
+    "https://rice-crop-img03"
+  ],
+  "hasMoistureStress": false
 }

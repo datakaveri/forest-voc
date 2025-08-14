@@ -1,87 +1,87 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:observationDateTime",
+      "@type": [
+        "forest:TimeProperty"
+      ],
+      "rdfs:comment": "Last reported time of observation.",
+      "rdfs:label": "observationDateTime",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:observationDateTime",
-            "@type": [
-                "forest:TimeProperty"
-            ],
-            "rdfs:comment": "Last reported time of observation.",
-            "rdfs:label": "observationDateTime",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:LandParcel"
-                },
-                {
-                    "@id": "forest:Weather"
-                },
-                {
-                    "@id": "forest:AgriMarket"
-                },
-                {
-                    "@id": "forest:CropDiseaseDesc"
-                },
-                {
-                    "@id": "forest:Common"
-                },
-                {
-                    "@id": "forest:SoilHealth"
-                },
-                {
-                    "@id": "forest:CropCondition"
-                },
-                {
-                    "@id": "forest:DomesticPriceInfo"
-                },
-                {
-                    "@id": "forest:GhgReport"
-                },
-                {
-                    "@id": "forest:ConsentArtifact"
-                },
-                {
-                    "@id": "forest:ConsentHistory"
-                },
-                {
-                    "@id": "forest:AgriAdvisory"
-                },
-                {
-                    "@id": "forest:HyperLocalAdvisory"
-                },
-                {
-                    "@id": "forest:CodeSystem"
-                },
-                {
-                    "@id": "forest:ValueSet"
-                },
-                {
-                    "@id": "forest:Irrigation"
-                },
-                {
-                    "@id": "forest:PowerDistribution"
-                },
-                {
-                    "@id": "forest:Commons"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:DateTime"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            }
+          "@id": "forest:LandParcel"
+        },
+        {
+          "@id": "forest:Weather"
+        },
+        {
+          "@id": "forest:AgriMarket"
+        },
+        {
+          "@id": "forest:CropDiseaseDesc"
+        },
+        {
+          "@id": "forest:Common"
+        },
+        {
+          "@id": "forest:SoilHealth"
+        },
+        {
+          "@id": "forest:CropCondition"
+        },
+        {
+          "@id": "forest:DomesticPriceInfo"
+        },
+        {
+          "@id": "forest:GhgReport"
+        },
+        {
+          "@id": "forest:ConsentArtifact"
+        },
+        {
+          "@id": "forest:ConsentHistory"
+        },
+        {
+          "@id": "forest:AgriAdvisory"
+        },
+        {
+          "@id": "forest:HyperLocalAdvisory"
+        },
+        {
+          "@id": "forest:CodeSystem"
+        },
+        {
+          "@id": "forest:ValueSet"
+        },
+        {
+          "@id": "forest:Irrigation"
+        },
+        {
+          "@id": "forest:PowerDistribution"
+        },
+        {
+          "@id": "forest:Commons"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:DateTime"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      }
+    }
+  ]
 }

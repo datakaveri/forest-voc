@@ -1,180 +1,180 @@
 {
-    "@context": "https://agrijson.org/",
-    "type": [
-        "forest:DomesticPriceInfo",
-        "forest:Schema"
-    ],
-    "id": "https://agrijson.org/DomesticPriceInfo",
-    "schema": {
-        "title": "ADEX DomesticPriceInfo Data Model",
+  "@context": "https://agrijson.org/",
+  "type": [
+    "forest:DomesticPriceInfo",
+    "forest:Schema"
+  ],
+  "id": "https://agrijson.org/DomesticPriceInfo",
+  "schema": {
+    "title": "ADEX DomesticPriceInfo Data Model",
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "array",
+        "items": [
+          {
+            "type": "string",
+            "description": "ADEX Data Model name. It has to be DomesticPriceInfo"
+          },
+          {
+            "type": "string",
+            "description": "ADEX Entity type. It has to be Resource"
+          }
+        ]
+      },
+      "commodityNameICC": {
+        "type": "string",
+        "description": "The name of the commodity corresponding to this observation as given by the ICC (Indicative Crop Classification)."
+      },
+      "tradedQuantity": {
+        "type": "number",
+        "description": "The total quantity of commodity that has been traded in the market corresponding to this observation.",
+        "unitCode": "KGM",
+        "unitText": "kilogram"
+      },
+      "commodityVarietyName": {
+        "type": "string",
+        "description": "Variety name of the commodity corresponding to this observation."
+      },
+      "modalPrice": {
+        "type": "number",
+        "description": "The most frequent pricing/modal price of the product/commodity/service corresponding to this observation.",
+        "unitCode": "INR",
+        "unitText": "Indian Rupee"
+      },
+      "commodityDescription": {
+        "type": "string",
+        "description": "The detailed description of the commodity or product corresponding to this observation."
+      },
+      "commodityCode": {
+        "type": "string",
+        "description": "The unique code of the commodity corresponding to this observation."
+      },
+      "minimumPrice": {
+        "type": "number",
+        "description": "The minimum price of the product/commodity/service corresponding to this observation.",
+        "unitCode": "INR",
+        "unitText": "Indian Rupee"
+      },
+      "commodityName": {
+        "type": "string",
+        "description": "The  name of the commodity corresponding to this observation."
+      },
+      "commodityVarietyCode": {
+        "type": "string",
+        "description": "The unique code assigned to the variety of a commodity corresponding to this observation."
+      },
+      "maximumPrice": {
+        "type": "number",
+        "description": "The maximum price of the product/commodity/service corresponding to this observation.",
+        "unitCode": "INR",
+        "unitText": "Indian Rupee"
+      },
+      "commodityCodeICC": {
+        "type": "string",
+        "description": "The unique code assigned to the commodity corresponding to this observation as given by the ICC (Indicative Crop Classification)."
+      },
+      "arrivalQuantity": {
+        "type": "number",
+        "description": "The quantity of commodity arrived at the market corresponding to this observation.",
+        "unitCode": "KGM",
+        "unitText": "kilogram"
+      },
+      "observationDateTime": {
+        "type": "string",
+        "description": "Last reported time of observation.",
+        "format": "date-time"
+      },
+      "localeInfo": {
         "type": "object",
+        "description": "Locale information corresponding to this observation.",
         "properties": {
-            "type": {
-                "type": "array",
-                "items": [
-                    {
-                        "type": "string",
-                        "description": "ADEX Data Model name. It has to be DomesticPriceInfo"
-                    },
-                    {
-                        "type": "string",
-                        "description": "ADEX Entity type. It has to be Resource"
-                    }
-                ]
-            },
-            "commodityNameICC": {
-                "type": "string",
-                "description": "The name of the commodity corresponding to this observation as given by the ICC (Indicative Crop Classification)."
-            },
-            "tradedQuantity": {
-                "type": "number",
-                "description": "The total quantity of commodity that has been traded in the market corresponding to this observation.",
-                "unitCode": "KGM",
-                "unitText": "kilogram"
-            },
-            "commodityVarietyName": {
-                "type": "string",
-                "description": "Variety name of the commodity corresponding to this observation."
-            },
-            "modalPrice": {
-                "type": "number",
-                "description": "The most frequent pricing/modal price of the product/commodity/service corresponding to this observation.",
-                "unitCode": "INR",
-                "unitText": "Indian Rupee"
-            },
-            "commodityDescription": {
-                "type": "string",
-                "description": "The detailed description of the commodity or product corresponding to this observation."
-            },
-            "commodityCode": {
-                "type": "string",
-                "description": "The unique code of the commodity corresponding to this observation."
-            },
-            "minimumPrice": {
-                "type": "number",
-                "description": "The minimum price of the product/commodity/service corresponding to this observation.",
-                "unitCode": "INR",
-                "unitText": "Indian Rupee"
-            },
-            "commodityName": {
-                "type": "string",
-                "description": "The  name of the commodity corresponding to this observation."
-            },
-            "commodityVarietyCode": {
-                "type": "string",
-                "description": "The unique code assigned to the variety of a commodity corresponding to this observation."
-            },
-            "maximumPrice": {
-                "type": "number",
-                "description": "The maximum price of the product/commodity/service corresponding to this observation.",
-                "unitCode": "INR",
-                "unitText": "Indian Rupee"
-            },
-            "commodityCodeICC": {
-                "type": "string",
-                "description": "The unique code assigned to the commodity corresponding to this observation as given by the ICC (Indicative Crop Classification)."
-            },
-            "arrivalQuantity": {
-                "type": "number",
-                "description": "The quantity of commodity arrived at the market corresponding to this observation.",
-                "unitCode": "KGM",
-                "unitText": "kilogram"
-            },
-            "observationDateTime": {
-                "type": "string",
-                "description": "Last reported time of observation.",
-                "format": "date-time"
-            },
-            "localeInfo": {
-                "type": "object",
-                "description": "Locale information corresponding to this observation.",
-                "properties": {
-                    "villageCode": {
-                        "type": "string",
-                        "description": "The village code corresponding to this observation."
-                    },
-                    "revenueDivisionCode": {
-                        "type": "string",
-                        "description": "The revenue division code corresponding to this observation"
-                    },
-                    "revenueDivision": {
-                        "type": "string",
-                        "description": "Name of the revenue division in a district corresponding to this observation."
-                    },
-                    "districtName": {
-                        "type": "string",
-                        "description": "Name of the district corresponding to this observation."
-                    },
-                    "zoneName": {
-                        "type": "string",
-                        "description": "Zone name corresponding to this observation."
-                    },
-                    "subdistrictCode": {
-                        "type": "string",
-                        "description": "The subdistrict code corresponding to this observation."
-                    },
-                    "wardName": {
-                        "type": "string",
-                        "description": "Ward name corresponding to this observation."
-                    },
-                    "countryCode": {
-                        "type": "string",
-                        "description": "Name of the country code corresponding to this observation."
-                    },
-                    "countryName": {
-                        "type": "string",
-                        "description": "Name of the country corresponding to this observation."
-                    },
-                    "districtCode": {
-                        "type": "string",
-                        "description": "The district code corresponding to this observation."
-                    },
-                    "clusterName": {
-                        "type": "string",
-                        "description": "Name of the cluster corresponding to this observation. A cluster or a firkas represents a group of villages."
-                    },
-                    "villageName": {
-                        "type": "string",
-                        "description": "Name of the village corresponding to this observation."
-                    },
-                    "zoneID": {
-                        "type": "string",
-                        "description": "Zone ID corresponding to this observation."
-                    },
-                    "stateName": {
-                        "type": "string",
-                        "description": "Name of the state corresponding to this observation."
-                    },
-                    "subdistrictName": {
-                        "type": "string",
-                        "description": "Name of the subdistrict corresponding to this observation.  A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states."
-                    },
-                    "wardID": {
-                        "type": "string",
-                        "description": "Ward ID corresponding to this observation."
-                    },
-                    "gramPanchayatName": {
-                        "type": "string",
-                        "description": "Name of the gram panchayat corresponding to this observation."
-                    },
-                    "stateCode": {
-                        "type": "string",
-                        "description": "The state code corresponding to this observation."
-                    },
-                    "clusterCode": {
-                        "type": "string",
-                        "description": "The cluster code corresponding to this observation."
-                    }
-                }
-            },
-            "marketID": {
-                "type": "string",
-                "description": "The unique ID referring to the agricultural market establishment corresponding to this observation"
-            },
-            "marketName": {
-                "type": "string",
-                "description": "Name of the market corresponding to this observation"
-            }
+          "villageCode": {
+            "type": "string",
+            "description": "The village code corresponding to this observation."
+          },
+          "revenueDivisionCode": {
+            "type": "string",
+            "description": "The revenue division code corresponding to this observation"
+          },
+          "revenueDivision": {
+            "type": "string",
+            "description": "Name of the revenue division in a district corresponding to this observation."
+          },
+          "districtName": {
+            "type": "string",
+            "description": "Name of the district corresponding to this observation."
+          },
+          "zoneName": {
+            "type": "string",
+            "description": "Zone name corresponding to this observation."
+          },
+          "subdistrictCode": {
+            "type": "string",
+            "description": "The subdistrict code corresponding to this observation."
+          },
+          "wardName": {
+            "type": "string",
+            "description": "Ward name corresponding to this observation."
+          },
+          "countryCode": {
+            "type": "string",
+            "description": "Name of the country code corresponding to this observation."
+          },
+          "countryName": {
+            "type": "string",
+            "description": "Name of the country corresponding to this observation."
+          },
+          "districtCode": {
+            "type": "string",
+            "description": "The district code corresponding to this observation."
+          },
+          "clusterName": {
+            "type": "string",
+            "description": "Name of the cluster corresponding to this observation. A cluster or a firkas represents a group of villages."
+          },
+          "villageName": {
+            "type": "string",
+            "description": "Name of the village corresponding to this observation."
+          },
+          "zoneID": {
+            "type": "string",
+            "description": "Zone ID corresponding to this observation."
+          },
+          "stateName": {
+            "type": "string",
+            "description": "Name of the state corresponding to this observation."
+          },
+          "subdistrictName": {
+            "type": "string",
+            "description": "Name of the subdistrict corresponding to this observation.  A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states."
+          },
+          "wardID": {
+            "type": "string",
+            "description": "Ward ID corresponding to this observation."
+          },
+          "gramPanchayatName": {
+            "type": "string",
+            "description": "Name of the gram panchayat corresponding to this observation."
+          },
+          "stateCode": {
+            "type": "string",
+            "description": "The state code corresponding to this observation."
+          },
+          "clusterCode": {
+            "type": "string",
+            "description": "The cluster code corresponding to this observation."
+          }
         }
+      },
+      "marketID": {
+        "type": "string",
+        "description": "The unique ID referring to the agricultural market establishment corresponding to this observation"
+      },
+      "marketName": {
+        "type": "string",
+        "description": "Name of the market corresponding to this observation"
+      }
     }
+  }
 }

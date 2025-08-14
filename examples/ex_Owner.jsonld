@@ -1,9 +1,9 @@
 {
-    "@context": "https://agrijson.org/",
-    "type": [
-        "forest:Owner"
-    ],
-    "id": "40b80571-edff-4291-b723-94c2a611f859",
-    "name": "AdexOwner",
-    "description": "Owner of ADEX COS"
+  "@context": "https://agrijson.org/",
+  "type": [
+    "forest:Owner"
+  ],
+  "id": "40b80571-edff-4291-b723-94c2a611f859",
+  "name": "AdexOwner",
+  "description": "Owner of ADEX COS"
 }

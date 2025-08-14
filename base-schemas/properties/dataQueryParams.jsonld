@@ -1,38 +1,38 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "iudx": "https://voc.iudx.org.in/",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "iudx": "https://voc.iudx.org.in/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:dataQueryParams",
+      "@type": [
+        "forest:Relationship"
+      ],
+      "rdfs:comment": "Describes the parameters or attributes that are to be passed as a part of the API request to fetch data.",
+      "rdfs:label": "dataQueryParams",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:dataQueryParams",
-            "@type": [
-                "forest:Relationship"
-            ],
-            "rdfs:comment": "Describes the parameters or attributes that are to be passed as a part of the API request to fetch data.",
-            "rdfs:label": "dataQueryParams",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:ResourceGroup"
-                },
-                {
-                    "@id": "forest:Resource"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@container": "@list",
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:RelationshipValue"
-                }
-            ]
+          "@id": "forest:ResourceGroup"
+        },
+        {
+          "@id": "forest:Resource"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@container": "@list",
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:RelationshipValue"
+        }
+      ]
+    }
+  ]
 }

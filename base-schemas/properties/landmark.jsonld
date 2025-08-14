@@ -1,33 +1,33 @@
 {
-    "@context": {
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "schema": "http://schema.org/",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "geojson": "https://purl.org/geojson/vocab#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "schema": "http://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "geojson": "https://purl.org/geojson/vocab#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:landmark",
+      "@type": [
+        "forest:GeoProperty"
+      ],
+      "rdfs:comment": "A physical distinguishing feature on land that marks a locality or a place.",
+      "rdfs:label": "landmark",
+      "forest:domainIncludes": [],
+      "forest:rangeIncludes": [
         {
-            "@id": "forest:landmark",
-            "@type": [
-                "forest:GeoProperty"
-            ],
-            "rdfs:comment": "A physical distinguishing feature on land that marks a locality or a place.",
-            "rdfs:label": "landmark",
-            "adex:domainIncludes": [],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ]
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
         }
-    ]
+      ]
+    }
+  ]
 }

@@ -1,303 +1,303 @@
 {
-    "@context": "https://agrijson.org/",
-    "type": [
-        "forest:AgriManufacturer",
-        "forest:Schema"
-    ],
-    "id": "https://agrijson.org/AgriManufacturer",
-    "schema": {
-        "title": "ADEX AgriManufacturer Data Model",
+  "@context": "https://agrijson.org/",
+  "type": [
+    "forest:AgriManufacturer",
+    "forest:Schema"
+  ],
+  "id": "https://agrijson.org/AgriManufacturer",
+  "schema": {
+    "title": "ADEX AgriManufacturer Data Model",
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "array",
+        "items": [
+          {
+            "type": "string",
+            "description": "ADEX Data Model name. It has to be AgriManufacturer"
+          },
+          {
+            "type": "string",
+            "description": "ADEX Entity type. It has to be Resource"
+          }
+        ]
+      },
+      "name": {
+        "type": "string",
+        "description": "Name of the entity."
+      },
+      "fssaiInfo": {
         "type": "object",
+        "description": "The FSSAI (Food and Safety Standards Authority of India) license details corresponding to this observation.",
         "properties": {
-            "type": {
-                "type": "array",
-                "items": [
-                    {
-                        "type": "string",
-                        "description": "ADEX Data Model name. It has to be AgriManufacturer"
-                    },
-                    {
-                        "type": "string",
-                        "description": "ADEX Entity type. It has to be Resource"
-                    }
-                ]
-            },
-            "name": {
-                "type": "string",
-                "description": "Name of the entity."
-            },
-            "fssaiInfo": {
-                "type": "object",
-                "description": "The FSSAI (Food and Safety Standards Authority of India) license details corresponding to this observation.",
-                "properties": {
-                    "certificationIssualDate": {
-                        "type": "string",
-                        "description": "The date of issual of the report or document or item corresponding to this observation.",
-                        "format": "date"
-                    },
-                    "certificationExpiryDate": {
-                        "type": "string",
-                        "description": "The date of expiry of the report or document or item corresponding to this observation.",
-                        "format": "date"
-                    },
-                    "certifyingAuthority": {
-                        "type": "string",
-                        "description": "Name of the authority issuing the certificate corresponding to this observation."
-                    },
-                    "certificationRenewalDate": {
-                        "type": "string",
-                        "description": "The date of renewal of the report or document or item corresponding to this observation.",
-                        "format": "date"
-                    },
-                    "certificateNumber": {
-                        "type": "string",
-                        "description": "Unique identification number of the certificate corresponding to this observation."
-                    }
-                }
-            },
-            "purposeDescription": {
-                "type": "string",
-                "description": "Describes the purpose of the entity or service corresponding this observation."
-            },
-            "productName": {
-                "type": "string",
-                "description": "Name of the product corresponding to this observation."
-            },
-            "contactPointInfo": {
-                "type": "object",
-                "description": "Contact point information of a business/service corresponding to this observation",
-                "properties": {
-                    "contactPointPhone": {
-                        "type": "string",
-                        "description": "Phone number of point of contact to the business or service corresponding to this observation"
-                    },
-                    "helplineNumber": {
-                        "type": "array",
-                        "description": "Helpline contact number(s) corresponding to this observation.",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "contactPointName": {
-                        "type": "string",
-                        "description": "Name of the point of contact to the business or service corresponding to this observation"
-                    },
-                    "contactPointEmail": {
-                        "type": "string",
-                        "description": "Email address of the point of contact to the business or service corresponding to this observation."
-                    }
-                }
-            },
-            "productCode": {
-                "type": "string",
-                "description": "The unique code assigned to the product corresponding to this observation."
-            },
-            "certificateInfo": {
-                "type": "object",
-                "description": "Date of issual, expiry/validity, renewal of the document/certificate corresponding to this observation.",
-                "properties": {
-                    "certificationIssualDate": {
-                        "type": "string",
-                        "description": "The date of issual of the report or document or item corresponding to this observation.",
-                        "format": "date"
-                    },
-                    "certificationExpiryDate": {
-                        "type": "string",
-                        "description": "The date of expiry of the report or document or item corresponding to this observation.",
-                        "format": "date"
-                    },
-                    "certifyingAuthority": {
-                        "type": "string",
-                        "description": "Name of the authority issuing the certificate corresponding to this observation."
-                    },
-                    "certificationRenewalDate": {
-                        "type": "string",
-                        "description": "The date of renewal of the report or document or item corresponding to this observation.",
-                        "format": "date"
-                    },
-                    "certificateNumber": {
-                        "type": "string",
-                        "description": "Unique identification number of the certificate corresponding to this observation."
-                    }
-                }
-            },
-            "pos": {
-                "type": "object",
-                "description": "Point of Sale (POS) represents the location(s) where transactions are completed when goods or services are sold corresponding to this observation."
-            },
-            "feedback": {
-                "type": "string",
-                "description": "The opinions, insights, and suggestions of an individual or group about an entity or service corresponding to this observation"
-            },
-            "foundingDate": {
-                "type": "string",
-                "description": "The date when the association/business/market was established.",
-                "format": "date"
-            },
-            "identityInfo": {
-                "type": "object",
-                "description": "Personal identification information issued by the government.",
-                "properties": {
-                    "panNo": {
-                        "type": "string",
-                        "description": "The pan card number of the individual corresponding to this observation."
-                    },
-                    "digitalSignature": {
-                        "type": "string",
-                        "description": "The link to the digital signature of the entity corresponding to this observation."
-                    },
-                    "iec": {
-                        "type": "string",
-                        "description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
-                    },
-                    "bankAccountNo": {
-                        "type": "number",
-                        "description": "The bank account number of the individual or business corresponding to this observation",
-                        "unitCode": "C62",
-                        "unitText": "Dimensionless"
-                    },
-                    "registrationNumber": {
-                        "type": "string",
-                        "description": "The registration number of the entity corresponding to this observation."
-                    },
-                    "gstin": {
-                        "type": "string",
-                        "description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
-                    },
-                    "ifscCode": {
-                        "type": "string",
-                        "description": "The IFSC code for the bank corresponding to this observation"
-                    },
-                    "fssaiLicense": {
-                        "type": "string",
-                        "description": "The FSSAI (Food and Safety Standards Authority of India) license number."
-                    },
-                    "drivingLicense": {
-                        "type": "string",
-                        "description": "The driving license number of the individual corresponding to this observation."
-                    },
-                    "aadharNo": {
-                        "type": "string",
-                        "description": "The aadhar number issued by the government for the individual corresponding to this observation."
-                    }
-                }
-            },
-            "businessAddress": {
-                "type": "object",
-                "description": "Business address corresponding to this observation",
-                "properties": {
-                    "street": {
-                        "type": "string",
-                        "description": "Street name corresponding to this observation."
-                    },
-                    "locality": {
-                        "type": "string",
-                        "description": "Area name of the location corresponding to this observation."
-                    },
-                    "pincode": {
-                        "type": "number",
-                        "description": "The postal code corresponding to this observation.",
-                        "unitCode": "C62",
-                        "unitText": "Dimensionless"
-                    },
-                    "cityName": {
-                        "type": "string",
-                        "description": "Name of the city corresponding to this observation."
-                    },
-                    "stateCode": {
-                        "type": "string",
-                        "description": "Name of the state code corresponding to this observation."
-                    },
-                    "addressLine": {
-                        "type": "string",
-                        "description": "Address corresponding to this observation"
-                    },
-                    "buildingNum": {
-                        "type": "string",
-                        "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-                    }
-                }
-            },
-            "phone": {
-                "type": "string",
-                "description": "Phone number  corresponding to this observation"
-            },
-            "residentialAddress": {
-                "type": "object",
-                "description": "Residential address corresponding to this observation",
-                "properties": {
-                    "street": {
-                        "type": "string",
-                        "description": "Street name corresponding to this observation."
-                    },
-                    "locality": {
-                        "type": "string",
-                        "description": "Area name of the location corresponding to this observation."
-                    },
-                    "pincode": {
-                        "type": "number",
-                        "description": "The postal code corresponding to this observation.",
-                        "unitCode": "C62",
-                        "unitText": "Dimensionless"
-                    },
-                    "cityName": {
-                        "type": "string",
-                        "description": "Name of the city corresponding to this observation."
-                    },
-                    "stateCode": {
-                        "type": "string",
-                        "description": "Name of the state code corresponding to this observation."
-                    },
-                    "addressLine": {
-                        "type": "string",
-                        "description": "Address corresponding to this observation"
-                    },
-                    "buildingNum": {
-                        "type": "string",
-                        "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-                    }
-                }
-            },
-            "permanentAddress": {
-                "type": "object",
-                "description": "Permanent address corresponding to this observation",
-                "properties": {
-                    "street": {
-                        "type": "string",
-                        "description": "Street name corresponding to this observation."
-                    },
-                    "locality": {
-                        "type": "string",
-                        "description": "Area name of the location corresponding to this observation."
-                    },
-                    "pincode": {
-                        "type": "number",
-                        "description": "The postal code corresponding to this observation.",
-                        "unitCode": "C62",
-                        "unitText": "Dimensionless"
-                    },
-                    "cityName": {
-                        "type": "string",
-                        "description": "Name of the city corresponding to this observation."
-                    },
-                    "stateCode": {
-                        "type": "string",
-                        "description": "Name of the state code corresponding to this observation."
-                    },
-                    "addressLine": {
-                        "type": "string",
-                        "description": "Address corresponding to this observation"
-                    },
-                    "buildingNum": {
-                        "type": "string",
-                        "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-                    }
-                }
-            },
-            "email": {
-                "type": "string",
-                "description": "Email address of the individual corresponding to this observation"
-            }
+          "certificationIssualDate": {
+            "type": "string",
+            "description": "The date of issual of the report or document or item corresponding to this observation.",
+            "format": "date"
+          },
+          "certificationExpiryDate": {
+            "type": "string",
+            "description": "The date of expiry of the report or document or item corresponding to this observation.",
+            "format": "date"
+          },
+          "certifyingAuthority": {
+            "type": "string",
+            "description": "Name of the authority issuing the certificate corresponding to this observation."
+          },
+          "certificationRenewalDate": {
+            "type": "string",
+            "description": "The date of renewal of the report or document or item corresponding to this observation.",
+            "format": "date"
+          },
+          "certificateNumber": {
+            "type": "string",
+            "description": "Unique identification number of the certificate corresponding to this observation."
+          }
         }
+      },
+      "purposeDescription": {
+        "type": "string",
+        "description": "Describes the purpose of the entity or service corresponding this observation."
+      },
+      "productName": {
+        "type": "string",
+        "description": "Name of the product corresponding to this observation."
+      },
+      "contactPointInfo": {
+        "type": "object",
+        "description": "Contact point information of a business/service corresponding to this observation",
+        "properties": {
+          "contactPointPhone": {
+            "type": "string",
+            "description": "Phone number of point of contact to the business or service corresponding to this observation"
+          },
+          "helplineNumber": {
+            "type": "array",
+            "description": "Helpline contact number(s) corresponding to this observation.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "contactPointName": {
+            "type": "string",
+            "description": "Name of the point of contact to the business or service corresponding to this observation"
+          },
+          "contactPointEmail": {
+            "type": "string",
+            "description": "Email address of the point of contact to the business or service corresponding to this observation."
+          }
+        }
+      },
+      "productCode": {
+        "type": "string",
+        "description": "The unique code assigned to the product corresponding to this observation."
+      },
+      "certificateInfo": {
+        "type": "object",
+        "description": "Date of issual, expiry/validity, renewal of the document/certificate corresponding to this observation.",
+        "properties": {
+          "certificationIssualDate": {
+            "type": "string",
+            "description": "The date of issual of the report or document or item corresponding to this observation.",
+            "format": "date"
+          },
+          "certificationExpiryDate": {
+            "type": "string",
+            "description": "The date of expiry of the report or document or item corresponding to this observation.",
+            "format": "date"
+          },
+          "certifyingAuthority": {
+            "type": "string",
+            "description": "Name of the authority issuing the certificate corresponding to this observation."
+          },
+          "certificationRenewalDate": {
+            "type": "string",
+            "description": "The date of renewal of the report or document or item corresponding to this observation.",
+            "format": "date"
+          },
+          "certificateNumber": {
+            "type": "string",
+            "description": "Unique identification number of the certificate corresponding to this observation."
+          }
+        }
+      },
+      "pos": {
+        "type": "object",
+        "description": "Point of Sale (POS) represents the location(s) where transactions are completed when goods or services are sold corresponding to this observation."
+      },
+      "feedback": {
+        "type": "string",
+        "description": "The opinions, insights, and suggestions of an individual or group about an entity or service corresponding to this observation"
+      },
+      "foundingDate": {
+        "type": "string",
+        "description": "The date when the association/business/market was established.",
+        "format": "date"
+      },
+      "identityInfo": {
+        "type": "object",
+        "description": "Personal identification information issued by the government.",
+        "properties": {
+          "panNo": {
+            "type": "string",
+            "description": "The pan card number of the individual corresponding to this observation."
+          },
+          "digitalSignature": {
+            "type": "string",
+            "description": "The link to the digital signature of the entity corresponding to this observation."
+          },
+          "iec": {
+            "type": "string",
+            "description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
+          },
+          "bankAccountNo": {
+            "type": "number",
+            "description": "The bank account number of the individual or business corresponding to this observation",
+            "unitCode": "C62",
+            "unitText": "Dimensionless"
+          },
+          "registrationNumber": {
+            "type": "string",
+            "description": "The registration number of the entity corresponding to this observation."
+          },
+          "gstin": {
+            "type": "string",
+            "description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
+          },
+          "ifscCode": {
+            "type": "string",
+            "description": "The IFSC code for the bank corresponding to this observation"
+          },
+          "fssaiLicense": {
+            "type": "string",
+            "description": "The FSSAI (Food and Safety Standards Authority of India) license number."
+          },
+          "drivingLicense": {
+            "type": "string",
+            "description": "The driving license number of the individual corresponding to this observation."
+          },
+          "aadharNo": {
+            "type": "string",
+            "description": "The aadhar number issued by the government for the individual corresponding to this observation."
+          }
+        }
+      },
+      "businessAddress": {
+        "type": "object",
+        "description": "Business address corresponding to this observation",
+        "properties": {
+          "street": {
+            "type": "string",
+            "description": "Street name corresponding to this observation."
+          },
+          "locality": {
+            "type": "string",
+            "description": "Area name of the location corresponding to this observation."
+          },
+          "pincode": {
+            "type": "number",
+            "description": "The postal code corresponding to this observation.",
+            "unitCode": "C62",
+            "unitText": "Dimensionless"
+          },
+          "cityName": {
+            "type": "string",
+            "description": "Name of the city corresponding to this observation."
+          },
+          "stateCode": {
+            "type": "string",
+            "description": "Name of the state code corresponding to this observation."
+          },
+          "addressLine": {
+            "type": "string",
+            "description": "Address corresponding to this observation"
+          },
+          "buildingNum": {
+            "type": "string",
+            "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+          }
+        }
+      },
+      "phone": {
+        "type": "string",
+        "description": "Phone number  corresponding to this observation"
+      },
+      "residentialAddress": {
+        "type": "object",
+        "description": "Residential address corresponding to this observation",
+        "properties": {
+          "street": {
+            "type": "string",
+            "description": "Street name corresponding to this observation."
+          },
+          "locality": {
+            "type": "string",
+            "description": "Area name of the location corresponding to this observation."
+          },
+          "pincode": {
+            "type": "number",
+            "description": "The postal code corresponding to this observation.",
+            "unitCode": "C62",
+            "unitText": "Dimensionless"
+          },
+          "cityName": {
+            "type": "string",
+            "description": "Name of the city corresponding to this observation."
+          },
+          "stateCode": {
+            "type": "string",
+            "description": "Name of the state code corresponding to this observation."
+          },
+          "addressLine": {
+            "type": "string",
+            "description": "Address corresponding to this observation"
+          },
+          "buildingNum": {
+            "type": "string",
+            "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+          }
+        }
+      },
+      "permanentAddress": {
+        "type": "object",
+        "description": "Permanent address corresponding to this observation",
+        "properties": {
+          "street": {
+            "type": "string",
+            "description": "Street name corresponding to this observation."
+          },
+          "locality": {
+            "type": "string",
+            "description": "Area name of the location corresponding to this observation."
+          },
+          "pincode": {
+            "type": "number",
+            "description": "The postal code corresponding to this observation.",
+            "unitCode": "C62",
+            "unitText": "Dimensionless"
+          },
+          "cityName": {
+            "type": "string",
+            "description": "Name of the city corresponding to this observation."
+          },
+          "stateCode": {
+            "type": "string",
+            "description": "Name of the state code corresponding to this observation."
+          },
+          "addressLine": {
+            "type": "string",
+            "description": "Address corresponding to this observation"
+          },
+          "buildingNum": {
+            "type": "string",
+            "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+          }
+        }
+      },
+      "email": {
+        "type": "string",
+        "description": "Email address of the individual corresponding to this observation"
+      }
     }
+  }
 }

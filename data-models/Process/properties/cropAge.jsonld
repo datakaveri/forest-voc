@@ -1,39 +1,39 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:cropAge",
+      "@type": [
+        "forest:QuantitativeProperty"
+      ],
+      "rdfs:comment": "The age of the crop species (in days) corresponding to the observation",
+      "rdfs:label": "cropAge",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:cropAge",
-            "@type": [
-                "forest:QuantitativeProperty"
-            ],
-            "rdfs:comment": "The age of the crop species (in days) corresponding to the observation",
-            "rdfs:label": "cropAge",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:CropCondition"
-                },
-                {
-                    "@id": "forest:LandParcel"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Number"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            }
+          "@id": "forest:CropCondition"
+        },
+        {
+          "@id": "forest:LandParcel"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Number"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      }
+    }
+  ]
 }

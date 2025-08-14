@@ -1,89 +1,89 @@
 {
-    "@context": "https://agrijson.org/",
-    "id": "resource-item-id",
-    "type": [
-        "forest:ExportTransaction",
-        "forest:Resource"
+  "@context": "https://agrijson.org/",
+  "id": "resource-item-id",
+  "type": [
+    "forest:ExportTransaction",
+    "forest:Resource"
+  ],
+  "commodityInfo": {
+    "commodityVarietyName": "Water Melon",
+    "commodityVarietyCode": "86",
+    "arrivalQuantity": 120,
+    "minimumPrice": 400,
+    "maximumPrice": 1000,
+    "modalPrice": 670
+  },
+  "exporterInfo": {
+    "name": "AIC International",
+    "house": "2 Ground floor",
+    "street": "Mount Road",
+    "cityName": "Calicut",
+    "state": "Kerala",
+    "stateCode": "236",
+    "country": "India",
+    "countryCode": "+91",
+    "pincode": "673001",
+    "panNo": "ELXXXXX",
+    "bankAccountNo": "HSBC452XXXXXXX",
+    "ifscCode": "ABHY0065001",
+    "iec": "impExpCode1"
+  },
+  "rcmcInfo": {
+    "certificateNumber": "RC235144",
+    "certifyingAuthority": "Export Promotion Council, Government of India",
+    "certificationIssualDate": "2023-03-12",
+    "certificationExpiryDate": "2024-02-31"
+  },
+  "fssaiInfo": {
+    "certificateNumber": "FS7235632",
+    "certifyingAuthority": "Ministry of Health & Family Welfare, Government of India",
+    "certificationIssualDate": "2023-02-31",
+    "certificationExpiryDate": "2026-12-31"
+  },
+  "phytosanitaryInfo": {
+    "certificateNumber": "IN256235",
+    "certifyingAuthority": "Plant Quarantine Information System, Department of Agriculture, Co-operation and Farmer Welfare, Government of India",
+    "certificationIssualDate": "2022-10-12",
+    "certificationExpiryDate": "2025-12-31"
+  },
+  "consignerInfo": {
+    "name": "Anil",
+    "locality": "Bandra, Mumbai",
+    "phone": "94522341XX",
+    "email": "relco@gmail.com"
+  },
+  "consigneeInfo": {
+    "name": "Mukesh",
+    "locality": "Antilia, Mumbai",
+    "phone": "99295534XX",
+    "email": "relind@gmail.com"
+  },
+  "originName": "India",
+  "originCode": "+91",
+  "destinationName": "Malaysia",
+  "destinationCode": "+68",
+  "portOfEntry": "Calicut",
+  "shipmentDate": "2023-10-12",
+  "vesselName": "EverGreen",
+  "sanitaryMeasures": [
+    "Chlorination",
+    "ozone",
+    "ultraviolet light",
+    "chloramines"
+  ],
+  "natureOfConsignment": "Final product",
+  "insuranceInfo": {
+    "agencyName": "United India",
+    "insuranceCoverage": 500000,
+    "policyProtection": [
+      "Accidents",
+      "Theft",
+      "Fire",
+      "Natural disasters"
     ],
-    "commodityInfo": {
-        "commodityVarietyName": "Water Melon",
-        "commodityVarietyCode": "86",
-        "arrivalQuantity": 120,
-        "minimumPrice": 400,
-        "maximumPrice": 1000,
-        "modalPrice": 670
-    },
-    "exporterInfo": {
-        "name": "AIC International",
-        "house": "2 Ground floor",
-        "street": "Mount Road",
-        "cityName": "Calicut",
-        "state": "Kerala",
-        "stateCode": "236",
-        "country": "India",
-        "countryCode": "+91",
-        "pincode": "673001",
-        "panNo": "ELXXXXX",
-        "bankAccountNo": "HSBC452XXXXXXX",
-        "ifscCode": "ABHY0065001",
-        "iec": "impExpCode1"
-    },
-    "rcmcInfo": {
-        "certificateNumber": "RC235144",
-        "certifyingAuthority": "Export Promotion Council, Government of India",
-        "certificationIssualDate": "2023-03-12",
-        "certificationExpiryDate": "2024-02-31"
-    },
-    "fssaiInfo": {
-        "certificateNumber": "FS7235632",
-        "certifyingAuthority": "Ministry of Health & Family Welfare, Government of India",
-        "certificationIssualDate": "2023-02-31",
-        "certificationExpiryDate": "2026-12-31"
-    },
-    "phytosanitaryInfo": {
-        "certificateNumber": "IN256235",
-        "certifyingAuthority": "Plant Quarantine Information System, Department of Agriculture, Co-operation and Farmer Welfare, Government of India",
-        "certificationIssualDate": "2022-10-12",
-        "certificationExpiryDate": "2025-12-31"
-    },
-    "consignerInfo": {
-        "name": "Anil",
-        "locality": "Bandra, Mumbai",
-        "phone": "94522341XX",
-        "email": "relco@gmail.com"
-    },
-    "consigneeInfo": {
-        "name": "Mukesh",
-        "locality": "Antilia, Mumbai",
-        "phone": "99295534XX",
-        "email": "relind@gmail.com"
-    },
-    "originName": "India",
-    "originCode": "+91",
-    "destinationName": "Malaysia",
-    "destinationCode": "+68",
-    "portOfEntry": "Calicut",
-    "shipmentDate": "2023-10-12",
-    "vesselName": "EverGreen",
-    "sanitaryMeasures": [
-        "Chlorination",
-        "ozone",
-        "ultraviolet light",
-        "chloramines"
-    ],
-    "natureOfConsignment": "Final product",
-    "insuranceInfo": {
-        "agencyName": "United India",
-        "insuranceCoverage": 500000,
-        "policyProtection": [
-            "Accidents",
-            "Theft",
-            "Fire",
-            "Natural disasters"
-        ],
-        "issualDate": "2023-10-12",
-        "expiryDate": "2024-10-12",
-        "policyNumber": "CR5284257933",
-        "policyDate": "2023-10-12"
-    }
+    "issualDate": "2023-10-12",
+    "expiryDate": "2024-10-12",
+    "policyNumber": "CR5284257933",
+    "policyDate": "2023-10-12"
+  }
 }

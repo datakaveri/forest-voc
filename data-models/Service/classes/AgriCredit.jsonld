@@ -1,27 +1,27 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
-        {
-            "@type": [
-                "owl:Class",
-                "rdfs:Class"
-            ],
-            "@id": "forest:AgriCredit",
-            "rdfs:comment": "A data model for agricultural credit.",
-            "rdfs:label": "AgriCredit",
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            },
-            "rdfs:subClassOf": {
-                "@id": "forest:Service"
-            }
-        }
-    ]
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@type": [
+        "owl:Class",
+        "rdfs:Class"
+      ],
+      "@id": "forest:AgriCredit",
+      "rdfs:comment": "A data model for agricultural credit.",
+      "rdfs:label": "AgriCredit",
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      },
+      "rdfs:subClassOf": {
+        "@id": "forest:Service"
+      }
+    }
+  ]
 }

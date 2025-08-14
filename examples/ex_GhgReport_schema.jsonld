@@ -1,257 +1,257 @@
 {
-    "@context": "https://agrijson.org/",
-    "type": [
-        "forest:GhgReport",
-        "forest:Schema"
-    ],
-    "id": "https://agrijson.org/GhgReport",
-    "schema": {
-        "title": "ADEX GhgReport Data Model",
+  "@context": "https://agrijson.org/",
+  "type": [
+    "forest:GhgReport",
+    "forest:Schema"
+  ],
+  "id": "https://agrijson.org/GhgReport",
+  "schema": {
+    "title": "ADEX GhgReport Data Model",
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "array",
+        "items": [
+          {
+            "type": "string",
+            "description": "ADEX Data Model name. It has to be GhgReport"
+          },
+          {
+            "type": "string",
+            "description": "ADEX Entity type. It has to be Resource"
+          }
+        ]
+      },
+      "refPeriod": {
+        "type": "string",
+        "description": "A specific timeframe or time interval that is chosen as a basis for comparison, analysis, or measurement of certain events, data, or phenomena."
+      },
+      "endDate": {
+        "type": "string",
+        "description": "The date until which the data in the report corresponding to this observation related to.",
+        "format": "date"
+      },
+      "creditValue": {
+        "type": "number",
+        "description": "Amount of carbon credits or its equivalents for the reporting period associated with an organisation corresponding to this observation.",
+        "unitCode": "C62",
+        "unitText": "Dimensionless"
+      },
+      "targetValue": {
+        "type": "number",
+        "description": "Target cap of GHG emissions set by the management for the reporting period corresponding to this observation.",
+        "unitCode": "KTN",
+        "unitText": "kilotonne"
+      },
+      "approvalDate": {
+        "type": "string",
+        "description": "The date on which a report or document has been offically approved.",
+        "format": "date"
+      },
+      "ghgName": {
+        "type": "array",
+        "description": "The name(s) of greenhouse gas(es) emitted during the reporting period. The presence of multiple gases is represented by enclosing them in a list.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "reportPeriod": {
+        "type": "string",
+        "description": "The time period for which the report or analysis or document corresponding to this observation relates to."
+      },
+      "totalEmission": {
+        "type": "number",
+        "description": "Total emission of greenhouse gases during the reporting period",
+        "unitCode": "KTN",
+        "unitText": "kilotonne"
+      },
+      "ghgScope": {
+        "type": "array",
+        "description": "Scope of the emission being reported as per GHG Protocol - Scope 1, Scope 2, Scope 3 as per the India GHG Program https://www.indiaghgp.org/explaining-scope-1-2-3",
+        "items": {
+          "type": "string"
+        }
+      },
+      "ghgEmission": {
+        "type": "array",
+        "description": "The amount of greenhouse gas(es) emitted during the reporting period. In case of multiple gases, it is an array of gas emission measures in the order of gases mentioned in 'ghgName'.",
+        "unitCode": "TNE",
+        "unitText": "kilotonne",
+        "items": {
+          "type": "number"
+        }
+      },
+      "reportingAuthority": {
+        "type": "string",
+        "description": "The name of the entity authorised to provide the GHG (GreenHouseGas) report."
+      },
+      "offsetValue": {
+        "type": "number",
+        "description": "The offset value represents a measurable decrease or elimination of greenhouse gas emissions, specifically carbon dioxide (CO2) or its equivalents, permitted or asserted during the reporting period corresponding to this observation.",
+        "unitCode": "KTN",
+        "unitText": "kilotonne"
+      },
+      "startDate": {
+        "type": "string",
+        "description": "The date from which the data in the report corresponding to this observation relates to.",
+        "format": "date"
+      },
+      "certificateInfo": {
         "type": "object",
+        "description": "Date of issual, expiry/validity, renewal of the document/certificate corresponding to this observation.",
         "properties": {
-            "type": {
-                "type": "array",
-                "items": [
-                    {
-                        "type": "string",
-                        "description": "ADEX Data Model name. It has to be GhgReport"
-                    },
-                    {
-                        "type": "string",
-                        "description": "ADEX Entity type. It has to be Resource"
-                    }
-                ]
-            },
-            "refPeriod": {
-                "type": "string",
-                "description": "A specific timeframe or time interval that is chosen as a basis for comparison, analysis, or measurement of certain events, data, or phenomena."
-            },
-            "endDate": {
-                "type": "string",
-                "description": "The date until which the data in the report corresponding to this observation related to.",
-                "format": "date"
-            },
-            "creditValue": {
+          "certificationRenewalDate": {
+            "type": "string",
+            "description": "The date of renewal of the report or document or item corresponding to this observation.",
+            "format": "date"
+          },
+          "certificationIssualDate": {
+            "type": "string",
+            "description": "The date of issual of the report or document or item corresponding to this observation.",
+            "format": "date"
+          },
+          "certificateNumber": {
+            "type": "string",
+            "description": "Unique identification number of the certificate corresponding to this observation."
+          },
+          "certifyingAuthority": {
+            "type": "string",
+            "description": "Name of the authority issuing the certificate corresponding to this observation."
+          },
+          "certificationExpiryDate": {
+            "type": "string",
+            "description": "The date of expiry of the report or document or item corresponding to this observation.",
+            "format": "date"
+          }
+        }
+      },
+      "observationDateTime": {
+        "type": "string",
+        "description": "Last reported time of observation.",
+        "format": "date-time"
+      },
+      "personnelInfo": {
+        "type": "object",
+        "description": "Personnel information of an individual or business corresponding to this observation.",
+        "properties": {
+          "phone": {
+            "type": "string",
+            "description": "Phone number  corresponding to this observation"
+          },
+          "academicQualification": {
+            "type": "string",
+            "description": "The highest educational qualification of the individual corresponding to this observation."
+          },
+          "fieldOfResearch": {
+            "type": "string",
+            "description": "A particular area or subject of study that undergoes investigation, exploration, and systematic examination to acquire fresh knowledge, insights, and comprehension."
+          },
+          "birthPlace": {
+            "type": "string",
+            "description": "Place of birth of the individual corresponding to this observation."
+          },
+          "residentialAddress": {
+            "type": "object",
+            "description": "Residential address corresponding to this observation"
+          },
+          "dob": {
+            "type": "string",
+            "description": "Date of birth of the individual corresponding to this observation.",
+            "format": "date"
+          },
+          "email": {
+            "type": "string",
+            "description": "Email address of the individual corresponding to this observation"
+          },
+          "salutation": {
+            "type": "string",
+            "description": "Salutation of the individual corresponding to this observation"
+          },
+          "permanentAddress": {
+            "type": "object",
+            "description": "Permanent address corresponding to this observation"
+          },
+          "businessAddress": {
+            "type": "object",
+            "description": "Business address corresponding to this observation"
+          },
+          "gender": {
+            "type": "string",
+            "description": "Gender of the individual corresponding to this observation"
+          },
+          "workStatus": {
+            "type": "string",
+            "description": "The work status indicates whether the individual or entity is actively working, on leave, part-time, full-time, temporary, permanent, retired or in any other specific arrangement."
+          },
+          "nationality": {
+            "type": "string",
+            "description": "Represents the nation that the individual corresponding to this observation belongs to."
+          },
+          "identityInfo": {
+            "type": "object",
+            "description": "Personal identification information issued by the government.",
+            "properties": {
+              "bankAccountNo": {
                 "type": "number",
-                "description": "Amount of carbon credits or its equivalents for the reporting period associated with an organisation corresponding to this observation.",
+                "description": "The bank account number of the individual or business corresponding to this observation",
                 "unitCode": "C62",
                 "unitText": "Dimensionless"
-            },
-            "targetValue": {
-                "type": "number",
-                "description": "Target cap of GHG emissions set by the management for the reporting period corresponding to this observation.",
-                "unitCode": "KTN",
-                "unitText": "kilotonne"
-            },
-            "approvalDate": {
+              },
+              "gstin": {
                 "type": "string",
-                "description": "The date on which a report or document has been offically approved.",
-                "format": "date"
-            },
-            "ghgName": {
-                "type": "array",
-                "description": "The name(s) of greenhouse gas(es) emitted during the reporting period. The presence of multiple gases is represented by enclosing them in a list.",
-                "items": {
-                    "type": "string"
-                }
-            },
-            "reportPeriod": {
+                "description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
+              },
+              "ifscCode": {
                 "type": "string",
-                "description": "The time period for which the report or analysis or document corresponding to this observation relates to."
-            },
-            "totalEmission": {
-                "type": "number",
-                "description": "Total emission of greenhouse gases during the reporting period",
-                "unitCode": "KTN",
-                "unitText": "kilotonne"
-            },
-            "ghgScope": {
-                "type": "array",
-                "description": "Scope of the emission being reported as per GHG Protocol - Scope 1, Scope 2, Scope 3 as per the India GHG Program https://www.indiaghgp.org/explaining-scope-1-2-3",
-                "items": {
-                    "type": "string"
-                }
-            },
-            "ghgEmission": {
-                "type": "array",
-                "description": "The amount of greenhouse gas(es) emitted during the reporting period. In case of multiple gases, it is an array of gas emission measures in the order of gases mentioned in 'ghgName'.",
-                "unitCode": "TNE",
-                "unitText": "kilotonne",
-                "items": {
-                    "type": "number"
-                }
-            },
-            "reportingAuthority": {
+                "description": "The IFSC code for the bank corresponding to this observation"
+              },
+              "drivingLicense": {
                 "type": "string",
-                "description": "The name of the entity authorised to provide the GHG (GreenHouseGas) report."
-            },
-            "offsetValue": {
-                "type": "number",
-                "description": "The offset value represents a measurable decrease or elimination of greenhouse gas emissions, specifically carbon dioxide (CO2) or its equivalents, permitted or asserted during the reporting period corresponding to this observation.",
-                "unitCode": "KTN",
-                "unitText": "kilotonne"
-            },
-            "startDate": {
+                "description": "The driving license number of the individual corresponding to this observation."
+              },
+              "registrationNumber": {
                 "type": "string",
-                "description": "The date from which the data in the report corresponding to this observation relates to.",
-                "format": "date"
-            },
-            "certificateInfo": {
-                "type": "object",
-                "description": "Date of issual, expiry/validity, renewal of the document/certificate corresponding to this observation.",
-                "properties": {
-                    "certificationRenewalDate": {
-                        "type": "string",
-                        "description": "The date of renewal of the report or document or item corresponding to this observation.",
-                        "format": "date"
-                    },
-                    "certificationIssualDate": {
-                        "type": "string",
-                        "description": "The date of issual of the report or document or item corresponding to this observation.",
-                        "format": "date"
-                    },
-                    "certificateNumber": {
-                        "type": "string",
-                        "description": "Unique identification number of the certificate corresponding to this observation."
-                    },
-                    "certifyingAuthority": {
-                        "type": "string",
-                        "description": "Name of the authority issuing the certificate corresponding to this observation."
-                    },
-                    "certificationExpiryDate": {
-                        "type": "string",
-                        "description": "The date of expiry of the report or document or item corresponding to this observation.",
-                        "format": "date"
-                    }
-                }
-            },
-            "observationDateTime": {
+                "description": "The registration number of the entity corresponding to this observation."
+              },
+              "digitalSignature": {
                 "type": "string",
-                "description": "Last reported time of observation.",
-                "format": "date-time"
-            },
-            "personnelInfo": {
-                "type": "object",
-                "description": "Personnel information of an individual or business corresponding to this observation.",
-                "properties": {
-                    "phone": {
-                        "type": "string",
-                        "description": "Phone number  corresponding to this observation"
-                    },
-                    "academicQualification": {
-                        "type": "string",
-                        "description": "The highest educational qualification of the individual corresponding to this observation."
-                    },
-                    "fieldOfResearch": {
-                        "type": "string",
-                        "description": "A particular area or subject of study that undergoes investigation, exploration, and systematic examination to acquire fresh knowledge, insights, and comprehension."
-                    },
-                    "birthPlace": {
-                        "type": "string",
-                        "description": "Place of birth of the individual corresponding to this observation."
-                    },
-                    "residentialAddress": {
-                        "type": "object",
-                        "description": "Residential address corresponding to this observation"
-                    },
-                    "dob": {
-                        "type": "string",
-                        "description": "Date of birth of the individual corresponding to this observation.",
-                        "format": "date"
-                    },
-                    "email": {
-                        "type": "string",
-                        "description": "Email address of the individual corresponding to this observation"
-                    },
-                    "salutation": {
-                        "type": "string",
-                        "description": "Salutation of the individual corresponding to this observation"
-                    },
-                    "permanentAddress": {
-                        "type": "object",
-                        "description": "Permanent address corresponding to this observation"
-                    },
-                    "businessAddress": {
-                        "type": "object",
-                        "description": "Business address corresponding to this observation"
-                    },
-                    "gender": {
-                        "type": "string",
-                        "description": "Gender of the individual corresponding to this observation"
-                    },
-                    "workStatus": {
-                        "type": "string",
-                        "description": "The work status indicates whether the individual or entity is actively working, on leave, part-time, full-time, temporary, permanent, retired or in any other specific arrangement."
-                    },
-                    "nationality": {
-                        "type": "string",
-                        "description": "Represents the nation that the individual corresponding to this observation belongs to."
-                    },
-                    "identityInfo": {
-                        "type": "object",
-                        "description": "Personal identification information issued by the government.",
-                        "properties": {
-                            "bankAccountNo": {
-                                "type": "number",
-                                "description": "The bank account number of the individual or business corresponding to this observation",
-                                "unitCode": "C62",
-                                "unitText": "Dimensionless"
-                            },
-                            "gstin": {
-                                "type": "string",
-                                "description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
-                            },
-                            "ifscCode": {
-                                "type": "string",
-                                "description": "The IFSC code for the bank corresponding to this observation"
-                            },
-                            "drivingLicense": {
-                                "type": "string",
-                                "description": "The driving license number of the individual corresponding to this observation."
-                            },
-                            "registrationNumber": {
-                                "type": "string",
-                                "description": "The registration number of the entity corresponding to this observation."
-                            },
-                            "digitalSignature": {
-                                "type": "string",
-                                "description": "The link to the digital signature of the entity corresponding to this observation."
-                            },
-                            "panNo": {
-                                "type": "string",
-                                "description": "The pan card number of the individual corresponding to this observation."
-                            },
-                            "fssaiLicense": {
-                                "type": "string",
-                                "description": "The FSSAI (Food and Safety Standards Authority of India) license number."
-                            },
-                            "aadharNo": {
-                                "type": "string",
-                                "description": "The aadhar number issued by the government for the individual corresponding to this observation."
-                            },
-                            "iec": {
-                                "type": "string",
-                                "description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
-                            }
-                        }
-                    },
-                    "imageURL": {
-                        "type": "array",
-                        "description": "The link that points to the photo of the individual corresponding to this observation.",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "designation": {
-                        "type": "string",
-                        "description": "Designation of the individual corresponding to this observation"
-                    },
-                    "expertise": {
-                        "type": "string",
-                        "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
-                    }
-                }
+                "description": "The link to the digital signature of the entity corresponding to this observation."
+              },
+              "panNo": {
+                "type": "string",
+                "description": "The pan card number of the individual corresponding to this observation."
+              },
+              "fssaiLicense": {
+                "type": "string",
+                "description": "The FSSAI (Food and Safety Standards Authority of India) license number."
+              },
+              "aadharNo": {
+                "type": "string",
+                "description": "The aadhar number issued by the government for the individual corresponding to this observation."
+              },
+              "iec": {
+                "type": "string",
+                "description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
+              }
             }
+          },
+          "imageURL": {
+            "type": "array",
+            "description": "The link that points to the photo of the individual corresponding to this observation.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "designation": {
+            "type": "string",
+            "description": "Designation of the individual corresponding to this observation"
+          },
+          "expertise": {
+            "type": "string",
+            "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
+          }
         }
+      }
     }
+  }
 }

@@ -1,35 +1,35 @@
 {
-    "@context": {
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geojson": "https://purl.org/geojson/vocab#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "schema": "http://schema.org/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "geojson": "https://purl.org/geojson/vocab#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "http://schema.org/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:dataSchema",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "Associated data schema. Specified as an URI (linking it to one of the known data type vocabulary, e.g., xsd)",
+      "rdfs:label": "dataSchema",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:dataSchema",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "Associated data schema. Specified as an URI (linking it to one of the known data type vocabulary, e.g., xsd)",
-            "rdfs:label": "dataSchema",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text",
-                    "@type": "@id"
-                }
-            ]
+          "@id": "forest:ValueDescriptor"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text",
+          "@type": "@id"
+        }
+      ]
+    }
+  ]
 }

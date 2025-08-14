@@ -1,24 +1,24 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
-        {
-            "@id": "forest:Relationship",
-            "@type": [
-                "owl:Class",
-                "rdfs:Class"
-            ],
-            "rdfs:comment": "Class of all Relationships in ADEX. A relationship property relates a resource to another resource. The range of relationship property are objects describing the links (URIs etc.) to the related resource and may contain meta-information about the type of relationship.",
-            "rdfs:label": "Relationship",
-            "rdfs:subClassOf": {
-                "@id": "rdf:Property"
-            }
-        }
-    ]
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:Relationship",
+      "@type": [
+        "owl:Class",
+        "rdfs:Class"
+      ],
+      "rdfs:comment": "Class of all Relationships in ADEX. A relationship property relates a resource to another resource. The range of relationship property are objects describing the links (URIs etc.) to the related resource and may contain meta-information about the type of relationship.",
+      "rdfs:label": "Relationship",
+      "rdfs:subClassOf": {
+        "@id": "rdf:Property"
+      }
+    }
+  ]
 }

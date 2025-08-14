@@ -1,86 +1,86 @@
 {
-    "@context": "https://agrijson.org/",
-    "id": "resource-item-id",
-    "type": [
-        "forest:AgriAdvisory",
-        "forest:Resource"
-    ],
-    "fileFormat": "Text",
-    "mediaURL": [
-        "https://gov-crop-advisory.com/rice"
-    ],
-    "personnelInfo": {
-        "phone": "9799999721",
-        "birthPlace": "Khammam,Telangana",
-        "residentialAddress": {
-            "buildingNum": "61/65",
-            "street": "abc",
-            "locality": "Ballepalli",
-            "districtName": "Khammam",
-            "stateName": "Telangana",
-            "countryName": "India",
-            "pincode": 507002
-        },
-        "dob": "1959-01-15",
-        "email": "kumarmk@gmail.com",
-        "salutation": "Mr",
-        "gender": "Male",
-        "identityInfo": {
-            "bankAccountNo": 101344515616,
-            "ifscCode": "SBIJ0005943",
-            "panNo": "BHSPS6711H",
-            "aadharNo": "0000 1111 2222"
-        }
+  "@context": "https://agrijson.org/",
+  "id": "resource-item-id",
+  "type": [
+    "forest:AgriAdvisory",
+    "forest:Resource"
+  ],
+  "fileFormat": "Text",
+  "mediaURL": [
+    "https://gov-crop-advisory.com/rice"
+  ],
+  "personnelInfo": {
+    "phone": "9799999721",
+    "birthPlace": "Khammam,Telangana",
+    "residentialAddress": {
+      "buildingNum": "61/65",
+      "street": "abc",
+      "locality": "Ballepalli",
+      "districtName": "Khammam",
+      "stateName": "Telangana",
+      "countryName": "India",
+      "pincode": 507002
     },
-    "contactPointInfo": {
-        "contactPointName": "The Manager",
-        "contactPointPhone": "81243817XX",
-        "contactPointEmail": "valleyhelpline@gmail.com"
-    },
-    "season": "Monsoon",
-    "localeInfo": {
-        "subdistrictName": "BONAKAL",
-        "clusterName": "BONAKAL",
-        "districtName": "Khammam",
-        "villageName": "ALLAPADU",
-        "stateName": "Telangana"
-    },
-    "observationDateTime": "2022-12-08T05:45:00+05:30",
-    "landExtent": 150,
-    "landIdentityInfo": {
-        "surveyNumber": "26 / 2e",
-        "baseSurveyNumber": 26,
-        "landParcelID": 34554321345672
-    },
-    "recommendedCropVariety": [
-        "Ariyan Nel, Arubatham Samba, Aruvadhan Kodai",
-        "Karen Narendra, Karen Vandana, Karan Shriya",
-        "Merut Yellow, Jaunpuri, Sartuj"
-    ],
-    "commodityICC": "580",
-    "commodityName": "CHILLI",
-    "validFrom": "2023-01-02",
-    "cropSeason": "Kharif",
-    "recommendingAuthority": "Department of Agriculture and Farmers Welfare, Government of India",
-    "recommendedCrops": [
-        "Rice",
-        "Wheat",
-        "Maize"
-    ],
-    "cropVarietyName": "CR Dhan 801",
-    "generalAdvisory": "Total normal rainfall of Khammam district is 227.8 mm and actual rainfall is 121.0 mm from 1st June to 14th July. Go for sowing of rice nursery after 24 hours of seed treatment",
-    "generalAdvisoryRegional": "ఖమ్మం జిల్లాలో జూన్ 01 నుండి జూలై 14 వరుకు సాధారణ వర్షపాతం 227.8 మి.మీ. కాగా ప్రస్తుతం 121.0 మి.మీ.ల వర్షం కురిసింది. కిలో పొడి వరి విత్తనానికి 3 గ్రా. కార్బండిజమ్ లేదా తడి విత్తనానికి 1 గ్రా.",
-    "agriculturalCategory": "Horticulture",
-    "regionalLanguageID": "14",
-    "regionalLanguageName": "Telugu",
-    "advisoryNature": "Disease management",
-    "natureOfProblem": "Moisture stress",
-    "advisoryChannel": [
-        "Website",
-        "Radio"
-    ],
-    "advisoryID": "TL0056",
-    "validTill": "2023-01-15",
-    "cropNameCommon": "Rice",
-    "cropCodeICC": "PQ1231"
+    "dob": "1959-01-15",
+    "email": "kumarmk@gmail.com",
+    "salutation": "Mr",
+    "gender": "Male",
+    "identityInfo": {
+      "bankAccountNo": 101344515616,
+      "ifscCode": "SBIJ0005943",
+      "panNo": "BHSPS6711H",
+      "aadharNo": "0000 1111 2222"
+    }
+  },
+  "contactPointInfo": {
+    "contactPointName": "The Manager",
+    "contactPointPhone": "81243817XX",
+    "contactPointEmail": "valleyhelpline@gmail.com"
+  },
+  "season": "Monsoon",
+  "localeInfo": {
+    "subdistrictName": "BONAKAL",
+    "clusterName": "BONAKAL",
+    "districtName": "Khammam",
+    "villageName": "ALLAPADU",
+    "stateName": "Telangana"
+  },
+  "observationDateTime": "2022-12-08T05:45:00+05:30",
+  "landExtent": 150,
+  "landIdentityInfo": {
+    "surveyNumber": "26 / 2e",
+    "baseSurveyNumber": 26,
+    "landParcelID": 34554321345672
+  },
+  "recommendedCropVariety": [
+    "Ariyan Nel, Arubatham Samba, Aruvadhan Kodai",
+    "Karen Narendra, Karen Vandana, Karan Shriya",
+    "Merut Yellow, Jaunpuri, Sartuj"
+  ],
+  "commodityICC": "580",
+  "commodityName": "CHILLI",
+  "validFrom": "2023-01-02",
+  "cropSeason": "Kharif",
+  "recommendingAuthority": "Department of Agriculture and Farmers Welfare, Government of India",
+  "recommendedCrops": [
+    "Rice",
+    "Wheat",
+    "Maize"
+  ],
+  "cropVarietyName": "CR Dhan 801",
+  "generalAdvisory": "Total normal rainfall of Khammam district is 227.8 mm and actual rainfall is 121.0 mm from 1st June to 14th July. Go for sowing of rice nursery after 24 hours of seed treatment",
+  "generalAdvisoryRegional": "ఖమ్మం జిల్లాలో జూన్ 01 నుండి జూలై 14 వరుకు సాధారణ వర్షపాతం 227.8 మి.మీ. కాగా ప్రస్తుతం 121.0 మి.మీ.ల వర్షం కురిసింది. కిలో పొడి వరి విత్తనానికి 3 గ్రా. కార్బండిజమ్ లేదా తడి విత్తనానికి 1 గ్రా.",
+  "agriculturalCategory": "Horticulture",
+  "regionalLanguageID": "14",
+  "regionalLanguageName": "Telugu",
+  "advisoryNature": "Disease management",
+  "natureOfProblem": "Moisture stress",
+  "advisoryChannel": [
+    "Website",
+    "Radio"
+  ],
+  "advisoryID": "TL0056",
+  "validTill": "2023-01-15",
+  "cropNameCommon": "Rice",
+  "cropCodeICC": "PQ1231"
 }

@@ -1,36 +1,36 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:spatialResolution",
+      "@type": [
+        "forest:QuantitativeProperty"
+      ],
+      "rdfs:comment": "Denotes the distance represented by a single pixel in an image such as 1m, 10m, etc.",
+      "rdfs:label": "spatialResolution",
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      },
+      "forest:domainIncludes": [
         {
-            "@id": "forest:spatialResolution",
-            "@type": [
-                "forest:QuantitativeProperty"
-            ],
-            "rdfs:comment": "Denotes the distance represented by a single pixel in an image such as 1m, 10m, etc.",
-            "rdfs:label": "spatialResolution",
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            },
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:Imagery"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Number"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ]
+          "@id": "forest:Imagery"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Number"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ]
+    }
+  ]
 }

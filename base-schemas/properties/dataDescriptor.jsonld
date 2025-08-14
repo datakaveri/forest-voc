@@ -1,41 +1,41 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "iudx": "https://voc.iudx.org.in/",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "iudx": "https://voc.iudx.org.in/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:dataDescriptor",
+      "@type": [
+        "forest:Relationship"
+      ],
+      "rdfs:comment": "URI pointing to the data-descriptor entity",
+      "rdfs:label": "dataDescriptor",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:dataDescriptor",
-            "@type": [
-                "forest:Relationship"
-            ],
-            "rdfs:comment": "URI pointing to the data-descriptor entity",
-            "rdfs:label": "dataDescriptor",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:ResourceGroup"
-                },
-                {
-                    "@id": "forest:Resource"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@type": "@id",
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:RelationshipValue"
-                },
-                {
-                    "@id": "forest:DataModel"
-                }
-            ]
+          "@id": "forest:ResourceGroup"
+        },
+        {
+          "@id": "forest:Resource"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@type": "@id",
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:RelationshipValue"
+        },
+        {
+          "@id": "forest:DataModel"
+        }
+      ]
+    }
+  ]
 }

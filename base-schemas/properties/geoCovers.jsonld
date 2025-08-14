@@ -1,34 +1,34 @@
 {
-    "@context": {
-        "schema": "http://schema.org/",
-        "iudx": "https://voc.iudx.org.in/",
-        "geojson": "https://purl.org/geojson/vocab#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "schema": "http://schema.org/",
+    "iudx": "https://voc.iudx.org.in/",
+    "geojson": "https://purl.org/geojson/vocab#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:geoCovers",
+      "@type": [
+        "forest:GeoProperty"
+      ],
+      "rdfs:comment": "Represents the coverage relationship between two geometries/places.",
+      "rdfs:label": "geoCovers",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:geoCovers",
-            "@type": [
-                "forest:GeoProperty"
-            ],
-            "rdfs:comment": "Represents the coverage relationship between two geometries/places.",
-            "rdfs:label": "geoCovers",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:Place"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:GeoJSONGeometry"
-                }
-            ]
+          "@id": "forest:Place"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:GeoJSONGeometry"
+        }
+      ]
+    }
+  ]
 }

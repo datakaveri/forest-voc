@@ -1,37 +1,37 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:ghgScope",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "Scope of the emission being reported as per GHG Protocol - Scope 1, Scope 2, Scope 3 as per the India GHG Program https://www.indiaghgp.org/explaining-scope-1-2-3",
+      "rdfs:label": "ghgScope",
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      },
+      "forest:domainIncludes": [
         {
-            "@id": "forest:ghgScope",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "Scope of the emission being reported as per GHG Protocol - Scope 1, Scope 2, Scope 3 as per the India GHG Program https://www.indiaghgp.org/explaining-scope-1-2-3",
-            "rdfs:label": "ghgScope",
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            },
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:GhgReport"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@container": "@list",
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ]
+          "@id": "forest:GhgReport"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@container": "@list",
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ]
+    }
+  ]
 }

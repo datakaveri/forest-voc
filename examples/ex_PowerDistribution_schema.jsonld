@@ -1,87 +1,87 @@
 {
-    "@context": "https://agrijson.org/",
-    "type": [
-        "forest:PowerDistribution",
-        "forest:Schema"
-    ],
-    "id": "https://agrijson.org/PowerDistribution",
-    "schema": {
-        "title": "ADEX PowerDistribution Data Model",
-        "type": "object",
-        "properties": {
-            "type": {
-                "type": "array",
-                "items": [
-                    {
-                        "type": "string",
-                        "description": "ADEX Data Model name. It has to be PowerDistribution"
-                    },
-                    {
-                        "type": "string",
-                        "description": "ADEX Entity type. It has to be Resource"
-                    }
-                ]
-            },
-            "observationDateTime": {
-                "type": "string",
-                "description": "Last reported time of observation.",
-                "format": "date-time"
-            },
-            "category": {
-                "type": "string",
-                "description": "Represents the name of classification of an entity or service based on a particular aspect."
-            },
-            "categoryCode": {
-                "type": "string",
-                "description": "The code of the category corresponding to this observation."
-            },
-            "powerDistributionDivision": {
-                "type": "string",
-                "description": "The name of the power distribution division corresponding to this observation."
-            },
-            "powerConsumption": {
-                "type": "number",
-                "description": "Power consumed by the entity corresponding to this observation.",
-                "unitText": "watt",
-                "unitCode": "WTT"
-            },
-            "powerDistributionSection": {
-                "type": "string",
-                "description": "The name of the power distribution section corresponding to this observation."
-            },
-            "energyConsumption": {
-                "type": "number",
-                "description": "Energy consumed over a specific time corresponding to this observation.",
-                "unitCode": "KWH",
-                "unitText": "kilowatt hour"
-            },
-            "powerDistributionSubdivision": {
-                "type": "string",
-                "description": "The name of the sub division in the power distribution  corresponding to this observation."
-            },
-            "totalServiceCount": {
-                "type": "number",
-                "description": "The total count of services availed corresponding to this observation.",
-                "unitCode": "C62",
-                "unitText": "Dimensionless"
-            },
-            "billedServicesCount": {
-                "type": "number",
-                "description": "The total count of services that are billed corresponding to this observation.",
-                "unitCode": "C62",
-                "unitText": "Dimensionless"
-            },
-            "cityName": {
-                "type": "string",
-                "description": "Name of the city corresponding to this observation."
-            },
-            "areaServed": {
-                "type": "array",
-                "description": "Area served by the entity or a service.",
-                "items": {
-                    "type": "string"
-                }
-            }
+  "@context": "https://agrijson.org/",
+  "type": [
+    "forest:PowerDistribution",
+    "forest:Schema"
+  ],
+  "id": "https://agrijson.org/PowerDistribution",
+  "schema": {
+    "title": "ADEX PowerDistribution Data Model",
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "array",
+        "items": [
+          {
+            "type": "string",
+            "description": "ADEX Data Model name. It has to be PowerDistribution"
+          },
+          {
+            "type": "string",
+            "description": "ADEX Entity type. It has to be Resource"
+          }
+        ]
+      },
+      "observationDateTime": {
+        "type": "string",
+        "description": "Last reported time of observation.",
+        "format": "date-time"
+      },
+      "category": {
+        "type": "string",
+        "description": "Represents the name of classification of an entity or service based on a particular aspect."
+      },
+      "categoryCode": {
+        "type": "string",
+        "description": "The code of the category corresponding to this observation."
+      },
+      "powerDistributionDivision": {
+        "type": "string",
+        "description": "The name of the power distribution division corresponding to this observation."
+      },
+      "powerConsumption": {
+        "type": "number",
+        "description": "Power consumed by the entity corresponding to this observation.",
+        "unitText": "watt",
+        "unitCode": "WTT"
+      },
+      "powerDistributionSection": {
+        "type": "string",
+        "description": "The name of the power distribution section corresponding to this observation."
+      },
+      "energyConsumption": {
+        "type": "number",
+        "description": "Energy consumed over a specific time corresponding to this observation.",
+        "unitCode": "KWH",
+        "unitText": "kilowatt hour"
+      },
+      "powerDistributionSubdivision": {
+        "type": "string",
+        "description": "The name of the sub division in the power distribution  corresponding to this observation."
+      },
+      "totalServiceCount": {
+        "type": "number",
+        "description": "The total count of services availed corresponding to this observation.",
+        "unitCode": "C62",
+        "unitText": "Dimensionless"
+      },
+      "billedServicesCount": {
+        "type": "number",
+        "description": "The total count of services that are billed corresponding to this observation.",
+        "unitCode": "C62",
+        "unitText": "Dimensionless"
+      },
+      "cityName": {
+        "type": "string",
+        "description": "Name of the city corresponding to this observation."
+      },
+      "areaServed": {
+        "type": "array",
+        "description": "Area served by the entity or a service.",
+        "items": {
+          "type": "string"
         }
+      }
     }
+  }
 }

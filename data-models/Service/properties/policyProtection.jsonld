@@ -1,37 +1,37 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:policyProtection",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "The potential risk(s)/ event(s) that is (are) protected or insured against by the insurance policy corresponding to this observation. For eg., accidents, theft, fire, natural disasters, etc.",
+      "rdfs:label": "policyProtection",
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      },
+      "forest:domainIncludes": [
         {
-            "@id": "forest:policyProtection",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "The potential risk(s)/ event(s) that is (are) protected or insured against by the insurance policy corresponding to this observation. For eg., accidents, theft, fire, natural disasters, etc.",
-            "rdfs:label": "policyProtection",
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            },
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:CropInsurance"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@container": "@list",
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ]
+          "@id": "forest:CropInsurance"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@container": "@list",
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ]
+    }
+  ]
 }

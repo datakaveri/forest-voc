@@ -1,49 +1,49 @@
 {
-    "@context": "https://agrijson.org/",
-    "id": "resource-item-id",
-    "type": [
-        "forest:FarmerCollective",
-        "forest:Resource"
-    ],
-    "communeName": "Organic Valley",
-    "legalStatus": "cooperativeSociety",
-    "phone": "99235632XX",
-    "email": "organicvalley@gmail.com",
-    "contactPointInfo": {
-        "contactPointName": "The Manager",
-        "contactPointPhone": "81243817XX",
-        "contactPointEmail": "valleyhelpline@gmail.com"
-    },
-    "businessAddress": {
-        "buildingNum": "house1",
-        "street": "street1",
-        "locality": "Vill.Langza, P.O Hikkim, Teh. Kaza, Distt, Lahul",
-        "cityName": "Spiti",
-        "stateName": "Himachal Pradesh",
-        "stateCode": "32",
-        "countryName": "India",
-        "pincode": "172124"
-    },
-    "foundingDate": "1999-12-31",
-    "certificateInfo": {
-        "certifyingAuthority": "FSSAI",
-        "certificationIssualDate": "2000-01-01",
-        "certificateNumber": "FS74324",
-        "certificationExpiryDate": "2002-02-02"
-    },
-    "areaServed": "West Bengal",
-    "farmerCount": 45,
-    "cropSpeciesInfo": {
-        "cropNameICC": "Orange",
-        "cropCodeICC": "3727",
-        "cropNameCommon": "Nagpur mandarin"
-    },
-    "serviceName": "Seedling and Seed Sales",
-    "serviceCode": "628",
-    "serviceDescription": "Selling the good variety of paddy seedlings",
-    "orgBranches": [
-        "Delhi",
-        "Bombay",
-        "Calcutta"
-    ]
+  "@context": "https://agrijson.org/",
+  "id": "resource-item-id",
+  "type": [
+    "forest:FarmerCollective",
+    "forest:Resource"
+  ],
+  "communeName": "Organic Valley",
+  "legalStatus": "cooperativeSociety",
+  "phone": "99235632XX",
+  "email": "organicvalley@gmail.com",
+  "contactPointInfo": {
+    "contactPointName": "The Manager",
+    "contactPointPhone": "81243817XX",
+    "contactPointEmail": "valleyhelpline@gmail.com"
+  },
+  "businessAddress": {
+    "buildingNum": "house1",
+    "street": "street1",
+    "locality": "Vill.Langza, P.O Hikkim, Teh. Kaza, Distt, Lahul",
+    "cityName": "Spiti",
+    "stateName": "Himachal Pradesh",
+    "stateCode": "32",
+    "countryName": "India",
+    "pincode": "172124"
+  },
+  "foundingDate": "1999-12-31",
+  "certificateInfo": {
+    "certifyingAuthority": "FSSAI",
+    "certificationIssualDate": "2000-01-01",
+    "certificateNumber": "FS74324",
+    "certificationExpiryDate": "2002-02-02"
+  },
+  "areaServed": "West Bengal",
+  "farmerCount": 45,
+  "cropSpeciesInfo": {
+    "cropNameICC": "Orange",
+    "cropCodeICC": "3727",
+    "cropNameCommon": "Nagpur mandarin"
+  },
+  "serviceName": "Seedling and Seed Sales",
+  "serviceCode": "628",
+  "serviceDescription": "Selling the good variety of paddy seedlings",
+  "orgBranches": [
+    "Delhi",
+    "Bombay",
+    "Calcutta"
+  ]
 }

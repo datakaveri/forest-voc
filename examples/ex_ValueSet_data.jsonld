@@ -1,31 +1,31 @@
 {
-    "@context": "https://agrijson.org/",
-    "id": "resource-item-id",
-    "type": [
-        "forest:ValueSet",
-        "forest:Resource"
-    ],
-    "valueSetName": "Typhoid and ParaTyphoid Fevers",
-    "valueSetID": "A01",
-    "totalCount": 370,
-    "valueSetStatus": "Active",
-    "isCaseSensitive": true,
-    "publisherInfo": {
-        "name": "abcXX",
-        "email": "abcXX@gmail.com"
-    },
-    "copyrights": "Copyright © | License ICD10 Data, When you work with ICD10data.com, we give you a dedicated data partner. Based on your specifications, we locate the files you need and deliver them with the latest updates, customized to fit your needs the budget.",
-    "versionInfo": {
-        "versionNum": 8,
-        "startDateTime": "2022-01-10T00:00:00+05:30",
-        "endDateTime": "9999-99-99T00:00:00+05:30"
-    },
-    "observationDateTime": "2022-01-10T00:00:00+05:30",
-    "isEditable": true,
-    "purposeDescription": "Clinical information and diagnosis of Typhoid and ParaTyphoid Fevers.",
-    "mediaURL": [
-        "https://www.icd10data.com/ICD10CM/Codes/A00-B99/A00-A09/A01-",
-        "https://www.icd10data.com/ICD10CM/Codes",
-        "https://build.fhir.org/valueset-icd-10.html"
-    ]
+  "@context": "https://agrijson.org/",
+  "id": "resource-item-id",
+  "type": [
+    "forest:ValueSet",
+    "forest:Resource"
+  ],
+  "valueSetName": "Typhoid and ParaTyphoid Fevers",
+  "valueSetID": "A01",
+  "totalCount": 370,
+  "valueSetStatus": "Active",
+  "isCaseSensitive": true,
+  "publisherInfo": {
+    "name": "abcXX",
+    "email": "abcXX@gmail.com"
+  },
+  "copyrights": "Copyright © | License ICD10 Data, When you work with ICD10data.com, we give you a dedicated data partner. Based on your specifications, we locate the files you need and deliver them with the latest updates, customized to fit your needs the budget.",
+  "versionInfo": {
+    "versionNum": 8,
+    "startDateTime": "2022-01-10T00:00:00+05:30",
+    "endDateTime": "9999-99-99T00:00:00+05:30"
+  },
+  "observationDateTime": "2022-01-10T00:00:00+05:30",
+  "isEditable": true,
+  "purposeDescription": "Clinical information and diagnosis of Typhoid and ParaTyphoid Fevers.",
+  "mediaURL": [
+    "https://www.icd10data.com/ICD10CM/Codes/A00-B99/A00-A09/A01-",
+    "https://www.icd10data.com/ICD10CM/Codes",
+    "https://build.fhir.org/valueset-icd-10.html"
+  ]
 }

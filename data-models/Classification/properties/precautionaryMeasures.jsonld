@@ -1,42 +1,42 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:precautionaryMeasures",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "The action of being careful, vigilant, and the steps to avoid potential dangers or risks.",
+      "rdfs:label": "precautionaryMeasures",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:precautionaryMeasures",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "The action of being careful, vigilant, and the steps to avoid potential dangers or risks.",
-            "rdfs:label": "precautionaryMeasures",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:OtherAgroChemical"
-                },
-                {
-                    "@id": "forest:Pesticide"
-                },
-                {
-                    "@id": "forest:Fertilizer"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            }
+          "@id": "forest:OtherAgroChemical"
+        },
+        {
+          "@id": "forest:Pesticide"
+        },
+        {
+          "@id": "forest:Fertilizer"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      }
+    }
+  ]
 }

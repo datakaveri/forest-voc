@@ -1,203 +1,203 @@
 {
-    "@context": "https://agrijson.org/",
-    "type": [
-        "forest:PublicScheme",
-        "forest:Schema"
-    ],
-    "id": "https://agrijson.org/PublicScheme",
-    "schema": {
-        "title": "ADEX PublicScheme Data Model",
-        "type": "object",
-        "properties": {
-            "type": {
-                "type": "array",
-                "items": [
-                    {
-                        "type": "string",
-                        "description": "ADEX Data Model name. It has to be PublicScheme"
-                    },
-                    {
-                        "type": "string",
-                        "description": "ADEX Entity type. It has to be Resource"
-                    }
-                ]
-            },
-            "mediaURL": {
-                "type": "array",
-                "description": "URL providing further information of any image(s) or media of the complaint or place.",
-                "items": {
-                    "type": "string"
-                }
-            },
-            "year": {
-                "type": "number",
-                "description": "Year corresponding to this observation and is described in YYYY format, for eg. 2020.",
-                "unitCode": "C62",
-                "unitText": "Dimensionless"
-            },
-            "purposeDescription": {
-                "type": "string",
-                "description": "Describes the purpose of the entity or service corresponding this observation."
-            },
-            "landExtent": {
-                "type": "number",
-                "description": "Area of the land corresponding to this observation.",
-                "unitCode": "ACR",
-                "unitText": "acre"
-            },
-            "landGeography": {
-                "type": "string",
-                "description": "The geographic characteristics of the land such as desert, hilly, etc"
-            },
-            "localeInfo": {
-                "type": "object",
-                "description": "Locale information corresponding to this observation.",
-                "properties": {
-                    "villageCode": {
-                        "type": "string",
-                        "description": "The village code corresponding to this observation."
-                    },
-                    "revenueDivisionCode": {
-                        "type": "string",
-                        "description": "The revenue division code corresponding to this observation"
-                    },
-                    "revenueDivision": {
-                        "type": "string",
-                        "description": "Name of the revenue division in a district corresponding to this observation."
-                    },
-                    "districtName": {
-                        "type": "string",
-                        "description": "Name of the district corresponding to this observation."
-                    },
-                    "zoneName": {
-                        "type": "string",
-                        "description": "Zone name corresponding to this observation."
-                    },
-                    "subdistrictCode": {
-                        "type": "string",
-                        "description": "The subdistrict code corresponding to this observation."
-                    },
-                    "wardName": {
-                        "type": "string",
-                        "description": "Ward name corresponding to this observation."
-                    },
-                    "countryCode": {
-                        "type": "string",
-                        "description": "Name of the country code corresponding to this observation."
-                    },
-                    "countryName": {
-                        "type": "string",
-                        "description": "Name of the country corresponding to this observation."
-                    },
-                    "districtCode": {
-                        "type": "string",
-                        "description": "The district code corresponding to this observation."
-                    },
-                    "clusterName": {
-                        "type": "string",
-                        "description": "Name of the cluster corresponding to this observation. A cluster or a firkas represents a group of villages."
-                    },
-                    "villageName": {
-                        "type": "string",
-                        "description": "Name of the village corresponding to this observation."
-                    },
-                    "zoneID": {
-                        "type": "string",
-                        "description": "Zone ID corresponding to this observation."
-                    },
-                    "stateName": {
-                        "type": "string",
-                        "description": "Name of the state corresponding to this observation."
-                    },
-                    "subdistrictName": {
-                        "type": "string",
-                        "description": "Name of the subdistrict corresponding to this observation.  A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states."
-                    },
-                    "wardID": {
-                        "type": "string",
-                        "description": "Ward ID corresponding to this observation."
-                    },
-                    "stateCode": {
-                        "type": "string",
-                        "description": "The state code corresponding to this observation."
-                    },
-                    "clusterCode": {
-                        "type": "string",
-                        "description": "The cluster code corresponding to this observation."
-                    }
-                }
-            },
-            "landHolding": {
-                "type": "number",
-                "description": "The aggregate land possession attributed to a farmer.",
-                "unitCode": "C62",
-                "unitText": "Dimensionless"
-            },
-            "schemeID": {
-                "type": "string",
-                "description": "The unique ID representing the scheme corresponding to this observation."
-            },
-            "eligibleBeneficiaries": {
-                "type": "array",
-                "description": "Represents the group(s) or category(ies) of people who can avail the benefits of the scheme corresponding to this observation.",
-                "items": {
-                    "type": "string"
-                }
-            },
-            "schemeName": {
-                "type": "string",
-                "description": "The name of the scheme or programme introduced by the government for public welfare and development."
-            },
-            "sanctionedAmount": {
-                "type": "number",
-                "description": "The actual amount spent from the grant/allocated amount for the scheme.",
-                "unitCode": "INR",
-                "unitText": "Indian Rupee"
-            },
-            "beneficiaryCount": {
-                "type": "number",
-                "description": "Represents the count of people benefited under the scheme corresponding to this observation.",
-                "unitCode": "C62",
-                "unitText": "Dimensionless"
-            },
-            "dueDate": {
-                "type": "string",
-                "description": "The deadline for making a payment or the final date for applying to avail a service corresponding to this observation.",
-                "format": "date"
-            },
-            "cropType": {
-                "type": "string",
-                "description": "Type of the crop species. For eg., Pulses, Cereals, Legumes, Veg Proteins, cash crop etc"
-            },
-            "govtName": {
-                "type": "string",
-                "description": "The name of the government associated with the entity or service related to this observation."
-            },
-            "valueChainPhase": {
-                "type": "string",
-                "description": "Value Chain is the series of activities and processes that a product or service goes through, from the initial raw material stage to the final delivery to the customer. It encompasses every step involved in the creation, production, distribution, and eventual consumption of a product or service. This field corresponds to the phase of the agricutural value chain to which the scheme applies to."
-            },
-            "department": {
-                "type": "string",
-                "description": "Division or section of the organization corresponding to this observation. Eg. Health, Transport."
-            },
-            "grantAmount": {
-                "type": "number",
-                "description": "The amount released for the public welfare under the scheme from the total budget corresponding to this observation.",
-                "unitCode": "INR",
-                "unitText": "Indian Rupee"
-            },
-            "departmentID": {
-                "type": "string",
-                "description": "Unique ID or code associated with the department which is associated with the service or the issue corresponding to this observation."
-            },
-            "applicationProcess": {
-                "type": "array",
-                "description": "The step by step process for applying for a service or completing an application.",
-                "items": {
-                    "type": "string"
-                }
-            }
+  "@context": "https://agrijson.org/",
+  "type": [
+    "forest:PublicScheme",
+    "forest:Schema"
+  ],
+  "id": "https://agrijson.org/PublicScheme",
+  "schema": {
+    "title": "ADEX PublicScheme Data Model",
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "array",
+        "items": [
+          {
+            "type": "string",
+            "description": "ADEX Data Model name. It has to be PublicScheme"
+          },
+          {
+            "type": "string",
+            "description": "ADEX Entity type. It has to be Resource"
+          }
+        ]
+      },
+      "mediaURL": {
+        "type": "array",
+        "description": "URL providing further information of any image(s) or media of the complaint or place.",
+        "items": {
+          "type": "string"
         }
+      },
+      "year": {
+        "type": "number",
+        "description": "Year corresponding to this observation and is described in YYYY format, for eg. 2020.",
+        "unitCode": "C62",
+        "unitText": "Dimensionless"
+      },
+      "purposeDescription": {
+        "type": "string",
+        "description": "Describes the purpose of the entity or service corresponding this observation."
+      },
+      "landExtent": {
+        "type": "number",
+        "description": "Area of the land corresponding to this observation.",
+        "unitCode": "ACR",
+        "unitText": "acre"
+      },
+      "landGeography": {
+        "type": "string",
+        "description": "The geographic characteristics of the land such as desert, hilly, etc"
+      },
+      "localeInfo": {
+        "type": "object",
+        "description": "Locale information corresponding to this observation.",
+        "properties": {
+          "villageCode": {
+            "type": "string",
+            "description": "The village code corresponding to this observation."
+          },
+          "revenueDivisionCode": {
+            "type": "string",
+            "description": "The revenue division code corresponding to this observation"
+          },
+          "revenueDivision": {
+            "type": "string",
+            "description": "Name of the revenue division in a district corresponding to this observation."
+          },
+          "districtName": {
+            "type": "string",
+            "description": "Name of the district corresponding to this observation."
+          },
+          "zoneName": {
+            "type": "string",
+            "description": "Zone name corresponding to this observation."
+          },
+          "subdistrictCode": {
+            "type": "string",
+            "description": "The subdistrict code corresponding to this observation."
+          },
+          "wardName": {
+            "type": "string",
+            "description": "Ward name corresponding to this observation."
+          },
+          "countryCode": {
+            "type": "string",
+            "description": "Name of the country code corresponding to this observation."
+          },
+          "countryName": {
+            "type": "string",
+            "description": "Name of the country corresponding to this observation."
+          },
+          "districtCode": {
+            "type": "string",
+            "description": "The district code corresponding to this observation."
+          },
+          "clusterName": {
+            "type": "string",
+            "description": "Name of the cluster corresponding to this observation. A cluster or a firkas represents a group of villages."
+          },
+          "villageName": {
+            "type": "string",
+            "description": "Name of the village corresponding to this observation."
+          },
+          "zoneID": {
+            "type": "string",
+            "description": "Zone ID corresponding to this observation."
+          },
+          "stateName": {
+            "type": "string",
+            "description": "Name of the state corresponding to this observation."
+          },
+          "subdistrictName": {
+            "type": "string",
+            "description": "Name of the subdistrict corresponding to this observation.  A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states."
+          },
+          "wardID": {
+            "type": "string",
+            "description": "Ward ID corresponding to this observation."
+          },
+          "stateCode": {
+            "type": "string",
+            "description": "The state code corresponding to this observation."
+          },
+          "clusterCode": {
+            "type": "string",
+            "description": "The cluster code corresponding to this observation."
+          }
+        }
+      },
+      "landHolding": {
+        "type": "number",
+        "description": "The aggregate land possession attributed to a farmer.",
+        "unitCode": "C62",
+        "unitText": "Dimensionless"
+      },
+      "schemeID": {
+        "type": "string",
+        "description": "The unique ID representing the scheme corresponding to this observation."
+      },
+      "eligibleBeneficiaries": {
+        "type": "array",
+        "description": "Represents the group(s) or category(ies) of people who can avail the benefits of the scheme corresponding to this observation.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "schemeName": {
+        "type": "string",
+        "description": "The name of the scheme or programme introduced by the government for public welfare and development."
+      },
+      "sanctionedAmount": {
+        "type": "number",
+        "description": "The actual amount spent from the grant/allocated amount for the scheme.",
+        "unitCode": "INR",
+        "unitText": "Indian Rupee"
+      },
+      "beneficiaryCount": {
+        "type": "number",
+        "description": "Represents the count of people benefited under the scheme corresponding to this observation.",
+        "unitCode": "C62",
+        "unitText": "Dimensionless"
+      },
+      "dueDate": {
+        "type": "string",
+        "description": "The deadline for making a payment or the final date for applying to avail a service corresponding to this observation.",
+        "format": "date"
+      },
+      "cropType": {
+        "type": "string",
+        "description": "Type of the crop species. For eg., Pulses, Cereals, Legumes, Veg Proteins, cash crop etc"
+      },
+      "govtName": {
+        "type": "string",
+        "description": "The name of the government associated with the entity or service related to this observation."
+      },
+      "valueChainPhase": {
+        "type": "string",
+        "description": "Value Chain is the series of activities and processes that a product or service goes through, from the initial raw material stage to the final delivery to the customer. It encompasses every step involved in the creation, production, distribution, and eventual consumption of a product or service. This field corresponds to the phase of the agricutural value chain to which the scheme applies to."
+      },
+      "department": {
+        "type": "string",
+        "description": "Division or section of the organization corresponding to this observation. Eg. Health, Transport."
+      },
+      "grantAmount": {
+        "type": "number",
+        "description": "The amount released for the public welfare under the scheme from the total budget corresponding to this observation.",
+        "unitCode": "INR",
+        "unitText": "Indian Rupee"
+      },
+      "departmentID": {
+        "type": "string",
+        "description": "Unique ID or code associated with the department which is associated with the service or the issue corresponding to this observation."
+      },
+      "applicationProcess": {
+        "type": "array",
+        "description": "The step by step process for applying for a service or completing an application.",
+        "items": {
+          "type": "string"
+        }
+      }
     }
+  }
 }

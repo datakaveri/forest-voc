@@ -1,35 +1,35 @@
 {
-    "@context": {
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "schema": "http://schema.org/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "http://schema.org/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:domainIncludes",
+      "@type": [
+        "rdf:Property"
+      ],
+      "rdfs:comment": "Relates a property to a class that is (one of) the type(s) the property is expected to be used on.",
+      "rdfs:label": "domainIncludes",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:domainIncludes",
-            "@type": [
-                "rdf:Property"
-            ],
-            "rdfs:comment": "Relates a property to a class that is (one of) the type(s) the property is expected to be used on.",
-            "rdfs:label": "domainIncludes",
-            "adex:domainIncludes": [
-                {
-                    "@id": "rdf:Property"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Class"
-                }
-            ],
-            "skos:exactmatch": {
-                "@id": "schema:domainIncludes"
-            }
+          "@id": "rdf:Property"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Class"
+        }
+      ],
+      "skos:exactmatch": {
+        "@id": "schema:domainIncludes"
+      }
+    }
+  ]
 }

@@ -1,35 +1,35 @@
 {
-    "@context": {
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:cosURL",
+      "@type": [
+        "forest:Relationship"
+      ],
+      "rdfs:comment": "The URL(s) of the server(s) corresponding to the City Operations System(COS) in consideration. For eg., it may be include the domain links of the data resource server, the file system server, etc.",
+      "rdfs:label": "cosURL",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:cosURL",
-            "@type": [
-                "forest:Relationship"
-            ],
-            "rdfs:comment": "The URL(s) of the server(s) corresponding to the City Operations System(COS) in consideration. For eg., it may be include the domain links of the data resource server, the file system server, etc.",
-            "rdfs:label": "cosURL",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:COS"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text",
-                    "@type": "@id"
-                },
-                {
-                    "@id": "forest:RelationshipValue"
-                }
-            ]
+          "@id": "forest:COS"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text",
+          "@type": "@id"
+        },
+        {
+          "@id": "forest:RelationshipValue"
+        }
+      ]
+    }
+  ]
 }

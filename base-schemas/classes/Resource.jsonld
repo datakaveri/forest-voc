@@ -1,24 +1,24 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
-        {
-            "@id": "forest:Resource",
-            "@type": [
-                "owl:Class",
-                "rdfs:Class"
-            ],
-            "rdfs:comment": "Describes the Resource entity in the ADEX catalogue.",
-            "rdfs:label": "Resource",
-            "rdfs:subClassOf": {
-                "@id": "forest:ADEXEntity"
-            }
-        }
-    ]
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:Resource",
+      "@type": [
+        "owl:Class",
+        "rdfs:Class"
+      ],
+      "rdfs:comment": "Describes the Resource entity in the ADEX catalogue.",
+      "rdfs:label": "Resource",
+      "rdfs:subClassOf": {
+        "@id": "forest:ADEXEntity"
+      }
+    }
+  ]
 }

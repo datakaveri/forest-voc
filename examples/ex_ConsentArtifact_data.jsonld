@@ -1,50 +1,50 @@
 {
-    "@context": "https://agrijson.org/",
-    "id": "resource-item-id",
-    "type": [
-        "forest:ConsentArtifact",
-        "forest:Resource"
-    ],
-    "consentArtifactID": "PA1995",
-    "fileFormat": "json",
-    "observationDateTime": "2023-01-01T00:20:00+05:30",
-    "fileSize": 998,
-    "mediaURL": [
-        "https://abc/artifactInfo/PA1995"
-    ],
-    "validFrom": "2001-01-01",
-    "validTill": "2029-12-31",
-    "frequency": "Two weeks",
-    "dataConsumerName": "",
-    "consentDateTime": "2021-01-01T00:20:00+05:30",
-    "dataProvider": {
-        "name": "TQTech",
-        "phone": "9246543XXX",
-        "email": "tqtech@gmail.com",
-        "businessAddress": {
-            "buildingNum": "61/65",
-            "street": "abc",
-            "locality": "Leningard",
-            "districtName": "Khammam",
-            "stateName": "Telangana",
-            "countryName": "India",
-            "pincode": 507302
-        }
-    },
-    "dataPrincipal": {
-        "name": "ITech",
-        "phone": "9876543XXX",
-        "email": "itech@gmail.com",
-        "businessAddress": {
-            "buildingNum": "52",
-            "street": "A street",
-            "locality": "Nilgiris",
-            "cityName": "Coimbatore",
-            "stateName": "Tamil Nadu",
-            "countryName": "India",
-            "pincode": 602345
-        }
-    },
-    "purposeCode": "RX593",
-    "purposeDescription": "Research and Development"
+  "@context": "https://agrijson.org/",
+  "id": "resource-item-id",
+  "type": [
+    "forest:ConsentArtifact",
+    "forest:Resource"
+  ],
+  "consentArtifactID": "PA1995",
+  "fileFormat": "json",
+  "observationDateTime": "2023-01-01T00:20:00+05:30",
+  "fileSize": 998,
+  "mediaURL": [
+    "https://abc/artifactInfo/PA1995"
+  ],
+  "validFrom": "2001-01-01",
+  "validTill": "2029-12-31",
+  "frequency": "Two weeks",
+  "dataConsumerName": "",
+  "consentDateTime": "2021-01-01T00:20:00+05:30",
+  "dataProvider": {
+    "name": "TQTech",
+    "phone": "9246543XXX",
+    "email": "tqtech@gmail.com",
+    "businessAddress": {
+      "buildingNum": "61/65",
+      "street": "abc",
+      "locality": "Leningard",
+      "districtName": "Khammam",
+      "stateName": "Telangana",
+      "countryName": "India",
+      "pincode": 507302
+    }
+  },
+  "dataPrincipal": {
+    "name": "ITech",
+    "phone": "9876543XXX",
+    "email": "itech@gmail.com",
+    "businessAddress": {
+      "buildingNum": "52",
+      "street": "A street",
+      "locality": "Nilgiris",
+      "cityName": "Coimbatore",
+      "stateName": "Tamil Nadu",
+      "countryName": "India",
+      "pincode": 602345
+    }
+  },
+  "purposeCode": "RX593",
+  "purposeDescription": "Research and Development"
 }

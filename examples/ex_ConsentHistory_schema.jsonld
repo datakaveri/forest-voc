@@ -1,249 +1,249 @@
 {
-    "@context": "https://agrijson.org/",
-    "type": [
-        "forest:ConsentHistory",
-        "forest:Schema"
-    ],
-    "id": "https://agrijson.org/ConsentHistory",
-    "schema": {
-        "title": "ADEX ConsentHistory Data Model",
-        "type": "object",
-        "properties": {
-            "type": {
-                "type": "array",
-                "items": [
-                    {
-                        "type": "string",
-                        "description": "ADEX Data Model name. It has to be ConsentHistory"
-                    },
-                    {
-                        "type": "string",
-                        "description": "ADEX Entity type. It has to be Resource"
-                    }
-                ]
-            },
-            "observationDateTime": {
-                "type": "string",
-                "description": "Last reported time of observation.",
-                "format": "date-time"
-            },
-            "consentStatus": {
-                "type": "string",
-                "description": "Represents the current status of consent. It can be 'Active' or 'Revoked' or 'Expired'."
-            },
-            "consentArtifactID": {
-                "type": "string",
-                "description": "The unique identifier assigned by the consent manager to the consent artifact."
-            },
-            "revocationDateTime": {
-                "type": "string",
-                "description": "The date and time of revocation for the consent of data corresponding to this observation.",
-                "format": "date-time"
-            },
-            "dataConsumerName": {
-                "type": "array",
-                "description": "The name of the consumer who has been granted access to the data corresponding to this observation.",
-                "items": {
-                    "type": "string"
-                }
-            },
-            "consentDateTime": {
-                "type": "string",
-                "description": "The date and time at which data consent was granted for the first time.",
-                "format": "date-time"
-            },
-            "dataPrincipal": {
-                "type": "object",
-                "description": "Detailed information of the source of the data corresponding to this observation.",
-                "properties": {
-                    "phone": {
-                        "type": "string",
-                        "description": "Phone number  corresponding to this observation"
-                    },
-                    "academicQualification": {
-                        "type": "string",
-                        "description": "The highest educational qualification of the individual corresponding to this observation."
-                    },
-                    "fieldOfResearch": {
-                        "type": "string",
-                        "description": "A particular area or subject of study that undergoes investigation, exploration, and systematic examination to acquire fresh knowledge, insights, and comprehension."
-                    },
-                    "birthPlace": {
-                        "type": "string",
-                        "description": "Place of birth of the individual corresponding to this observation."
-                    },
-                    "residentialAddress": {
-                        "type": "object",
-                        "description": "Residential address corresponding to this observation"
-                    },
-                    "email": {
-                        "type": "string",
-                        "description": "Email address of the individual corresponding to this observation"
-                    },
-                    "salutation": {
-                        "type": "string",
-                        "description": "Salutation of the individual corresponding to this observation"
-                    },
-                    "dob": {
-                        "type": "string",
-                        "description": "Date of birth (DOB) of the individual corresponding to this observation.",
-                        "format": "date"
-                    },
-                    "permanentAddress": {
-                        "type": "object",
-                        "description": "Permanent address corresponding to this observation"
-                    },
-                    "businessAddress": {
-                        "type": "object",
-                        "description": "Business address corresponding to this observation"
-                    },
-                    "gender": {
-                        "type": "string",
-                        "description": "Gender of the individual corresponding to this observation"
-                    },
-                    "workStatus": {
-                        "type": "string",
-                        "description": "The work status indicates whether the individual or entity is actively working, on leave, part-time, full-time, temporary, permanent, retired or in any other specific arrangement."
-                    },
-                    "nationality": {
-                        "type": "string",
-                        "description": "Represents the nation that the individual corresponding to this observation belongs to."
-                    },
-                    "identityInfo": {
-                        "type": "object",
-                        "description": "Personal identification information issued by the government."
-                    },
-                    "language": {
-                        "type": "array",
-                        "description": "Represents the language(s) that can be used for communicating with an entity or those offered by a service corresponding to this observation.",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "imageURL": {
-                        "type": "array",
-                        "description": "The link that points to the picture of the individual or an entity corresponding to this observation.",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "designation": {
-                        "type": "string",
-                        "description": "Designation of the individual corresponding to this observation"
-                    },
-                    "jurisdiction": {
-                        "type": "array",
-                        "description": "The administrative divisions within which the entity holds territorial scope of authority.",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "expertise": {
-                        "type": "string",
-                        "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
-                    }
-                }
-            },
-            "dataProvider": {
-                "type": "object",
-                "description": "Detailed information of the AIP (Agricultural Information Provider) who aggregates the data from the data principal corresponding to this observation.",
-                "properties": {
-                    "phone": {
-                        "type": "string",
-                        "description": "Phone number  corresponding to this observation"
-                    },
-                    "academicQualification": {
-                        "type": "string",
-                        "description": "The highest educational qualification of the individual corresponding to this observation."
-                    },
-                    "fieldOfResearch": {
-                        "type": "string",
-                        "description": "A particular area or subject of study that undergoes investigation, exploration, and systematic examination to acquire fresh knowledge, insights, and comprehension."
-                    },
-                    "birthPlace": {
-                        "type": "string",
-                        "description": "Place of birth of the individual corresponding to this observation."
-                    },
-                    "residentialAddress": {
-                        "type": "object",
-                        "description": "Residential address corresponding to this observation"
-                    },
-                    "email": {
-                        "type": "string",
-                        "description": "Email address of the individual corresponding to this observation"
-                    },
-                    "salutation": {
-                        "type": "string",
-                        "description": "Salutation of the individual corresponding to this observation"
-                    },
-                    "dob": {
-                        "type": "string",
-                        "description": "Date of birth (DOB) of the individual corresponding to this observation.",
-                        "format": "date"
-                    },
-                    "permanentAddress": {
-                        "type": "object",
-                        "description": "Permanent address corresponding to this observation"
-                    },
-                    "businessAddress": {
-                        "type": "object",
-                        "description": "Business address corresponding to this observation"
-                    },
-                    "gender": {
-                        "type": "string",
-                        "description": "Gender of the individual corresponding to this observation"
-                    },
-                    "workStatus": {
-                        "type": "string",
-                        "description": "The work status indicates whether the individual or entity is actively working, on leave, part-time, full-time, temporary, permanent, retired or in any other specific arrangement."
-                    },
-                    "nationality": {
-                        "type": "string",
-                        "description": "Represents the nation that the individual corresponding to this observation belongs to."
-                    },
-                    "identityInfo": {
-                        "type": "object",
-                        "description": "Personal identification information issued by the government."
-                    },
-                    "language": {
-                        "type": "array",
-                        "description": "Represents the language(s) that can be used for communicating with an entity or those offered by a service corresponding to this observation.",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "imageURL": {
-                        "type": "array",
-                        "description": "The link that points to the picture of the individual or an entity corresponding to this observation.",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "designation": {
-                        "type": "string",
-                        "description": "Designation of the individual corresponding to this observation"
-                    },
-                    "jurisdiction": {
-                        "type": "array",
-                        "description": "The administrative divisions within which the entity holds territorial scope of authority.",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "expertise": {
-                        "type": "string",
-                        "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
-                    }
-                }
-            },
-            "purposeCode": {
-                "type": "string",
-                "description": "The unique code representing the purpose of entity or service corresponding to this observation."
-            },
-            "purposeDescription": {
-                "type": "string",
-                "description": "Describes the purpose of the entity or service corresponding this observation."
-            }
+  "@context": "https://agrijson.org/",
+  "type": [
+    "forest:ConsentHistory",
+    "forest:Schema"
+  ],
+  "id": "https://agrijson.org/ConsentHistory",
+  "schema": {
+    "title": "ADEX ConsentHistory Data Model",
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "array",
+        "items": [
+          {
+            "type": "string",
+            "description": "ADEX Data Model name. It has to be ConsentHistory"
+          },
+          {
+            "type": "string",
+            "description": "ADEX Entity type. It has to be Resource"
+          }
+        ]
+      },
+      "observationDateTime": {
+        "type": "string",
+        "description": "Last reported time of observation.",
+        "format": "date-time"
+      },
+      "consentStatus": {
+        "type": "string",
+        "description": "Represents the current status of consent. It can be 'Active' or 'Revoked' or 'Expired'."
+      },
+      "consentArtifactID": {
+        "type": "string",
+        "description": "The unique identifier assigned by the consent manager to the consent artifact."
+      },
+      "revocationDateTime": {
+        "type": "string",
+        "description": "The date and time of revocation for the consent of data corresponding to this observation.",
+        "format": "date-time"
+      },
+      "dataConsumerName": {
+        "type": "array",
+        "description": "The name of the consumer who has been granted access to the data corresponding to this observation.",
+        "items": {
+          "type": "string"
         }
+      },
+      "consentDateTime": {
+        "type": "string",
+        "description": "The date and time at which data consent was granted for the first time.",
+        "format": "date-time"
+      },
+      "dataPrincipal": {
+        "type": "object",
+        "description": "Detailed information of the source of the data corresponding to this observation.",
+        "properties": {
+          "phone": {
+            "type": "string",
+            "description": "Phone number  corresponding to this observation"
+          },
+          "academicQualification": {
+            "type": "string",
+            "description": "The highest educational qualification of the individual corresponding to this observation."
+          },
+          "fieldOfResearch": {
+            "type": "string",
+            "description": "A particular area or subject of study that undergoes investigation, exploration, and systematic examination to acquire fresh knowledge, insights, and comprehension."
+          },
+          "birthPlace": {
+            "type": "string",
+            "description": "Place of birth of the individual corresponding to this observation."
+          },
+          "residentialAddress": {
+            "type": "object",
+            "description": "Residential address corresponding to this observation"
+          },
+          "email": {
+            "type": "string",
+            "description": "Email address of the individual corresponding to this observation"
+          },
+          "salutation": {
+            "type": "string",
+            "description": "Salutation of the individual corresponding to this observation"
+          },
+          "dob": {
+            "type": "string",
+            "description": "Date of birth (DOB) of the individual corresponding to this observation.",
+            "format": "date"
+          },
+          "permanentAddress": {
+            "type": "object",
+            "description": "Permanent address corresponding to this observation"
+          },
+          "businessAddress": {
+            "type": "object",
+            "description": "Business address corresponding to this observation"
+          },
+          "gender": {
+            "type": "string",
+            "description": "Gender of the individual corresponding to this observation"
+          },
+          "workStatus": {
+            "type": "string",
+            "description": "The work status indicates whether the individual or entity is actively working, on leave, part-time, full-time, temporary, permanent, retired or in any other specific arrangement."
+          },
+          "nationality": {
+            "type": "string",
+            "description": "Represents the nation that the individual corresponding to this observation belongs to."
+          },
+          "identityInfo": {
+            "type": "object",
+            "description": "Personal identification information issued by the government."
+          },
+          "language": {
+            "type": "array",
+            "description": "Represents the language(s) that can be used for communicating with an entity or those offered by a service corresponding to this observation.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "imageURL": {
+            "type": "array",
+            "description": "The link that points to the picture of the individual or an entity corresponding to this observation.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "designation": {
+            "type": "string",
+            "description": "Designation of the individual corresponding to this observation"
+          },
+          "jurisdiction": {
+            "type": "array",
+            "description": "The administrative divisions within which the entity holds territorial scope of authority.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "expertise": {
+            "type": "string",
+            "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
+          }
+        }
+      },
+      "dataProvider": {
+        "type": "object",
+        "description": "Detailed information of the AIP (Agricultural Information Provider) who aggregates the data from the data principal corresponding to this observation.",
+        "properties": {
+          "phone": {
+            "type": "string",
+            "description": "Phone number  corresponding to this observation"
+          },
+          "academicQualification": {
+            "type": "string",
+            "description": "The highest educational qualification of the individual corresponding to this observation."
+          },
+          "fieldOfResearch": {
+            "type": "string",
+            "description": "A particular area or subject of study that undergoes investigation, exploration, and systematic examination to acquire fresh knowledge, insights, and comprehension."
+          },
+          "birthPlace": {
+            "type": "string",
+            "description": "Place of birth of the individual corresponding to this observation."
+          },
+          "residentialAddress": {
+            "type": "object",
+            "description": "Residential address corresponding to this observation"
+          },
+          "email": {
+            "type": "string",
+            "description": "Email address of the individual corresponding to this observation"
+          },
+          "salutation": {
+            "type": "string",
+            "description": "Salutation of the individual corresponding to this observation"
+          },
+          "dob": {
+            "type": "string",
+            "description": "Date of birth (DOB) of the individual corresponding to this observation.",
+            "format": "date"
+          },
+          "permanentAddress": {
+            "type": "object",
+            "description": "Permanent address corresponding to this observation"
+          },
+          "businessAddress": {
+            "type": "object",
+            "description": "Business address corresponding to this observation"
+          },
+          "gender": {
+            "type": "string",
+            "description": "Gender of the individual corresponding to this observation"
+          },
+          "workStatus": {
+            "type": "string",
+            "description": "The work status indicates whether the individual or entity is actively working, on leave, part-time, full-time, temporary, permanent, retired or in any other specific arrangement."
+          },
+          "nationality": {
+            "type": "string",
+            "description": "Represents the nation that the individual corresponding to this observation belongs to."
+          },
+          "identityInfo": {
+            "type": "object",
+            "description": "Personal identification information issued by the government."
+          },
+          "language": {
+            "type": "array",
+            "description": "Represents the language(s) that can be used for communicating with an entity or those offered by a service corresponding to this observation.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "imageURL": {
+            "type": "array",
+            "description": "The link that points to the picture of the individual or an entity corresponding to this observation.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "designation": {
+            "type": "string",
+            "description": "Designation of the individual corresponding to this observation"
+          },
+          "jurisdiction": {
+            "type": "array",
+            "description": "The administrative divisions within which the entity holds territorial scope of authority.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "expertise": {
+            "type": "string",
+            "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
+          }
+        }
+      },
+      "purposeCode": {
+        "type": "string",
+        "description": "The unique code representing the purpose of entity or service corresponding to this observation."
+      },
+      "purposeDescription": {
+        "type": "string",
+        "description": "Describes the purpose of the entity or service corresponding this observation."
+      }
     }
+  }
 }

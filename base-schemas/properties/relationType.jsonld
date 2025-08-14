@@ -1,35 +1,35 @@
 {
-    "@context": {
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:relationType",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "Type of relation. ENUM: [REL_MESSAGESTREAM, REL_FILE, REL_DATASET, REL_THING].",
+      "rdfs:label": "relationType",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:relationType",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "Type of relation. ENUM: [REL_MESSAGESTREAM, REL_FILE, REL_DATASET, REL_THING].",
-            "rdfs:label": "relationType",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:RelationshipValue",
-                    "adex:requiredProperty": true
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ]
+          "@id": "forest:RelationshipValue",
+          "adex:requiredProperty": true
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ]
+    }
+  ]
 }

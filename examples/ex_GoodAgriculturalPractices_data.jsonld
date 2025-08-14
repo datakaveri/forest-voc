@@ -1,16 +1,16 @@
 {
-    "@context": "https://agrijson.org/",
-    "id": "resource-item-id",
-    "type": [
-        "forest:GoodAgriculturalPractices",
-        "forest:Resource"
-    ],
-    "moduleName": "Pest and Disease Management",
-    "subModuleName": "Integrated Pest Management (IPM)",
-    "controlPoints": [
-        "Monitoring and early detection of pests and diseases",
-        "Adoption of integrated pest management (IPM) strategies",
-        "Proper use of pesticides, following recommended guidelines"
-    ],
-    "isGAPCompliant": "False"
+  "@context": "https://agrijson.org/",
+  "id": "resource-item-id",
+  "type": [
+    "forest:GoodAgriculturalPractices",
+    "forest:Resource"
+  ],
+  "moduleName": "Pest and Disease Management",
+  "subModuleName": "Integrated Pest Management (IPM)",
+  "controlPoints": [
+    "Monitoring and early detection of pests and diseases",
+    "Adoption of integrated pest management (IPM) strategies",
+    "Proper use of pesticides, following recommended guidelines"
+  ],
+  "isGAPCompliant": "False"
 }

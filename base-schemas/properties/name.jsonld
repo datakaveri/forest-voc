@@ -1,74 +1,74 @@
 {
-    "@context": {
-        "schema": "http://schema.org/",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "iudx": "https://voc.iudx.org.in/",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geojson": "https://purl.org/geojson/vocab#",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "schema": "http://schema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "iudx": "https://voc.iudx.org.in/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "geojson": "https://purl.org/geojson/vocab#",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:name",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "Name of the entity.",
+      "rdfs:label": "name",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:name",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "Name of the entity.",
-            "rdfs:label": "name",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:Place"
-                },
-                {
-                    "@id": "forest:Organization"
-                },
-                {
-                    "@id": "forest:RelationshipValue"
-                },
-                {
-                    "@id": "forest:ADEXEntity",
-                    "adex:requiredProperty": true
-                },
-                {
-                    "@id": "forest:PersonnelDesc"
-                },
-                {
-                    "@id": "forest:Version"
-                },
-                {
-                    "@id": "forest:Transporter"
-                },
-                {
-                    "@id": "forest:TransportCost"
-                },
-                {
-                    "@id": "forest:AgriExpert"
-                },
-                {
-                    "@id": "forest:ExtensionWorker"
-                },
-                {
-                    "@id": "forest:AgriResearcher"
-                },
-                {
-                    "@id": "forest:AgriManufacturer"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ],
-            "skos:exactMatch": {
-                "@id": "schema:name"
-            }
+          "@id": "forest:Place"
+        },
+        {
+          "@id": "forest:Organization"
+        },
+        {
+          "@id": "forest:RelationshipValue"
+        },
+        {
+          "@id": "forest:ADEXEntity",
+          "adex:requiredProperty": true
+        },
+        {
+          "@id": "forest:PersonnelDesc"
+        },
+        {
+          "@id": "forest:Version"
+        },
+        {
+          "@id": "forest:Transporter"
+        },
+        {
+          "@id": "forest:TransportCost"
+        },
+        {
+          "@id": "forest:AgriExpert"
+        },
+        {
+          "@id": "forest:ExtensionWorker"
+        },
+        {
+          "@id": "forest:AgriResearcher"
+        },
+        {
+          "@id": "forest:AgriManufacturer"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ],
+      "skos:exactMatch": {
+        "@id": "schema:name"
+      }
+    }
+  ]
 }

@@ -1,39 +1,39 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:cropGroupICC",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "The crop classification as specified by the FAO (Food and Agriculture Organization) in a classification system called the ICC (International Standard for Coding Crops) classification, which groups crops into nine categories based on their botanical characteristics and use.",
+      "rdfs:label": "cropGroupICC",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:cropGroupICC",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "The crop classification as specified by the FAO (Food and Agriculture Organization) in a classification system called the ICC (International Standard for Coding Crops) classification, which groups crops into nine categories based on their botanical characteristics and use.",
-            "rdfs:label": "cropGroupICC",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:Crop"
-                },
-                {
-                    "@id": "forest:CropCondition"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            }
+          "@id": "forest:Crop"
+        },
+        {
+          "@id": "forest:CropCondition"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      }
+    }
+  ]
 }

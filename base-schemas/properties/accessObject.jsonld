@@ -1,35 +1,35 @@
 {
-    "@context": {
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:accessObject",
+      "@type": [
+        "forest:Relationship"
+      ],
+      "rdfs:comment": "Link to the access object. For example, an open API object.",
+      "rdfs:label": "accessObject",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:accessObject",
-            "@type": [
-                "forest:Relationship"
-            ],
-            "rdfs:comment": "Link to the access object. For example, an open API object.",
-            "rdfs:label": "accessObject",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:AccessObjectInfoValue"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text",
-                    "@type": "@id"
-                },
-                {
-                    "@id": "forest:RelationshipValue"
-                }
-            ]
+          "@id": "forest:AccessObjectInfoValue"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text",
+          "@type": "@id"
+        },
+        {
+          "@id": "forest:RelationshipValue"
+        }
+      ]
+    }
+  ]
 }

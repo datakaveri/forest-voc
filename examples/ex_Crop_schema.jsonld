@@ -1,59 +1,59 @@
 {
-    "@context": "https://agrijson.org/",
-    "type": [
-        "forest:Crop",
-        "forest:Schema"
-    ],
-    "id": "https://agrijson.org/Crop",
-    "schema": {
-        "title": "ADEX Crop Data Model",
-        "type": "object",
-        "properties": {
-            "type": {
-                "type": "array",
-                "items": [
-                    {
-                        "type": "string",
-                        "description": "ADEX Data Model name. It has to be Crop"
-                    },
-                    {
-                        "type": "string",
-                        "description": "ADEX Entity type. It has to be Resource"
-                    }
-                ]
-            },
-            "cropCode": {
-                "type": "string",
-                "description": "The unique code for the crop species corresponding to this observation."
-            },
-            "cropNameCommon": {
-                "type": "string",
-                "description": "The common/local name of the crop species corresponding to the observation."
-            },
-            "seedVarietyName": {
-                "type": "string",
-                "description": "The name of the seed variety corresponding to this observation."
-            },
-            "cropCodeICC": {
-                "type": "string",
-                "description": "The unique code assigned for the crop species as per the ICC (International Crop Classification) of FAO (Food and Agicultural Organisation)."
-            },
-            "cropNameICC": {
-                "type": "string",
-                "description": "The name of the crop as given by the ICC (International Crop Classification) of FAO (Food and Agicultural Organisation)."
-            },
-            "cropNameBotanical": {
-                "type": "string",
-                "description": "The botanical nomenclature of the crop species corresponding to this observation."
-            },
-            "seedVarietyCode": {
-                "type": "string",
-                "description": "The code assigned to the seed variety corresponding to this observation."
-            },
-            "cropGroupICC": {
-                "type": "string",
-                "description": "The crop classification as specified by the FAO (Food and Agriculture Organization) in a classification system called the ICC (International Standard for Coding Crops) classification, which groups crops into nine categories based on their botanical characteristics and use."
-            }
-        }
+  "@context": "https://agrijson.org/",
+  "type": [
+    "forest:Crop",
+    "forest:Schema"
+  ],
+  "id": "https://agrijson.org/Crop",
+  "schema": {
+    "title": "ADEX Crop Data Model",
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "array",
+        "items": [
+          {
+            "type": "string",
+            "description": "ADEX Data Model name. It has to be Crop"
+          },
+          {
+            "type": "string",
+            "description": "ADEX Entity type. It has to be Resource"
+          }
+        ]
+      },
+      "cropCode": {
+        "type": "string",
+        "description": "The unique code for the crop species corresponding to this observation."
+      },
+      "cropNameCommon": {
+        "type": "string",
+        "description": "The common/local name of the crop species corresponding to the observation."
+      },
+      "seedVarietyName": {
+        "type": "string",
+        "description": "The name of the seed variety corresponding to this observation."
+      },
+      "cropCodeICC": {
+        "type": "string",
+        "description": "The unique code assigned for the crop species as per the ICC (International Crop Classification) of FAO (Food and Agicultural Organisation)."
+      },
+      "cropNameICC": {
+        "type": "string",
+        "description": "The name of the crop as given by the ICC (International Crop Classification) of FAO (Food and Agicultural Organisation)."
+      },
+      "cropNameBotanical": {
+        "type": "string",
+        "description": "The botanical nomenclature of the crop species corresponding to this observation."
+      },
+      "seedVarietyCode": {
+        "type": "string",
+        "description": "The code assigned to the seed variety corresponding to this observation."
+      },
+      "cropGroupICC": {
+        "type": "string",
+        "description": "The crop classification as specified by the FAO (Food and Agriculture Organization) in a classification system called the ICC (International Standard for Coding Crops) classification, which groups crops into nine categories based on their botanical characteristics and use."
+      }
     }
+  }
 }

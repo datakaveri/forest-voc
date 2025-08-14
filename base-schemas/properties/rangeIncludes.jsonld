@@ -1,39 +1,39 @@
 {
-    "@context": {
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "schema": "http://schema.org/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "http://schema.org/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:rangeIncludes",
+      "@type": [
+        "rdf:Property"
+      ],
+      "rdfs:comment": "Relates a property to a class that constitutes (one of) the expected type(s) for values of the property.",
+      "rdfs:label": "rangeIncludes",
+      "skos:exactMatch": {
+        "@id": "schema:rangeIncludes"
+      },
+      "forest:domainIncludes": [
         {
-            "@id": "forest:rangeIncludes",
-            "@type": [
-                "rdf:Property"
-            ],
-            "rdfs:comment": "Relates a property to a class that constitutes (one of) the expected type(s) for values of the property.",
-            "rdfs:label": "rangeIncludes",
-            "skos:exactMatch": {
-                "@id": "schema:rangeIncludes"
-            },
-            "adex:domainIncludes": [
-                {
-                    "@id": "rdf:Property"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Class"
-                }
-            ],
-            "skos:exactmatch": {
-                "@id": "schema:rangeIncludes"
-            }
+          "@id": "rdf:Property"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Class"
+        }
+      ],
+      "skos:exactmatch": {
+        "@id": "schema:rangeIncludes"
+      }
+    }
+  ]
 }

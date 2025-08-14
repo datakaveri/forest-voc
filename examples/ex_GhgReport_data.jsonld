@@ -1,35 +1,35 @@
 {
-    "@context": "https://agrijson.org/",
-    "id": "resource-item-id",
-    "type": [
-        "forest:GhgReport",
-        "forest:Resource"
-    ],
-    "identityInfo": {
-        "registrationNumber": "TNW3194850"
-    },
-    "name": "Aramco",
-    "businessAddress": {
-        "buildingNum": "T-10, 3rd floor",
-        "street": "Langza",
-        "locality": "Neugi Nagar,",
-        "cityName": "Panaji",
-        "stateName": "Goa",
-        "stateCode": "26",
-        "countryName": "India",
-        "pincode": "403001"
-    },
-    "startDate": "1999-01-01",
-    "endDate": "2000-12-31",
-    "approvalDate": "1998-12-31",
-    "reportingAuthority": "Ministry of Environment, Forest and Climate Change",
-    "ghgScope": "Direct Emissions",
-    "ghgEmission": 7000,
-    "ghgName": "Co2",
-    "totalEmission": 7500,
-    "reportPeriod": "2001-2002",
-    "offsetValue": 700,
-    "creditValue": 7000,
-    "targetValue": 5000,
-    "refPeriod": "1995-1996"
+  "@context": "https://agrijson.org/",
+  "id": "resource-item-id",
+  "type": [
+    "forest:GhgReport",
+    "forest:Resource"
+  ],
+  "identityInfo": {
+    "registrationNumber": "TNW3194850"
+  },
+  "name": "Aramco",
+  "businessAddress": {
+    "buildingNum": "T-10, 3rd floor",
+    "street": "Langza",
+    "locality": "Neugi Nagar,",
+    "cityName": "Panaji",
+    "stateName": "Goa",
+    "stateCode": "26",
+    "countryName": "India",
+    "pincode": "403001"
+  },
+  "startDate": "1999-01-01",
+  "endDate": "2000-12-31",
+  "approvalDate": "1998-12-31",
+  "reportingAuthority": "Ministry of Environment, Forest and Climate Change",
+  "ghgScope": "Direct Emissions",
+  "ghgEmission": 7000,
+  "ghgName": "Co2",
+  "totalEmission": 7500,
+  "reportPeriod": "2001-2002",
+  "offsetValue": 700,
+  "creditValue": 7000,
+  "targetValue": 5000,
+  "refPeriod": "1995-1996"
 }

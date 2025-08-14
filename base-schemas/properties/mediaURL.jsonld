@@ -1,80 +1,80 @@
 {
-    "@context": {
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "geojson": "https://purl.org/geojson/vocab#",
-        "schema": "http://schema.org/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "iudx": "https://voc.iudx.org.in/",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "geojson": "https://purl.org/geojson/vocab#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "iudx": "https://voc.iudx.org.in/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:mediaURL",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "URL providing further information of any image(s) or media of the complaint or place.",
+      "rdfs:label": "mediaURL",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:mediaURL",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "URL providing further information of any image(s) or media of the complaint or place.",
-            "rdfs:label": "mediaURL",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:CropDiseaseDesc"
-                },
-                {
-                    "@id": "forest:AgriAdvisory"
-                },
-                {
-                    "@id": "forest:ConsentArtifact"
-                },
-                {
-                    "@id": "forest:Imagery"
-                },
-                {
-                    "@id": "forest:PublicSchemes"
-                },
-                {
-                    "@id": "forest:AgriMarket"
-                },
-                {
-                    "@id": "forest:CodeSystem"
-                },
-                {
-                    "@id": "forest:ValueSet"
-                },
-                {
-                    "@id": "forest:AgriBusiness"
-                },
-                {
-                    "@id": "forest:CropCondition"
-                },
-                {
-                    "@id": "forest:Transporter"
-                },
-                {
-                    "@id": "forest:TransportCost"
-                },
-                {
-                    "@id": "forest:ExportTransaction"
-                },
-                {
-                    "@id": "forest:HyperLocalAdvisory"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@container": "@list",
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ],
-            "skos:exactMatch": {
-                "@id": "open311:media_url"
-            }
+          "@id": "forest:CropDiseaseDesc"
+        },
+        {
+          "@id": "forest:AgriAdvisory"
+        },
+        {
+          "@id": "forest:ConsentArtifact"
+        },
+        {
+          "@id": "forest:Imagery"
+        },
+        {
+          "@id": "forest:PublicSchemes"
+        },
+        {
+          "@id": "forest:AgriMarket"
+        },
+        {
+          "@id": "forest:CodeSystem"
+        },
+        {
+          "@id": "forest:ValueSet"
+        },
+        {
+          "@id": "forest:AgriBusiness"
+        },
+        {
+          "@id": "forest:CropCondition"
+        },
+        {
+          "@id": "forest:Transporter"
+        },
+        {
+          "@id": "forest:TransportCost"
+        },
+        {
+          "@id": "forest:ExportTransaction"
+        },
+        {
+          "@id": "forest:HyperLocalAdvisory"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@container": "@list",
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ],
+      "skos:exactMatch": {
+        "@id": "open311:media_url"
+      }
+    }
+  ]
 }

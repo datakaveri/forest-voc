@@ -1,57 +1,57 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:phone",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "Phone number  corresponding to this observation",
+      "rdfs:label": "phone",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:phone",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "Phone number  corresponding to this observation",
-            "rdfs:label": "phone",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:PersonnelDesc"
-                },
-                {
-                    "@id": "forest:Transporter"
-                },
-                {
-                    "@id": "forest:TransportCost"
-                },
-                {
-                    "@id": "forest:AgriExpert"
-                },
-                {
-                    "@id": "forest:ExtensionWorker"
-                },
-                {
-                    "@id": "forest:AgriResearcher"
-                },
-                {
-                    "@id": "forest:AgriManufacturer"
-                },
-                {
-                    "@id": "forest:AgriMarket"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            }
+          "@id": "forest:PersonnelDesc"
+        },
+        {
+          "@id": "forest:Transporter"
+        },
+        {
+          "@id": "forest:TransportCost"
+        },
+        {
+          "@id": "forest:AgriExpert"
+        },
+        {
+          "@id": "forest:ExtensionWorker"
+        },
+        {
+          "@id": "forest:AgriResearcher"
+        },
+        {
+          "@id": "forest:AgriManufacturer"
+        },
+        {
+          "@id": "forest:AgriMarket"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      }
+    }
+  ]
 }

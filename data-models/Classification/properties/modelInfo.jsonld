@@ -1,45 +1,45 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:modelInfo",
+      "@type": [
+        "forest:StructuredProperty"
+      ],
+      "rdfs:comment": "The make/model information of the vehicle corresponding to this observation.",
+      "rdfs:label": "modelInfo",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:modelInfo",
-            "@type": [
-                "forest:StructuredProperty"
-            ],
-            "rdfs:comment": "The make/model information of the vehicle corresponding to this observation.",
-            "rdfs:label": "modelInfo",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:OtherAgroChemical"
-                },
-                {
-                    "@id": "forest:Pesticide"
-                },
-                {
-                    "@id": "forest:Fertilizer"
-                },
-                {
-                    "@id": "forest:AgriMachinery"
-                },
-                {
-                    "@id": "forest:Drone"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:ModelDesc"
-                }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            }
+          "@id": "forest:OtherAgroChemical"
+        },
+        {
+          "@id": "forest:Pesticide"
+        },
+        {
+          "@id": "forest:Fertilizer"
+        },
+        {
+          "@id": "forest:AgriMachinery"
+        },
+        {
+          "@id": "forest:Drone"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:ModelDesc"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      }
+    }
+  ]
 }

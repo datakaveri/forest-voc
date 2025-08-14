@@ -1,36 +1,36 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:isGAPCompliant",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "Compliance criteria in the India Good Agricultural Practices (IndGAP) are the measurable benchmarks that ensure farmers are implementing the recommended practices to achieve the objectives of sustainable and responsible farming. The value True -  indicates the farming practices that are under the compliance of IndGAP and False - indicates the farming practices that are not under the compliance of IndGAP.",
+      "rdfs:label": "isGAPCompliant",
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      },
+      "forest:domainIncludes": [
         {
-            "@id": "forest:isGAPCompliant",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "Compliance criteria in the India Good Agricultural Practices (IndGAP) are the measurable benchmarks that ensure farmers are implementing the recommended practices to achieve the objectives of sustainable and responsible farming. The value True -  indicates the farming practices that are under the compliance of IndGAP and False - indicates the farming practices that are not under the compliance of IndGAP.",
-            "rdfs:label": "isGAPCompliant",
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            },
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:GoodAgriculturalPractices"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Boolean"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ]
+          "@id": "forest:GoodAgriculturalPractices"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Boolean"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ]
+    }
+  ]
 }

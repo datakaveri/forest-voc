@@ -1,25 +1,25 @@
 {
-    "@context": {
-        "iudx": "https://voc.iudx.org.in/",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "schema": "http://schema.org/",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
-        {
-            "@id": "forest:DateTime",
-            "@type": [
-                "rdfs:Class"
-            ],
-            "rdfs:comment": "Describes ISO Time in a DateTime format as specified in ISO 8601",
-            "rdfs:label": "DateTime",
-            "skos:exactMatch": {
-                "@id": "schema:DateTime"
-            }
-        }
-    ]
+  "@context": {
+    "iudx": "https://voc.iudx.org.in/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "http://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:DateTime",
+      "@type": [
+        "rdfs:Class"
+      ],
+      "rdfs:comment": "Describes ISO Time in a DateTime format as specified in ISO 8601",
+      "rdfs:label": "DateTime",
+      "skos:exactMatch": {
+        "@id": "schema:DateTime"
+      }
+    }
+  ]
 }

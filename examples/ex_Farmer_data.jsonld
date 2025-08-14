@@ -1,36 +1,36 @@
 {
-    "@context": "https://agrijson.org/",
-    "id": "resource-item-id",
-    "type": [
-        "forest:Farmer",
-        "forest:Resource"
-    ],
-    "name": "Swaminathan",
-    "farmerID": "IN12741",
-    "imageURL": "https://sample.org.in",
-    "language": [
-        "Tamil",
-        "English",
-        "Hindi",
-        "Telugu"
-    ],
-    "email": "swaminathanofficial@gmail.com",
-    "gender": "Male",
-    "phone": "9283294XXX",
-    "year": "2024",
-    "landHolding": 4.6,
-    "landParcelInfo": {
-        "landClassCode": "LC172",
-        "landExtent": 10000,
-        "irrigationSource": "check dam"
-    },
-    "residentialAddress": {
-        "buildingNum": "61/65",
-        "street": "abc",
-        "locality": "Ballepalli",
-        "districtName": "Khammam",
-        "stateName": "Telangana",
-        "countryName": "India",
-        "pincode": 507002
-    }
+  "@context": "https://agrijson.org/",
+  "id": "resource-item-id",
+  "type": [
+    "forest:Farmer",
+    "forest:Resource"
+  ],
+  "name": "Swaminathan",
+  "farmerID": "IN12741",
+  "imageURL": "https://sample.org.in",
+  "language": [
+    "Tamil",
+    "English",
+    "Hindi",
+    "Telugu"
+  ],
+  "email": "swaminathanofficial@gmail.com",
+  "gender": "Male",
+  "phone": "9283294XXX",
+  "year": "2024",
+  "landHolding": 4.6,
+  "landParcelInfo": {
+    "landClassCode": "LC172",
+    "landExtent": 10000,
+    "irrigationSource": "check dam"
+  },
+  "residentialAddress": {
+    "buildingNum": "61/65",
+    "street": "abc",
+    "locality": "Ballepalli",
+    "districtName": "Khammam",
+    "stateName": "Telangana",
+    "countryName": "India",
+    "pincode": 507002
+  }
 }

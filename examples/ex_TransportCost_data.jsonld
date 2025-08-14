@@ -1,32 +1,32 @@
 {
-    "@context": "https://agrijson.org",
-    "id": "resource-item-id",
-    "type": [
-        "forest:TransportCost",
-        "forest:Resource"
-    ],
-    "name": "VR transports",
-    "commodityInfo": {
-        "commodityVarietyName": "Water Melon",
-        "commodityVarietyCode": "86",
-        "arrivalQuantity": 120,
-        "minimumPrice": 400,
-        "maximumPrice": 1000,
-        "modalPrice": 670
-    },
-    "contactPointInfo": {
-        "helplineNumber": "99907797XX",
-        "contactPointEmail": "contact_helpdesk@sentinels.eu"
-    },
-    "originName": "India",
-    "originCode": "+91",
-    "enquiryDate": "2024-01-04",
-    "destinationName": "Malaysia",
-    "destinationCode": "+68",
-    "captitalInfo": {
-        "costType": "Estimated",
-        "fob": "FOB-origin",
-        "transportationCost": 6000,
-        "currencyType": "Dollar"
-    }
+  "@context": "https://agrijson.org",
+  "id": "resource-item-id",
+  "type": [
+    "forest:TransportCost",
+    "forest:Resource"
+  ],
+  "name": "VR transports",
+  "commodityInfo": {
+    "commodityVarietyName": "Water Melon",
+    "commodityVarietyCode": "86",
+    "arrivalQuantity": 120,
+    "minimumPrice": 400,
+    "maximumPrice": 1000,
+    "modalPrice": 670
+  },
+  "contactPointInfo": {
+    "helplineNumber": "99907797XX",
+    "contactPointEmail": "contact_helpdesk@sentinels.eu"
+  },
+  "originName": "India",
+  "originCode": "+91",
+  "enquiryDate": "2024-01-04",
+  "destinationName": "Malaysia",
+  "destinationCode": "+68",
+  "captitalInfo": {
+    "costType": "Estimated",
+    "fob": "FOB-origin",
+    "transportationCost": 6000,
+    "currencyType": "Dollar"
+  }
 }

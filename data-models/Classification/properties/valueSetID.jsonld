@@ -1,36 +1,36 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:valueSetID",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "An identifier for this ValueSet, which assigns specific, unique codes to the items listed in it.",
+      "rdfs:label": "valueSetID",
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      },
+      "forest:domainIncludes": [
         {
-            "@id": "forest:valueSetID",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "An identifier for this ValueSet, which assigns specific, unique codes to the items listed in it.",
-            "rdfs:label": "valueSetID",
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            },
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:ValueSet"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ]
+          "@id": "forest:ValueSet"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ]
+    }
+  ]
 }

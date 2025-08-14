@@ -1,12 +1,12 @@
 {
-    "@context": "https://agrijson.org/",
-    "type": [
-        "forest:COS"
-    ],
-    "id": "49f96c4c-e595-4fee-984c-43dededfba48",
-    "name": "AdexCos",
-    "owner": "40b80571-edff-4291-b723-94c2a611f859",
-    "description": "COS ADEX",
-    "cosURL": "ts.adex.org.in",
-    "cosUI": " dataexplorer.ts.adex.org.in"
+  "@context": "https://agrijson.org/",
+  "type": [
+    "forest:COS"
+  ],
+  "id": "49f96c4c-e595-4fee-984c-43dededfba48",
+  "name": "AdexCos",
+  "owner": "40b80571-edff-4291-b723-94c2a611f859",
+  "description": "COS ADEX",
+  "cosURL": "ts.adex.org.in",
+  "cosUI": " dataexplorer.ts.adex.org.in"
 }

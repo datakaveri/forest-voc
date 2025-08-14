@@ -1,37 +1,37 @@
 {
-    "@context": "https://agrijson.org/",
-    "id": "resource-item-id",
-    "type": [
-        "forest:AgriExpert",
-        "forest:Resource"
-    ],
-    "name": "Lavenza",
-    "orgName": "KKMS",
-    "jurisdiction": "Indian states and Union Territories",
-    "imageURL": "https://example_url.img",
-    "language": [
-        "Tamil",
-        "English",
-        "Hindi",
-        "Telugu"
-    ],
-    "email": "mssnofficial@gmail.com",
-    "gender": "Female",
-    "phone": "9283294XXX",
-    "workStatus": "Retired",
-    "designation": "R&D head",
-    "academicQualification": "Doctorate in Philosophy",
-    "residentialAddress": {
-        "buildingNum": "61/65",
-        "street": "abc",
-        "locality": "Ballepalli",
-        "districtName": "Khammam",
-        "stateName": "Telangana",
-        "countryName": "India",
-        "pincode": 507002
-    },
-    "identityInfo": {
-        "panNo": "AXXXXXXHHZ",
-        "aadharNo": "3112XXXX54XXX"
-    }
+  "@context": "https://agrijson.org/",
+  "id": "resource-item-id",
+  "type": [
+    "forest:AgriExpert",
+    "forest:Resource"
+  ],
+  "name": "Lavenza",
+  "orgName": "KKMS",
+  "jurisdiction": "Indian states and Union Territories",
+  "imageURL": "https://example_url.img",
+  "language": [
+    "Tamil",
+    "English",
+    "Hindi",
+    "Telugu"
+  ],
+  "email": "mssnofficial@gmail.com",
+  "gender": "Female",
+  "phone": "9283294XXX",
+  "workStatus": "Retired",
+  "designation": "R&D head",
+  "academicQualification": "Doctorate in Philosophy",
+  "residentialAddress": {
+    "buildingNum": "61/65",
+    "street": "abc",
+    "locality": "Ballepalli",
+    "districtName": "Khammam",
+    "stateName": "Telangana",
+    "countryName": "India",
+    "pincode": 507002
+  },
+  "identityInfo": {
+    "panNo": "AXXXXXXHHZ",
+    "aadharNo": "3112XXXX54XXX"
+  }
 }

@@ -1,17 +1,17 @@
 {
-    "@context": "https://agrijson.org/",
-    "id": "resource-item-id",
-    "type": [
-        "forest:AgriCredit",
-        "forest:Resource"
-    ],
-    "year": 2011,
-    "evaluationYear": "2011-12",
-    "loanType": "crop loan",
-    "loanTargetAmount": 10233.0,
-    "loanAchievementAmount": 11787.0,
-    "achievementRate": 115.19,
-    "totalTargetAmount": 16123.0,
-    "totalAchievementAmount": 22899.0,
-    "totalAchievementRate": 142.03
+  "@context": "https://agrijson.org/",
+  "id": "resource-item-id",
+  "type": [
+    "forest:AgriCredit",
+    "forest:Resource"
+  ],
+  "year": 2011,
+  "evaluationYear": "2011-12",
+  "loanType": "crop loan",
+  "loanTargetAmount": 10233.0,
+  "loanAchievementAmount": 11787.0,
+  "achievementRate": 115.19,
+  "totalTargetAmount": 16123.0,
+  "totalAchievementAmount": 22899.0,
+  "totalAchievementRate": 142.03
 }

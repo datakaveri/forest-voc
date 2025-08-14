@@ -1,39 +1,39 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:advisoryNature",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "The nature of advisory corresponding to this observation.",
+      "rdfs:label": "advisoryNature",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:advisoryNature",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "The nature of advisory corresponding to this observation.",
-            "rdfs:label": "advisoryNature",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:AgriAdvisory"
-                },
-                {
-                    "@id": "forest:HyperLocalAdvisory"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            }
+          "@id": "forest:AgriAdvisory"
+        },
+        {
+          "@id": "forest:HyperLocalAdvisory"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      }
+    }
+  ]
 }

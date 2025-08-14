@@ -1,35 +1,35 @@
 {
-    "@context": {
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:authServerURL",
+      "@type": [
+        "forest:Relationship"
+      ],
+      "rdfs:comment": "URL of the ADEX authorization server used for a given resource.",
+      "rdfs:label": "authServerURL",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:authServerURL",
-            "@type": [
-                "forest:Relationship"
-            ],
-            "rdfs:comment": "URL of the ADEX authorization server used for a given resource.",
-            "rdfs:label": "authServerURL",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:AuthServerInfoValue"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text",
-                    "@type": "@id"
-                },
-                {
-                    "@id": "forest:RelationshipValue"
-                }
-            ]
+          "@id": "forest:AuthServerInfoValue"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text",
+          "@type": "@id"
+        },
+        {
+          "@id": "forest:RelationshipValue"
+        }
+      ]
+    }
+  ]
 }

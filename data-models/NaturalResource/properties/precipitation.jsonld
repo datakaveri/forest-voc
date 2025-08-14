@@ -1,39 +1,39 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:precipitation",
+      "@type": [
+        "forest:QuantitativeProperty"
+      ],
+      "rdfs:comment": "Observed precipitation/rainfall level over a given duration.",
+      "rdfs:label": "precipitation",
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      },
+      "forest:domainIncludes": [
         {
-            "@id": "forest:precipitation",
-            "@type": [
-                "forest:QuantitativeProperty"
-            ],
-            "rdfs:comment": "Observed precipitation/rainfall level over a given duration.",
-            "rdfs:label": "precipitation",
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            },
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:Weather"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Number"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ],
-            "skos:exactMatch": {
-                "@id": "Fiware:precipitation"
-            }
+          "@id": "forest:Weather"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Number"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ],
+      "skos:exactMatch": {
+        "@id": "Fiware:precipitation"
+      }
+    }
+  ]
 }

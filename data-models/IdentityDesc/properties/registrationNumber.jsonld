@@ -1,42 +1,42 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:registrationNumber",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "The registration number of the entity corresponding to this observation.",
+      "rdfs:label": "registrationNumber",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:registrationNumber",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "The registration number of the entity corresponding to this observation.",
-            "rdfs:label": "registrationNumber",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:IdentityDesc"
-                },
-                {
-                    "@id": "forest:AgriMarket"
-                },
-                {
-                    "@id": "forest:AgriMachinery"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            }
+          "@id": "forest:IdentityDesc"
+        },
+        {
+          "@id": "forest:AgriMarket"
+        },
+        {
+          "@id": "forest:AgriMachinery"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      }
+    }
+  ]
 }

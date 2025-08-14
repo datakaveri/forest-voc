@@ -1,27 +1,27 @@
 {
-    "@context": "https://agrijson.org/",
-    "id": "resource-item-id",
-    "type": [
-        "forest:Imagery",
-        "forest:Resource"
-    ],
-    "imageID": "S1A_IW_GRDH_1SDV_20210606T003923_20210606T003948_038212_048278_C192_IA",
-    "fileSize": 800,
-    "fileFormat": "netcdf",
-    "imageURL": [
-        "https://sentinels.copernicus.eu/data_and_imagery/S1A_IW_GRDH_1SDV_20210606T003923_20210606T003948_038212_048278_C192_IA.netcdf"
-    ],
-    "mediaURL": [
-        "https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1",
-        "https://asf.alaska.edu/data-sets/sar-data-sets/sentinel-1/sentinel-1-data-and-imagery/"
-    ],
-    "spectralBandResolution": "Blue - 492.4 nm; Green - 559.8 nm; Red -  664.6 nm",
-    "spatialResolution": 250,
-    "radiometricResolution": 8,
-    "geometricResolution": 10,
-    "temporalResolution": "every 16 days",
-    "contactPointInfo": {
-        "helplineNumber": "99907797XX",
-        "contactPointEmail": "contact_helpdesk@sentinels.eu"
-    }
+  "@context": "https://agrijson.org/",
+  "id": "resource-item-id",
+  "type": [
+    "forest:Imagery",
+    "forest:Resource"
+  ],
+  "imageID": "S1A_IW_GRDH_1SDV_20210606T003923_20210606T003948_038212_048278_C192_IA",
+  "fileSize": 800,
+  "fileFormat": "netcdf",
+  "imageURL": [
+    "https://sentinels.copernicus.eu/data_and_imagery/S1A_IW_GRDH_1SDV_20210606T003923_20210606T003948_038212_048278_C192_IA.netcdf"
+  ],
+  "mediaURL": [
+    "https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1",
+    "https://asf.alaska.edu/data-sets/sar-data-sets/sentinel-1/sentinel-1-data-and-imagery/"
+  ],
+  "spectralBandResolution": "Blue - 492.4 nm; Green - 559.8 nm; Red -  664.6 nm",
+  "spatialResolution": 250,
+  "radiometricResolution": 8,
+  "geometricResolution": 10,
+  "temporalResolution": "every 16 days",
+  "contactPointInfo": {
+    "helplineNumber": "99907797XX",
+    "contactPointEmail": "contact_helpdesk@sentinels.eu"
+  }
 }

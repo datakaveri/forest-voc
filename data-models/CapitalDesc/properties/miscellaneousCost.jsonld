@@ -1,36 +1,36 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:miscellaneousCost",
+      "@type": [
+        "forest:QuantitativeProperty"
+      ],
+      "rdfs:comment": "The inevitable minor expenses incurred for a season in the cultivation of a crop corresponding to this observation.",
+      "rdfs:label": "miscellaneousCost",
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      },
+      "forest:domainIncludes": [
         {
-            "@id": "forest:miscellaneousCost",
-            "@type": [
-                "forest:QuantitativeProperty"
-            ],
-            "rdfs:comment": "The inevitable minor expenses incurred for a season in the cultivation of a crop corresponding to this observation.",
-            "rdfs:label": "miscellaneousCost",
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            },
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:CapitalDesc"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Number"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ]
+          "@id": "forest:CapitalDesc"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Number"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ]
+    }
+  ]
 }

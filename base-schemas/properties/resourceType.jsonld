@@ -1,35 +1,35 @@
 {
-    "@context": {
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:resourceType",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "Type of resource. ENUM: [MESSAGESTREAM, DATASET, FILE, GSLAYER, MEDIASTREAM].",
+      "rdfs:label": "resourceType",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:resourceType",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "Type of resource. ENUM: [MESSAGESTREAM, DATASET, FILE, GSLAYER, MEDIASTREAM].",
-            "rdfs:label": "resourceType",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:ResourceGroup",
-                    "adex:requiredProperty": true
-                },
-                {
-                    "@id": "forest:Resource"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text"
-                }
-            ]
+          "@id": "forest:ResourceGroup",
+          "adex:requiredProperty": true
+        },
+        {
+          "@id": "forest:Resource"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text"
+        }
+      ]
+    }
+  ]
 }

@@ -1,38 +1,38 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "iudx": "https://voc.iudx.org.in/",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "iudx": "https://voc.iudx.org.in/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:dataAccessPurposes",
+      "@type": [
+        "forest:Relationship"
+      ],
+      "rdfs:comment": "Describes the various purposes for which the data can be accessed.",
+      "rdfs:label": "dataAccessPurposes",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:dataAccessPurposes",
-            "@type": [
-                "forest:Relationship"
-            ],
-            "rdfs:comment": "Describes the various purposes for which the data can be accessed.",
-            "rdfs:label": "dataAccessPurposes",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:ResourceGroup"
-                },
-                {
-                    "@id": "forest:Resource"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@container": "@list",
-                    "@id": "forest:Object"
-                },
-                {
-                    "@id": "forest:RelationshipValue"
-                }
-            ]
+          "@id": "forest:ResourceGroup"
+        },
+        {
+          "@id": "forest:Resource"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@container": "@list",
+          "@id": "forest:Object"
+        },
+        {
+          "@id": "forest:RelationshipValue"
+        }
+      ]
+    }
+  ]
 }

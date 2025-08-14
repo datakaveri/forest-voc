@@ -1,39 +1,39 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:seedVarietyCode",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "The code assigned to the seed variety corresponding to this observation.",
+      "rdfs:label": "seedVarietyCode",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:seedVarietyCode",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "The code assigned to the seed variety corresponding to this observation.",
-            "rdfs:label": "seedVarietyCode",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:Crop"
-                },
-                {
-                    "@id": "forest:Seed"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            }
+          "@id": "forest:Crop"
+        },
+        {
+          "@id": "forest:Seed"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      }
+    }
+  ]
 }

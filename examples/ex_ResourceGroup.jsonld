@@ -1,39 +1,39 @@
 {
-    "@context": "https://agrijson.org/",
+  "@context": "https://agrijson.org/",
+  "type": [
+    "forest:ResourceGroup"
+  ],
+  "id": "providerID/example.com/senosrs",
+  "description": "Description of this resource group",
+  "name": "sensors",
+  "tags": "sensor, sensing, resource, battery operated",
+  "itemStatus": "ACTIVE",
+  "provider": "providerID",
+  "resourceServer": "resourceProviderID/exapmle.com",
+  "resourceAuthControlLevel": "INDIVIDUAL",
+  "resourceType": "messageStream",
+  "authServerInfo": {
     "type": [
-        "forest:ResourceGroup"
+      "AuthServerInfoValue"
     ],
-    "id": "providerID/example.com/senosrs",
-    "description": "Description of this resource group",
-    "name": "sensors",
-    "tags": "sensor, sensing, resource, battery operated",
-    "itemStatus": "ACTIVE",
-    "provider": "providerID",
-    "resourceServer": "resourceProviderID/exapmle.com",
-    "resourceAuthControlLevel": "INDIVIDUAL",
-    "resourceType": "messageStream",
-    "authServerInfo": {
-        "type": [
-            "AuthServerInfoValue"
-        ],
-        "authServerURL": "https://myauth.server.org/",
-        "authType": "adex-auth"
-    },
-    "accessObjectInfo": {
-        "type": [
-            "AccessObjectInfoValue"
-        ],
-        "accessObject": "https://example.com/sensorsApis.json",
-        "additionalInfoURL": "https://example.com/sensorsApis",
-        "accessObjectType": "openAPI"
-    },
-    "adexResourceAPIs": [
-        "attribute",
-        "temporal"
+    "authServerURL": "https://myauth.server.org/",
+    "authType": "adex-auth"
+  },
+  "accessObjectInfo": {
+    "type": [
+      "AccessObjectInfoValue"
     ],
-    "itemCreatedAt": "2019-02-20T10:30:06.093121",
-    "location": {
-        "type": "Place",
-        "address": "Bangalore"
-    }
+    "accessObject": "https://example.com/sensorsApis.json",
+    "additionalInfoURL": "https://example.com/sensorsApis",
+    "accessObjectType": "openAPI"
+  },
+  "adexResourceAPIs": [
+    "attribute",
+    "temporal"
+  ],
+  "itemCreatedAt": "2019-02-20T10:30:06.093121",
+  "location": {
+    "type": "Place",
+    "address": "Bangalore"
+  }
 }

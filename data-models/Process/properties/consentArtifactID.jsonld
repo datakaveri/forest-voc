@@ -1,39 +1,39 @@
 {
-    "@context": {
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:consentArtifactID",
+      "@type": [
+        "forest:TextProperty"
+      ],
+      "rdfs:comment": "The unique identifier assigned by the consent manager to the consent artifact.",
+      "rdfs:label": "consentArtifactID",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:consentArtifactID",
-            "@type": [
-                "forest:TextProperty"
-            ],
-            "rdfs:comment": "The unique identifier assigned by the consent manager to the consent artifact.",
-            "rdfs:label": "consentArtifactID",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:ConsentArtifact"
-                },
-                {
-                    "@id": "forest:ConsentHistory"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            }
+          "@id": "forest:ConsentArtifact"
+        },
+        {
+          "@id": "forest:ConsentHistory"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      }
+    }
+  ]
 }

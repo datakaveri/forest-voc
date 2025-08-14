@@ -1,837 +1,837 @@
 {
-    "@context": "https://agrijson.org/",
-    "type": [
-        "forest:LandParcel",
-        "forest:Schema"
-    ],
-    "id": "https://agrijson.org/LandParcel",
-    "schema": {
-        "title": "ADEX LandParcel Data Model",
+  "@context": "https://agrijson.org/",
+  "type": [
+    "forest:LandParcel",
+    "forest:Schema"
+  ],
+  "id": "https://agrijson.org/LandParcel",
+  "schema": {
+    "title": "ADEX LandParcel Data Model",
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "array",
+        "items": [
+          {
+            "type": "string",
+            "description": "ADEX Data Model name. It has to be LandParcel"
+          },
+          {
+            "type": "string",
+            "description": "ADEX Entity type. It has to be Resource"
+          }
+        ]
+      },
+      "sowingDate": {
+        "type": "string",
+        "description": "The date at which the crop has been sown in the farm corresponding to this observation.",
+        "format": "date"
+      },
+      "season": {
+        "type": "string",
+        "description": "Represents distinct period of the year characterized by particular weather conditions, activities, or events."
+      },
+      "cropCode": {
+        "type": "string",
+        "description": "The unique code for the crop species corresponding to this observation."
+      },
+      "irrigationCount": {
+        "type": "number",
+        "description": "The total number times the farm has been irrigated corresponding to this observation.",
+        "unitCode": "C62",
+        "unitText": "dimensionless"
+      },
+      "harvestDate": {
+        "type": "string",
+        "description": "The date at which the crop has been harvested in the farm corresponding to this observation.",
+        "format": "date"
+      },
+      "waterCoverage": {
+        "description": "The extent of the area covered by water during the irrigation process on a farm.",
+        "type": [
+          "ValueDescriptor"
+        ],
+        "unitCode": "P1",
+        "unitText": "percent",
+        "dataSchema": "iudx:Number"
+      },
+      "location": {
         "type": "object",
+        "description": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor."
+      },
+      "observationDateTime": {
+        "type": "string",
+        "description": "Last reported time of observation.",
+        "format": "date-time"
+      },
+      "cropHeight": {
+        "type": "number",
+        "description": "The height of the crop corresponding to this observation.",
+        "unitCode": "MTR",
+        "unitText": "metre"
+      },
+      "targetYield": {
+        "type": "number",
+        "description": "The desired or expected level of production for a specific agricultural crop within a given area or field.",
+        "unitCode": "KGM",
+        "unitText": "kilogram"
+      },
+      "previousCropName": {
+        "type": "string",
+        "description": "The name of the crop that was cultivated prior to the current crop in the land/ soil corresponding to this observation."
+      },
+      "cropAge": {
+        "type": "number",
+        "description": "The age of the crop species (in days) corresponding to the observation",
+        "unitCode": "C62",
+        "unitText": "Dimensionless"
+      },
+      "nextCropName": {
+        "type": "string",
+        "description": "The name of the crop that will be cultivated in the upcoming season orresponding to this observation."
+      },
+      "irrigationMethod": {
+        "type": "string",
+        "description": "The types of irrigating crops include surface irrigation, flooded field irrigation, drip irrigation, sprinkler irrigation, and subsurface irrigation."
+      },
+      "cropHealth": {
+        "type": "string",
+        "description": "The condition of the crop cultivated in the farm corresponding to this observation."
+      },
+      "plantingMethod": {
+        "type": "string",
+        "description": "The techniques and practices such as drill seeding, broadcasting, transplanting, etc. used to plant the crops for cultivation."
+      },
+      "cropNameCommon": {
+        "type": "string",
+        "description": "The common/local name of the crop species corresponding to the observation."
+      },
+      "landClassCode": {
+        "type": "string",
+        "description": "The code of land classification as assigned by the government. Land classification can be based on several aspects such as type of land settlements, resource availability, irrigation etc."
+      },
+      "ownerInfo": {
+        "type": "object",
+        "description": "Details of the person who owns the entity corresponding to this observation.",
         "properties": {
-            "type": {
-                "type": "array",
-                "items": [
-                    {
-                        "type": "string",
-                        "description": "ADEX Data Model name. It has to be LandParcel"
-                    },
-                    {
-                        "type": "string",
-                        "description": "ADEX Entity type. It has to be Resource"
-                    }
-                ]
-            },
-            "sowingDate": {
-                "type": "string",
-                "description": "The date at which the crop has been sown in the farm corresponding to this observation.",
-                "format": "date"
-            },
-            "season": {
-                "type": "string",
-                "description": "Represents distinct period of the year characterized by particular weather conditions, activities, or events."
-            },
-            "cropCode": {
-                "type": "string",
-                "description": "The unique code for the crop species corresponding to this observation."
-            },
-            "irrigationCount": {
+          "language": {
+            "type": "array",
+            "description": "Represents the language(s) that can be used for communicating with an entity or those offered by a service corresponding to this observation.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "gender": {
+            "type": "string",
+            "description": "Gender of the individual corresponding to this observation"
+          },
+          "fieldOfResearch": {
+            "type": "string",
+            "description": "A particular area or subject of study that undergoes investigation, exploration, and systematic examination to acquire fresh knowledge, insights, and comprehension."
+          },
+          "academicQualification": {
+            "type": "string",
+            "description": "The highest educational qualification of the individual corresponding to this observation."
+          },
+          "identityInfo": {
+            "type": "object",
+            "description": "Personal identification information issued by the government.",
+            "properties": {
+              "bankAccountNo": {
                 "type": "number",
-                "description": "The total number times the farm has been irrigated corresponding to this observation.",
-                "unitCode": "C62",
-                "unitText": "dimensionless"
-            },
-            "harvestDate": {
-                "type": "string",
-                "description": "The date at which the crop has been harvested in the farm corresponding to this observation.",
-                "format": "date"
-            },
-            "waterCoverage": {
-                "description": "The extent of the area covered by water during the irrigation process on a farm.",
-                "type": [
-                    "ValueDescriptor"
-                ],
-                "unitCode": "P1",
-                "unitText": "percent",
-                "dataSchema": "iudx:Number"
-            },
-            "location": {
-                "type": "object",
-                "description": "Location associated with a resource Item (a spatial point), a group of resource items (a spatial region) or even an observation in case of a mobile sensor."
-            },
-            "observationDateTime": {
-                "type": "string",
-                "description": "Last reported time of observation.",
-                "format": "date-time"
-            },
-            "cropHeight": {
-                "type": "number",
-                "description": "The height of the crop corresponding to this observation.",
-                "unitCode": "MTR",
-                "unitText": "metre"
-            },
-            "targetYield": {
-                "type": "number",
-                "description": "The desired or expected level of production for a specific agricultural crop within a given area or field.",
-                "unitCode": "KGM",
-                "unitText": "kilogram"
-            },
-            "previousCropName": {
-                "type": "string",
-                "description": "The name of the crop that was cultivated prior to the current crop in the land/ soil corresponding to this observation."
-            },
-            "cropAge": {
-                "type": "number",
-                "description": "The age of the crop species (in days) corresponding to the observation",
+                "description": "The bank account number of the individual or business corresponding to this observation",
                 "unitCode": "C62",
                 "unitText": "Dimensionless"
-            },
-            "nextCropName": {
+              },
+              "gstin": {
                 "type": "string",
-                "description": "The name of the crop that will be cultivated in the upcoming season orresponding to this observation."
-            },
-            "irrigationMethod": {
+                "description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
+              },
+              "ifscCode": {
                 "type": "string",
-                "description": "The types of irrigating crops include surface irrigation, flooded field irrigation, drip irrigation, sprinkler irrigation, and subsurface irrigation."
-            },
-            "cropHealth": {
+                "description": "The IFSC code for the bank corresponding to this observation"
+              },
+              "drivingLicense": {
                 "type": "string",
-                "description": "The condition of the crop cultivated in the farm corresponding to this observation."
-            },
-            "plantingMethod": {
+                "description": "The driving license number of the individual corresponding to this observation."
+              },
+              "registrationNumber": {
                 "type": "string",
-                "description": "The techniques and practices such as drill seeding, broadcasting, transplanting, etc. used to plant the crops for cultivation."
-            },
-            "cropNameCommon": {
+                "description": "The registration number of the entity corresponding to this observation."
+              },
+              "digitalSignature": {
                 "type": "string",
-                "description": "The common/local name of the crop species corresponding to the observation."
-            },
-            "landClassCode": {
+                "description": "The link to the digital signature of the entity corresponding to this observation."
+              },
+              "panNo": {
                 "type": "string",
-                "description": "The code of land classification as assigned by the government. Land classification can be based on several aspects such as type of land settlements, resource availability, irrigation etc."
-            },
-            "ownerInfo": {
-                "type": "object",
-                "description": "Details of the person who owns the entity corresponding to this observation.",
-                "properties": {
-                    "language": {
-                        "type": "array",
-                        "description": "Represents the language(s) that can be used for communicating with an entity or those offered by a service corresponding to this observation.",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "gender": {
-                        "type": "string",
-                        "description": "Gender of the individual corresponding to this observation"
-                    },
-                    "fieldOfResearch": {
-                        "type": "string",
-                        "description": "A particular area or subject of study that undergoes investigation, exploration, and systematic examination to acquire fresh knowledge, insights, and comprehension."
-                    },
-                    "academicQualification": {
-                        "type": "string",
-                        "description": "The highest educational qualification of the individual corresponding to this observation."
-                    },
-                    "identityInfo": {
-                        "type": "object",
-                        "description": "Personal identification information issued by the government.",
-                        "properties": {
-                            "bankAccountNo": {
-                                "type": "number",
-                                "description": "The bank account number of the individual or business corresponding to this observation",
-                                "unitCode": "C62",
-                                "unitText": "Dimensionless"
-                            },
-                            "gstin": {
-                                "type": "string",
-                                "description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
-                            },
-                            "ifscCode": {
-                                "type": "string",
-                                "description": "The IFSC code for the bank corresponding to this observation"
-                            },
-                            "drivingLicense": {
-                                "type": "string",
-                                "description": "The driving license number of the individual corresponding to this observation."
-                            },
-                            "registrationNumber": {
-                                "type": "string",
-                                "description": "The registration number of the entity corresponding to this observation."
-                            },
-                            "digitalSignature": {
-                                "type": "string",
-                                "description": "The link to the digital signature of the entity corresponding to this observation."
-                            },
-                            "panNo": {
-                                "type": "string",
-                                "description": "The pan card number of the individual corresponding to this observation."
-                            },
-                            "fssaiLicense": {
-                                "type": "string",
-                                "description": "The FSSAI (Food and Safety Standards Authority of India) license number."
-                            },
-                            "aadharNo": {
-                                "type": "string",
-                                "description": "The aadhar number issued by the government for the individual corresponding to this observation."
-                            },
-                            "iec": {
-                                "type": "string",
-                                "description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
-                            }
-                        }
-                    },
-                    "nationality": {
-                        "type": "string",
-                        "description": "Represents the nation that the individual corresponding to this observation belongs to."
-                    },
-                    "phone": {
-                        "type": "string",
-                        "description": "Phone number  corresponding to this observation"
-                    },
-                    "businessAddress": {
-                        "type": "object",
-                        "description": "Business address corresponding to this observation",
-                        "properties": {
-                            "addressLine": {
-                                "type": "string",
-                                "description": "Address corresponding to this observation"
-                            },
-                            "cityName": {
-                                "type": "string",
-                                "description": "Name of the city corresponding to this observation."
-                            },
-                            "locality": {
-                                "type": "string",
-                                "description": "Area name of the location corresponding to this observation."
-                            },
-                            "buildingNum": {
-                                "type": "string",
-                                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-                            },
-                            "pincode": {
-                                "type": "number",
-                                "description": "The postal code corresponding to this observation.",
-                                "unitCode": "C62",
-                                "unitText": "Dimensionless"
-                            },
-                            "stateCode": {
-                                "type": "string",
-                                "description": "Name of the state code corresponding to this observation."
-                            },
-                            "street": {
-                                "type": "string",
-                                "description": "Street name corresponding to this observation."
-                            }
-                        }
-                    },
-                    "permanentAddress": {
-                        "type": "object",
-                        "description": "Permanent address corresponding to this observation",
-                        "properties": {
-                            "addressLine": {
-                                "type": "string",
-                                "description": "Address corresponding to this observation"
-                            },
-                            "cityName": {
-                                "type": "string",
-                                "description": "Name of the city corresponding to this observation."
-                            },
-                            "locality": {
-                                "type": "string",
-                                "description": "Area name of the location corresponding to this observation."
-                            },
-                            "buildingNum": {
-                                "type": "string",
-                                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-                            },
-                            "pincode": {
-                                "type": "number",
-                                "description": "The postal code corresponding to this observation.",
-                                "unitCode": "C62",
-                                "unitText": "Dimensionless"
-                            },
-                            "stateCode": {
-                                "type": "string",
-                                "description": "Name of the state code corresponding to this observation."
-                            },
-                            "street": {
-                                "type": "string",
-                                "description": "Street name corresponding to this observation."
-                            }
-                        }
-                    },
-                    "residentialAddress": {
-                        "type": "object",
-                        "description": "Residential address corresponding to this observation",
-                        "properties": {
-                            "addressLine": {
-                                "type": "string",
-                                "description": "Address corresponding to this observation"
-                            },
-                            "cityName": {
-                                "type": "string",
-                                "description": "Name of the city corresponding to this observation."
-                            },
-                            "locality": {
-                                "type": "string",
-                                "description": "Area name of the location corresponding to this observation."
-                            },
-                            "buildingNum": {
-                                "type": "string",
-                                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-                            },
-                            "pincode": {
-                                "type": "number",
-                                "description": "The postal code corresponding to this observation.",
-                                "unitCode": "C62",
-                                "unitText": "Dimensionless"
-                            },
-                            "stateCode": {
-                                "type": "string",
-                                "description": "Name of the state code corresponding to this observation."
-                            },
-                            "street": {
-                                "type": "string",
-                                "description": "Street name corresponding to this observation."
-                            }
-                        }
-                    },
-                    "dob": {
-                        "type": "string",
-                        "description": "Date of birth (DOB) of the individual corresponding to this observation.",
-                        "format": "date"
-                    },
-                    "email": {
-                        "type": "string",
-                        "description": "Email address of the individual corresponding to this observation"
-                    },
-                    "designation": {
-                        "type": "string",
-                        "description": "Designation of the individual corresponding to this observation"
-                    },
-                    "jurisdiction": {
-                        "type": "array",
-                        "description": "The administrative divisions within which the entity holds territorial scope of authority.",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "workStatus": {
-                        "type": "string",
-                        "description": "The work status indicates whether the individual or entity is actively working, on leave, part-time, full-time, temporary, permanent, retired or in any other specific arrangement."
-                    },
-                    "birthPlace": {
-                        "type": "string",
-                        "description": "Place of birth of the individual corresponding to this observation."
-                    },
-                    "expertise": {
-                        "type": "string",
-                        "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
-                    },
-                    "salutation": {
-                        "type": "string",
-                        "description": "Salutation of the individual corresponding to this observation"
-                    },
-                    "imageURL": {
-                        "type": "array",
-                        "description": "The link that points to the picture of the individual or an entity corresponding to this observation.",
-                        "items": {
-                            "type": "string"
-                        }
-                    }
-                }
-            },
-            "landExtent": {
-                "type": "number",
-                "description": "Area of the land corresponding to this observation.",
-                "unitCode": "FTK",
-                "unitText": "square foot"
-            },
-            "lessorInfo": {
-                "type": "object",
-                "description": "Details of the person who leases the entity corresponding to this observation.",
-                "properties": {
-                    "language": {
-                        "type": "array",
-                        "description": "Represents the language(s) that can be used for communicating with an entity or those offered by a service corresponding to this observation.",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "gender": {
-                        "type": "string",
-                        "description": "Gender of the individual corresponding to this observation"
-                    },
-                    "fieldOfResearch": {
-                        "type": "string",
-                        "description": "A particular area or subject of study that undergoes investigation, exploration, and systematic examination to acquire fresh knowledge, insights, and comprehension."
-                    },
-                    "academicQualification": {
-                        "type": "string",
-                        "description": "The highest educational qualification of the individual corresponding to this observation."
-                    },
-                    "identityInfo": {
-                        "type": "object",
-                        "description": "Personal identification information issued by the government.",
-                        "properties": {
-                            "bankAccountNo": {
-                                "type": "number",
-                                "description": "The bank account number of the individual or business corresponding to this observation",
-                                "unitCode": "C62",
-                                "unitText": "Dimensionless"
-                            },
-                            "gstin": {
-                                "type": "string",
-                                "description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
-                            },
-                            "ifscCode": {
-                                "type": "string",
-                                "description": "The IFSC code for the bank corresponding to this observation"
-                            },
-                            "drivingLicense": {
-                                "type": "string",
-                                "description": "The driving license number of the individual corresponding to this observation."
-                            },
-                            "registrationNumber": {
-                                "type": "string",
-                                "description": "The registration number of the entity corresponding to this observation."
-                            },
-                            "digitalSignature": {
-                                "type": "string",
-                                "description": "The link to the digital signature of the entity corresponding to this observation."
-                            },
-                            "panNo": {
-                                "type": "string",
-                                "description": "The pan card number of the individual corresponding to this observation."
-                            },
-                            "fssaiLicense": {
-                                "type": "string",
-                                "description": "The FSSAI (Food and Safety Standards Authority of India) license number."
-                            },
-                            "aadharNo": {
-                                "type": "string",
-                                "description": "The aadhar number issued by the government for the individual corresponding to this observation."
-                            },
-                            "iec": {
-                                "type": "string",
-                                "description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
-                            }
-                        }
-                    },
-                    "nationality": {
-                        "type": "string",
-                        "description": "Represents the nation that the individual corresponding to this observation belongs to."
-                    },
-                    "phone": {
-                        "type": "string",
-                        "description": "Phone number  corresponding to this observation"
-                    },
-                    "businessAddress": {
-                        "type": "object",
-                        "description": "Business address corresponding to this observation",
-                        "properties": {
-                            "addressLine": {
-                                "type": "string",
-                                "description": "Address corresponding to this observation"
-                            },
-                            "cityName": {
-                                "type": "string",
-                                "description": "Name of the city corresponding to this observation."
-                            },
-                            "locality": {
-                                "type": "string",
-                                "description": "Area name of the location corresponding to this observation."
-                            },
-                            "buildingNum": {
-                                "type": "string",
-                                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-                            },
-                            "pincode": {
-                                "type": "number",
-                                "description": "The postal code corresponding to this observation.",
-                                "unitCode": "C62",
-                                "unitText": "Dimensionless"
-                            },
-                            "stateCode": {
-                                "type": "string",
-                                "description": "Name of the state code corresponding to this observation."
-                            },
-                            "street": {
-                                "type": "string",
-                                "description": "Street name corresponding to this observation."
-                            }
-                        }
-                    },
-                    "permanentAddress": {
-                        "type": "object",
-                        "description": "Permanent address corresponding to this observation",
-                        "properties": {
-                            "addressLine": {
-                                "type": "string",
-                                "description": "Address corresponding to this observation"
-                            },
-                            "cityName": {
-                                "type": "string",
-                                "description": "Name of the city corresponding to this observation."
-                            },
-                            "locality": {
-                                "type": "string",
-                                "description": "Area name of the location corresponding to this observation."
-                            },
-                            "buildingNum": {
-                                "type": "string",
-                                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-                            },
-                            "pincode": {
-                                "type": "number",
-                                "description": "The postal code corresponding to this observation.",
-                                "unitCode": "C62",
-                                "unitText": "Dimensionless"
-                            },
-                            "stateCode": {
-                                "type": "string",
-                                "description": "Name of the state code corresponding to this observation."
-                            },
-                            "street": {
-                                "type": "string",
-                                "description": "Street name corresponding to this observation."
-                            }
-                        }
-                    },
-                    "residentialAddress": {
-                        "type": "object",
-                        "description": "Residential address corresponding to this observation",
-                        "properties": {
-                            "addressLine": {
-                                "type": "string",
-                                "description": "Address corresponding to this observation"
-                            },
-                            "cityName": {
-                                "type": "string",
-                                "description": "Name of the city corresponding to this observation."
-                            },
-                            "locality": {
-                                "type": "string",
-                                "description": "Area name of the location corresponding to this observation."
-                            },
-                            "buildingNum": {
-                                "type": "string",
-                                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
-                            },
-                            "pincode": {
-                                "type": "number",
-                                "description": "The postal code corresponding to this observation.",
-                                "unitCode": "C62",
-                                "unitText": "Dimensionless"
-                            },
-                            "stateCode": {
-                                "type": "string",
-                                "description": "Name of the state code corresponding to this observation."
-                            },
-                            "street": {
-                                "type": "string",
-                                "description": "Street name corresponding to this observation."
-                            }
-                        }
-                    },
-                    "dob": {
-                        "type": "string",
-                        "description": "Date of birth (DOB) of the individual corresponding to this observation.",
-                        "format": "date"
-                    },
-                    "email": {
-                        "type": "string",
-                        "description": "Email address of the individual corresponding to this observation"
-                    },
-                    "designation": {
-                        "type": "string",
-                        "description": "Designation of the individual corresponding to this observation"
-                    },
-                    "jurisdiction": {
-                        "type": "array",
-                        "description": "The administrative divisions within which the entity holds territorial scope of authority.",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "workStatus": {
-                        "type": "string",
-                        "description": "The work status indicates whether the individual or entity is actively working, on leave, part-time, full-time, temporary, permanent, retired or in any other specific arrangement."
-                    },
-                    "birthPlace": {
-                        "type": "string",
-                        "description": "Place of birth of the individual corresponding to this observation."
-                    },
-                    "expertise": {
-                        "type": "string",
-                        "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
-                    },
-                    "salutation": {
-                        "type": "string",
-                        "description": "Salutation of the individual corresponding to this observation"
-                    },
-                    "imageURL": {
-                        "type": "array",
-                        "description": "The link that points to the picture of the individual or an entity corresponding to this observation.",
-                        "items": {
-                            "type": "string"
-                        }
-                    }
-                }
-            },
-            "capitalInfo": {
-                "type": "object",
-                "description": "The income and expenditure information corresponding to the entity.",
-                "properties": {
-                    "cgst": {
-                        "type": "number",
-                        "description": "Central Goods and Service Tax is charged on the intra state supply of products and services.",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "utgst": {
-                        "type": "number",
-                        "description": "Union Territory Goods and Service Tax is levied on the supply of products and services in any of the Union Territories in the country, viz. Andaman and Nicobar Islands, Daman and Diu, Dadra and Nagar Haveli, Lakshadweep, and Chandigarh. UTGST is levied along with CGST.",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "freightCost": {
-                        "type": "number",
-                        "description": "The cost incurred for transporting the goods from the point of origin to a destination location.",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "paymentTerm": {
-                        "type": "string",
-                        "description": "Description of the terms of payment corresponding to this observation."
-                    },
-                    "netExpenditure": {
-                        "type": "number",
-                        "description": "The total cost incurred for the cultivation of a crop.",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "transportationCost": {
-                        "type": "number",
-                        "description": "The total cost incurred due to transportation of raw materials / supplies / merchandise which includes the road tax, state and central tax, IGST, etc.",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "landCess": {
-                        "type": "number",
-                        "description": "The amount of tax levied on land holdings.",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "miscellaneousCost": {
-                        "type": "number",
-                        "description": "The inevitable minor expenses incurred for a season in the cultivation of a crop corresponding to this observation.",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "electricityCost": {
-                        "type": "number",
-                        "description": "The total electricity cost incurred from agricultural purposes.",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "cultivationCost": {
-                        "type": "number",
-                        "description": "The total expense incurred on cultivation",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "machineryCost": {
-                        "type": "number",
-                        "description": "The total machinery cost incurred from agricultural purposes.",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "harvestCost": {
-                        "type": "number",
-                        "description": "The total cost incurred for harvesting the crop.",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "currencyType": {
-                        "type": "string",
-                        "description": "The type of currency used for selling the goods and services corresponding to this observation."
-                    },
-                    "leaseAmount": {
-                        "type": "number",
-                        "description": "The amount paid by the lessee for the land under cultivation.",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "netIncome": {
-                        "type": "number",
-                        "description": "Net revenue from the farmland corresponding to this observation",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "labourCost": {
-                        "type": "number",
-                        "description": "The total labour cost incurred during the cultivation of a crop.",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "costType": {
-                        "type": "string",
-                        "description": "Describes the type of the cost, for eg., whether the cost is estimated or billed."
-                    },
-                    "sgst": {
-                        "type": "number",
-                        "description": "State Goods and Service Tax like CGST, is charged on the sale of products or services within a state.",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    },
-                    "igst": {
-                        "type": "number",
-                        "description": "Integrated Goods and Service Tax is charged on inter-state transactions of products and services.",
-                        "unitCode": "INR",
-                        "unitText": "Indian Rupee"
-                    }
-                }
-            },
-            "landGeography": {
+                "description": "The pan card number of the individual corresponding to this observation."
+              },
+              "fssaiLicense": {
                 "type": "string",
-                "description": "The geographic characteristics of the land such as desert, hilly, etc"
-            },
-            "cropArea": {
-                "type": "number",
-                "description": "Area of the agricultural land used for cultivation, i.e, the arable land area.",
-                "unitCode": "MTK",
-                "unitText": "square metre"
-            },
-            "localeInfo": {
-                "type": "object",
-                "description": "Locale information corresponding to this observation.",
-                "properties": {
-                    "villageCode": {
-                        "type": "string",
-                        "description": "The village code corresponding to this observation."
-                    },
-                    "revenueDivisionCode": {
-                        "type": "string",
-                        "description": "The revenue division code corresponding to this observation"
-                    },
-                    "revenueDivision": {
-                        "type": "string",
-                        "description": "Name of the revenue division in a district corresponding to this observation."
-                    },
-                    "districtName": {
-                        "type": "string",
-                        "description": "Name of the district corresponding to this observation."
-                    },
-                    "zoneName": {
-                        "type": "string",
-                        "description": "Zone name corresponding to this observation."
-                    },
-                    "subdistrictCode": {
-                        "type": "string",
-                        "description": "The subdistrict code corresponding to this observation."
-                    },
-                    "wardName": {
-                        "type": "string",
-                        "description": "Ward name corresponding to this observation."
-                    },
-                    "countryCode": {
-                        "type": "string",
-                        "description": "Name of the country code corresponding to this observation."
-                    },
-                    "countryName": {
-                        "type": "string",
-                        "description": "Name of the country corresponding to this observation."
-                    },
-                    "districtCode": {
-                        "type": "string",
-                        "description": "The district code corresponding to this observation."
-                    },
-                    "clusterName": {
-                        "type": "string",
-                        "description": "Name of the cluster corresponding to this observation. A cluster or a firkas represents a group of villages."
-                    },
-                    "villageName": {
-                        "type": "string",
-                        "description": "Name of the village corresponding to this observation."
-                    },
-                    "zoneID": {
-                        "type": "string",
-                        "description": "Zone ID corresponding to this observation."
-                    },
-                    "stateName": {
-                        "type": "string",
-                        "description": "Name of the state corresponding to this observation."
-                    },
-                    "subdistrictName": {
-                        "type": "string",
-                        "description": "Name of the subdistrict corresponding to this observation.  A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states."
-                    },
-                    "wardID": {
-                        "type": "string",
-                        "description": "Ward ID corresponding to this observation."
-                    },
-                    "gramPanchayatName": {
-                        "type": "string",
-                        "description": "Name of the gram panchayat corresponding to this observation."
-                    },
-                    "stateCode": {
-                        "type": "string",
-                        "description": "The state code corresponding to this observation."
-                    },
-                    "clusterCode": {
-                        "type": "string",
-                        "description": "The cluster code corresponding to this observation."
-                    }
-                }
-            },
-            "landClassName": {
+                "description": "The FSSAI (Food and Safety Standards Authority of India) license number."
+              },
+              "aadharNo": {
                 "type": "string",
-                "description": "The name of the land classification as assigned by the government. Land classification can be based on several aspects such as type of land settlements, resource availability, irrigation etc."
-            },
-            "ownershipType": {
+                "description": "The aadhar number issued by the government for the individual corresponding to this observation."
+              },
+              "iec": {
                 "type": "string",
-                "description": "The type of ownership of the entity corresponding to this observation. ENUM: [Lease, Rent, Own]"
-            },
-            "landIdentityInfo": {
-                "type": "object",
-                "description": "The unique land identification information corresponding to this observation.",
-                "properties": {
-                    "baseSurveyNumber": {
-                        "type": "number",
-                        "description": "The base survey number of the land corresponding to this observation.",
-                        "unitCode": "C62",
-                        "unitText": "Dimensionless"
-                    },
-                    "subdivisionNumber": {
-                        "type": "string",
-                        "description": "The subdivision number from the land survey number corresponding to this observation"
-                    },
-                    "surveyNumber": {
-                        "type": "string",
-                        "description": "The unique land survey number allocated to the land corresponding to this observation."
-                    },
-                    "landParcelID": {
-                        "type": "number",
-                        "description": "The ULPIN(Unique Land Parcel Identification Number) representing the land parcel corresponding to the observation.",
-                        "unitCode": "C62",
-                        "unitText": "Dimensionless"
-                    }
-                }
-            },
-            "irrigationSource": {
-                "type": "string",
-                "description": "The source of irrigation for a land, such as well, canals, tanks, borewell, etc"
-            },
-            "landExtentType": {
-                "type": "string",
-                "description": "The classification of the land parcel extent based on certain aspects such as its size."
-            },
-            "foodCropArea": {
-                "type": "string",
-                "description": "The total area of land used solely for the cultivation of food crops (eg., rice, wheat, millets, etc.), excluding non-food crops (eg., cotton, rubber, etc)."
+                "description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
+              }
             }
+          },
+          "nationality": {
+            "type": "string",
+            "description": "Represents the nation that the individual corresponding to this observation belongs to."
+          },
+          "phone": {
+            "type": "string",
+            "description": "Phone number  corresponding to this observation"
+          },
+          "businessAddress": {
+            "type": "object",
+            "description": "Business address corresponding to this observation",
+            "properties": {
+              "addressLine": {
+                "type": "string",
+                "description": "Address corresponding to this observation"
+              },
+              "cityName": {
+                "type": "string",
+                "description": "Name of the city corresponding to this observation."
+              },
+              "locality": {
+                "type": "string",
+                "description": "Area name of the location corresponding to this observation."
+              },
+              "buildingNum": {
+                "type": "string",
+                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+              },
+              "pincode": {
+                "type": "number",
+                "description": "The postal code corresponding to this observation.",
+                "unitCode": "C62",
+                "unitText": "Dimensionless"
+              },
+              "stateCode": {
+                "type": "string",
+                "description": "Name of the state code corresponding to this observation."
+              },
+              "street": {
+                "type": "string",
+                "description": "Street name corresponding to this observation."
+              }
+            }
+          },
+          "permanentAddress": {
+            "type": "object",
+            "description": "Permanent address corresponding to this observation",
+            "properties": {
+              "addressLine": {
+                "type": "string",
+                "description": "Address corresponding to this observation"
+              },
+              "cityName": {
+                "type": "string",
+                "description": "Name of the city corresponding to this observation."
+              },
+              "locality": {
+                "type": "string",
+                "description": "Area name of the location corresponding to this observation."
+              },
+              "buildingNum": {
+                "type": "string",
+                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+              },
+              "pincode": {
+                "type": "number",
+                "description": "The postal code corresponding to this observation.",
+                "unitCode": "C62",
+                "unitText": "Dimensionless"
+              },
+              "stateCode": {
+                "type": "string",
+                "description": "Name of the state code corresponding to this observation."
+              },
+              "street": {
+                "type": "string",
+                "description": "Street name corresponding to this observation."
+              }
+            }
+          },
+          "residentialAddress": {
+            "type": "object",
+            "description": "Residential address corresponding to this observation",
+            "properties": {
+              "addressLine": {
+                "type": "string",
+                "description": "Address corresponding to this observation"
+              },
+              "cityName": {
+                "type": "string",
+                "description": "Name of the city corresponding to this observation."
+              },
+              "locality": {
+                "type": "string",
+                "description": "Area name of the location corresponding to this observation."
+              },
+              "buildingNum": {
+                "type": "string",
+                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+              },
+              "pincode": {
+                "type": "number",
+                "description": "The postal code corresponding to this observation.",
+                "unitCode": "C62",
+                "unitText": "Dimensionless"
+              },
+              "stateCode": {
+                "type": "string",
+                "description": "Name of the state code corresponding to this observation."
+              },
+              "street": {
+                "type": "string",
+                "description": "Street name corresponding to this observation."
+              }
+            }
+          },
+          "dob": {
+            "type": "string",
+            "description": "Date of birth (DOB) of the individual corresponding to this observation.",
+            "format": "date"
+          },
+          "email": {
+            "type": "string",
+            "description": "Email address of the individual corresponding to this observation"
+          },
+          "designation": {
+            "type": "string",
+            "description": "Designation of the individual corresponding to this observation"
+          },
+          "jurisdiction": {
+            "type": "array",
+            "description": "The administrative divisions within which the entity holds territorial scope of authority.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "workStatus": {
+            "type": "string",
+            "description": "The work status indicates whether the individual or entity is actively working, on leave, part-time, full-time, temporary, permanent, retired or in any other specific arrangement."
+          },
+          "birthPlace": {
+            "type": "string",
+            "description": "Place of birth of the individual corresponding to this observation."
+          },
+          "expertise": {
+            "type": "string",
+            "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
+          },
+          "salutation": {
+            "type": "string",
+            "description": "Salutation of the individual corresponding to this observation"
+          },
+          "imageURL": {
+            "type": "array",
+            "description": "The link that points to the picture of the individual or an entity corresponding to this observation.",
+            "items": {
+              "type": "string"
+            }
+          }
         }
+      },
+      "landExtent": {
+        "type": "number",
+        "description": "Area of the land corresponding to this observation.",
+        "unitCode": "FTK",
+        "unitText": "square foot"
+      },
+      "lessorInfo": {
+        "type": "object",
+        "description": "Details of the person who leases the entity corresponding to this observation.",
+        "properties": {
+          "language": {
+            "type": "array",
+            "description": "Represents the language(s) that can be used for communicating with an entity or those offered by a service corresponding to this observation.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "gender": {
+            "type": "string",
+            "description": "Gender of the individual corresponding to this observation"
+          },
+          "fieldOfResearch": {
+            "type": "string",
+            "description": "A particular area or subject of study that undergoes investigation, exploration, and systematic examination to acquire fresh knowledge, insights, and comprehension."
+          },
+          "academicQualification": {
+            "type": "string",
+            "description": "The highest educational qualification of the individual corresponding to this observation."
+          },
+          "identityInfo": {
+            "type": "object",
+            "description": "Personal identification information issued by the government.",
+            "properties": {
+              "bankAccountNo": {
+                "type": "number",
+                "description": "The bank account number of the individual or business corresponding to this observation",
+                "unitCode": "C62",
+                "unitText": "Dimensionless"
+              },
+              "gstin": {
+                "type": "string",
+                "description": "The Goods and Service Tax Identification Number of an individual or a business corresponding to this observation."
+              },
+              "ifscCode": {
+                "type": "string",
+                "description": "The IFSC code for the bank corresponding to this observation"
+              },
+              "drivingLicense": {
+                "type": "string",
+                "description": "The driving license number of the individual corresponding to this observation."
+              },
+              "registrationNumber": {
+                "type": "string",
+                "description": "The registration number of the entity corresponding to this observation."
+              },
+              "digitalSignature": {
+                "type": "string",
+                "description": "The link to the digital signature of the entity corresponding to this observation."
+              },
+              "panNo": {
+                "type": "string",
+                "description": "The pan card number of the individual corresponding to this observation."
+              },
+              "fssaiLicense": {
+                "type": "string",
+                "description": "The FSSAI (Food and Safety Standards Authority of India) license number."
+              },
+              "aadharNo": {
+                "type": "string",
+                "description": "The aadhar number issued by the government for the individual corresponding to this observation."
+              },
+              "iec": {
+                "type": "string",
+                "description": "The Importer-Exporter Code (IEC) which is an unique business identification number for export from or import to India"
+              }
+            }
+          },
+          "nationality": {
+            "type": "string",
+            "description": "Represents the nation that the individual corresponding to this observation belongs to."
+          },
+          "phone": {
+            "type": "string",
+            "description": "Phone number  corresponding to this observation"
+          },
+          "businessAddress": {
+            "type": "object",
+            "description": "Business address corresponding to this observation",
+            "properties": {
+              "addressLine": {
+                "type": "string",
+                "description": "Address corresponding to this observation"
+              },
+              "cityName": {
+                "type": "string",
+                "description": "Name of the city corresponding to this observation."
+              },
+              "locality": {
+                "type": "string",
+                "description": "Area name of the location corresponding to this observation."
+              },
+              "buildingNum": {
+                "type": "string",
+                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+              },
+              "pincode": {
+                "type": "number",
+                "description": "The postal code corresponding to this observation.",
+                "unitCode": "C62",
+                "unitText": "Dimensionless"
+              },
+              "stateCode": {
+                "type": "string",
+                "description": "Name of the state code corresponding to this observation."
+              },
+              "street": {
+                "type": "string",
+                "description": "Street name corresponding to this observation."
+              }
+            }
+          },
+          "permanentAddress": {
+            "type": "object",
+            "description": "Permanent address corresponding to this observation",
+            "properties": {
+              "addressLine": {
+                "type": "string",
+                "description": "Address corresponding to this observation"
+              },
+              "cityName": {
+                "type": "string",
+                "description": "Name of the city corresponding to this observation."
+              },
+              "locality": {
+                "type": "string",
+                "description": "Area name of the location corresponding to this observation."
+              },
+              "buildingNum": {
+                "type": "string",
+                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+              },
+              "pincode": {
+                "type": "number",
+                "description": "The postal code corresponding to this observation.",
+                "unitCode": "C62",
+                "unitText": "Dimensionless"
+              },
+              "stateCode": {
+                "type": "string",
+                "description": "Name of the state code corresponding to this observation."
+              },
+              "street": {
+                "type": "string",
+                "description": "Street name corresponding to this observation."
+              }
+            }
+          },
+          "residentialAddress": {
+            "type": "object",
+            "description": "Residential address corresponding to this observation",
+            "properties": {
+              "addressLine": {
+                "type": "string",
+                "description": "Address corresponding to this observation"
+              },
+              "cityName": {
+                "type": "string",
+                "description": "Name of the city corresponding to this observation."
+              },
+              "locality": {
+                "type": "string",
+                "description": "Area name of the location corresponding to this observation."
+              },
+              "buildingNum": {
+                "type": "string",
+                "description": "The unique number of the house/building/shop/flat corresponding to this observation."
+              },
+              "pincode": {
+                "type": "number",
+                "description": "The postal code corresponding to this observation.",
+                "unitCode": "C62",
+                "unitText": "Dimensionless"
+              },
+              "stateCode": {
+                "type": "string",
+                "description": "Name of the state code corresponding to this observation."
+              },
+              "street": {
+                "type": "string",
+                "description": "Street name corresponding to this observation."
+              }
+            }
+          },
+          "dob": {
+            "type": "string",
+            "description": "Date of birth (DOB) of the individual corresponding to this observation.",
+            "format": "date"
+          },
+          "email": {
+            "type": "string",
+            "description": "Email address of the individual corresponding to this observation"
+          },
+          "designation": {
+            "type": "string",
+            "description": "Designation of the individual corresponding to this observation"
+          },
+          "jurisdiction": {
+            "type": "array",
+            "description": "The administrative divisions within which the entity holds territorial scope of authority.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "workStatus": {
+            "type": "string",
+            "description": "The work status indicates whether the individual or entity is actively working, on leave, part-time, full-time, temporary, permanent, retired or in any other specific arrangement."
+          },
+          "birthPlace": {
+            "type": "string",
+            "description": "Place of birth of the individual corresponding to this observation."
+          },
+          "expertise": {
+            "type": "string",
+            "description": "The advanced knowledge, skills, and understanding acquired through education, training, and experience in diverse agricultural aspects, aiding in productivity, risk reduction, resource conservation, and sustainable profitability."
+          },
+          "salutation": {
+            "type": "string",
+            "description": "Salutation of the individual corresponding to this observation"
+          },
+          "imageURL": {
+            "type": "array",
+            "description": "The link that points to the picture of the individual or an entity corresponding to this observation.",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "capitalInfo": {
+        "type": "object",
+        "description": "The income and expenditure information corresponding to the entity.",
+        "properties": {
+          "cgst": {
+            "type": "number",
+            "description": "Central Goods and Service Tax is charged on the intra state supply of products and services.",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "utgst": {
+            "type": "number",
+            "description": "Union Territory Goods and Service Tax is levied on the supply of products and services in any of the Union Territories in the country, viz. Andaman and Nicobar Islands, Daman and Diu, Dadra and Nagar Haveli, Lakshadweep, and Chandigarh. UTGST is levied along with CGST.",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "freightCost": {
+            "type": "number",
+            "description": "The cost incurred for transporting the goods from the point of origin to a destination location.",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "paymentTerm": {
+            "type": "string",
+            "description": "Description of the terms of payment corresponding to this observation."
+          },
+          "netExpenditure": {
+            "type": "number",
+            "description": "The total cost incurred for the cultivation of a crop.",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "transportationCost": {
+            "type": "number",
+            "description": "The total cost incurred due to transportation of raw materials / supplies / merchandise which includes the road tax, state and central tax, IGST, etc.",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "landCess": {
+            "type": "number",
+            "description": "The amount of tax levied on land holdings.",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "miscellaneousCost": {
+            "type": "number",
+            "description": "The inevitable minor expenses incurred for a season in the cultivation of a crop corresponding to this observation.",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "electricityCost": {
+            "type": "number",
+            "description": "The total electricity cost incurred from agricultural purposes.",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "cultivationCost": {
+            "type": "number",
+            "description": "The total expense incurred on cultivation",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "machineryCost": {
+            "type": "number",
+            "description": "The total machinery cost incurred from agricultural purposes.",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "harvestCost": {
+            "type": "number",
+            "description": "The total cost incurred for harvesting the crop.",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "currencyType": {
+            "type": "string",
+            "description": "The type of currency used for selling the goods and services corresponding to this observation."
+          },
+          "leaseAmount": {
+            "type": "number",
+            "description": "The amount paid by the lessee for the land under cultivation.",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "netIncome": {
+            "type": "number",
+            "description": "Net revenue from the farmland corresponding to this observation",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "labourCost": {
+            "type": "number",
+            "description": "The total labour cost incurred during the cultivation of a crop.",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "costType": {
+            "type": "string",
+            "description": "Describes the type of the cost, for eg., whether the cost is estimated or billed."
+          },
+          "sgst": {
+            "type": "number",
+            "description": "State Goods and Service Tax like CGST, is charged on the sale of products or services within a state.",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          },
+          "igst": {
+            "type": "number",
+            "description": "Integrated Goods and Service Tax is charged on inter-state transactions of products and services.",
+            "unitCode": "INR",
+            "unitText": "Indian Rupee"
+          }
+        }
+      },
+      "landGeography": {
+        "type": "string",
+        "description": "The geographic characteristics of the land such as desert, hilly, etc"
+      },
+      "cropArea": {
+        "type": "number",
+        "description": "Area of the agricultural land used for cultivation, i.e, the arable land area.",
+        "unitCode": "MTK",
+        "unitText": "square metre"
+      },
+      "localeInfo": {
+        "type": "object",
+        "description": "Locale information corresponding to this observation.",
+        "properties": {
+          "villageCode": {
+            "type": "string",
+            "description": "The village code corresponding to this observation."
+          },
+          "revenueDivisionCode": {
+            "type": "string",
+            "description": "The revenue division code corresponding to this observation"
+          },
+          "revenueDivision": {
+            "type": "string",
+            "description": "Name of the revenue division in a district corresponding to this observation."
+          },
+          "districtName": {
+            "type": "string",
+            "description": "Name of the district corresponding to this observation."
+          },
+          "zoneName": {
+            "type": "string",
+            "description": "Zone name corresponding to this observation."
+          },
+          "subdistrictCode": {
+            "type": "string",
+            "description": "The subdistrict code corresponding to this observation."
+          },
+          "wardName": {
+            "type": "string",
+            "description": "Ward name corresponding to this observation."
+          },
+          "countryCode": {
+            "type": "string",
+            "description": "Name of the country code corresponding to this observation."
+          },
+          "countryName": {
+            "type": "string",
+            "description": "Name of the country corresponding to this observation."
+          },
+          "districtCode": {
+            "type": "string",
+            "description": "The district code corresponding to this observation."
+          },
+          "clusterName": {
+            "type": "string",
+            "description": "Name of the cluster corresponding to this observation. A cluster or a firkas represents a group of villages."
+          },
+          "villageName": {
+            "type": "string",
+            "description": "Name of the village corresponding to this observation."
+          },
+          "zoneID": {
+            "type": "string",
+            "description": "Zone ID corresponding to this observation."
+          },
+          "stateName": {
+            "type": "string",
+            "description": "Name of the state corresponding to this observation."
+          },
+          "subdistrictName": {
+            "type": "string",
+            "description": "Name of the subdistrict corresponding to this observation.  A subdistrict is also called as a tehsil, mandal, tahsil, tahasil, taluka, taluk, or taluq across the Indian states."
+          },
+          "wardID": {
+            "type": "string",
+            "description": "Ward ID corresponding to this observation."
+          },
+          "gramPanchayatName": {
+            "type": "string",
+            "description": "Name of the gram panchayat corresponding to this observation."
+          },
+          "stateCode": {
+            "type": "string",
+            "description": "The state code corresponding to this observation."
+          },
+          "clusterCode": {
+            "type": "string",
+            "description": "The cluster code corresponding to this observation."
+          }
+        }
+      },
+      "landClassName": {
+        "type": "string",
+        "description": "The name of the land classification as assigned by the government. Land classification can be based on several aspects such as type of land settlements, resource availability, irrigation etc."
+      },
+      "ownershipType": {
+        "type": "string",
+        "description": "The type of ownership of the entity corresponding to this observation. ENUM: [Lease, Rent, Own]"
+      },
+      "landIdentityInfo": {
+        "type": "object",
+        "description": "The unique land identification information corresponding to this observation.",
+        "properties": {
+          "baseSurveyNumber": {
+            "type": "number",
+            "description": "The base survey number of the land corresponding to this observation.",
+            "unitCode": "C62",
+            "unitText": "Dimensionless"
+          },
+          "subdivisionNumber": {
+            "type": "string",
+            "description": "The subdivision number from the land survey number corresponding to this observation"
+          },
+          "surveyNumber": {
+            "type": "string",
+            "description": "The unique land survey number allocated to the land corresponding to this observation."
+          },
+          "landParcelID": {
+            "type": "number",
+            "description": "The ULPIN(Unique Land Parcel Identification Number) representing the land parcel corresponding to the observation.",
+            "unitCode": "C62",
+            "unitText": "Dimensionless"
+          }
+        }
+      },
+      "irrigationSource": {
+        "type": "string",
+        "description": "The source of irrigation for a land, such as well, canals, tanks, borewell, etc"
+      },
+      "landExtentType": {
+        "type": "string",
+        "description": "The classification of the land parcel extent based on certain aspects such as its size."
+      },
+      "foodCropArea": {
+        "type": "string",
+        "description": "The total area of land used solely for the cultivation of food crops (eg., rice, wheat, millets, etc.), excluding non-food crops (eg., cotton, rubber, etc)."
+      }
     }
+  }
 }

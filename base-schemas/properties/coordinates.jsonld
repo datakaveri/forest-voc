@@ -1,38 +1,38 @@
 {
-    "@context": {
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geojson": "https://purl.org/geojson/vocab#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "iudx": "https://voc.iudx.org.in/",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "schema": "http://schema.org/",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "geojson": "https://purl.org/geojson/vocab#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "http://schema.org/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:coordinates",
+      "@type": [
+        "forest:GeoProperty"
+      ],
+      "rdfs:comment": "Coordinates for the GeoJSON object",
+      "rdfs:label": "coordinates",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:coordinates",
-            "@type": [
-                "forest:GeoProperty"
-            ],
-            "rdfs:comment": "Coordinates for the GeoJSON object",
-            "rdfs:label": "coordinates",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:Point"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Number",
-                    "@container": "@list"
-                }
-            ],
-            "skos:exactMatch": {
-                "@id": "geojson:coordinates"
-            }
+          "@id": "forest:Point"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Number",
+          "@container": "@list"
+        }
+      ],
+      "skos:exactMatch": {
+        "@id": "geojson:coordinates"
+      }
+    }
+  ]
 }

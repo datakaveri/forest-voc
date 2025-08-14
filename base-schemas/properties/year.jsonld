@@ -1,55 +1,55 @@
 {
-    "@context": {
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "iudx": "https://voc.iudx.org.in/",
-        "geojson": "https://purl.org/geojson/vocab#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "schema": "http://schema.org/",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "adex": "https://agrijson.org/",
-        "forest": "https://voc.forest-stack.iudx.io/"
-    },
-    "@graph": [
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "iudx": "https://voc.iudx.org.in/",
+    "geojson": "https://purl.org/geojson/vocab#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:year",
+      "@type": [
+        "forest:QuantitativeProperty"
+      ],
+      "rdfs:comment": "Year corresponding to this observation and is described in YYYY format, for eg. 2020.",
+      "rdfs:label": "year",
+      "forest:domainIncludes": [
         {
-            "@id": "forest:year",
-            "@type": [
-                "forest:QuantitativeProperty"
-            ],
-            "rdfs:comment": "Year corresponding to this observation and is described in YYYY format, for eg. 2020.",
-            "rdfs:label": "year",
-            "adex:domainIncludes": [
-                {
-                    "@id": "forest:CropDiseaseDesc"
-                },
-                {
-                    "@id": "forest:PublicSchemes"
-                },
-                {
-                    "@id": "forest:Farmer"
-                },
-                {
-                    "@id": "forest:ModelDesc"
-                },
-                {
-                    "@id": "forest:CropCondition"
-                },
-                {
-                    "@id": "forest:AgriCredit"
-                },
-                {
-                    "@id": "forest:DomesticPriceInfo"
-                }
-            ],
-            "adex:rangeIncludes": [
-                {
-                    "@id": "forest:Number"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
-                }
-            ]
+          "@id": "forest:CropDiseaseDesc"
+        },
+        {
+          "@id": "forest:PublicSchemes"
+        },
+        {
+          "@id": "forest:Farmer"
+        },
+        {
+          "@id": "forest:ModelDesc"
+        },
+        {
+          "@id": "forest:CropCondition"
+        },
+        {
+          "@id": "forest:AgriCredit"
+        },
+        {
+          "@id": "forest:DomesticPriceInfo"
         }
-    ]
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Number"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ]
+    }
+  ]
 }

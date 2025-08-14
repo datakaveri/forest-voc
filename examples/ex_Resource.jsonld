@@ -1,63 +1,63 @@
 {
-    "@context": "https://agrijson.org/",
-    "id": "y6543b2b-00e4-4a90-a74f-ddf6840d32d8",
-    "type": [
-        "forest:Resource",
-        "forest:AgriAdvisory"
-    ],
-    "name": "sensorA",
-    "label": "Agriculture Subdistrict (ASD) Level Agromet Advisory Data in Telangana State",
-    "description": "Description of this resource",
-    "tags": [
-        "Advisory",
-        "district",
-        "crop",
-        "subdistrict",
-        "general advisory",
-        "state advisory",
-        "regional advisory"
-    ],
-    "resourceGroup": "3f01f800-92d7-4ffa-afe3-7cb4fb8aa3ee",
-    "provider": "1er423p9-ebaf-4df7-a575-556ec6092a25",
-    "resourceType": "MESSAGESTREAM",
-    "iudxResourceAPIs": [
-        "ATTR",
-        "TEMPORAL"
-    ],
-    "accessPolicy": "SECURE",
-    "apdURL": "acl-apd.adex.org.in",
-    "itemStatus": "ACTIVE",
-    "ownerUserId": "75v46c-4130-451f-b4df-ce41e245a754",
-    "cos": "354f96c4c-e595-4fee-984c-43dededfba48",
-    "location": {
-        "type": "Place",
-        "address": "ABD area, Hyderabad",
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [
-                        77.179011,
-                        18.556975
-                    ],
-                    [
-                        77.047585,
-                        15.14819
-                    ],
-                    [
-                        80.569225,
-                        19.514793
-                    ],
-                    [
-                        78.217742,
-                        20.06644
-                    ],
-                    [
-                        77.179011,
-                        18.556975
-                    ]
-                ]
-            ]
-        }
+  "@context": "https://agrijson.org/",
+  "id": "y6543b2b-00e4-4a90-a74f-ddf6840d32d8",
+  "type": [
+    "forest:Resource",
+    "forest:AgriAdvisory"
+  ],
+  "name": "sensorA",
+  "label": "Agriculture Subdistrict (ASD) Level Agromet Advisory Data in Telangana State",
+  "description": "Description of this resource",
+  "tags": [
+    "Advisory",
+    "district",
+    "crop",
+    "subdistrict",
+    "general advisory",
+    "state advisory",
+    "regional advisory"
+  ],
+  "resourceGroup": "3f01f800-92d7-4ffa-afe3-7cb4fb8aa3ee",
+  "provider": "1er423p9-ebaf-4df7-a575-556ec6092a25",
+  "resourceType": "MESSAGESTREAM",
+  "iudxResourceAPIs": [
+    "ATTR",
+    "TEMPORAL"
+  ],
+  "accessPolicy": "SECURE",
+  "apdURL": "acl-apd.adex.org.in",
+  "itemStatus": "ACTIVE",
+  "ownerUserId": "75v46c-4130-451f-b4df-ce41e245a754",
+  "cos": "354f96c4c-e595-4fee-984c-43dededfba48",
+  "location": {
+    "type": "Place",
+    "address": "ABD area, Hyderabad",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.179011,
+            18.556975
+          ],
+          [
+            77.047585,
+            15.14819
+          ],
+          [
+            80.569225,
+            19.514793
+          ],
+          [
+            78.217742,
+            20.06644
+          ],
+          [
+            77.179011,
+            18.556975
+          ]
+        ]
+      ]
     }
+  }
 }
