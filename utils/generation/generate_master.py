@@ -13,7 +13,7 @@ folders = []
 
 
 # Recursively list out classes and properties paths
-output_file = "adex.jsonld"
+output_file = "forest.jsonld"
 
 for (dirpath, dirnames, filenames) in os.walk("./"):
 
