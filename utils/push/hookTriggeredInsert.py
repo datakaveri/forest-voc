@@ -56,7 +56,7 @@ for fldr in schema_folders:
             with open(fldr + "/" + filename, 'r') as f:
                 print("Pushing " + filename)
                 doc = json.load(f)
-                name = doc["@graph"][0]["@id"][5:]
+                name = doc["@graph"][0]["@id"].split(":")[1]
                 status = post_schema(name, "", doc)
                 if (status == 0):
                     failed_list.append(name)
