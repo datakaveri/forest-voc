@@ -13,7 +13,7 @@
         "owl:Class",
         "rdfs:Class"
       ],
-      "@id": "iudx:AgriCredit",
+      "@id": "forest:AgriCredit",
       "rdfs:comment": "A data model for agricultural credit.",
       "rdfs:label": "AgriCredit",
       "rdfs:isDefinedBy": {
