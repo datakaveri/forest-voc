@@ -30,7 +30,7 @@
           "@id": "forest:RelationshipValue"
         },
         {
-          "@id": "forest:ADEXEntity",
+          "@id": "forest:IUDXEntity",
           "adex:requiredProperty": true
         },
         {

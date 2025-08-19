@@ -19,7 +19,7 @@
       "rdfs:label": "label",
       "forest:domainIncludes": [
         {
-          "@id": "forest:ADEXEntity"
+          "@id": "forest:IUDXEntity"
         }
       ],
       "forest:rangeIncludes": [

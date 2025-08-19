@@ -19,7 +19,7 @@
       "rdfs:label": "itemModifiedAt",
       "forest:domainIncludes": [
         {
-          "@id": "forest:ADEXEntity"
+          "@id": "forest:IUDXEntity"
         }
       ],
       "forest:rangeIncludes": [
