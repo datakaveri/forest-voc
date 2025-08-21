@@ -14,7 +14,7 @@
         "rdfs:Class"
       ],
       "@id": "forest:ProductAuction",
-      "rdfs:comment": "A datamodel for forest product auctions.",
+      "rdfs:comment": "A data-model for forest product auctions.",
       "rdfs:label": "ProductAuction",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
