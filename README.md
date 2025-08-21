@@ -21,4 +21,4 @@ Schemas hosted here are available in web-view format on [Forest-Stack Vocabulary
 We divide our schemas into the following three categories
 - data-types: Basic json data types, such as Number, Boolean, Text, etc
 - base-schemas: Core concepts generally used in adex internal operations and general concepts which serve as building blocks to advance concepts
-- datamodels: Data comprehension vocabulary for diverse domains of datasources building upon concepts defined in base-schemas
+- data-models: Data comprehension vocabulary for diverse domains of datasources building upon concepts defined in base-schemas
