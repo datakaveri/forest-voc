@@ -13,14 +13,14 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "forest:ProductAuction",
+            "@id": "forest:PlantationSites",
             "rdfs:comment": "",
-            "rdfs:label": "ProductAuction",
+            "rdfs:label": "PlantationSites",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
             "rdfs:subClassOf": {
-                "@id": "forest:ForestProduce"
+                "@id": "forest:ForestPlantation"
             }
         }
     ]

@@ -57,23 +57,23 @@ def check_multiple_includes(includes):
 def which_adex_property(prop_type):
     if prop_type == "QP":
         prop_list = []
-        prop_list.append("adex:QuantitativeProperty")
+        prop_list.append("forest:QuantitativeProperty")
         return prop_list
     elif prop_type == "TP":
         prop_list = []
-        prop_list.append("adex:TimeProperty")
+        prop_list.append("forest:TimeProperty")
         return prop_list
     elif prop_type == "TXP":
         prop_list = []
-        prop_list.append("adex:TextProperty")
+        prop_list.append("forest:TextProperty")
         return prop_list
     elif prop_type == "SP":
         prop_list = []
-        prop_list.append("adex:StructuredProperty")
+        prop_list.append("forest:StructuredProperty")
         return prop_list
     elif prop_type == "GP":
         prop_list = []
-        prop_list.append("adex:GeoProperty")
+        prop_list.append("forest:GeoProperty")
         return prop_list
 
 
@@ -87,16 +87,16 @@ def add_domain_or_range(item_list, items, item_type):
             else:
                 if item.strip() == "Text-list":
                     dr_dict["@container"] = "@list"
-                    dr_dict["@id"] = "adex:Text"
+                    dr_dict["@id"] = "forest:Text"
                 else:
                     dr_dict[
-                        "@id"] = "adex:" + item.strip() if item_type == "adex:rangeIncludes" and item.strip() not in [
-                        "NumericArray", "ValueDescriptor"] else "adex:" + item.strip()
+                        "@id"] = "forest:" + item.strip() if item_type == "forest:rangeIncludes" and item.strip() not in [
+                        "NumericArray", "ValueDescriptor"] else "forest:" + item.strip()
             dr_list.append(dr_dict)
             for i in range(len(dr_list)):
                 if "@container" in dr_list[i].keys():
-                    if {'@id': 'adex:Text'} in dr_list:
-                        dr_list.remove({'@id': 'adex:Text'})
+                    if {'@id': 'forest:Text'} in dr_list:
+                        dr_list.remove({'@id': 'forest:Text'})
     except NameError:
         dr_list = []
         dr_dict = {}
@@ -105,7 +105,7 @@ def add_domain_or_range(item_list, items, item_type):
         else:
 
             dr_dict[
-                "@id"] = "adex:" + items.strip() if item_type == "adex:rangeIncludes" else "adex:" + items.strip()
+                "@id"] = "forest:" + items.strip() if item_type == "forest:rangeIncludes" else "forest:" + items.strip()
         dr_list.append(dr_dict)
     return dr_list
 
@@ -135,7 +135,7 @@ def create_domain(properties_path):
         class_dict["@graph"][0]["rdfs:comment"] = comment
         class_dict["@graph"][0]["rdfs:label"] = domain_name
         dict1 = {}
-        dict1["rdfs:subClassOf"] = {"@id": "adex:DataModel"}
+        dict1["rdfs:subClassOf"] = {"@id": "forest:DataModel"}
         obj["@graph"][0].update(dict1)
 
         with open(domain_path, "w+") as prop_file:
@@ -147,13 +147,13 @@ def create_classes(properties_path, subclass):
         comment = input(f"Enter the description of {sub_domain}\n")
         class_dict = obj
         class_dict["@graph"][0]["@type"] = ["owl:Class", "rdfs:Class"]
-        class_dict["@graph"][0]["@id"] = "adex:" + sub_domain
+        class_dict["@graph"][0]["@id"] = "forest:" + sub_domain
         class_dict["@graph"][0]["rdfs:comment"] = comment
         class_dict["@graph"][0]["rdfs:label"] = sub_domain
         dict1 = {}
 
         if "Data Model" in subclass:
-            dict1["rdfs:subClassOf"] = {"@id": "adex:" + domain_name}
+            dict1["rdfs:subClassOf"] = {"@id": "forest:" + domain_name}
         obj["@graph"][0].update(dict1)
 
         with open(subdomain_path, "w+") as prop_file:
@@ -186,11 +186,11 @@ def order_obj(obj):
         except KeyError:
             pass
         try:
-            tmp_obj["adex:domainIncludes"] = obj["@graph"][0]["adex:domainIncludes"]
+            tmp_obj["forest:domainIncludes"] = obj["@graph"][0]["forest:domainIncludes"]
         except KeyError:
             pass
         try:
-            tmp_obj["adex:rangeIncludes"] = obj["@graph"][0]["adex:rangeIncludes"]
+            tmp_obj["forest:rangeIncludes"] = obj["@graph"][0]["forest:rangeIncludes"]
         except KeyError:
             pass
         try:
@@ -210,11 +210,11 @@ def order_obj(obj):
         except KeyError:
             pass
         try:
-            del (obj["@graph"][0]["adex:domainIncludes"])
+            del (obj["@graph"][0]["forest:domainIncludes"])
         except KeyError:
             pass
         try:
-            del (obj["@graph"][0]["adex:rangeIncludes"])
+            del (obj["@graph"][0]["forest:rangeIncludes"])
         except KeyError:
             pass
         new_dict["@graph"] = new_list
@@ -271,13 +271,13 @@ def gen_properties(df):
                 new_list = []
                 tmp_obj = {}
                 new_list.append(tmp_obj)
-                tmp_obj["@id"] = "adex:" + csv_label
+                tmp_obj["@id"] = "forest:" + csv_label
                 tmp_obj["@type"] = which_adex_property(csv_type)
                 tmp_obj["rdfs:comment"] = csv_comment
                 tmp_obj["rdfs:label"] = csv_label
                 tmp_obj["rdfs:isDefinedBy"] = obj["@graph"][0]["rdfs:isDefinedBy"]
-                tmp_obj["adex:domainIncludes"] = add_domain_or_range(csv_domain_list, csv_domain, "adex:domainIncludes")
-                tmp_obj["adex:rangeIncludes"] = add_domain_or_range(csv_range_list, csv_range, "adex:rangeIncludes")
+                tmp_obj["forest:domainIncludes"] = add_domain_or_range(csv_domain_list, csv_domain, "forest:domainIncludes")
+                tmp_obj["forest:rangeIncludes"] = add_domain_or_range(csv_range_list, csv_range, "forest:rangeIncludes")
                 if csv_match != 'nan':
                     tmp_obj["skos:exactMatch"] = {'@id': csv_match}
                 new_dict["@graph"] = new_list
@@ -300,16 +300,16 @@ def gen_properties(df):
 
                             base_prop["@graph"][0]["@type"] = which_adex_property(csv_type)
                             base_prop["@graph"][0]["rdfs:comment"] = csv_comment
-                            base_prop["@graph"][0]["adex:rangeIncludes"] = add_domain_or_range(csv_range_list,
+                            base_prop["@graph"][0]["forest:rangeIncludes"] = add_domain_or_range(csv_range_list,
                                                                                                csv_range,
-                                                                                               "adex:rangeIncludes")
+                                                                                               "forest:rangeIncludes")
 
                             csv_domain = csv_domain.split(",")
                             for i in range(len(csv_domain)):
                                 new_domain = csv_domain[i].strip()
-                                new_domain_obj = {"@id": "adex:" + new_domain}
-                                if new_domain_obj not in base_prop["@graph"][0]["adex:domainIncludes"]:
-                                    base_prop["@graph"][0]["adex:domainIncludes"].append(new_domain_obj)
+                                new_domain_obj = {"@id": "forest:" + new_domain}
+                                if new_domain_obj not in base_prop["@graph"][0]["forest:domainIncludes"]:
+                                    base_prop["@graph"][0]["forest:domainIncludes"].append(new_domain_obj)
                             write_json(base_prop, base_file)
 
                 if not os.path.exists(properties_path):
@@ -324,8 +324,8 @@ def gen_properties(df):
             domain = item[3]
             range_include = item[4].strip()
             filename = dir_home + "/base-schemas/properties/" + base_property + ".jsonld"
-            jsonld_update(filename, domain, "adex:domainIncludes", "baseSchema")
-            jsonld_update(filename, range_include, "adex:rangeIncludes", "baseSchema")
+            jsonld_update(filename, domain, "forest:domainIncludes", "baseSchema")
+            jsonld_update(filename, range_include, "forest:rangeIncludes", "baseSchema")
 
         if item[7] == "1": # OtherSchema
             # try:
@@ -333,8 +333,8 @@ def gen_properties(df):
             domain =  item[3]
             range_include = item[4].strip()
             property_path = find_name(base_property + '.jsonld', dir_home)
-            jsonld_update(property_path[0], domain, "adex:domainIncludes", "")
-            jsonld_update(property_path[0], range_include, "adex:rangeIncludes", "")
+            jsonld_update(property_path[0], domain, "forest:domainIncludes", "")
+            jsonld_update(property_path[0], range_include, "forest:rangeIncludes", "")
 
         # except:
         #    print(f"NOT FOUND in Other Schema: {base_property}  ")
@@ -359,7 +359,7 @@ if __name__ == "__main__":
     else:
         domain_name = Path(file_dir).stem
 
-    dir_home = "/home/iudx/Work/gitrepos/agri-voc/"
+    dir_home = "/home/iudx/Work/gitrepos/forest-voc/"
     data_models_dir = os.path.join(dir_home, "data-models")
     if val == "Y":
         arr = next(os.walk(dir_home + "/data-models"))

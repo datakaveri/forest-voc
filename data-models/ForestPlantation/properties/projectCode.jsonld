@@ -9,18 +9,18 @@
     },
     "@graph": [
         {
-            "@id": "forest:refNumber",
+            "@id": "forest:projectCode",
             "@type": [
                 "forest:TextProperty"
             ],
-            "rdfs:comment": "A unique reference code assigned to each auction record for tracking and identification.",
-            "rdfs:label": "refNumber",
+            "rdfs:comment": "Project identifier, which may include a secondary site code for specific plantation locations.",
+            "rdfs:label": "projectCode",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
             "forest:domainIncludes": [
                 {
-                    "@id": "forest:ProductAuction"
+                    "@id": "forest:PlantationSites"
                 }
             ],
             "forest:rangeIncludes": [

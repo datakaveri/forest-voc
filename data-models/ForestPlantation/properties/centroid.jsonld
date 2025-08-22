@@ -9,21 +9,30 @@
     },
     "@graph": [
         {
-            "@id": "forest:refNumber",
+            "@id": "forest:centroid",
             "@type": [
-                "forest:TextProperty"
+                "forest:GeoProperty"
             ],
-            "rdfs:comment": "A unique reference code assigned to each auction record for tracking and identification.",
-            "rdfs:label": "refNumber",
+            "rdfs:comment": "Geographic centroid coordinate of the plantation polygon.",
+            "rdfs:label": "centroid",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
             "forest:domainIncludes": [
                 {
-                    "@id": "forest:ProductAuction"
+                    "@id": "forest:PlantationSites"
                 }
             ],
             "forest:rangeIncludes": [
+                {
+                    "@id": "forest:Point"
+                },
+                {
+                    "@id": "forest:GeoJSONGeometry"
+                },
+                {
+                    "@id": "forest:Place"
+                },
                 {
                     "@id": "forest:Text"
                 },

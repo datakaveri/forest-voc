@@ -1,36 +1,36 @@
 {
-  "@context": {
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "iudx": "https://voc.iudx.org.in/",
-    "adex": "https://agrijson.org/",
-    "forest": "https://voc.forest-stack.iudx.io/"
-  },
-  "@graph": [
-    {
-      "@id": "forest:quantity",
-      "@type": [
-        "forest:QuantitativeProperty"
-      ],
-      "rdfs:comment": "Quantity of the product in auction.",
-      "rdfs:label": "quantity",
-      "rdfs:isDefinedBy": {
-        "@id": "forest:"
-      },
-      "forest:domainIncludes": [
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
         {
-          "@id": "forest:ProductAuction"
+            "@id": "forest:quantity",
+            "@type": [
+                "forest:QuantitativeProperty"
+            ],
+            "rdfs:comment": "The measured amount or volume of the forest product available in the auction.",
+            "rdfs:label": "quantity",
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
+            "forest:domainIncludes": [
+                {
+                    "@id": "forest:ProductAuction"
+                }
+            ],
+            "forest:rangeIncludes": [
+                {
+                    "@id": "forest:Number"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ]
         }
-      ],
-      "forest:rangeIncludes": [
-        {
-          "@id": "forest:Number"
-        },
-        {
-          "@id": "forest:ValueDescriptor"
-        }
-      ]
-    }
-  ]
+    ]
 }

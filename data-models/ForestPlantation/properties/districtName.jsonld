@@ -9,18 +9,18 @@
     },
     "@graph": [
         {
-            "@id": "forest:refNumber",
+            "@id": "forest:districtName",
             "@type": [
                 "forest:TextProperty"
             ],
-            "rdfs:comment": "A unique reference code assigned to each auction record for tracking and identification.",
-            "rdfs:label": "refNumber",
+            "rdfs:comment": "Name of the district where the forest area is located.",
+            "rdfs:label": "districtName",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
             "forest:domainIncludes": [
                 {
-                    "@id": "forest:ProductAuction"
+                    "@id": "forest:PlantationSites"
                 }
             ],
             "forest:rangeIncludes": [

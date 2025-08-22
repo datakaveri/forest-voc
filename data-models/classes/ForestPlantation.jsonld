@@ -13,14 +13,14 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "forest:ProductAuction",
-            "rdfs:comment": "",
-            "rdfs:label": "ProductAuction",
+            "@id": "iudx:ForestPlantation",
+            "rdfs:comment": "Data models that pertain to a cultivated area where trees are deliberately planted and managed for commercial, conservation, or ecological purposes within a forest environment.",
+            "rdfs:label": "ForestPlantation",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
             "rdfs:subClassOf": {
-                "@id": "forest:ForestProduce"
+                "@id": "forest:DataModel"
             }
         }
     ]

@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@id": "forest:refNumber",
+            "@id": "forest:rangeName",
             "@type": [
                 "forest:TextProperty"
             ],
-            "rdfs:comment": "A unique reference code assigned to each auction record for tracking and identification.",
-            "rdfs:label": "refNumber",
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            },
+            "rdfs:comment": "The official name of the forest range under management or jurisdiction.",
+            "rdfs:label": "rangeName",
             "forest:domainIncludes": [
+                {
+                    "@id": "forest:PlantationSites"
+                },
                 {
                     "@id": "forest:ProductAuction"
                 }
@@ -30,7 +30,13 @@
                 {
                     "@id": "forest:ValueDescriptor"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
+            "skos:exactMatch": {
+                "@id": "RangeName"
+            }
         }
     ]
 }

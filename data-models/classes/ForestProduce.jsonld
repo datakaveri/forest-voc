@@ -1,24 +1,27 @@
 {
-  "@context": {
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "iudx": "https://voc.iudx.org.in/",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "adex": "https://agrijson.org/",
-    "forest": "https://voc.forest-stack.iudx.io/"
-  },
-  "@graph": [
-    {
-      "@id": "forest:ForestProduce",
-      "@type": [
-        "owl:Class",
-        "rdfs:Class"
-      ],
-      "rdfs:comment": "Data models that encompasses both marketable goods used directly or processed into items, as well as non-market products that support rural economies and biodiversity.",
-      "rdfs:label": "ForestProduce",
-      "rdfs:subClassOf": {
-        "@id": "forest:DataModel"
-      }
-    }
-  ]
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "@id": "iudx:ForestProduce",
+            "rdfs:comment": "Data models that pertain to all the goods and materials obtained from forests, including timber, fruits, nuts, medicinal plants, and other natural resources.",
+            "rdfs:label": "ForestProduce",
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "forest:DataModel"
+            }
+        }
+    ]
 }
