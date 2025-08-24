@@ -14,7 +14,7 @@
                 "rdfs:Class"
             ],
             "@id": "forest:ProductAuction",
-            "rdfs:comment": "Data model pertaining to any material or resource obtained from a forest ecosystem, including all parts of trees, plants, animals, and minerals found within or brought from forests."
+            "rdfs:comment": "Data model pertaining to any material or resource obtained from a forest ecosystem, including all parts of trees, plants, animals, and minerals found within or brought from forests.",
             "rdfs:label": "ProductAuction",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
