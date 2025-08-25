@@ -39,7 +39,7 @@
             },
 	    "rdfs:subProperyOf": {
                 "@id": "forest:divisionName"
-            },
+            }
         }
     ]
 }

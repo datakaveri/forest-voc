@@ -29,7 +29,7 @@
                 },
                 {
                     "@id": "forest:ValueDescriptor"
-                },,
+                },
                 {
                     "@id": "forest:RelationshipValue"
                 }
@@ -39,7 +39,7 @@
             },
 	    "rdfs:subProperyOf": {
                 "@id": "forest:circleName"
-            },
+            }
         }
     ]
 }
