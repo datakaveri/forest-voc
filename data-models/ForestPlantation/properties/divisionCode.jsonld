@@ -18,6 +18,9 @@
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
+	    "rdfs:subProperyOf": {
+                "@id": "forest:circleCode"
+            },
             "forest:domainIncludes": [
                 {
                     "@id": "forest:PlantationSites"
@@ -29,6 +32,9 @@
                 },
                 {
                     "@id": "forest:ValueDescriptor"
+                },
+                {
+                    "@id": "forest:RelationshipValue"
                 }
             ],
             "skos:exactMatch": {

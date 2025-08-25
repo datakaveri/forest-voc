@@ -29,6 +29,9 @@
                 },
                 {
                     "@id": "forest:ValueDescriptor"
+                },
+                {
+                    "@id": "forest:RelationshipValue"
                 }
             ]
         }

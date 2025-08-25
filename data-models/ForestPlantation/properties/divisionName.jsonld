@@ -29,14 +29,17 @@
                 },
                 {
                     "@id": "forest:ValueDescriptor"
+                },,
+                {
+                    "@id": "forest:RelationshipValue"
                 }
             ],
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
-            "skos:exactMatch": {
-                "@id": "AdministrativeArea"
-            }
+	    "rdfs:subProperyOf": {
+                "@id": "forest:circleName"
+            },
         }
     ]
 }
