@@ -18,6 +18,9 @@
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
+	    "rdfs:subProperyOf": {
+                "@id": "forest:rangeName"
+            },
             "forest:domainIncludes": [
                 {
                     "@id": "forest:PlantationSites"
