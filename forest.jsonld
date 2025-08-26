@@ -1,0 +1,650 @@
+{
+    "@context": {
+        "DateTime": {
+            "@id": "forest:DateTime"
+        },
+        "type": "@type",
+        "id": "@id",
+        "@vocab": "https://voc.forest-stack.iudx.io/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "schema": "http://schema.org/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "iudx": "https://voc.iudx.org.in/",
+        "forest": "https://voc.forest-stack.iudx.io/",
+        "adex": "https://agrijson.org/",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "qudt": "http://qudt.org/vocab/unit/",
+        "Text": {
+            "@id": "forest:Text"
+        },
+        "Number": {
+            "@id": "forest:Number"
+        },
+        "NumericArray": {
+            "@id": "forest:NumericArray"
+        },
+        "Object": {
+            "@id": "forest:Object"
+        },
+        "Boolean": {
+            "@id": "forest:Boolean"
+        },
+        "Organization": {
+            "@id": "forest:Organization"
+        },
+        "Intangible": {
+            "@id": "forest:Intangible"
+        },
+        "Model": {
+            "@id": "forest:Model"
+        },
+        "Relationship": {
+            "@id": "forest:Relationship"
+        },
+        "StructuredProperty": {
+            "@id": "forest:StructuredProperty"
+        },
+        "GeoCoordinates": {
+            "@id": "forest:GeoCoordinates"
+        },
+        "COS": {
+            "@id": "forest:COS"
+        },
+        "Owner": {
+            "@id": "forest:Owner"
+        },
+        "Provider": {
+            "@id": "forest:Provider"
+        },
+        "IUDXEntity": {
+            "@id": "forest:IUDXEntity"
+        },
+        "Feature": {
+            "@id": "forest:Feature"
+        },
+        "GeoJSONGeometry": {
+            "@id": "forest:GeoJSONGeometry"
+        },
+        "AccessObjectInfoValue": {
+            "@id": "forest:AccessObjectInfoValue"
+        },
+        "Polygon": {
+            "@id": "forest:Polygon"
+        },
+        "Resource": {
+            "@id": "forest:Resource"
+        },
+        "DataFieldListValue": {
+            "@id": "forest:DataFieldListValue"
+        },
+        "ValueDescriptor": {
+            "@id": "forest:ValueDescriptor"
+        },
+        "Class": {
+            "@id": "forest:Class"
+        },
+        "TimeProperty": {
+            "@id": "forest:TimeProperty"
+        },
+        "TimeSeriesAggregation": {
+            "@id": "forest:TimeSeriesAggregation"
+        },
+        "StructuredValue": {
+            "@id": "forest:StructuredValue"
+        },
+        "ResourceGroup": {
+            "@id": "forest:ResourceGroup"
+        },
+        "ResourceServer": {
+            "@id": "forest:ResourceServer"
+        },
+        "Place": {
+            "@id": "forest:Place"
+        },
+        "QuantitativeProperty": {
+            "@id": "forest:QuantitativeProperty"
+        },
+        "DataDescriptor": {
+            "@id": "forest:DataDescriptor"
+        },
+        "AuthServerInfoValue": {
+            "@id": "forest:AuthServerInfoValue"
+        },
+        "DataModel": {
+            "@id": "forest:DataModel"
+        },
+        "Thing": {
+            "@id": "forest:Thing"
+        },
+        "LineString": {
+            "@id": "forest:LineString"
+        },
+        "TextProperty": {
+            "@id": "forest:TextProperty"
+        },
+        "Point": {
+            "@id": "forest:Point"
+        },
+        "RelationshipValue": {
+            "@id": "forest:RelationshipValue"
+        },
+        "GeoProperty": {
+            "@id": "forest:GeoProperty"
+        },
+        "longitude": {
+            "@id": "forest:longitude"
+        },
+        "resourceServerRegURL": {
+            "@id": "forest:resourceServerRegURL",
+            "@type": "@id"
+        },
+        "dataDescriptorName": {
+            "@id": "forest:dataDescriptorName"
+        },
+        "date": {
+            "@id": "forest:date"
+        },
+        "secureDataFields": {
+            "@id": "forest:secureDataFields"
+        },
+        "dataReadiness": {
+            "@id": "forest:dataReadiness"
+        },
+        "repositoryURL": {
+            "@id": "forest:repositoryURL",
+            "@type": "@id"
+        },
+        "apdURL": {
+            "@id": "forest:apdURL"
+        },
+        "relatedEntity": {
+            "@id": "forest:relatedEntity",
+            "@type": "@id"
+        },
+        "providerOrg": {
+            "@id": "forest:providerOrg"
+        },
+        "itemModifiedAt": {
+            "@id": "forest:itemModifiedAt"
+        },
+        "hasObject": {
+            "@id": "forest:hasObject"
+        },
+        "label": {
+            "@id": "forest:label"
+        },
+        "isRelatedTo": {
+            "@id": "forest:isRelatedTo"
+        },
+        "cos": {
+            "@id": "forest:cos",
+            "@type": "@id"
+        },
+        "measAccuracy": {
+            "@id": "forest:measAccuracy"
+        },
+        "rangeIncludes": {
+            "@id": "forest:rangeIncludes"
+        },
+        "dxResourceAPIs": {
+            "@id": "forest:dxResourceAPIs"
+        },
+        "owner": {
+            "@id": "forest:owner",
+            "@type": "@id"
+        },
+        "provider": {
+            "@id": "forest:provider",
+            "@type": "@id"
+        },
+        "dataQualityFile": {
+            "@id": "forest:dataQualityFile",
+            "@type": "@id"
+        },
+        "description": {
+            "@id": "forest:description"
+        },
+        "fileFormat": {
+            "@id": "forest:fileFormat"
+        },
+        "hasParent": {
+            "@id": "forest:hasParent"
+        },
+        "durationInMinutes": {
+            "@id": "forest:durationInMinutes"
+        },
+        "dataSample": {
+            "@id": "forest:dataSample"
+        },
+        "value": {
+            "@id": "forest:value"
+        },
+        "additionalInfoURL": {
+            "@id": "forest:additionalInfoURL",
+            "@type": "@id"
+        },
+        "accessObject": {
+            "@id": "forest:accessObject",
+            "@type": "@id"
+        },
+        "itemDeprecatedAt": {
+            "@id": "forest:itemDeprecatedAt"
+        },
+        "organizationType": {
+            "@id": "forest:organizationType"
+        },
+        "geoJSON": {
+            "@id": "forest:geoJSON"
+        },
+        "mediaURL": {
+            "@id": "forest:mediaURL"
+        },
+        "itemCreatedAt": {
+            "@id": "forest:itemCreatedAt"
+        },
+        "coordinates": {
+            "@id": "forest:coordinates"
+        },
+        "avgOverTime": {
+            "@id": "forest:avgOverTime"
+        },
+        "dataAccessPurposes": {
+            "@id": "forest:dataAccessPurposes",
+            "@type": "@id"
+        },
+        "associatedEntity": {
+            "@id": "forest:associatedEntity",
+            "@type": "@id"
+        },
+        "dataSampleFile": {
+            "@id": "forest:dataSampleFile",
+            "@type": "@id"
+        },
+        "isPartOf": {
+            "@id": "forest:isPartOf"
+        },
+        "geometry": {
+            "@id": "forest:geometry"
+        },
+        "geoCovers": {
+            "@id": "forest:geoCovers"
+        },
+        "instValue": {
+            "@id": "forest:instValue"
+        },
+        "cosUI": {
+            "@id": "forest:cosUI",
+            "@type": "@id"
+        },
+        "address": {
+            "@id": "forest:address"
+        },
+        "authType": {
+            "@id": "forest:authType"
+        },
+        "authServerURL": {
+            "@id": "forest:authServerURL",
+            "@type": "@id"
+        },
+        "maxValue": {
+            "@id": "forest:maxValue"
+        },
+        "minOverTime": {
+            "@id": "forest:minOverTime"
+        },
+        "tags": {
+            "@id": "forest:tags"
+        },
+        "location": {
+            "@id": "forest:location"
+        },
+        "latitude": {
+            "@id": "forest:latitude"
+        },
+        "year": {
+            "@id": "forest:year"
+        },
+        "downloadURL": {
+            "@id": "forest:downloadURL",
+            "@type": "@id"
+        },
+        "resourceGroup": {
+            "@id": "forest:resourceGroup",
+            "@type": "@id"
+        },
+        "name": {
+            "@id": "forest:name"
+        },
+        "resourceServerOrg": {
+            "@id": "forest:resourceServerOrg"
+        },
+        "accessPolicy": {
+            "@id": "forest:accessPolicy"
+        },
+        "resourceServer": {
+            "@id": "forest:resourceServer",
+            "@type": "@id"
+        },
+        "unitText": {
+            "@id": "forest:unitText"
+        },
+        "domainIncludes": {
+            "@id": "forest:domainIncludes"
+        },
+        "authServerInfo": {
+            "@id": "forest:authServerInfo"
+        },
+        "department": {
+            "@id": "forest:department"
+        },
+        "durationInHours": {
+            "@id": "forest:durationInHours"
+        },
+        "resourceAccessModalities": {
+            "@id": "forest:resourceAccessModalities"
+        },
+        "altitude": {
+            "@id": "forest:altitude"
+        },
+        "landmark": {
+            "@id": "forest:landmark"
+        },
+        "dataDescriptor": {
+            "@id": "forest:dataDescriptor",
+            "@type": "@id"
+        },
+        "resolution": {
+            "@id": "forest:resolution"
+        },
+        "fileSize": {
+            "@id": "forest:fileSize"
+        },
+        "aggregationDuration": {
+            "@id": "forest:aggregationDuration"
+        },
+        "month": {
+            "@id": "forest:month"
+        },
+        "accessObjectType": {
+            "@id": "forest:accessObjectType"
+        },
+        "openDataFields": {
+            "@id": "forest:openDataFields"
+        },
+        "dataQueryParams": {
+            "@id": "forest:dataQueryParams",
+            "@type": "@id"
+        },
+        "dataDescriptorLabel": {
+            "@id": "forest:dataDescriptorLabel"
+        },
+        "accessObjectInfo": {
+            "@id": "forest:accessObjectInfo"
+        },
+        "maxOverTime": {
+            "@id": "forest:maxOverTime"
+        },
+        "dataSchema": {
+            "@id": "forest:dataSchema"
+        },
+        "resourceType": {
+            "@id": "forest:resourceType"
+        },
+        "unitCode": {
+            "@id": "forest:unitCode"
+        },
+        "sameAs": {
+            "@id": "forest:sameAs"
+        },
+        "cosURL": {
+            "@id": "forest:cosURL",
+            "@type": "@id"
+        },
+        "modelType": {
+            "@id": "forest:modelType"
+        },
+        "minValue": {
+            "@id": "forest:minValue"
+        },
+        "itemStatus": {
+            "@id": "forest:itemStatus"
+        },
+        "relationType": {
+            "@id": "forest:relationType"
+        },
+        "requiredProperty": {
+            "@id": "forest:requiredProperty"
+        },
+        "labelXYZ": {
+            "@id": "forest:labelXYZ"
+        },
+        "Plantation": {
+            "@id": "forest:Plantation"
+        },
+        "parentRegionId": {
+            "@id": "forest:parentRegionId"
+        },
+        "area": {
+            "@id": "forest:area"
+        },
+        "code": {
+            "@id": "forest:code"
+        },
+        "status": {
+            "@id": "forest:status"
+        },
+        "modelCode": {
+            "@id": "forest:modelCode"
+        },
+        "schemeCode": {
+            "@id": "forest:schemeCode"
+        },
+        "PlantationSites": {
+            "@id": "forest:PlantationSites"
+        },
+        "Scheme": {
+            "@id": "forest:Scheme"
+        },
+        "schemeStatus": {
+            "@id": "forest:schemeStatus"
+        },
+        "vfpmcName": {
+            "@id": "forest:vfpmcName"
+        },
+        "schemeApplicableStates": {
+            "@id": "forest:schemeApplicableStates"
+        },
+        "divisionName": {
+            "@id": "forest:divisionName"
+        },
+        "modelName": {
+            "@id": "forest:modelName"
+        },
+        "schemeScope": {
+            "@id": "forest:schemeScope"
+        },
+        "rangeCode": {
+            "@id": "forest:rangeCode"
+        },
+        "schemeName": {
+            "@id": "forest:schemeName"
+        },
+        "schemeValidTill": {
+            "@id": "forest:schemeValidTill"
+        },
+        "schemeSourceUri": {
+            "@id": "forest:schemeSourceUri"
+        },
+        "circleCode": {
+            "@id": "forest:circleCode"
+        },
+        "siteName": {
+            "@id": "forest:siteName"
+        },
+        "districtName": {
+            "@id": "forest:districtName"
+        },
+        "schemeValidFrom": {
+            "@id": "forest:schemeValidFrom"
+        },
+        "projectCode": {
+            "@id": "forest:projectCode"
+        },
+        "centroid": {
+            "@id": "forest:centroid"
+        },
+        "schemeDefiningAuthority": {
+            "@id": "forest:schemeDefiningAuthority"
+        },
+        "plantationYear": {
+            "@id": "forest:plantationYear"
+        },
+        "circleName": {
+            "@id": "forest:circleName"
+        },
+        "siteCode": {
+            "@id": "forest:siteCode"
+        },
+        "districtCode": {
+            "@id": "forest:districtCode"
+        },
+        "schemeDefinition": {
+            "@id": "forest:schemeDefinition"
+        },
+        "landCategory": {
+            "@id": "forest:landCategory"
+        },
+        "divisionCode": {
+            "@id": "forest:divisionCode"
+        },
+        "villageName": {
+            "@id": "forest:villageName"
+        },
+        "rangeName": {
+            "@id": "forest:rangeName"
+        },
+        "ForestProduce": {
+            "@id": "forest:ForestProduce"
+        },
+        "ForestPlantation": {
+            "@id": "forest:ForestPlantation"
+        },
+        "ForestryModel": {
+            "@id": "forest:ForestryModel"
+        },
+        "Region": {
+            "@id": "forest:Region"
+        },
+        "Species": {
+            "@id": "forest:Species"
+        },
+        "SchemeStatus": {
+            "@id": "forest:SchemeStatus"
+        },
+        "SchemeScope": {
+            "@id": "forest:SchemeScope"
+        },
+        "RegionStatus": {
+            "@id": "forest:RegionStatus"
+        },
+        "RegionType": {
+            "@id": "forest:RegionType"
+        },
+        "PlantationStatus": {
+            "@id": "forest:PlantationStatus"
+        },
+        "ModelStatus": {
+            "@id": "forest:ModelStatus"
+        },
+        "VolumeEquationType": {
+            "@id": "forest:VolumeEquationType"
+        },
+        "UoM": {
+            "@id": "forest:UoM"
+        },
+        "ProductAuction": {
+            "@id": "forest:ProductAuction"
+        },
+        "productName": {
+            "@id": "forest:productName"
+        },
+        "auctionDate": {
+            "@id": "forest:auctionDate"
+        },
+        "refNumber": {
+            "@id": "forest:refNumber"
+        },
+        "quantity": {
+            "@id": "forest:quantity"
+        },
+        "depotName": {
+            "@id": "forest:depotName"
+        },
+        "productType": {
+            "@id": "forest:productType"
+        },
+        "biddingAmount": {
+            "@id": "forest:biddingAmount"
+        },
+        "lotNumber": {
+            "@id": "forest:lotNumber"
+        },
+        "woodDensity": {
+            "@id": "forest:woodDensity"
+        },
+        "scientificName": {
+            "@id": "forest:scientificName"
+        },
+        "family": {
+            "@id": "forest:family"
+        },
+        "volumeEquationType": {
+            "@id": "forest:volumeEquationType"
+        },
+        "commonNames": {
+            "@id": "forest:commonNames"
+        },
+        "spacing": {
+            "@id": "forest:spacing"
+        },
+        "applicableStates": {
+            "@id": "forest:applicableStates"
+        },
+        "targetDensityPerHa": {
+            "@id": "forest:targetDensityPerHa"
+        },
+        "sourceUri": {
+            "@id": "forest:sourceUri"
+        },
+        "definition": {
+            "@id": "forest:definition"
+        },
+        "validFrom": {
+            "@id": "forest:validFrom"
+        },
+        "scope": {
+            "@id": "forest:scope"
+        },
+        "workPackages": {
+            "@id": "forest:workPackages"
+        },
+        "definingAuthority": {
+            "@id": "forest:definingAuthority"
+        },
+        "validTill": {
+            "@id": "forest:validTill"
+        },
+        "state": {
+            "@id": "forest:state"
+        },
+        "regionType": {
+            "@id": "forest:regionType"
+        },
+        "parentId": {
+            "@id": "forest:parentId"
+        }
+    }
+}
