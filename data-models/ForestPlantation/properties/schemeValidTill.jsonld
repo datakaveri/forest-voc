@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:schemeValidTill",
+      "@type": [
+        "forest:TimeProperty"
+      ],
+      "rdfs:comment": "Date until which the forestry scheme is valid (null if currently valid)",
+      "rdfs:label": "schemeValidTill",
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      },
+      "forest:domainIncludes": [
+        {
+          "@id": "forest:Scheme"
+        }
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:DateTime"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ]
+    }
+  ]
+}
+
