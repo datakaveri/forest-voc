@@ -9,22 +9,26 @@
   },
   "@graph": [
     {
-      "@id": "forest:Scheme",
+      "@id": "forest:schemeScope",
       "@type": [
-        "owl:Class",
-        "rdfs:Class"
+        "forest:TextProperty"
       ],
-      "rdfs:comment": "Forestry scheme or program that funds and defines afforestation activities",
-      "rdfs:label": "Scheme",
+      "rdfs:comment": "Scope of the forestry scheme (CENTRAL, STATE, PROJECT)",
+      "rdfs:label": "schemeScope",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
-      "rdfs:subClassOf": [
+      "forest:domainIncludes": [
         {
-          "@id": "forest:Intangible"
+          "@id": "forest:Scheme"
+        }
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text"
         },
         {
-          "@id": "forest:DataModel"
+          "@id": "forest:ValueDescriptor"
         }
       ]
     }

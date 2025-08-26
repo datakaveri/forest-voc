@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:definingAuthority",
+      "@id": "forest:schemeDefinition",
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Organization or authority that defines and manages the scheme",
-      "rdfs:label": "definingAuthority",
+      "rdfs:comment": "Detailed description of what the forestry scheme covers and its objectives",
+      "rdfs:label": "schemeDefinition",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

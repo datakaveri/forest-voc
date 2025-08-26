@@ -9,26 +9,22 @@
   },
   "@graph": [
     {
-      "@id": "forest:sourceUri",
+      "@id": "forest:Scheme",
       "@type": [
-        "forest:TextProperty"
+        "owl:Class",
+        "rdfs:Class"
       ],
-      "rdfs:comment": "URI reference to the official source document or website for the scheme",
-      "rdfs:label": "sourceUri",
+      "rdfs:comment": "Forestry scheme or program that funds and defines afforestation activities across the country or specific to a state.",
+      "rdfs:label": "Scheme",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
-      "forest:domainIncludes": [
+      "rdfs:subClassOf": [
         {
-          "@id": "forest:Scheme"
-        }
-      ],
-      "forest:rangeIncludes": [
-        {
-          "@id": "forest:Text"
+          "@id": "forest:Intangible"
         },
         {
-          "@id": "forest:ValueDescriptor"
+          "@id": "forest:ForestPlantation"
         }
       ]
     }
