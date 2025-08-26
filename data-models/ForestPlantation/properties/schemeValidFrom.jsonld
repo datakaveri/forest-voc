@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:code",
+      "@id": "forest:schemeValidFrom",
       "@type": [
-        "forest:TextProperty"
+        "forest:TimeProperty"
       ],
-      "rdfs:comment": "Unique code identifier for the scheme",
-      "rdfs:label": "code",
+      "rdfs:comment": "Date from which the forestry scheme is valid",
+      "rdfs:label": "schemeValidFrom",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
@@ -25,7 +25,7 @@
       ],
       "forest:rangeIncludes": [
         {
-          "@id": "forest:Text"
+          "@id": "forest:DateTime"
         },
         {
           "@id": "forest:ValueDescriptor"
