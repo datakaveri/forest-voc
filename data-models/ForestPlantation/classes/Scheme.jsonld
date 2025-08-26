@@ -19,14 +19,9 @@
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
-      "rdfs:subClassOf": [
-        {
-          "@id": "forest:Intangible"
-        },
-        {
-          "@id": "forest:ForestPlantation"
-        }
-      ]
+      "rdfs:subClassOf": {
+        "@id": "forest:ForestPlantation"
+    }
     }
   ]
 }
