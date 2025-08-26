@@ -13,7 +13,7 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "iudx:ForestPlantation",
+            "@id": "forest:ForestPlantation",
             "rdfs:comment": "Data models that pertain to a cultivated area where trees are deliberately planted and managed for commercial, conservation, or ecological purposes within a forest environment.",
             "rdfs:label": "ForestPlantation",
             "rdfs:isDefinedBy": {
