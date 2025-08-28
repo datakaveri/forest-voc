@@ -20,7 +20,7 @@
       },
       "forest:domainIncludes": [
         {
-          "@id": "forest:Scheme"
+          "@id": "forest:ForestScheme"
         }
       ],
       "forest:rangeIncludes": [

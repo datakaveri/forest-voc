@@ -13,9 +13,9 @@
         "owl:Class",
         "rdfs:Class"
       ],
-      "@id": "forest:Scheme",
+      "@id": "forest:ForestScheme",
       "rdfs:comment": "Forestry scheme or program that funds and defines afforestation activities across the country or specific to a state.",
-      "rdfs:label": "Scheme",
+      "rdfs:label": "ForestScheme",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

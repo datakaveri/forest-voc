@@ -23,7 +23,7 @@
                     "@id": "forest:PlantationSites"
                 },
                 {
-                    "@id": "forest:Scheme"
+                    "@id": "forest:ForestScheme"
                 }
             ],
             "forest:rangeIncludes": [
