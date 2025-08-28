@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@id": "forest:modelName",
+            "@id": "forest:modelStatus",
             "@type": [
                 "forest:TextProperty"
             ],
-            "rdfs:comment": "Model or type of plantation implemented.",
-            "rdfs:label": "modelName",
+            "rdfs:comment": "Current status of the forestry scheme ENUM: [\"ACTIVE\",\"DEPRECATED\"].",
+            "rdfs:label": "modelStatus",
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
             "forest:domainIncludes": [
-                {
-                    "@id": "forest:PlantationSites"
-                },
                 {
                     "@id": "forest:ForestModel"
                 }
@@ -30,10 +30,7 @@
                 {
                     "@id": "forest:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            }
+            ]
         }
     ]
 }

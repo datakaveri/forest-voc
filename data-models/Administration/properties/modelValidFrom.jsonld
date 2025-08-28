@@ -9,31 +9,28 @@
     },
     "@graph": [
         {
-            "@id": "forest:modelName",
+            "@id": "forest:modelValidFrom",
             "@type": [
-                "forest:TextProperty"
+                "forest:TimeProperty"
             ],
-            "rdfs:comment": "Model or type of plantation implemented.",
-            "rdfs:label": "modelName",
+            "rdfs:comment": "Date from which the forestry model is valid.",
+            "rdfs:label": "modelValidFrom",
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
             "forest:domainIncludes": [
-                {
-                    "@id": "forest:PlantationSites"
-                },
                 {
                     "@id": "forest:ForestModel"
                 }
             ],
             "forest:rangeIncludes": [
                 {
-                    "@id": "forest:Text"
+                    "@id": "forest:DateTime"
                 },
                 {
                     "@id": "forest:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            }
+            ]
         }
     ]
 }

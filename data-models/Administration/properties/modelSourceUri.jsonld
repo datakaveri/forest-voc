@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@id": "forest:modelName",
+            "@id": "forest:modelSourceUri",
             "@type": [
                 "forest:TextProperty"
             ],
-            "rdfs:comment": "Model or type of plantation implemented.",
-            "rdfs:label": "modelName",
+            "rdfs:comment": "URI reference to the official source document or website for the forestry model.",
+            "rdfs:label": "modelSourceUri",
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
             "forest:domainIncludes": [
-                {
-                    "@id": "forest:PlantationSites"
-                },
                 {
                     "@id": "forest:ForestModel"
                 }
@@ -30,10 +30,7 @@
                 {
                     "@id": "forest:ValueDescriptor"
                 }
-            ],
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            }
+            ]
         }
     ]
 }
