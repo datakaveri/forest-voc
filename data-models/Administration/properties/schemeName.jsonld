@@ -21,6 +21,9 @@
             "forest:domainIncludes": [
                 {
                     "@id": "forest:PlantationSites"
+                },
+                {
+                    "@id": "forest:Scheme"
                 }
             ],
             "forest:rangeIncludes": [
