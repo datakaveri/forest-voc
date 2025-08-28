@@ -25,6 +25,10 @@
         },
         {
           "@id": "forest:Place"
+        },
+	,
+        {
+          "@id": "forest:PlantationSites"
         }
       ],
       "forest:rangeIncludes": [
