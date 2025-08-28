@@ -20,7 +20,7 @@
             },
             "forest:domainIncludes": [
                 {
-                    "@id": "forest:Administration"
+                    "@id": "forest:ProductAuction"
                 }
             ],
             "forest:rangeIncludes": [

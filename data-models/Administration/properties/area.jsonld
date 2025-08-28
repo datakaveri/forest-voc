@@ -9,28 +9,31 @@
     },
     "@graph": [
         {
-            "@id": "forest:auctionDate",
+            "@id": "forest:area",
             "@type": [
-                "forest:TimeProperty"
+                "forest:QuantitativeProperty"
             ],
-            "rdfs:comment": "The scheduled date on which the auction for the product takes place.",
-            "rdfs:label": "auctionDate",
+            "rdfs:comment": "Total area of the plantation.",
+            "rdfs:label": "area",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
             "forest:domainIncludes": [
                 {
-                    "@id": "forest:Administration"
+                    "@id": "forest:PlantationSites"
                 }
             ],
             "forest:rangeIncludes": [
                 {
-                    "@id": "forest:DateTime"
+                    "@id": "forest:Number"
                 },
                 {
                     "@id": "forest:ValueDescriptor"
                 }
-            ]
+            ],
+            "skos:exactMatch": {
+                "@id": "sampleSizeValue"
+            }
         }
     ]
 }

@@ -9,28 +9,37 @@
     },
     "@graph": [
         {
-            "@id": "forest:auctionDate",
+            "@id": "forest:rangeName",
             "@type": [
-                "forest:TimeProperty"
+                "forest:TextProperty"
             ],
-            "rdfs:comment": "The scheduled date on which the auction for the product takes place.",
-            "rdfs:label": "auctionDate",
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            },
+            "rdfs:comment": "The official name of the forest range under management or jurisdiction.",
+            "rdfs:label": "rangeName",
             "forest:domainIncludes": [
                 {
-                    "@id": "forest:Administration"
-                }
+                    "@id": "forest:PlantationSites"
+                },
+		{
+		    "@id": "forest:ProductAuction"
+		}
             ],
             "forest:rangeIncludes": [
                 {
-                    "@id": "forest:DateTime"
+                    "@id": "forest:Text"
                 },
                 {
                     "@id": "forest:ValueDescriptor"
+                },
+                {
+                    "@id": "forest:RelationshipValue"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
+	    "rdfs:subProperyOf": {
+                "@id": "forest:divisionName"
+            }
         }
     ]
 }

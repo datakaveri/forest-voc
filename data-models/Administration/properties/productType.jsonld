@@ -9,23 +9,23 @@
     },
     "@graph": [
         {
-            "@id": "forest:auctionDate",
+            "@id": "forest:productType",
             "@type": [
-                "forest:TimeProperty"
+                "forest:TextProperty"
             ],
-            "rdfs:comment": "The scheduled date on which the auction for the product takes place.",
-            "rdfs:label": "auctionDate",
+            "rdfs:comment": "The classification or category of the forest product (e.g., timber, non-timber forest product, firewood).",
+            "rdfs:label": "productType",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
             "forest:domainIncludes": [
                 {
-                    "@id": "forest:Administration"
+                    "@id": "forest:ProductAuction"
                 }
             ],
             "forest:rangeIncludes": [
                 {
-                    "@id": "forest:DateTime"
+                    "@id": "forest:Text"
                 },
                 {
                     "@id": "forest:ValueDescriptor"

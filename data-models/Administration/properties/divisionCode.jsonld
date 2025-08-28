@@ -9,28 +9,37 @@
     },
     "@graph": [
         {
-            "@id": "forest:auctionDate",
+            "@id": "forest:divisionCode",
             "@type": [
-                "forest:TimeProperty"
+                "forest:TextProperty"
             ],
-            "rdfs:comment": "The scheduled date on which the auction for the product takes place.",
-            "rdfs:label": "auctionDate",
+            "rdfs:comment": "Identifier code for the forest division.",
+            "rdfs:label": "divisionCode",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
+	    "rdfs:subProperyOf": {
+                "@id": "forest:circleCode"
+            },
             "forest:domainIncludes": [
                 {
-                    "@id": "forest:Administration"
+                    "@id": "forest:PlantationSites"
                 }
             ],
             "forest:rangeIncludes": [
                 {
-                    "@id": "forest:DateTime"
+                    "@id": "forest:Text"
                 },
                 {
                     "@id": "forest:ValueDescriptor"
+                },
+                {
+                    "@id": "forest:RelationshipValue"
                 }
-            ]
+            ],
+            "skos:exactMatch": {
+                "@id": "dcat:centroid"
+            }
         }
     ]
 }

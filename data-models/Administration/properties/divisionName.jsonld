@@ -9,18 +9,18 @@
     },
     "@graph": [
         {
-            "@id": "forest:refNumber",
+            "@id": "forest:divisionName",
             "@type": [
                 "forest:TextProperty"
             ],
-            "rdfs:comment": "A unique reference code assigned to each auction record for tracking and identification.",
-            "rdfs:label": "refNumber",
-            "rdfs:isDefinedBy": {
-                "@id": "forest:"
-            },
+            "rdfs:comment": "The name of the forest division responsible for administration and management of the forest area.",
+            "rdfs:label": "divisionName",
             "forest:domainIncludes": [
                 {
-                    "@id": "forest:Administration"
+                    "@id": "forest:PlantationSites"
+                },
+                {
+                    "@id": "forest:ProductAuction"
                 }
             ],
             "forest:rangeIncludes": [
@@ -29,8 +29,17 @@
                 },
                 {
                     "@id": "forest:ValueDescriptor"
+                },
+                {
+                    "@id": "forest:RelationshipValue"
                 }
-            ]
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
+	    "rdfs:subProperyOf": {
+                "@id": "forest:circleName"
+            }
         }
     ]
 }

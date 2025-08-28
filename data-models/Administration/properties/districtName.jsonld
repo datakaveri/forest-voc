@@ -9,26 +9,29 @@
     },
     "@graph": [
         {
-            "@id": "forest:auctionDate",
+            "@id": "forest:districtName",
             "@type": [
-                "forest:TimeProperty"
+                "forest:TextProperty"
             ],
-            "rdfs:comment": "The scheduled date on which the auction for the product takes place.",
-            "rdfs:label": "auctionDate",
+            "rdfs:comment": "Name of the district where the forest area is located.",
+            "rdfs:label": "districtName",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
             "forest:domainIncludes": [
                 {
-                    "@id": "forest:Administration"
+                    "@id": "forest:PlantationSites"
                 }
             ],
             "forest:rangeIncludes": [
                 {
-                    "@id": "forest:DateTime"
+                    "@id": "forest:Text"
                 },
                 {
                     "@id": "forest:ValueDescriptor"
+                },
+                {
+                    "@id": "forest:RelationshipValue"
                 }
             ]
         }

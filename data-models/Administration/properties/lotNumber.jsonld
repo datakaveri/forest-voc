@@ -9,23 +9,23 @@
     },
     "@graph": [
         {
-            "@id": "forest:auctionDate",
+            "@id": "forest:lotNumber",
             "@type": [
-                "forest:TimeProperty"
+                "forest:TextProperty"
             ],
-            "rdfs:comment": "The scheduled date on which the auction for the product takes place.",
-            "rdfs:label": "auctionDate",
+            "rdfs:comment": "A unique identifier assigned to a specific lot of forest product being auctioned.",
+            "rdfs:label": "lotNumber",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
             "forest:domainIncludes": [
                 {
-                    "@id": "forest:Administration"
+                    "@id": "forest:ProductAuction"
                 }
             ],
             "forest:rangeIncludes": [
                 {
-                    "@id": "forest:DateTime"
+                    "@id": "forest:Text"
                 },
                 {
                     "@id": "forest:ValueDescriptor"
