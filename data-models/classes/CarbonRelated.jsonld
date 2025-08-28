@@ -13,9 +13,9 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "forest:ForestProduce",
-            "rdfs:comment": "Data models that pertain to all the goods and materials obtained from forests, including timber, fruits, nuts, medicinal plants, and other natural resources.",
-            "rdfs:label": "ForestProduce",
+            "@id": "forest:CarbonRelated",
+            "rdfs:comment": "Data models that pertain to carbon dynamics in forests, including carbon storage, fluxes, biomass accumulation, soil carbon content, and natural carbon cycling processes.",
+            "rdfs:label": "CarbonRelated",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },

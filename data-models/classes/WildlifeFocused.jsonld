@@ -13,9 +13,9 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "forest:ForestProduce",
-            "rdfs:comment": "Data models that pertain to all the goods and materials obtained from forests, including timber, fruits, nuts, medicinal plants, and other natural resources.",
-            "rdfs:label": "ForestProduce",
+            "@id": "forest:WildlifeFocused",
+            "rdfs:comment": "Data models that pertain to forest wildlife, including species identification, habitat characterization, population dynamics, biodiversity, and ecological relationships within forest ecosystems.",
+            "rdfs:label": "WildlifeFocused",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },

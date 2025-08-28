@@ -13,9 +13,9 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "@id": "forest:ForestProduce",
-            "rdfs:comment": "Data models that pertain to all the goods and materials obtained from forests, including timber, fruits, nuts, medicinal plants, and other natural resources.",
-            "rdfs:label": "ForestProduce",
+            "@id": "forest:NatureAndClimate",
+            "rdfs:comment": "Data models that pertain to natural ecosystems and climatic factors influencing forests, including vegetation dynamics, climate change impacts, and environmental conditions.",
+            "rdfs:label": "NatureAndClimate",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
