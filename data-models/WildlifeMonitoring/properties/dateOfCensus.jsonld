@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:dateOfCensus",
+      "@type": [
+        "forest:TimeProperty"
+      ],
+      "rdfs:comment": "Date when the wildlife census was conducted",
+      "rdfs:label": "dateOfCensus",
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      },
+      "forest:domainIncludes": [
+        {
+          "@id": "forest:WildlifeCensus"
+        }
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:DateTime"
+        }
+      ]
+    }
+  ]
+}
