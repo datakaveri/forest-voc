@@ -19,11 +19,9 @@
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
-      "rdfs:subClassOf": [
-        {
+      "rdfs:subClassOf": {
           "@id": "forest:SpeciesDirectory"
-        }
-      ]
+      }
     }
   ]
 }
