@@ -19,7 +19,7 @@
       },
       "rdfs:subClassOf": [
         {
-          "@id": "forest:DataModel"
+          "@id": "forest:SpeciesDirectory"
         }
       ]
     }
