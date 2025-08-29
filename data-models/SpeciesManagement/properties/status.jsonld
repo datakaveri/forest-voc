@@ -14,7 +14,7 @@
         "forest:TextProperty"
       ],
       "rdfs:comment": "Current status of the species record (active, deprecated, etc.)",
-      "rdfs:label": "Status",
+      "rdfs:label": "status",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

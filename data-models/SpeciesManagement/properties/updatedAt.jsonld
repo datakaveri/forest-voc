@@ -14,7 +14,7 @@
         "forest:TimeProperty"
       ],
       "rdfs:comment": "Timestamp when the species record was last updated",
-      "rdfs:label": "Updated At",
+      "rdfs:label": "updatedAt",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

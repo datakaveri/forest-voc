@@ -14,7 +14,7 @@
         "forest:QuantitativeProperty"
       ],
       "rdfs:comment": "Ratio of root biomass to shoot biomass",
-      "rdfs:label": "Root-Shoot Ratio",
+      "rdfs:label": "rootShootRatio",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

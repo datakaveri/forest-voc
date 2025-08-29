@@ -14,7 +14,7 @@
         "forest:StructuredProperty"
       ],
       "rdfs:comment": "Coefficients for volume calculation equations",
-      "rdfs:label": "Volume Equation Coefficients",
+      "rdfs:label": "volumeEquationCoefficients",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

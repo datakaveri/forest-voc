@@ -14,7 +14,7 @@
         "forest:StructuredProperty"
       ],
       "rdfs:comment": "Diameter growth model by years since planting",
-      "rdfs:label": "Diameter Growth",
+      "rdfs:label": "diameterGrowth",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

@@ -12,7 +12,7 @@
       "@id": "forest:commonNames",
       "@type": "rdf:Property",
       "rdfs:comment": "Common or vernacular names of the species in different languages",
-      "rdfs:label": "Common Names",
+      "rdfs:label": "commonNames",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

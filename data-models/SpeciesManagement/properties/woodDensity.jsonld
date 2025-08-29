@@ -14,7 +14,7 @@
         "forest:QuantitativeProperty"
       ],
       "rdfs:comment": "Wood density of the species in g/cm³",
-      "rdfs:label": "Wood Density",
+      "rdfs:label": "woodDensity",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

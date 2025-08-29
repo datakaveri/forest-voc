@@ -14,7 +14,7 @@
         "forest:TextProperty"
       ],
       "rdfs:comment": "Scientific name (binomial nomenclature) of the species",
-      "rdfs:label": "Scientific Name",
+      "rdfs:label": "scientificName",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
