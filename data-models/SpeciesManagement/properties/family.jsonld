@@ -10,7 +10,9 @@
   "@graph": [
     {
       "@id": "forest:family",
-      "@type": "rdf:Property",
+      "@type": [
+        "forest:TextProperty"
+      ],
       "rdfs:comment": "Taxonomic family of the species",
       "rdfs:label": "Family",
       "rdfs:isDefinedBy": {

@@ -10,7 +10,9 @@
   "@graph": [
     {
       "@id": "forest:woodDensity",
-      "@type": "rdf:Property",
+      "@type": [
+        "forest:QuantitativeProperty"
+      ],
       "rdfs:comment": "Wood density of the species in g/cm³",
       "rdfs:label": "Wood Density",
       "rdfs:isDefinedBy": {

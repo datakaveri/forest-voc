@@ -10,7 +10,9 @@
   "@graph": [
     {
       "@id": "forest:updatedAt",
-      "@type": "rdf:Property",
+      "@type": [
+        "forest:TimeProperty"
+      ],
       "rdfs:comment": "Timestamp when the species record was last updated",
       "rdfs:label": "Updated At",
       "rdfs:isDefinedBy": {

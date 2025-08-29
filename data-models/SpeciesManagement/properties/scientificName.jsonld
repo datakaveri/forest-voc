@@ -10,7 +10,9 @@
   "@graph": [
     {
       "@id": "forest:scientificName",
-      "@type": "rdf:Property",
+      "@type": [
+        "forest:TextProperty"
+      ],
       "rdfs:comment": "Scientific name (binomial nomenclature) of the species",
       "rdfs:label": "Scientific Name",
       "rdfs:isDefinedBy": {

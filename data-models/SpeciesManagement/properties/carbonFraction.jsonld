@@ -10,7 +10,9 @@
   "@graph": [
     {
       "@id": "forest:carbonFraction",
-      "@type": "rdf:Property",
+      "@type": [
+        "forest:QuantitativeProperty"
+      ],
       "rdfs:comment": "Fraction of dry biomass that is carbon",
       "rdfs:label": "Carbon Fraction",
       "rdfs:isDefinedBy": {

@@ -10,7 +10,9 @@
   "@graph": [
     {
       "@id": "forest:volumeEquationType",
-      "@type": "rdf:Property",
+      "@type": [
+        "forest:TextProperty"
+      ],
       "rdfs:comment": "Type of volume equation used for this species (linear, polynomial, allometric)",
       "rdfs:label": "Volume Equation Type",
       "rdfs:isDefinedBy": {

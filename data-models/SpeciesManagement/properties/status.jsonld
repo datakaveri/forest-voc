@@ -10,7 +10,9 @@
   "@graph": [
     {
       "@id": "forest:status",
-      "@type": "rdf:Property",
+      "@type": [
+        "forest:TextProperty"
+      ],
       "rdfs:comment": "Current status of the species record (active, deprecated, etc.)",
       "rdfs:label": "Status",
       "rdfs:isDefinedBy": {

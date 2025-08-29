@@ -10,7 +10,9 @@
   "@graph": [
     {
       "@id": "forest:rootShootRatio",
-      "@type": "rdf:Property",
+      "@type": [
+        "forest:QuantitativeProperty"
+      ],
       "rdfs:comment": "Ratio of root biomass to shoot biomass",
       "rdfs:label": "Root-Shoot Ratio",
       "rdfs:isDefinedBy": {
