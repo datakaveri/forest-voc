@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "forest": "https://agrijson.org/forest/",
+    "schema": "https://schema.org/",
+    "adex": "https://agrijson.org/adex/",
+    "iudx": "https://agrijson.org/iudx/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:volumeEquationType",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Type of volume equation used for this species (linear, polynomial, allometric)",
+      "rdfs:label": "Volume Equation Type",
+      "rdfs:isDefinedBy": {
+        "@id": "https://agrijson.org/forest/"
+      },
+      "forest:domainIncludes": [
+        {
+          "@id": "forest:Species"
+        }
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text"
+        }
+      ]
+    }
+  ]
+}

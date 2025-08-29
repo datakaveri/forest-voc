@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "forest": "https://agrijson.org/forest/",
+    "schema": "https://schema.org/",
+    "adex": "https://agrijson.org/adex/",
+    "iudx": "https://agrijson.org/iudx/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:rootShootRatio",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Ratio of root biomass to shoot biomass",
+      "rdfs:label": "Root-Shoot Ratio",
+      "rdfs:isDefinedBy": {
+        "@id": "https://agrijson.org/forest/"
+      },
+      "forest:domainIncludes": [
+        {
+          "@id": "forest:Species"
+        }
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Number"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "forest": "https://agrijson.org/forest/",
+    "schema": "https://schema.org/",
+    "adex": "https://agrijson.org/adex/",
+    "iudx": "https://agrijson.org/iudx/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:volumeEquationCoefficients",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Coefficients for volume calculation equations",
+      "rdfs:label": "Volume Equation Coefficients",
+      "rdfs:isDefinedBy": {
+        "@id": "https://agrijson.org/forest/"
+      },
+      "forest:domainIncludes": [
+        {
+          "@id": "forest:Species"
+        }
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Object"
+        }
+      ]
+    }
+  ]
+}

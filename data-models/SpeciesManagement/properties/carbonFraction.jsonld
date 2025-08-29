@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "forest": "https://agrijson.org/forest/",
+    "schema": "https://schema.org/",
+    "adex": "https://agrijson.org/adex/",
+    "iudx": "https://agrijson.org/iudx/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:carbonFraction",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Fraction of dry biomass that is carbon",
+      "rdfs:label": "Carbon Fraction",
+      "rdfs:isDefinedBy": {
+        "@id": "https://agrijson.org/forest/"
+      },
+      "forest:domainIncludes": [
+        {
+          "@id": "forest:Species"
+        }
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Number"
+        }
+      ]
+    }
+  ]
+}

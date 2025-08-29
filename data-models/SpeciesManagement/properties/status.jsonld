@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "forest": "https://agrijson.org/forest/",
+    "schema": "https://schema.org/",
+    "adex": "https://agrijson.org/adex/",
+    "iudx": "https://agrijson.org/iudx/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:status",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Current status of the species record (active, deprecated, etc.)",
+      "rdfs:label": "Status",
+      "rdfs:isDefinedBy": {
+        "@id": "https://agrijson.org/forest/"
+      },
+      "forest:domainIncludes": [
+        {
+          "@id": "forest:Species"
+        }
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Text"
+        }
+      ]
+    }
+  ]
+}
