@@ -15,7 +15,7 @@
             ],
             "@id": "forest:WildlifeFocused",
             "rdfs:comment": "Data models that pertain to forest wildlife, including species identification, habitat characterization, population dynamics, biodiversity, and ecological relationships within forest ecosystems.",
-            "rdfs:label": "WildlifeFocused",
+            "rdfs:label": "WildlifeMonitoring",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
