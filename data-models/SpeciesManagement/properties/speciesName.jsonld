@@ -10,7 +10,9 @@
   "@graph": [
     {
       "@id": "forest:speciesName",
-      "@type": "rdf:Property",
+      "@type": [
+        "forest:TextProperty"
+      ],
       "rdfs:comment": "Primary name of the species",
       "rdfs:label": "Species Name",
       "rdfs:isDefinedBy": {

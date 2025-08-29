@@ -10,7 +10,9 @@
   "@graph": [
     {
       "@id": "forest:createdAt",
-      "@type": "rdf:Property",
+      "@type": [
+        "forest:TimeProperty"
+      ],
       "rdfs:comment": "Timestamp when the species record was created",
       "rdfs:label": "Created At",
       "rdfs:isDefinedBy": {

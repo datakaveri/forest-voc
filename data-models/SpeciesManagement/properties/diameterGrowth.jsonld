@@ -10,7 +10,9 @@
   "@graph": [
     {
       "@id": "forest:diameterGrowth",
-      "@type": "rdf:Property",
+      "@type": [
+        "forest:StructuredProperty"
+      ],
       "rdfs:comment": "Diameter growth model by years since planting",
       "rdfs:label": "Diameter Growth",
       "rdfs:isDefinedBy": {

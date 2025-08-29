@@ -10,7 +10,9 @@
   "@graph": [
     {
       "@id": "forest:volumeEquationCoefficients",
-      "@type": "rdf:Property",
+      "@type": [
+        "forest:StructuredProperty"
+      ],
       "rdfs:comment": "Coefficients for volume calculation equations",
       "rdfs:label": "Volume Equation Coefficients",
       "rdfs:isDefinedBy": {
