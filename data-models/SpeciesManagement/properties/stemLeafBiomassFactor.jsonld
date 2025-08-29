@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "forest": "https://agrijson.org/forest/",
+    "schema": "https://schema.org/",
+    "adex": "https://agrijson.org/adex/",
+    "iudx": "https://agrijson.org/iudx/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:stemLeafBiomassFactor",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Factor for converting stem biomass to leaf biomass",
+      "rdfs:label": "Stem-Leaf Biomass Factor",
+      "rdfs:isDefinedBy": {
+        "@id": "https://agrijson.org/forest/"
+      },
+      "forest:domainIncludes": [
+        {
+          "@id": "forest:Species"
+        }
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Number"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "forest": "https://agrijson.org/forest/",
+    "schema": "https://schema.org/",
+    "adex": "https://agrijson.org/adex/",
+    "iudx": "https://agrijson.org/iudx/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:Species",
+      "@type": [
+        "owl:Class",
+        "rdfs:Class"
+      ],
+      "rdfs:comment": "Comprehensive species information including taxonomy, characteristics, and growth parameters for forestry management",
+      "rdfs:label": "Species",
+      "rdfs:isDefinedBy": {
+        "@id": "https://agrijson.org/forest/"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "forest:DataModel"
+        }
+      ]
+    }
+  ]
+}
