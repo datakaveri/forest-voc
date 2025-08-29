@@ -20,7 +20,7 @@
       },
       "forest:domainIncludes": [
         {
-          "@id": "forest:WildlifeConflict"
+          "@id": "forest:HumanWildlifeConflict"
         }
       ],
       "forest:rangeIncludes": [
