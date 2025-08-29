@@ -9,18 +9,18 @@
   },
   "@graph": [
     {
-      "@id": "forest:WildlifeConflict",
+      "@id": "forest:HumanWildlifeConflict",
       "@type": [
         "owl:Class",
         "rdfs:Class"
       ],
       "rdfs:comment": "Records of human-wildlife conflicts including depredation events, crop damage, and livestock attacks",
-      "rdfs:label": "WildlifeConflict",
+      "rdfs:label": "HumanWildlifeConflict",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
       "rdfs:subClassOf": {
-        "@id": "forest:DataModel"
+        "@id": "forest:WildlifeMonitoring"
       }
     }
   ]

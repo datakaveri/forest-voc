@@ -1,0 +1,27 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "@id": "forest:CarbonSequestration",
+            "rdfs:comment": "Data models that pertain to carbon dynamics in forests, including carbon storage, fluxes, biomass accumulation, soil carbon content, and natural carbon cycling processes.",
+            "rdfs:label": "CarbonSequestration",
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
+            "rdfs:subClassOf": {
+                "@id": "forest:DataModel"
+            }
+        }
+    ]
+}
