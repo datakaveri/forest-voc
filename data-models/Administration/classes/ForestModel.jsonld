@@ -20,7 +20,7 @@
                 "@id": "forest:"
             },
             "rdfs:subClassOf": {
-                "@id": "forest:Administration"
+                "@id": "forest:PlantationManagement"
             }
         }
     ]
