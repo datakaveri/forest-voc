@@ -15,7 +15,7 @@
             ],
             "@id": "forest:Administration",
             "rdfs:comment": "Data models that pertain to the governance, policies, organizational structures, and regulatory mechanisms responsible for managing forests, including planning, implementation, monitoring, and enforcement of forestry activities.",
-            "rdfs:label": "Administration",
+            "rdfs:label": "PlantationManagement",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },

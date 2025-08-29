@@ -15,7 +15,7 @@
             ],
             "@id": "forest:CarbonRelated",
             "rdfs:comment": "Data models that pertain to carbon dynamics in forests, including carbon storage, fluxes, biomass accumulation, soil carbon content, and natural carbon cycling processes.",
-            "rdfs:label": "CarbonRelated",
+            "rdfs:label": "CarbonSequestration",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
