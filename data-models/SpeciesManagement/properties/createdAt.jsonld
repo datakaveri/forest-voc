@@ -14,7 +14,7 @@
         "forest:TimeProperty"
       ],
       "rdfs:comment": "Timestamp when the species record was created",
-      "rdfs:label": "Created At",
+      "rdfs:label": "createdAt",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

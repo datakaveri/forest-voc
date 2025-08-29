@@ -14,7 +14,7 @@
         "forest:TextProperty"
       ],
       "rdfs:comment": "Taxonomic genus of the species",
-      "rdfs:label": "Genus",
+      "rdfs:label": "genus",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

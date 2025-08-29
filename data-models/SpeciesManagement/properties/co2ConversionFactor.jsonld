@@ -14,7 +14,7 @@
         "forest:QuantitativeProperty"
       ],
       "rdfs:comment": "Conversion factor from carbon to CO2 (44/12)",
-      "rdfs:label": "CO2 Conversion Factor",
+      "rdfs:label": "co2ConversionFactor",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

@@ -14,7 +14,7 @@
         "forest:QuantitativeProperty"
       ],
       "rdfs:comment": "Biomass expansion factor for converting stem volume to total biomass",
-      "rdfs:label": "Biomass Expansion Factor",
+      "rdfs:label": "biomassExpansionFactor",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

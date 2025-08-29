@@ -14,7 +14,7 @@
         "forest:QuantitativeProperty"
       ],
       "rdfs:comment": "Factor for converting stem biomass to leaf biomass",
-      "rdfs:label": "Stem-Leaf Biomass Factor",
+      "rdfs:label": "stemLeafBiomassFactor",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
