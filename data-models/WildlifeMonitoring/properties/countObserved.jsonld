@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:countObserved",
+      "@type": [
+        "forest:QuantitativeProperty"
+      ],
+      "rdfs:comment": "Number of animals of the specified species observed during census",
+      "rdfs:label": "countObserved",
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      },
+      "forest:domainIncludes": [
+        {
+          "@id": "forest:WildlifeCensus"
+        }
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:Number"
+        }
+      ]
+    }
+  ]
+}
