@@ -1,0 +1,36 @@
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "iudx": "https://voc.iudx.org.in/",
+        "adex": "https://agrijson.org/",
+        "forest": "https://voc.forest-stack.iudx.io/"
+    },
+    "@graph": [
+        {
+            "@id": "forest:doctorDesignation",
+            "@type": [
+                "forest:TextProperty"
+            ],
+            "rdfs:comment": "Professional designation or title of the doctor who attended to the wildlife conflict incident (e.g., Veterinary Doctor, Medical Officer).",
+            "rdfs:label": "doctorDesignation",
+            "rdfs:isDefinedBy": {
+                "@id": "forest:"
+            },
+            "forest:domainIncludes": [
+                {
+                    "@id": "forest:HumanWildlifeConflict"
+                }
+            ],
+            "forest:rangeIncludes": [
+                {
+                    "@id": "forest:Text"
+                },
+                {
+                    "@id": "forest:ValueDescriptor"
+                }
+            ]
+        }
+    ]
+}
