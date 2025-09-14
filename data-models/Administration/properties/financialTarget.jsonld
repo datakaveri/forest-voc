@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@id": "forest:regionId",
+            "@id": "forest:financialTarget",
             "@type": [
-                "forest:TextProperty"
+                "forest:QuantitativeProperty"
             ],
-            "rdfs:comment": "Reference to the administrative region (Region hierarchy) associated with this MPR report.",
-            "rdfs:label": "regionId",
+            "rdfs:comment": "Financial target (budget) value (number ≥ 0).",
+            "rdfs:label": "financialTarget",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
@@ -25,7 +25,7 @@
             ],
             "forest:rangeIncludes": [
                 {
-                    "@id": "forest:Text"
+                    "@id": "forest:Number"
                 },
                 {
                     "@id": "forest:ValueDescriptor"

@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@id": "forest:regionId",
+            "@id": "forest:workstreamId",
             "@type": [
                 "forest:TextProperty"
             ],
-            "rdfs:comment": "Reference to the administrative region (Region hierarchy) associated with this MPR report.",
-            "rdfs:label": "regionId",
+            "rdfs:comment": "Consistent identifier for the workstream (e.g. PLM-RDF2 for plantation model, or activity family for other packages).",
+            "rdfs:label": "workstreamId",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
