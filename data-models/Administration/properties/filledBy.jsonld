@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@id": "forest:regionId",
+            "@id": "forest:filledBy",
             "@type": [
                 "forest:TextProperty"
             ],
-            "rdfs:comment": "Reference to the administrative region (Region hierarchy) associated with this MPR report.",
-            "rdfs:label": "regionId",
+            "rdfs:comment": "Officer name/identifier who filled the report.",
+            "rdfs:label": "filledBy",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },

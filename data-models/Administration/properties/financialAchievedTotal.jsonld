@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@id": "forest:regionId",
+            "@id": "forest:financialAchievedTotal",
             "@type": [
-                "forest:TextProperty"
+                "forest:QuantitativeProperty"
             ],
-            "rdfs:comment": "Reference to the administrative region (Region hierarchy) associated with this MPR report.",
-            "rdfs:label": "regionId",
+            "rdfs:comment": "Financial expenditure total (must equal upto_last_month + during_month) (number ≥ 0).",
+            "rdfs:label": "financialAchievedTotal",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
@@ -25,7 +25,7 @@
             ],
             "forest:rangeIncludes": [
                 {
-                    "@id": "forest:Text"
+                    "@id": "forest:Number"
                 },
                 {
                     "@id": "forest:ValueDescriptor"

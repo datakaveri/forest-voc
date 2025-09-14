@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@id": "forest:regionId",
+            "@id": "forest:budgetHeadCode",
             "@type": [
                 "forest:TextProperty"
             ],
-            "rdfs:comment": "Reference to the administrative region (Region hierarchy) associated with this MPR report.",
-            "rdfs:label": "regionId",
+            "rdfs:comment": "Head of Account code (e.g. 2406-01-101-(22)01, 2406-01-789-(03), 2406-01-796-(21)). Population segment can be derived from this code.",
+            "rdfs:label": "budgetHeadCode",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
