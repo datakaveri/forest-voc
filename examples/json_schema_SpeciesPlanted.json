@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Species Planted List",
+  "description": "Schema for validating species planted data structure in plantation sites",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "code": {
+        "type": "string",
+        "description": "Species identifier code (e.g., AZI_IND, DAL_SIS)",
+        "pattern": "^[A-Z_]+$",
+        "minLength": 1
+      },
+      "count": {
+        "type": "number",
+        "description": "Number of plants of this species",
+        "minimum": 0,
+        "multipleOf": 1
+      }
+    },
+    "required": ["code", "count"],
+    "additionalProperties": false
+  },
+  "minItems": 0,
+  "examples": [
+    [
+      { "code": "AZI_IND", "count": 1100 },
+      { "code": "DAL_SIS", "count": 400 }
+    ],
+    [
+      { "code": "TEC_GRANDIS", "count": 500 },
+      { "code": "EUC_GLOBULUS", "count": 300 },
+      { "code": "PIN_PATULA", "count": 200 }
+    ]
+  ]
+}
