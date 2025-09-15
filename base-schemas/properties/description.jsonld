@@ -18,13 +18,16 @@
       "rdfs:label": "description",
       "forest:domainIncludes": [
         {
-          "@id": "forest:IUDXEntity"
+          "@id": "forest:Thing"
         }
       ],
       "forest:rangeIncludes": [
         {
           "@id": "forest:Text"
-        }
+        },
+      "rdfs:isDefinedBy": {
+          "@id": "forest:"
+      }
       ]
     }
   ]
