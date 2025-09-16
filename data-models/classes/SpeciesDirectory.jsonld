@@ -15,7 +15,7 @@
         "rdfs:Class"
       ],
       "rdfs:comment": "Forest tree species with biological and growth characteristics for forestry planning",
-      "rdfs:label": "Species",
+      "rdfs:label": "SpeciesDirectory",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
