@@ -14,7 +14,7 @@
         "owl:Class",
         "rdfs:Class"
       ],
-      "rdfs:comment": "Describes the class of all GeoProperties in ADEX. The range of a geo-property are objects describing geo-coordinates (e.g., latitude, longitude, GeoJSON objects etc.)",
+      "rdfs:comment": "Describes the class of all GeoProperties in Forest-Stack. The range of a geo-property are objects describing geo-coordinates (e.g., latitude, longitude, GeoJSON objects etc.)",
       "rdfs:label": "GeoProperty",
       "rdfs:subClassOf": {
         "@id": "forest:StructuredProperty"

@@ -14,10 +14,10 @@
         "owl:Class",
         "rdfs:Class"
       ],
-      "rdfs:comment": "Describes the Resource Server entry in the ADEX catalogue.",
+      "rdfs:comment": "Describes the Resource Server entry in the Forest-Stack catalogue.",
       "rdfs:label": "ResourceServer",
       "rdfs:subClassOf": {
-        "@id": "forest:ADEXEntity"
+        "@id": "forest:IUDXEntity"
       }
     }
   ]

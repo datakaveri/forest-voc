@@ -14,7 +14,7 @@
         "owl:Class",
         "rdfs:Class"
       ],
-      "rdfs:comment": "Class of all ADEX Entities (Resource, ResourceGroup, ResourceServer, Provider etc.)",
+      "rdfs:comment": "Class of all IUDX Entities (Resource, ResourceGroup, ResourceServer, Provider etc.)",
       "rdfs:label": "IUDXEntity",
       "rdfs:subClassOf": {
         "@id": "forest:Thing"

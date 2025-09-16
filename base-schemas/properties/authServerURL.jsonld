@@ -14,7 +14,7 @@
       "@type": [
         "forest:Relationship"
       ],
-      "rdfs:comment": "URL of the ADEX authorization server used for a given resource.",
+      "rdfs:comment": "URL of the Forest-Stack authorization server used for a given resource.",
       "rdfs:label": "authServerURL",
       "forest:domainIncludes": [
         {

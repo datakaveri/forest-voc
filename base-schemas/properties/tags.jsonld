@@ -14,7 +14,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Comma separated discovery tags associated with an ADEXEntity (resource , resource Group)",
+      "rdfs:comment": "Comma separated discovery tags associated with an IUDXEntity (resource , resource Group)",
       "rdfs:label": "tags",
       "forest:domainIncludes": [
         {

@@ -14,10 +14,10 @@
         "owl:Class",
         "rdfs:Class"
       ],
-      "rdfs:comment": "Describes the Resource entity in the ADEX catalogue.",
+      "rdfs:comment": "Describes the Resource entity in the Forest-Stack catalogue.",
       "rdfs:label": "Resource",
       "rdfs:subClassOf": {
-        "@id": "forest:ADEXEntity"
+        "@id": "forest:IUDXEntity"
       }
     }
   ]

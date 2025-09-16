@@ -14,7 +14,7 @@
         "owl:Class",
         "rdfs:Class"
       ],
-      "rdfs:comment": "Class of all Time properties in ADEX. The range of time property is a time/date objects in standard formats.",
+      "rdfs:comment": "Class of all Time properties in Forest-Stack. The range of time property is a time/date objects in standard formats.",
       "rdfs:label": "TimeProperty",
       "rdfs:subClassOf": {
         "@id": "rdf:Property"

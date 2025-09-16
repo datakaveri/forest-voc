@@ -14,10 +14,10 @@
         "owl:Class",
         "rdfs:Class"
       ],
-      "rdfs:comment": "Describes the Model entity in the ADEX catalogue.",
+      "rdfs:comment": "Describes the Model entity in the Forest-Stack catalogue.",
       "rdfs:label": "Model",
       "rdfs:subClassOf": {
-        "@id": "forest:ADEXEntity"
+        "@id": "forest:IUDXEntity"
       }
     }
   ]

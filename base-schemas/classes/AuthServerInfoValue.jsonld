@@ -14,7 +14,7 @@
         "owl:Class",
         "rdfs:Class"
       ],
-      "rdfs:comment": "Describes information about the ADEX Authorization Server for a given resource.",
+      "rdfs:comment": "Describes information about the Forest-Stack Authorization Server for a given resource.",
       "rdfs:label": "AuthServerInfoValue",
       "rdfs:subClassOf": {
         "@id": "forest:StructuredValue"

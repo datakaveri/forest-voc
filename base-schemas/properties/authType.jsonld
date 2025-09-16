@@ -14,7 +14,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Identification of the auth scheme used for a given resource.  ENUM: [ADEXAUTH].",
+      "rdfs:comment": "Identification of the auth scheme used for a given resource.",
       "rdfs:label": "authType",
       "forest:domainIncludes": [
         {
