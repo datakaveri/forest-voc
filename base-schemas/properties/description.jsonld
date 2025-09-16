@@ -14,7 +14,7 @@
             "@type": [
                 "forest:TextProperty"
             ],
-            "rdfs:comment": "Description for an ADEX thing.",
+            "rdfs:comment": "Description for an Forest-Stack thing.",
             "rdfs:label": "description",
             "forest:domainIncludes": [
                 {
