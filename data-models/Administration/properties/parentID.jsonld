@@ -14,7 +14,7 @@
                 "forest:TextProperty"
             ],
             "rdfs:comment": "Unique identifier indicating the parent region in the spatial or administrative hierarchy",
-            "rdfs:label": "parentID",
+            "rdfs:label": "parentRegionCode",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },

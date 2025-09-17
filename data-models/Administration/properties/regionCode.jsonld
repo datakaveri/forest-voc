@@ -20,7 +20,10 @@
             },
             "forest:domainIncludes": [
                 {
-                    "@id": "forest:ForestModel"
+                    "@id": "forest:ForestRegion"
+                },
+                {
+                    "@id": "forest:MonthlyProgressReport"
                 }
             ],
             "forest:rangeIncludes": [
