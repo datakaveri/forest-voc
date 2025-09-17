@@ -20,7 +20,7 @@
         "@id": "forest:"
       },
       "rdfs:subClassOf": {
-        "@id": "forest:WildlifeMonitoring"
+        "@id": "forest:WildlifeRelated"
       }
     }
   ]
