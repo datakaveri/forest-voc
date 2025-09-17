@@ -9,23 +9,23 @@
   },
   "@graph": [
     {
-      "@id": "forest:rootShootRatio",
+      "@id": "forest:order",
       "@type": [
-        "forest:QuantitativeProperty"
+        "forest:TextProperty"
       ],
-      "rdfs:comment": "Ratio of root biomass to shoot biomass",
-      "rdfs:label": "rootShootRatio",
+      "rdfs:comment": "Taxonomic order to which the species belongs in the biological classification hierarchy.",
+      "rdfs:label": "order",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
       "forest:domainIncludes": [
         {
-          "@id": "forest:SpeciesCarbonSequestration"
+          "@id": "forest:Species"
         }
       ],
       "forest:rangeIncludes": [
         {
-          "@id": "forest:Number"
+          "@id": "forest:Text"
         }
       ]
     }
