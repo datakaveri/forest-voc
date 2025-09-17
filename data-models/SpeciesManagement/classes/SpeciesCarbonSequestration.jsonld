@@ -9,25 +9,19 @@
   },
   "@graph": [
     {
-      "@id": "forest:status",
+      "@id": "forest:SpeciesCarbonSequestration",
       "@type": [
-        "forest:TextProperty"
+        "owl:Class",
+        "rdfs:Class"
       ],
-      "rdfs:comment": "Current status of the species record (active, deprecated, etc.)",
-      "rdfs:label": "status",
+      "rdfs:comment": "Species information focused on carbon sequestration, biomass calculations, and climate-related parameters for carbon accounting and climate change mitigation studies.",
+      "rdfs:label": "SpeciesCarbonSequestration",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
-      "forest:domainIncludes": [
-        {
-          "@id": "forest:Species"
-        }
-      ],
-      "forest:rangeIncludes": [
-        {
-          "@id": "forest:Text"
-        }
-      ]
+      "rdfs:subClassOf": {
+        "@id": "forest:SpeciesRelated"
+      }
     }
   ]
 }

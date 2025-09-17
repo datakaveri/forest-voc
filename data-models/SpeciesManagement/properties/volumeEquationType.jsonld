@@ -20,7 +20,7 @@
       },
       "forest:domainIncludes": [
         {
-          "@id": "forest:Species"
+          "@id": "forest:SpeciesCarbonSequestration"
         }
       ],
       "forest:rangeIncludes": [

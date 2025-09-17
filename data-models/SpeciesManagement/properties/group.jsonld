@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:createdAt",
+      "@id": "forest:group",
       "@type": [
-        "forest:TimeProperty"
+        "forest:TextProperty"
       ],
-      "rdfs:comment": "Timestamp when the species record was created",
-      "rdfs:label": "createdAt",
+      "rdfs:comment": "Taxonomic group (Kingdom) to which the species belongs in the biological classification hierarchy.",
+      "rdfs:label": "group",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
@@ -25,7 +25,7 @@
       ],
       "forest:rangeIncludes": [
         {
-          "@id": "forest:DateTime"
+          "@id": "forest:Text"
         }
       ]
     }

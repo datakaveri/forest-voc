@@ -14,7 +14,7 @@
         "owl:Class",
         "rdfs:Class"
       ],
-      "rdfs:comment": "Comprehensive species information including taxonomy, characteristics, and growth parameters for forestry management. This model and definition of fields can be used to create a species directory.",
+      "rdfs:comment": "Core species information including taxonomy, identification, growth characteristics, and seasonal patterns for forestry management.",
       "rdfs:label": "Species",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
