@@ -20,7 +20,7 @@
         "@id": "forest:"
       },
       "rdfs:subClassOf": {
-        "@id": "forest:SpeciesDirectory"
+        "@id": "forest:SpeciesRelated"
       }
     }
   ]
