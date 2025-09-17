@@ -13,7 +13,7 @@
             "@type": [
                 "forest:TextProperty"
             ],
-            "rdfs:comment": "Reference to the administrative region (Region hierarchy) associated with this MPR report.",
+            "rdfs:comment": "Reference to a unique administrative region.",
             "rdfs:label": "regionId",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
