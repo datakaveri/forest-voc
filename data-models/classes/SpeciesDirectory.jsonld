@@ -9,7 +9,7 @@
   },
   "@graph": [
     {
-      "@id": "forest:SpeciesDirectory",
+      "@id": "forest:SpeciesRelated",
       "@type": [
         "owl:Class",
         "rdfs:Class"
