@@ -15,7 +15,7 @@
             ],
             "@id": "forest:PlantationSites",
             "rdfs:comment": "Data model for designated locations or areas within a forest or land environment where trees are deliberately planted, cultivated, and managed for specific purposes such as commercial timber production, conservation, ecological restoration, or environmental protection. This model and definition of fields can be used to create a plantation registry.",
-            "rdfs:label": "PlantationSites",
+            "rdfs:label": "Plantation related",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },
