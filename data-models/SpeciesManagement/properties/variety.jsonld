@@ -9,21 +9,18 @@
   },
   "@graph": [
     {
-      "@id": "forest:speciesName",
+      "@id": "forest:variety",
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Primary name of the species",
-      "rdfs:label": "speciesName",
+      "rdfs:comment": "Variety or cultivar name of the species, if applicable, for more specific identification within the species.",
+      "rdfs:label": "variety",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
       "forest:domainIncludes": [
         {
           "@id": "forest:Species"
-        },
-        {
-          "@id": "forest:SpeciesCarbonSequestration"
         }
       ],
       "forest:rangeIncludes": [

@@ -9,26 +9,26 @@
   },
   "@graph": [
     {
-      "@id": "forest:speciesName",
+      "@id": "forest:workingplanuri",
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Primary name of the species",
-      "rdfs:label": "speciesName",
+      "rdfs:comment": "URI or URL reference to the working plan document associated with this plantation site.",
+      "rdfs:label": "workingplanuri",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
       "forest:domainIncludes": [
         {
-          "@id": "forest:Species"
-        },
-        {
-          "@id": "forest:SpeciesCarbonSequestration"
+          "@id": "forest:PlantationSites"
         }
       ],
       "forest:rangeIncludes": [
         {
           "@id": "forest:Text"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
         }
       ]
     }
