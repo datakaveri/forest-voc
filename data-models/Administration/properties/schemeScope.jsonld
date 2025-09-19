@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Scope of the forestry scheme (CENTRAL, STATE, PROJECT)",
+      "rdfs:comment": "Scope of the forestry scheme (CENTRAL, STATE, LOCAL, EXTERNALLY_AIDED_PROJECT, PRIVATE, CSR)",
       "rdfs:label": "schemeScope",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
