@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Method used for wildlife observation (WATERPOINT/CAMERA_TRAP/TRANSECT/OTHERS)",
+      "rdfs:comment": "Method used for wildlife observation (WATERPOINT,CAMERA_TRAP,TRANSECT,OTHERS)",
       "rdfs:label": "observationMethod",
       "rdfs:isDefinedBy": {
         "@id": "forest:"

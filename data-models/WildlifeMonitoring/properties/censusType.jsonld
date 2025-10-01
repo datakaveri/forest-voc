@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Type of census activity (POPULATION_SURVEY/HABITAT_ASSESSMENT/MIGRATION_TRACKING/SPECIES_DIVERSITY)",
+      "rdfs:comment": "Type of census activity (POPULATION_SURVEY,HABITAT_ASSESSMENT,MIGRATION_TRACKING,SPECIES_DIVERSITY,OTHERS)",
       "rdfs:label": "censusType",
       "rdfs:isDefinedBy": {
         "@id": "forest:"

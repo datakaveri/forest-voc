@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:isAggregated",
+      "@id": "forest:reportingPersonName",
       "@type": [
-        "forest:QuantitativeProperty"
+        "forest:TextProperty"
       ],
-      "rdfs:comment": "Indicates whether this event record represents aggregated data (true) or individual event (false)",
-      "rdfs:label": "isAggregated",
+      "rdfs:comment": "Name of the person who reported the wildlife conflict",
+      "rdfs:label": "reportingPersonName",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
@@ -25,7 +25,7 @@
       ],
       "forest:rangeIncludes": [
         {
-          "@id": "forest:Boolean"
+          "@id": "forest:Text"
         },
         {
           "@id": "forest:ValueDescriptor"
