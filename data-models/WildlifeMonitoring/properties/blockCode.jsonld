@@ -18,7 +18,7 @@
       "rdfs:label": "blockCode",
       "forest:domainIncludes": [
         {
-          "@id": "forest:Thing"
+          "@id": "forest:AnimalRescue"
         }
       ],
       "forest:rangeIncludes": [
