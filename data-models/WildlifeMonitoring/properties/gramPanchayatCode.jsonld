@@ -18,7 +18,7 @@
       "rdfs:label": "gramPanchayatCode",
       "forest:domainIncludes": [
         {
-          "@id": "forest:Thing"
+          "@id": "forest:AnimalRescue"
         }
       ],
       "forest:rangeIncludes": [
