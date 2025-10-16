@@ -31,6 +31,9 @@
                 },
                 {
                     "@id": "forest:ForestRegion"
+                },
+                {
+                    "@id": "forest:SiteProposal"
                 }
             ],
             "forest:rangeIncludes": [
