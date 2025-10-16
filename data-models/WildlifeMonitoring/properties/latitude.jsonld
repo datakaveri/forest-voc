@@ -24,6 +24,9 @@
         },
         {
           "@id": "forest:HumanWildlifeConflict"
+        },
+        {
+          "@id": "forest:AnimalRescue"
         }
       ],
       "forest:rangeIncludes": [

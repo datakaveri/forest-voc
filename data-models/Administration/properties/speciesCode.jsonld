@@ -1,34 +1,29 @@
 {
   "@context": {
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "iudx": "https://voc.iudx.org.in/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "adex": "https://agrijson.org/",
     "forest": "https://voc.forest-stack.iudx.io/"
   },
   "@graph": [
     {
-      "@id": "forest:workingplanuri",
+      "@id": "forest:speciesCode",
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "URI or URL reference to the working plan document associated with this plantation site.",
-      "rdfs:label": "workingPlanUri",
-      "rdfs:isDefinedBy": {
-        "@id": "forest:"
-      },
+      "rdfs:comment": "Code identifier for the species proposed for plantation",
+      "rdfs:label": "speciesCode",
       "forest:domainIncludes": [
         {
-          "@id": "forest:PlantationSites"
+          "@id": "forest:SiteProposal"
         }
       ],
       "forest:rangeIncludes": [
         {
           "@id": "forest:Text"
-        },
-        {
-          "@id": "forest:ValueDescriptor"
         }
       ]
     }
