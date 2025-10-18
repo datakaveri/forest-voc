@@ -14,7 +14,7 @@
         "forest:TextProperty"
       ],
       "rdfs:comment": "Local Government Directory (LGD) village code for the village where the plantation site is located, used for administrative and governance purposes.",
-      "rdfs:label": "LGDVillageCode",
+      "rdfs:label": "lgdVillageCode",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
