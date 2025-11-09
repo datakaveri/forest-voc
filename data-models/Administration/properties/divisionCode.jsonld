@@ -24,6 +24,18 @@
             "forest:domainIncludes": [
                 {
                     "@id": "forest:PlantationSites"
+                },
+                {
+                    "@id": "forest:HumanWildlifeConflict"
+                },
+                {
+                    "@id": "forest:AnimalRescue"
+                },
+                {
+                    "@id": "forest:WildlifeCensus"
+                },
+                {
+                    "@id": "forest:SiteProposal"
                 }
             ],
             "forest:rangeIncludes": [
