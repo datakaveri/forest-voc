@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Public safety measures taken during the incident (e.g., 'area cordoned off', 'traffic diverted', 'crowd managed', 'schools closed')",
+      "rdfs:comment": "Public safety measures taken during the incident (e.g., 'area cordoned off', 'traffic diverted', 'crowd managed', 'schools closed', 'warning issued', 'patrol increased')",
       "rdfs:label": "publicSafetyActions",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
@@ -21,6 +21,9 @@
       "forest:domainIncludes": [
         {
           "@id": "forest:AnimalRescue"
+        },
+        {
+          "@id": "forest:HumanWildlifeConflict"
         }
       ],
       "forest:rangeIncludes": [

@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "First Information Report (FIR) number if a criminal case was filed in connection with the incident",
+      "rdfs:comment": "First Information Report (FIR) number if a criminal case or police complaint was filed in connection with the incident",
       "rdfs:label": "FIRNumber",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
@@ -21,6 +21,9 @@
       "forest:domainIncludes": [
         {
           "@id": "forest:AnimalRescue"
+        },
+        {
+          "@id": "forest:HumanWildlifeConflict"
         }
       ],
       "forest:rangeIncludes": [

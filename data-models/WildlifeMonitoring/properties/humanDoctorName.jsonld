@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@id": "forest:doctorDesignation",
+            "@id": "forest:humanDoctorName",
             "@type": [
                 "forest:TextProperty"
             ],
-            "rdfs:comment": "Professional designation or title of the doctor who attended to the wildlife conflict incident (e.g., Veterinary Doctor, Medical Officer).",
-            "rdfs:label": "doctorDesignation",
+            "rdfs:comment": "Name of the doctor who attended to the human victim(s) in the wildlife conflict incident",
+            "rdfs:label": "humanDoctorName",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },

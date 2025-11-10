@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@id": "forest:medicalAttentionRequired",
+            "@id": "forest:humanDoctorContact",
             "@type": [
                 "forest:TextProperty"
             ],
-            "rdfs:comment": "Indicates whether medical attention was required for the wildlife conflict incident (Yes/No).",
-            "rdfs:label": "medicalAttentionRequired",
+            "rdfs:comment": "Contact information (phone number, email) of the doctor who attended to human victim(s)",
+            "rdfs:label": "humanDoctorContact",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
             },

@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Outcome of injuries sustained in the wildlife conflict (e.g., injury, death, minor, severe)",
+      "rdfs:comment": "For HUMANS: Outcome of injuries sustained. Allowed values: INJURY, DEATH, FIRST_AID_ONLY",
       "rdfs:label": "injuryOutcome",
       "rdfs:isDefinedBy": {
         "@id": "forest:"

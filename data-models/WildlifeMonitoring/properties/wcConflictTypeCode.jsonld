@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Code indicating the type of wildlife conflict (e.g., LIVESTOCK_DEPREDATION, CROP_DAMAGE, HUMAN_INJURY)",
+      "rdfs:comment": "Code indicating the type of wildlife conflict. Allowed values: CROP_DAMAGE, LIVESTOCK_DEPREDATION, HUMAN_INJURY, HUMAN_DEATH, PROPERTY_DAMAGE, FISH_POND_DEPREDATION, APIARY_DAMAGE, OTHER",
       "rdfs:label": "conflictTypeCode",
       "rdfs:isDefinedBy": {
         "@id": "forest:"

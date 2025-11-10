@@ -13,7 +13,7 @@
       "@type": [
         "forest:QuantitativeProperty"
       ],
-      "rdfs:comment": "Number of people injured during the incident or rescue operation",
+      "rdfs:comment": "Number of humans injured in the wildlife conflict incident or rescue operation",
       "rdfs:label": "humanInjuryCount",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
@@ -21,11 +21,17 @@
       "forest:domainIncludes": [
         {
           "@id": "forest:AnimalRescue"
+        },
+        {
+          "@id": "forest:HumanWildlifeConflict"
         }
       ],
       "forest:rangeIncludes": [
         {
           "@id": "forest:Number"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
         }
       ]
     }

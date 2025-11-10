@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Description of property damage caused by the animal or during the incident (e.g., 'damaged crops', 'broken fence', 'vehicle damage')",
+      "rdfs:comment": "Description of property damage caused by wildlife or during the incident (e.g., 'damaged crops', 'broken fence', 'vehicle damage')",
       "rdfs:label": "propertyDamageDescription",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
@@ -21,6 +21,9 @@
       "forest:domainIncludes": [
         {
           "@id": "forest:AnimalRescue"
+        },
+        {
+          "@id": "forest:HumanWildlifeConflict"
         }
       ],
       "forest:rangeIncludes": [

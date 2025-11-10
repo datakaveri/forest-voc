@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Legal section or act under which action was taken (e.g., 'Wildlife Protection Act Section 9', 'IPC Section 429')",
+      "rdfs:comment": "Legal section or act under which action was taken or case is registered (e.g., 'Wildlife Protection Act Section 9', 'IPC Section 429')",
       "rdfs:label": "legalSection",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
@@ -21,6 +21,9 @@
       "forest:domainIncludes": [
         {
           "@id": "forest:AnimalRescue"
+        },
+        {
+          "@id": "forest:HumanWildlifeConflict"
         }
       ],
       "forest:rangeIncludes": [

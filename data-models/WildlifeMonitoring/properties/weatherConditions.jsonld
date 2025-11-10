@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Weather conditions during the census (SUNNY/CLOUDY/RAINY/FOGGY)",
+      "rdfs:comment": "Weather conditions during the census or at the time of the conflict incident (e.g., SUNNY/CLOUDY/RAINY/FOGGY/CLEAR)",
       "rdfs:label": "weatherConditions",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
@@ -21,6 +21,9 @@
       "forest:domainIncludes": [
         {
           "@id": "forest:WildlifeCensus"
+        },
+        {
+          "@id": "forest:HumanWildlifeConflict"
         }
       ],
       "forest:rangeIncludes": [
