@@ -9,26 +9,23 @@
   },
   "@graph": [
     {
-      "@id": "forest:coordinateUncertaintyInMeters",
+      "@id": "forest:rightsHolder",
       "@type": [
-        "forest:QuantitativeProperty"
+        "forest:TextProperty"
       ],
-      "rdfs:comment": "The horizontal distance (in meters) from the given coordinates describing the smallest circle containing the whole of the location. Represents the precision of the coordinates",
-      "rdfs:label": "coordinateUncertaintyInMeters",
+      "rdfs:comment": "The person, organization, or institution that owns or manages the rights over the census data (e.g., 'Tamil Nadu Forest Department', 'Wildlife Institute of India')",
+      "rdfs:label": "rightsHolder",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
       "forest:domainIncludes": [
         {
           "@id": "forest:WildlifeCensus"
-        },
-        {
-          "@id": "forest:AnimalRescue"
         }
       ],
       "forest:rangeIncludes": [
         {
-          "@id": "forest:Number"
+          "@id": "forest:Text"
         }
       ]
     }

@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "The specific description of the place where the census was conducted (e.g., 'Mudumalai Tiger Reserve, Zone 3, near Moyar River')",
+      "rdfs:comment": "The specific description of the place (e.g., 'Mudumalai Tiger Reserve, Zone 3, near Moyar River', 'Highway NH-48 near Km 125')",
       "rdfs:label": "locality",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
@@ -21,6 +21,9 @@
       "forest:domainIncludes": [
         {
           "@id": "forest:WildlifeCensus"
+        },
+        {
+          "@id": "forest:AnimalRescue"
         }
       ],
       "forest:rangeIncludes": [

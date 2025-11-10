@@ -9,26 +9,23 @@
   },
   "@graph": [
     {
-      "@id": "forest:coordinateUncertaintyInMeters",
+      "@id": "forest:reportedDateTime",
       "@type": [
-        "forest:QuantitativeProperty"
+        "forest:TimeProperty"
       ],
-      "rdfs:comment": "The horizontal distance (in meters) from the given coordinates describing the smallest circle containing the whole of the location. Represents the precision of the coordinates",
-      "rdfs:label": "coordinateUncertaintyInMeters",
+      "rdfs:comment": "Date and time when the rescue incident was officially reported to authorities. Use ISO-8601 DateTime format (e.g., '2024-03-15T15:00:00+05:30')",
+      "rdfs:label": "reportedDateTime",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
       "forest:domainIncludes": [
-        {
-          "@id": "forest:WildlifeCensus"
-        },
         {
           "@id": "forest:AnimalRescue"
         }
       ],
       "forest:rangeIncludes": [
         {
-          "@id": "forest:Number"
+          "@id": "forest:DateTime"
         }
       ]
     }
