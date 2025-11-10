@@ -18,14 +18,7 @@
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
-      "forest:domainIncludes": [
-        {
-          "@id": "forest:WildlifeCensus"
-        },
-        {
-          "@id": "forest:HumanWildlifeConflict"
-        }
-      ],
+      "forest:domainIncludes": [],
       "forest:rangeIncludes": [
         {
           "@id": "forest:Text"

@@ -20,9 +20,6 @@
       },
       "forest:domainIncludes": [
         {
-          "@id": "forest:WildlifeCensus"
-        },
-        {
           "@id": "forest:AnimalRescue"
         },
         {
