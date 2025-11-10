@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Specific subtype of the affected entity (e.g., buffalo calf, wheat crop, residential property)",
+      "rdfs:comment": "Controlled subtype per entity (e.g., crop variety/livestock species/property type). Specific subtype of the affected entity",
       "rdfs:label": "affectedSubtype",
       "rdfs:isDefinedBy": {
         "@id": "forest:"

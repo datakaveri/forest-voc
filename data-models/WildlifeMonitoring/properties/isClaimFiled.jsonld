@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:conflictSpeciesId",
+      "@id": "forest:isClaimFiled",
       "@type": [
-        "forest:QuantitativeProperty"
+        "forest:TextProperty"
       ],
-      "rdfs:comment": "Identifier of the wildlife species involved in the conflict",
-      "rdfs:label": "conflictSpeciesId",
+      "rdfs:comment": "Whether a compensation claim was filed for the conflict incident. Allowed values: TRUE, FALSE",
+      "rdfs:label": "isClaimFiled",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
@@ -25,10 +25,7 @@
       ],
       "forest:rangeIncludes": [
         {
-          "@id": "forest:Number"
-        },
-        {
-          "@id": "forest:ValueDescriptor"
+          "@id": "forest:Text"
         }
       ]
     }

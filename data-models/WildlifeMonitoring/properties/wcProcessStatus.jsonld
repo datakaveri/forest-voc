@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Current processing status of the wildlife conflict case (e.g., reported, under_investigation, approved, rejected, compensated)",
+      "rdfs:comment": "Current processing status of the wildlife conflict case. Allowed values: REPORTED, VERIFIED, TEAM_DISPATCHED, SITE_INSPECTED, ASSESSED, APPROVED, COMPENSATION_SANCTIONED, PAID, REJECTED, CLOSED",
       "rdfs:label": "processStatus",
       "rdfs:isDefinedBy": {
         "@id": "forest:"

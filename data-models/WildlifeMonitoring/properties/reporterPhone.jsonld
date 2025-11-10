@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Phone number or contact number of the person (citizen or officer) who reported the animal rescue incident",
+      "rdfs:comment": "Phone number or contact number of the person (citizen or officer) who reported the animal rescue or wildlife conflict incident",
       "rdfs:label": "reporterPhone",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
@@ -21,6 +21,9 @@
       "forest:domainIncludes": [
         {
           "@id": "forest:AnimalRescue"
+        },
+        {
+          "@id": "forest:HumanWildlifeConflict"
         }
       ],
       "forest:rangeIncludes": [

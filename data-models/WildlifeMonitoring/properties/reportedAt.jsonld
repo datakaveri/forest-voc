@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:reportedAt",
+      "@type": [
+        "forest:TimeProperty"
+      ],
+      "rdfs:comment": "Date and time when the conflict was reported. Use ISO-8601 DateTime format (e.g., '2024-03-15T14:30:00+05:30')",
+      "rdfs:label": "reportedAt",
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      },
+      "forest:domainIncludes": [
+        {
+          "@id": "forest:HumanWildlifeConflict"
+        }
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:DateTime"
+        }
+      ]
+    }
+  ]
+}

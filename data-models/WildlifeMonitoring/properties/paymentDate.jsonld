@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "iudx": "https://voc.iudx.org.in/",
+    "adex": "https://agrijson.org/",
+    "forest": "https://voc.forest-stack.iudx.io/"
+  },
+  "@graph": [
+    {
+      "@id": "forest:paymentDate",
+      "@type": [
+        "forest:TimeProperty"
+      ],
+      "rdfs:comment": "Date when compensation payment was disbursed. ISO-8601 format (e.g., 2024-01-15 or 2024-01-15T10:00:00+05:30)",
+      "rdfs:label": "paymentDate",
+      "rdfs:isDefinedBy": {
+        "@id": "forest:"
+      },
+      "forest:domainIncludes": [
+        {
+          "@id": "forest:HumanWildlifeConflict"
+        }
+      ],
+      "forest:rangeIncludes": [
+        {
+          "@id": "forest:DateTime"
+        },
+        {
+          "@id": "forest:ValueDescriptor"
+        }
+      ]
+    }
+  ]
+}

@@ -21,6 +21,9 @@
       "forest:domainIncludes": [
         {
           "@id": "forest:WildlifeCensus"
+        },
+        {
+          "@id": "forest:HumanWildlifeConflict"
         }
       ],
       "forest:rangeIncludes": [
