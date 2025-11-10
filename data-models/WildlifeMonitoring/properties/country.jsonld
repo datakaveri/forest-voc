@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:observationMethod",
+      "@id": "forest:country",
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Method used for wildlife observation. Allowed values: CAMERA_TRAP, LINE_TRANSECT, WATERPOINT_COUNT, SIGN_SURVEY, OTHERS",
-      "rdfs:label": "observationMethod",
+      "rdfs:comment": "The name of the country in which the census was conducted. Use ISO 3166-1 country codes when possible (e.g., 'IN' for India)",
+      "rdfs:label": "country",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

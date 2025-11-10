@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:observationMethod",
+      "@id": "forest:samplingProtocol",
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Method used for wildlife observation. Allowed values: CAMERA_TRAP, LINE_TRANSECT, WATERPOINT_COUNT, SIGN_SURVEY, OTHERS",
-      "rdfs:label": "observationMethod",
+      "rdfs:comment": "The methodological approach or standard procedure used for sampling (e.g., 'Line Transect 2km', 'Camera trap 30-day deployment')",
+      "rdfs:label": "samplingProtocol",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

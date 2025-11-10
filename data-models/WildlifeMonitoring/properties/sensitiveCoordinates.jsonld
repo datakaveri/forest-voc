@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:observationMethod",
+      "@id": "forest:sensitiveCoordinates",
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Method used for wildlife observation. Allowed values: CAMERA_TRAP, LINE_TRANSECT, WATERPOINT_COUNT, SIGN_SURVEY, OTHERS",
-      "rdfs:label": "observationMethod",
+      "rdfs:comment": "Indicates whether the location coordinates contain sensitive information that should be protected (e.g., 'true' for endangered species, poaching-prone areas)",
+      "rdfs:label": "sensitiveCoordinates",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

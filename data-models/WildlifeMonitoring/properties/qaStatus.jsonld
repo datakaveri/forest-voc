@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:observationMethod",
+      "@id": "forest:qaStatus",
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Method used for wildlife observation. Allowed values: CAMERA_TRAP, LINE_TRANSECT, WATERPOINT_COUNT, SIGN_SURVEY, OTHERS",
-      "rdfs:label": "observationMethod",
+      "rdfs:comment": "The quality assurance status of the census record (e.g., 'PENDING', 'VERIFIED', 'APPROVED', 'REJECTED', 'NEEDS_REVIEW')",
+      "rdfs:label": "qaStatus",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

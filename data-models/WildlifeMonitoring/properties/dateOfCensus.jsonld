@@ -13,7 +13,7 @@
       "@type": [
         "forest:TimeProperty"
       ],
-      "rdfs:comment": "Date when the wildlife census was conducted",
+      "rdfs:comment": "Date and time when the wildlife census was conducted. Must be in ISO-8601 DateTime format (e.g., 2025-11-10T14:30:00Z)",
       "rdfs:label": "dateOfCensus",
       "rdfs:isDefinedBy": {
         "@id": "forest:"

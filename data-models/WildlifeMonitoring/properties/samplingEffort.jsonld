@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:observationMethod",
+      "@id": "forest:samplingEffort",
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Method used for wildlife observation. Allowed values: CAMERA_TRAP, LINE_TRANSECT, WATERPOINT_COUNT, SIGN_SURVEY, OTHERS",
-      "rdfs:label": "observationMethod",
+      "rdfs:comment": "Quantification of the effort expended during the sampling event (e.g., 'trap nights: 120', 'person hours: 48', 'transect length: 5km x 3 replicates')",
+      "rdfs:label": "samplingEffort",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
