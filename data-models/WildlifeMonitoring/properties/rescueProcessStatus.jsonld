@@ -14,7 +14,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Current stage of the rescue process (sighting, reported, team_dispatched, rescue_in_progress, rescued, treated, released, death, rescue_failed)",
+      "rdfs:comment": "Current stage of the rescue lifecycle. Allowed values: SIGHTED, REPORTED, TEAM_DISPATCHED, ARRIVED, CAPTURE_IN_PROGRESS, CAPTURED, TREATED, TRANSPORTED, RELEASED, TRANSFERRED_TO_CENTER, DEATH, CLOSED",
       "rdfs:label": "rescueProcessStatus",
       "forest:domainIncludes": [
         {

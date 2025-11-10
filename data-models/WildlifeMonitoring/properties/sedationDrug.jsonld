@@ -9,26 +9,23 @@
   },
   "@graph": [
     {
-      "@id": "forest:coordinateUncertaintyInMeters",
+      "@id": "forest:sedationDrug",
       "@type": [
-        "forest:QuantitativeProperty"
+        "forest:TextProperty"
       ],
-      "rdfs:comment": "The horizontal distance (in meters) from the given coordinates describing the smallest circle containing the whole of the location. Represents the precision of the coordinates",
-      "rdfs:label": "coordinateUncertaintyInMeters",
+      "rdfs:comment": "Name of the sedative or anesthetic drug used during tranquilization (e.g., 'Ketamine', 'Xylazine', 'Medetomidine')",
+      "rdfs:label": "sedationDrug",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
       "forest:domainIncludes": [
-        {
-          "@id": "forest:WildlifeCensus"
-        },
         {
           "@id": "forest:AnimalRescue"
         }
       ],
       "forest:rangeIncludes": [
         {
-          "@id": "forest:Number"
+          "@id": "forest:Text"
         }
       ]
     }

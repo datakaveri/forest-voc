@@ -9,26 +9,23 @@
   },
   "@graph": [
     {
-      "@id": "forest:coordinateUncertaintyInMeters",
+      "@id": "forest:releaseDateTime",
       "@type": [
-        "forest:QuantitativeProperty"
+        "forest:TimeProperty"
       ],
-      "rdfs:comment": "The horizontal distance (in meters) from the given coordinates describing the smallest circle containing the whole of the location. Represents the precision of the coordinates",
-      "rdfs:label": "coordinateUncertaintyInMeters",
+      "rdfs:comment": "Date and time when the animal was released back to the wild. Use ISO-8601 DateTime format (e.g., '2024-03-20T08:00:00+05:30')",
+      "rdfs:label": "releaseDateTime",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
       "forest:domainIncludes": [
-        {
-          "@id": "forest:WildlifeCensus"
-        },
         {
           "@id": "forest:AnimalRescue"
         }
       ],
       "forest:rangeIncludes": [
         {
-          "@id": "forest:Number"
+          "@id": "forest:DateTime"
         }
       ]
     }

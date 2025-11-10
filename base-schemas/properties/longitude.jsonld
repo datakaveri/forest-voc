@@ -17,7 +17,7 @@
       "@type": [
         "forest:GeoProperty"
       ],
-      "rdfs:comment": "Longitude of a place. Specified in WGS 84 CRS (https://en.wikipedia.org/wiki/World_Geodetic_System)",
+      "rdfs:comment": "Longitude of a place in decimal degrees. Specified in WGS 84 CRS (EPSG:4326). For sensitive locations, coordinates may be generalized",
       "rdfs:label": "longitude",
       "forest:domainIncludes": [
         {
@@ -25,6 +25,9 @@
         },
         {
           "@id": "forest:Place"
+        },
+        {
+          "@id": "forest:AnimalRescue"
         }
       ],
       "forest:rangeIncludes": [

@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Status indicating if census location is inside or outside protected areas (INSIDE/OUTSIDE)",
+      "rdfs:comment": "Status indicating if the location is inside or outside protected areas. Allowed values: INSIDE, OUTSIDE",
       "rdfs:label": "protectedAreaStatus",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
@@ -21,6 +21,9 @@
       "forest:domainIncludes": [
         {
           "@id": "forest:WildlifeCensus"
+        },
+        {
+          "@id": "forest:AnimalRescue"
         }
       ],
       "forest:rangeIncludes": [

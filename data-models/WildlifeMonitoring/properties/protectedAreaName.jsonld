@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "The name of the protected area where the census was conducted (e.g., 'Jim Corbett National Park', 'Nagarhole Tiger Reserve')",
+      "rdfs:comment": "The name of the protected area if applicable (e.g., 'Jim Corbett National Park', 'Nagarhole Tiger Reserve', 'Bandipur Wildlife Sanctuary')",
       "rdfs:label": "protectedAreaName",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
@@ -21,6 +21,9 @@
       "forest:domainIncludes": [
         {
           "@id": "forest:WildlifeCensus"
+        },
+        {
+          "@id": "forest:AnimalRescue"
         }
       ],
       "forest:rangeIncludes": [

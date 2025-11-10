@@ -9,19 +9,16 @@
   },
   "@graph": [
     {
-      "@id": "forest:coordinateUncertaintyInMeters",
+      "@id": "forest:releaseLatitude",
       "@type": [
-        "forest:QuantitativeProperty"
+        "forest:GeoProperty"
       ],
-      "rdfs:comment": "The horizontal distance (in meters) from the given coordinates describing the smallest circle containing the whole of the location. Represents the precision of the coordinates",
-      "rdfs:label": "coordinateUncertaintyInMeters",
+      "rdfs:comment": "Latitude coordinate of the location where the animal was released, in decimal degrees (WGS 84, EPSG:4326)",
+      "rdfs:label": "releaseLatitude",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
       "forest:domainIncludes": [
-        {
-          "@id": "forest:WildlifeCensus"
-        },
         {
           "@id": "forest:AnimalRescue"
         }

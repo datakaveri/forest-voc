@@ -9,19 +9,16 @@
   },
   "@graph": [
     {
-      "@id": "forest:coordinateUncertaintyInMeters",
+      "@id": "forest:responseTimeMinutes",
       "@type": [
         "forest:QuantitativeProperty"
       ],
-      "rdfs:comment": "The horizontal distance (in meters) from the given coordinates describing the smallest circle containing the whole of the location. Represents the precision of the coordinates",
-      "rdfs:label": "coordinateUncertaintyInMeters",
+      "rdfs:comment": "Total time taken from report to team arrival at the incident location, measured in minutes",
+      "rdfs:label": "responseTimeMinutes",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
       "forest:domainIncludes": [
-        {
-          "@id": "forest:WildlifeCensus"
-        },
         {
           "@id": "forest:AnimalRescue"
         }

@@ -14,7 +14,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Name or identifier of the officer who reported the animal rescue",
+      "rdfs:comment": "Name, employee ID, or identifier of the forest officer who reported or logged the animal rescue incident",
       "rdfs:label": "reportedByOfficer",
       "forest:domainIncludes": [
         {

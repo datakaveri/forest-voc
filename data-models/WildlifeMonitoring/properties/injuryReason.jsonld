@@ -14,7 +14,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Cause or reason for the animal's injury (vehicle collision, human-wildlife conflict, natural causes, poaching, disease, etc.)",
+      "rdfs:comment": "Cause or reason for the animal's injury. Allowed values: VEHICLE_COLLISION, ELECTROCUTION, POACHING, HWC_ATTACK, NATURAL, DISEASE, OTHER",
       "rdfs:label": "injuryReason",
       "forest:domainIncludes": [
         {
