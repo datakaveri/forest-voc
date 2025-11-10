@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:observationMethod",
+      "@id": "forest:identificationVerificationStatus",
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Method used for wildlife observation. Allowed values: CAMERA_TRAP, LINE_TRANSECT, WATERPOINT_COUNT, SIGN_SURVEY, OTHERS",
-      "rdfs:label": "observationMethod",
+      "rdfs:comment": "Quality status of the taxonomic identification. Allowed values: VERIFIED, UNVERIFIED, REQUIRES_VERIFICATION, UNCERTAIN",
+      "rdfs:label": "identificationVerificationStatus",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

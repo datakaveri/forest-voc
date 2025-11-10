@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:observationMethod",
+      "@id": "forest:programID",
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Method used for wildlife observation. Allowed values: CAMERA_TRAP, LINE_TRANSECT, WATERPOINT_COUNT, SIGN_SURVEY, OTHERS",
-      "rdfs:label": "observationMethod",
+      "rdfs:comment": "An identifier for the monitoring program under which this census was conducted (e.g., 'AITM' for All India Tiger Monitoring, 'WLCS' for Wildlife Census Survey)",
+      "rdfs:label": "programID",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

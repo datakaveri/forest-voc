@@ -13,7 +13,7 @@
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Type of census activity (POPULATION_SURVEY,HABITAT_ASSESSMENT,MIGRATION_TRACKING,SPECIES_DIVERSITY,OTHERS)",
+      "rdfs:comment": "Survey purpose or objective of the census activity. Allowed values: POPULATION_SURVEY, HABITAT_ASSESSMENT, MIGRATION_TRACKING, SPECIES_DIVERSITY, MONITORING, OTHERS. This is distinct from samplingProtocol which describes the methodological approach",
       "rdfs:label": "censusType",
       "rdfs:isDefinedBy": {
         "@id": "forest:"

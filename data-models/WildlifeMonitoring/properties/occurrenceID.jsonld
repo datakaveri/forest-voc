@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:observationMethod",
+      "@id": "forest:occurrenceID",
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Method used for wildlife observation. Allowed values: CAMERA_TRAP, LINE_TRANSECT, WATERPOINT_COUNT, SIGN_SURVEY, OTHERS",
-      "rdfs:label": "observationMethod",
+      "rdfs:comment": "Globally unique identifier for the occurrence record (e.g., UUID or DOI-based)",
+      "rdfs:label": "occurrenceID",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },

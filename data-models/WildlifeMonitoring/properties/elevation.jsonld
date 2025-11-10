@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:localName",
+      "@id": "forest:elevation",
       "@type": [
-        "forest:TextProperty"
+        "forest:QuantitativeProperty"
       ],
-      "rdfs:comment": "Local or vernacular name of the observed species (optional, from field entry)",
-      "rdfs:label": "localName",
+      "rdfs:comment": "The elevation (altitude, above sea level) in meters at which the census was conducted",
+      "rdfs:label": "elevation",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
@@ -25,7 +25,7 @@
       ],
       "forest:rangeIncludes": [
         {
-          "@id": "forest:Text"
+          "@id": "forest:Number"
         }
       ]
     }

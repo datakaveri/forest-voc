@@ -9,12 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "forest:observationMethod",
+      "@id": "forest:license",
       "@type": [
         "forest:TextProperty"
       ],
-      "rdfs:comment": "Method used for wildlife observation. Allowed values: CAMERA_TRAP, LINE_TRANSECT, WATERPOINT_COUNT, SIGN_SURVEY, OTHERS",
-      "rdfs:label": "observationMethod",
+      "rdfs:comment": "The license applied to the census data that defines usage rights and restrictions. Use standard license URIs when possible (e.g., 'CC-BY-4.0', 'CC0-1.0')",
+      "rdfs:label": "license",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
       },
