@@ -11,9 +11,9 @@
     {
       "@id": "forest:followUpRequired",
       "@type": [
-        "forest:TextProperty"
+        "forest:BooleanProperty"
       ],
-      "rdfs:comment": "Whether follow-up action or monitoring is required for this conflict case. Allowed values: TRUE, FALSE",
+      "rdfs:comment": "Whether follow-up action or monitoring is required for this conflict case",
       "rdfs:label": "followUpRequired",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
@@ -25,7 +25,7 @@
       ],
       "forest:rangeIncludes": [
         {
-          "@id": "forest:Text"
+          "@id": "forest:Boolean"
         }
       ]
     }

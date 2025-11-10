@@ -11,9 +11,9 @@
     {
       "@id": "forest:necropsyDone",
       "@type": [
-        "forest:TextProperty"
+        "forest:BooleanProperty"
       ],
-      "rdfs:comment": "Indicates whether a post-mortem examination (necropsy) was conducted. Allowed values: TRUE, FALSE",
+      "rdfs:comment": "Indicates whether a post-mortem examination (necropsy) was conducted",
       "rdfs:label": "necropsyDone",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
@@ -25,7 +25,7 @@
       ],
       "forest:rangeIncludes": [
         {
-          "@id": "forest:Text"
+          "@id": "forest:Boolean"
         }
       ]
     }

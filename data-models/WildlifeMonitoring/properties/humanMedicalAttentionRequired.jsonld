@@ -11,9 +11,9 @@
         {
             "@id": "forest:humanMedicalAttentionRequired",
             "@type": [
-                "forest:TextProperty"
+                "forest:BooleanProperty"
             ],
-            "rdfs:comment": "Indicates whether medical attention was required for humans in the wildlife conflict incident. Allowed values: TRUE, FALSE",
+            "rdfs:comment": "Indicates whether medical attention was required for humans in the wildlife conflict incident",
             "rdfs:label": "humanMedicalAttentionRequired",
             "rdfs:isDefinedBy": {
                 "@id": "forest:"
@@ -25,10 +25,7 @@
             ],
             "forest:rangeIncludes": [
                 {
-                    "@id": "forest:Text"
-                },
-                {
-                    "@id": "forest:ValueDescriptor"
+                    "@id": "forest:Boolean"
                 }
             ]
         }

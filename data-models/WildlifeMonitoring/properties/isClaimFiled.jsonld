@@ -11,9 +11,9 @@
     {
       "@id": "forest:isClaimFiled",
       "@type": [
-        "forest:TextProperty"
+        "forest:BooleanProperty"
       ],
-      "rdfs:comment": "Whether a compensation claim was filed for the conflict incident. Allowed values: TRUE, FALSE",
+      "rdfs:comment": "Whether a compensation claim was filed for the conflict incident",
       "rdfs:label": "isClaimFiled",
       "rdfs:isDefinedBy": {
         "@id": "forest:"
@@ -25,7 +25,7 @@
       ],
       "forest:rangeIncludes": [
         {
-          "@id": "forest:Text"
+          "@id": "forest:Boolean"
         }
       ]
     }
